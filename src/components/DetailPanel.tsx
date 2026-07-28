@@ -57,11 +57,19 @@ export default function DetailPanel({ entity, onClose }: Props) {
         })}
       </div>
 
-      <h3 className="detail-h">방향 (thesis)</h3>
-      <p className="detail-body">{entity.thesis}</p>
+      {entity.thesis ? (
+        <>
+          <h3 className="detail-h">방향 (thesis)</h3>
+          <p className="detail-body">{entity.thesis}</p>
+        </>
+      ) : null}
 
-      <h3 className="detail-h">비중 근거 (weight {entity.weight})</h3>
-      <p className="detail-body">{entity.weight_rationale}</p>
+      {entity.weight_rationale ? (
+        <>
+          <h3 className="detail-h">비중 근거 (weight {entity.weight})</h3>
+          <p className="detail-body">{entity.weight_rationale}</p>
+        </>
+      ) : null}
 
       <h3 className="detail-h">출처</h3>
       <ul className="detail-refs">

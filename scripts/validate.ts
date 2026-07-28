@@ -111,6 +111,11 @@ for (const f of fields) {
   }
 }
 
+// TODO(서사 우선): narrative 를 쓰기 시작하면 "weight>=4 인 노드는 어떤 가지의
+//   narrative 에서 [[id]] 로 언급돼야 한다" 검사를 켠다. 지금은 narrative 가 전부
+//   비어 있어 전량 실패하므로 넣지 않는다. thesis/weight_rationale 필수 검사는
+//   schema 를 optional 로 바꿔 이미 제거됨.
+
 // ---- entity → field 참조 & verified 경고 ----
 for (const e of entities) {
   const efields = Array.isArray(e.fields) ? e.fields : [];

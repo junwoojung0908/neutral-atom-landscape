@@ -48,7 +48,7 @@ export default function App() {
       if (ui.kind !== "all" && e.kind !== ui.kind) return false;
       if (e.weight < ui.weightMin) return false;
       if (q) {
-        const hay = `${e.label} ${e.byline} ${e.thesis} ${e.affiliation_note ?? ""}`.toLowerCase();
+        const hay = `${e.label} ${e.byline} ${e.thesis ?? ""} ${e.affiliation_note ?? ""}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;

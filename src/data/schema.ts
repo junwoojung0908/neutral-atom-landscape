@@ -22,6 +22,10 @@ export const FieldSchema = z.object({
   /** 원형 배치 순서 최적화용 인접 희망 목록 */
   adjacent: z.array(z.string()),
   blurb: z.string().min(1),
+  /** 가지 서사(서사 우선 구조). 아직 대부분 비어 있음. */
+  narrative: z.string().optional(),
+  /** 서사 마지막 갱신일 (YYYY-MM-DD). */
+  narrative_updated: DateString.optional(),
 });
 export type Field = z.infer<typeof FieldSchema>;
 
@@ -47,9 +51,10 @@ export const EntitySchema = z.object({
   year: z.number().int(),
   fields: z.array(z.string()).min(1),
   weight: z.number().int().min(1).max(5),
-  /** 크기는 주장이다 → 근거 의무화 */
-  weight_rationale: z.string().min(1),
-  thesis: z.string().min(1),
+  /** 크기의 근거. 서사 우선 구조로 가면 서사가 대체하므로 optional. */
+  weight_rationale: z.string().min(1).optional(),
+  /** 이 항목의 방향(주장). 서사 우선 구조에서 optional — 서사가 담을 수 있음. */
+  thesis: z.string().min(1).optional(),
   /** ★ 방어선: 최소 1개 필수 */
   refs: z.array(RefSchema).min(1),
   /** 서지 메타데이터의 출처. hydrate 가 채우면 "api". */
