@@ -1,0 +1,4 @@
+[
+  { "from": "pichler18", "to": "ebadi22", "rel": "proposes→implements" },
+  { "from": "andrist23", "to": "ebadi22", "rel": "contests" }
+]
