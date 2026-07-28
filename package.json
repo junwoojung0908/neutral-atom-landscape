@@ -1,0 +1,34 @@
+{
+  "name": "neutral-atom-landscape",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "validate": "tsx scripts/validate.ts",
+    "hydrate": "tsx scripts/hydrate.ts",
+    "fetch-corpus": "tsx scripts/fetch-corpus.ts",
+    "count": "tsx scripts/count.ts",
+    "taxonomy": "tsx scripts/taxonomy-check.ts"
+  },
+  "dependencies": {
+    "d3-force": "^3.0.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/d3-force": "^3.0.10",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "oxlint": "^1.71.0",
+    "tsx": "^4.23.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  }
+}
