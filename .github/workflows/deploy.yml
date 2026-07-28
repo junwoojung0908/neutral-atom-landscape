@@ -1,0 +1,50 @@
+name: deploy
+
+# main 에 push 될 때만 배포. validate 가 실패하면 build 에 도달하지 못하므로,
+# 검증 안 된 서지(refs 누락·계층 위반 등)가 공개 사이트에 올라가는 경로가 물리적으로 막힌다.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 새 배포가 시작되면 진행 중이던 이전 배포는 취소한다.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      # ★ 배포 게이트: 데이터 검증이 실패하면 여기서 워크플로가 멈춘다.
+      - name: Validate data (deploy gate)
+        run: npm run validate
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    # private 유지 동안엔 Pages 배포를 수동 트리거로만 실행한다 (push 는 validate+build
+    # 게이트만 돌려 CI 로 쓴다). 공개하기로 정하면 아래 if 줄을 지워 push→배포로 바꿔라.
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
