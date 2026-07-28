@@ -18,6 +18,10 @@ report/
 # 원시 코퍼스 (수천 편, 초록 포함 — 로컬 캐시)
 data/corpus-raw.json
 
+# count.ts 재생성 산출물 (counts.json 은 앱이 import 하므로 커밋함)
+data/corpus.json
+data/unclassified.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
