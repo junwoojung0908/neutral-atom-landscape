@@ -45,6 +45,21 @@ function wrap2(t: string, maxLen = 26, maxLines = 3): string[] {
   return lines.filter(Boolean).slice(0, maxLines);
 }
 
+/** 가지명을 ' · ' 기준 두 줄로 균형 분할 (모바일 좌측 폭 절약) */
+function laneLines(l: string): string[] {
+  const parts = l.split(" · ");
+  if (parts.length < 2) return [l];
+  let best = [l];
+  let bestDiff = 1e9;
+  for (let i = 1; i < parts.length; i++) {
+    const a = parts.slice(0, i).join(" · ");
+    const b = parts.slice(i).join(" · ");
+    const d = Math.abs(a.length - b.length);
+    if (d < bestDiff) { bestDiff = d; best = [a, b]; }
+  }
+  return best;
+}
+
 interface View { kx: number; ky: number; tx: number; ty: number }
 interface Props {
   onOpen: (p: TPaper) => void;
@@ -63,7 +78,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const [H, setH] = useState(420);
   const [narrow, setNarrow] = useState(false);
   const W = narrow ? 400 : 1000;
-  const M = narrow ? { l: 108, r: 8, t: 6, b: 18 } : { l: 156, r: 14, t: 8, b: 22 };
+  const M = narrow ? { l: 82, r: 8, t: 6, b: 18 } : { l: 156, r: 14, t: 8, b: 22 };
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
@@ -273,7 +288,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     return s;
   }, [qn]);
 
-  const cutoff = clamp(Math.round(32 * Math.sqrt(view.kx * view.ky)), 32, papers.length);
+  const cutoff = clamp(Math.round(24 * Math.sqrt(view.kx * view.ky)), 24, papers.length);
   const visible = useMemo(() => {
     const out: { p: TPaper; x: number; y: number }[] = [];
     const push = (p: TPaper) => {
@@ -482,7 +497,9 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             <text key={`ll-${id}`} className={`tlz-lanelabel${fitted === id ? " fit" : ""}`} x={M.l - 8} y={cyl}
               textAnchor="end" dominantBaseline="middle" fill={m?.color} onClick={() => fitLane(id)}>
               <title>클릭: 이 분야를 화면에 맞게 확대 (다시 클릭하면 복귀)</title>
-              {m?.ko}
+              {(narrow ? laneLines(m?.ko ?? "") : [m?.ko ?? ""]).map((ln, li, arr) => (
+                <tspan key={li} x={M.l - 8} dy={li === 0 ? (arr.length > 1 ? -5 : 0) : 11}>{ln}</tspan>
+              ))}
             </text>
           );
         })}
