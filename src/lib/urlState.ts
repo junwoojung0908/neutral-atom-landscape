@@ -9,6 +9,8 @@ export interface UiState {
   weightMin: number; // 1..5
   q: string; // 검색어
   sel: string | null; // 선택된 노드 id
+  traj: boolean; // 그룹 궤적 오버레이
+  branch: string | null; // 드릴다운 중인 분야 id
 }
 
 function read(): UiState {
@@ -20,7 +22,7 @@ function read(): UiState {
   const weightMin = Math.min(5, Math.max(1, Number(p.get("w")) || 1));
   const q = p.get("q") ?? "";
   const sel = p.get("sel");
-  return { off, kind, weightMin, q, sel: sel || null };
+  return { off, kind, weightMin, q, sel: sel || null, traj: p.get("traj") === "1", branch: p.get("br") || null };
 }
 
 function write(s: UiState) {
@@ -30,6 +32,8 @@ function write(s: UiState) {
   if (s.weightMin > 1) p.set("w", String(s.weightMin));
   if (s.q) p.set("q", s.q);
   if (s.sel) p.set("sel", s.sel);
+  if (s.traj) p.set("traj", "1");
+  if (s.branch) p.set("br", s.branch);
   const qs = p.toString();
   window.history.replaceState(null, "", qs ? `${window.location.pathname}?${qs}` : window.location.pathname);
 }

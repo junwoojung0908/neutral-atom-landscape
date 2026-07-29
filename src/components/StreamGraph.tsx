@@ -31,16 +31,17 @@ export default function StreamGraph() {
     const xOf = (y: number) => x0 + ((y - years[0]) / (years[years.length - 1] - years[0])) * (x1 - x0);
     const yOf = (s: number) => y0 - s * (y0 - y1);
 
-    // 연도별 정규화 분모 = 그해 전체 논문 수(가지 분수합 + 미분류)
-    const denom = (yr: number) => series.reduce((s, se) => s + valueOf(se.id, yr), 0) || 1;
+    // 원값(절대량) 스택: 분모 = 전체 연도 최대 합. 정규화하지 않는다 — 성장 자체가 보인다.
+    const totalOf = (yr: number) => series.reduce((s, se) => s + valueOf(se.id, yr), 0);
+    const maxTotal = Math.max(...years.map(totalOf), 1);
 
     return series.map((se, idx) => {
-      const below = (yr: number) => series.slice(0, idx).reduce((s, x) => s + valueOf(x.id, yr), 0) / denom(yr);
+      const below = (yr: number) => series.slice(0, idx).reduce((s, x) => s + valueOf(x.id, yr), 0) / maxTotal;
       const top: string[] = [];
       const bot: string[] = [];
       years.forEach((yr) => {
         const b = below(yr);
-        const t = b + valueOf(se.id, yr) / denom(yr);
+        const t = b + valueOf(se.id, yr) / maxTotal;
         top.push(`${xOf(yr).toFixed(1)},${yOf(t).toFixed(1)}`);
       });
       years.slice().reverse().forEach((yr) => bot.push(`${xOf(yr).toFixed(1)},${yOf(below(yr)).toFixed(1)}`));
@@ -92,9 +93,9 @@ export default function StreamGraph() {
       )}
 
       <p className="stream-note">
-        연도별 100% 정규화. 여러 가지에 걸친 논문은 <strong>1/k 분수 배분</strong>. 상단 히트율은 raw
-        membership이라 합이 100%를 넘습니다. <span className="u-legend">회색</span>은 어느 가지에도 안 걸린
-        미분류 — 택소노미의 구멍입니다.
+        연도별 <strong>절대량</strong>(논문 수) 스택 — 분야 전체의 성장이 그대로 보입니다. 여러 가지에 걸친
+        논문은 <strong>1/k 분수 배분</strong>. 상단 히트율은 raw membership이라 합이 100%를 넘습니다.{" "}
+        <span className="u-legend">회색</span>은 어느 가지에도 안 걸린 미분류입니다.
       </p>
     </div>
   );
