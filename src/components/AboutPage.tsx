@@ -50,6 +50,7 @@ export default function AboutPage() {
         <li><code>software</code> 가지는 구조적 과소집계 — 해당 문헌 다수가 cs.AR/cs.ET 등 CS 카테고리라 quant-ph 코퍼스 밖</li>
         <li><code>readout</code>(~2%)은 규모가 작지만 결함허용의 독립 전제(비파괴 측정·erasure 검출)라 가지로 유지 — 편집상 결정</li>
         <li>인용 그래프는 지지/반박을 구분하지 못함 — 빨간 점선(contests)만 손 큐레이션</li>
+        <li>가지 <strong>서사</strong>는 AI 보조(Claude)로 작성된 초안이며 운영자 검토 하에 갱신됨 (작성 2026-07-30)</li>
       </ul>
 
       <p className="about-foot">
