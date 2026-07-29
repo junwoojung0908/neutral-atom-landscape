@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-29",
+  "version": "2026-07-30",
   "corpus": {
     "categories": [
       "quant-ph",
@@ -9,8 +9,7 @@
       "from": "2015-01-01",
       "to": "2026-07-31"
     },
-    "include": [
-      "Rydberg",
+    "strong": [
       "optical tweezer",
       "optical tweezers",
       "tweezer array",
@@ -20,18 +19,35 @@
       "atom-by-atom",
       "reconfigurable atom"
     ],
-    "exclude": [
-      "Rydberg polariton",
-      "Rydberg exciton",
-      "Rydberg blockade in semiconductor",
-      "excitonic Rydberg",
-      "Rydberg series in molecules",
+    "weak_context": [
+      "array",
+      "tweezer",
+      "trapped atom",
+      "single atom",
+      "single-atom",
+      "individually address",
+      "individual address",
+      "qubit",
+      "quantum gate",
+      "quantum comput",
+      "quantum simulat",
+      "quantum information",
+      "register",
+      "dress",
+      "chain"
+    ],
+    "hard_exclude": [
+      "rydberg polariton",
+      "rydberg exciton",
+      "excitonic rydberg",
+      "blockade in semiconductor"
+    ],
+    "soft_exclude": [
       "vapor cell",
       "room-temperature vapor",
       "rydberg sensor",
       "atomic receiver",
       "electric field measurement",
-      "electric field strength",
       "electrometry",
       "microwave electric field",
       "rf sensing",
