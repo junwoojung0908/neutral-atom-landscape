@@ -341,11 +341,15 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
 
   const grpActive = checked.size > 0;
   const qActive = qn.length > 0;
+  // 밝기(불투명도) = 인용수 로그 스케일 — 크기와 함께 이중 인코딩으로 대비
+  const maxCited = byCited[0]?.cited ?? 1;
+  const logDen = Math.log10(1 + maxCited);
+  const baseOp = (p: TPaper) => 0.22 + 0.7 * (Math.log10(1 + p.cited) / logDen);
   const dotOp = (p: TPaper) => {
-    if (qActive) return matched.has(p.id) ? 0.95 : 0.12;
-    if (grpActive) return p.group && checked.has(p.group) ? 0.95 : 0.14;
-    if (eff) return p.id === eff ? 1 : connected.has(p.id) ? 0.72 : 0.22;
-    return 0.85;
+    if (qActive) return matched.has(p.id) ? Math.max(baseOp(p), 0.9) : 0.1;
+    if (grpActive) return p.group && checked.has(p.group) ? Math.max(baseOp(p), 0.9) : 0.1;
+    if (eff) return p.id === eff ? 1 : connected.has(p.id) ? Math.min(baseOp(p) + 0.18, 0.95) : 0.12;
+    return baseOp(p);
   };
   const dotRing = (p: TPaper) =>
     qActive ? matched.has(p.id) : grpActive ? !!(p.group && checked.has(p.group)) : eff === p.id;
