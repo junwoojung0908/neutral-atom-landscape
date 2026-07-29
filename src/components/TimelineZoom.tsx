@@ -111,6 +111,16 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   }, [laneIndex, laneH, YEARW, M.l, M.t]);
 
   const byCited = useMemo(() => papers.slice().sort((a, b) => b.cited - a.cited), []);
+  // 레인별 인용순 — LOD 를 레인 단위로 할당해 화면 밀도를 균등화
+  const byLaneSorted = useMemo(() => {
+    const m = new Map<string, TPaper[]>();
+    for (const p of byCited) {
+      const arr = m.get(p.lane);
+      if (arr) arr.push(p);
+      else m.set(p.lane, [p]);
+    }
+    return m;
+  }, [byCited]);
   const byId = useMemo(() => new Map(papers.map((p) => [p.id, p])), []);
   const majorIds = useMemo(() => new Set(byCited.slice(0, MAJOR).map((p) => p.id)), [byCited]);
   const groupCounts = useMemo(() => {
@@ -274,23 +284,26 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     return s;
   }, [qn]);
 
-  const cutoff = clamp(Math.round(24 * Math.sqrt(view.kx * view.ky)), 24, papers.length);
+  // 레인당 K개 (기본 2, 줌인할수록 증가) — 특정 분야 쏠림 방지
+  const perLane = clamp(Math.round(2 * Math.sqrt(view.kx * view.ky)), 2, 500);
   const visible = useMemo(() => {
     const out: { p: TPaper; x: number; y: number }[] = [];
+    const seen = new Set<string>();
     const push = (p: TPaper) => {
+      if (seen.has(p.id)) return;
+      seen.add(p.id);
       const b = pos.get(p.id)!;
       const x = view.tx + b.x * view.kx;
       const y = view.ty + b.y * view.ky;
       if (x > M.l - 30 && x < W - M.r + 30 && y > M.t - 30 && y < H - M.b + 30) out.push({ p, x, y });
     };
-    const seen = new Set<string>();
-    for (let i = 0; i < cutoff; i++) {
-      push(byCited[i]);
-      seen.add(byCited[i].id);
-    }
-    if (qn) for (const p of papers) if (matched.has(p.id) && !seen.has(p.id)) push(p);
+    const picked: TPaper[] = [];
+    for (const arr of byLaneSorted.values()) for (const p of arr.slice(0, perLane)) picked.push(p);
+    picked.sort((a, b) => b.cited - a.cited); // 라벨 우선순위 = 인용순
+    for (const p of picked) push(p);
+    if (qn) for (const p of papers) if (matched.has(p.id)) push(p);
     return out;
-  }, [cutoff, view, pos, byCited, qn, matched]);
+  }, [perLane, view, pos, byLaneSorted, qn, matched]);
 
   const posS = useMemo(() => new Map(visible.map((v) => [v.p.id, v])), [visible]);
   const visSet = useMemo(() => new Set(visible.map((v) => v.p.id)), [visible]);
