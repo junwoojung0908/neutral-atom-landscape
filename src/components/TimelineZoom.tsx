@@ -5,6 +5,7 @@ import { firstLevelFields, fieldById } from "../data/loader.ts";
 import { displayTitle } from "../lib/format.ts";
 import groupsJson from "../../data/groups.json";
 import { counts } from "../lib/survey.ts";
+import { curatedEdges } from "../lib/curated.ts";
 
 // 박스형 무한줌. x(연도)·y(가지) 축을 독립적으로 줌. 축 라벨은 박스 가장자리에 고정,
 // 내용만 클립. 줌인할수록(면적↑) 저인용 논문이 더 드러남(LOD).
@@ -147,11 +148,19 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     return groupsMeta.filter((g) => m.has(g.id)).map((g) => ({ ...g, n: m.get(g.id)! }));
   }, []);
 
-  const [view, setView] = useState<View>({ kx: 1, ky: 1, tx: 0, ty: 0 });
+  const [view, setView] = useState<View>(() => {
+    const p = new URLSearchParams(window.location.search);
+    const v = (p.get("v") ?? "").split(",").map(Number);
+    return v.length === 4 && v.every((x) => Number.isFinite(x))
+      ? { kx: clamp(v[0], 1, 40), ky: clamp(v[1], 1, 40), tx: v[2], ty: v[3] }
+      : { kx: 1, ky: 1, tx: 0, ty: 0 };
+  });
   const coarse = view.ky < SPLIT_KY; // 줌아웃 = 대분류 5개
   const [hover, setHover] = useState<string | null>(null);
-  const [checked, setChecked] = useState<Set<string>>(new Set());
-  const [q, setQ] = useState("");
+  const [checked, setChecked] = useState<Set<string>>(
+    () => new Set((new URLSearchParams(window.location.search).get("g") ?? "").split(",").filter(Boolean)),
+  );
+  const [q, setQ] = useState(() => new URLSearchParams(window.location.search).get("tq") ?? "");
   const [fitted, setFitted] = useState<string | null>(null); // 화면에 맞춰 확대된 레인
   const raf = useRef<number | null>(null);
 
@@ -229,6 +238,23 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const start = laneIndex.get(g.children[0]) ?? 0;
     fitRow(g.id, start, g.children.length);
   };
+  // 뷰·그룹·검색을 URL 에 동기화(공유용). 다른 키는 보존.
+  useEffect(() => {
+    const t = window.setTimeout(() => {
+      const p = new URLSearchParams(window.location.search);
+      const def = view.kx === 1 && view.ky === 1 && Math.abs(view.tx) < 1 && Math.abs(view.ty) < 1;
+      if (def) p.delete("v");
+      else p.set("v", [view.kx, view.ky, view.tx, view.ty].map((x) => Math.round(x * 100) / 100).join(","));
+      if (checked.size) p.set("g", [...checked].join(","));
+      else p.delete("g");
+      if (q) p.set("tq", q);
+      else p.delete("tq");
+      const qs = p.toString();
+      window.history.replaceState(null, "", qs ? `${window.location.pathname}?${qs}${window.location.hash}` : window.location.pathname + window.location.hash);
+    }, 250);
+    return () => window.clearTimeout(t);
+  }, [view, checked, q]);
+
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number } | null>(null);
   const pinch = useRef<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
@@ -356,10 +382,16 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const picked: TPaper[] = [];
     const src = coarse ? byGroupSorted : byLaneSorted;
     for (const arr of src.values()) for (const p of arr.slice(0, perLane)) picked.push(p);
+    // 큐레이션 관계(논쟁 등) 양끝 논문은 LOD 와 무관하게 항상 표시
+    for (const e of curatedEdges) for (const id of [e.from, e.to]) {
+      const p = byId.get(id);
+      if (p) picked.push(p);
+    }
     picked.sort((a, b) => b.score - a.score); // 라벨 우선순위 = 중요도(score)순
     for (const p of picked) push(p);
     if (qn) for (const p of papers) if (matched.has(p.id)) push(p);
-    // 겹침 완화: 화면 좌표에서 3회 반복 분리(작은 이동이라 연도 왜곡 미미, 라벨 배치도 개선)
+    // 겹침 완화: 3회 반복 분리 + 논문당 총 이동 12 상한(위치 안정성)
+    const origin = out.map((o) => ({ x: o.x, y: o.y }));
     for (let it = 0; it < 3; it++) {
       for (let i = 0; i < out.length; i++) {
         for (let j = i + 1; j < out.length; j++) {
@@ -376,6 +408,11 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           }
         }
       }
+    }
+    for (let i = 0; i < out.length; i++) {
+      const dx = out[i].x - origin[i].x, dy = out[i].y - origin[i].y;
+      const d = Math.hypot(dx, dy);
+      if (d > 12) { out[i].x = origin[i].x + (dx / d) * 12; out[i].y = origin[i].y + (dy / d) * 12; }
     }
     return out;
   }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched]);
@@ -545,6 +582,18 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           {hoverEdges.map((e, i) => {
             const a = posS.get(e.from), b = posS.get(e.to);
             return a && b ? <line key={`hv-${i}`} className="tlz-edge-hi" x1={a.x} y1={a.y} x2={b.x} y2={b.y} /> : null;
+          })}
+          {/* 큐레이션 관계: contests=빨간 점선, proposes→implements=진한 실선 */}
+          {curatedEdges.map((e, i) => {
+            const a = posS.get(e.from), b = posS.get(e.to);
+            if (!a || !b) return null;
+            const contests = e.rel === "contests";
+            return (
+              <line key={`cur-${i}`} className={contests ? "tlz-cur-con" : "tlz-cur-imp"}
+                x1={a.x} y1={a.y} x2={b.x} y2={b.y}>
+                <title>{e.rel}</title>
+              </line>
+            );
           })}
           {visible.map(({ p, x, y }) => (
             <circle key={p.id} cx={x} cy={y} r={radius(p.score)} fill={p.review ? "var(--panel)" : (laneMetaMap.get(p.lane)?.color ?? "#888")}

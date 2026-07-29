@@ -772,3 +772,31 @@ input[type="range"] {
   .tlz-hoverinfo { left: 8px; right: 8px; font-size: 11px; }
   .survey-layer { padding: 10px 10px 6px; }
 }
+
+.tlz-cur-con {
+  stroke: #E4572E;
+  stroke-width: 1.8;
+  stroke-dasharray: 5 4;
+  stroke-opacity: 0.9;
+}
+.tlz-cur-imp {
+  stroke: var(--text);
+  stroke-width: 1.6;
+  stroke-opacity: 0.65;
+}
+
+.nav-links { margin-left: auto; display: flex; gap: 12px; }
+.nav-links .nav-link { margin-left: 0; }
+.about {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 18px 20px 40px;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.about h3 { margin: 18px 0 6px; font-size: 15px; }
+.about ul { padding-left: 20px; margin: 4px 0; }
+.about li { margin: 3px 0; }
+.about code { font-family: var(--mono); background: var(--panel-2); padding: 0 4px; border-radius: 4px; }
+.about a { color: var(--focus); }
+.about-foot { margin-top: 18px; color: var(--muted); }

@@ -25,8 +25,11 @@ function read(): UiState {
   return { off, kind, weightMin, q, sel: sel || null, traj: p.get("traj") === "1", branch: p.get("br") || null };
 }
 
+const OWN_KEYS = ["off", "kind", "w", "q", "sel", "traj", "br"];
 function write(s: UiState) {
-  const p = new URLSearchParams();
+  // 자기 키만 갱신하고 나머지(타임라인 뷰 등)는 보존
+  const p = new URLSearchParams(window.location.search);
+  for (const k of OWN_KEYS) p.delete(k);
   if (s.off.size) p.set("off", [...s.off].join(","));
   if (s.kind !== "all") p.set("kind", s.kind);
   if (s.weightMin > 1) p.set("w", String(s.weightMin));
