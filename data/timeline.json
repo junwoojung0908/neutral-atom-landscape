@@ -89,7 +89,7 @@
     {
       "id": "1501.05320",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -152,7 +152,7 @@
     {
       "id": "1504.01886",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -164,7 +164,7 @@
     {
       "id": "1504.01892",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -176,7 +176,7 @@
     {
       "id": "1504.02527",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -250,7 +250,7 @@
     {
       "id": "1506.04005",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -275,7 +275,7 @@
     {
       "id": "1506.04419",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -312,7 +312,7 @@
     {
       "id": "1507.02997",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -384,7 +384,7 @@
     {
       "id": "1508.02308",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -460,7 +460,7 @@
     {
       "id": "1509.04543",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -484,7 +484,7 @@
     {
       "id": "1509.06292",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -496,7 +496,7 @@
     {
       "id": "1510.00281",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -557,7 +557,7 @@
     {
       "id": "1510.09183",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -620,7 +620,7 @@
     {
       "id": "1511.08856",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -632,7 +632,7 @@
     {
       "id": "1512.02123",
       "year": 2015,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -716,7 +716,7 @@
     {
       "id": "1601.02567",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -765,7 +765,7 @@
     {
       "id": "1601.05013",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -801,7 +801,7 @@
     {
       "id": "1601.07305",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -849,7 +849,7 @@
     {
       "id": "1602.03261",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -873,7 +873,7 @@
     {
       "id": "1602.04606",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -898,7 +898,7 @@
     {
       "id": "1602.06313",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -910,7 +910,7 @@
     {
       "id": "1602.07981",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -986,7 +986,7 @@
     {
       "id": "1603.06590",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1010,7 +1010,7 @@
     {
       "id": "1604.02314",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1022,7 +1022,7 @@
     {
       "id": "1604.03005",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1135,7 +1135,7 @@
     {
       "id": "1605.05207",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1211,7 +1211,7 @@
     {
       "id": "1605.09422",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1235,7 +1235,7 @@
     {
       "id": "1606.00562",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1247,7 +1247,7 @@
     {
       "id": "1606.03885",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1295,7 +1295,7 @@
     {
       "id": "1606.08791",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1307,7 +1307,7 @@
     {
       "id": "1607.01984",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1319,7 +1319,7 @@
     {
       "id": "1607.03044",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1344,7 +1344,7 @@
     {
       "id": "1607.06295",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1421,7 +1421,7 @@
     {
       "id": "1608.02410",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1519,7 +1519,7 @@
     {
       "id": "1609.02736",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -1567,7 +1567,7 @@
     {
       "id": "1610.07611",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -1628,7 +1628,7 @@
     {
       "id": "1611.02594",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -1640,7 +1640,7 @@
     {
       "id": "1611.02914",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1652,7 +1652,7 @@
     {
       "id": "1611.03288",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1716,7 +1716,7 @@
     {
       "id": "1611.09612",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1754,7 +1754,7 @@
     {
       "id": "1612.05631",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -1766,14 +1766,15 @@
     {
       "id": "1612.08053",
       "year": 2016,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
       "cited": 149,
       "title": "Tutorial: Calculation of Rydberg interaction potentials",
       "author": "Sebastian Weber et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "1701.00081",
@@ -1804,7 +1805,7 @@
     {
       "id": "1701.02915",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1879,7 +1880,7 @@
     {
       "id": "1702.07358",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1891,7 +1892,7 @@
     {
       "id": "1703.00580",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1903,7 +1904,7 @@
     {
       "id": "1703.01566",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -1927,7 +1928,7 @@
     {
       "id": "1703.04626",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1951,7 +1952,7 @@
     {
       "id": "1703.05957",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -1999,7 +2000,7 @@
     {
       "id": "1704.04461",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2011,7 +2012,7 @@
     {
       "id": "1704.08837",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2071,7 +2072,7 @@
     {
       "id": "1705.03293",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2132,7 +2133,7 @@
     {
       "id": "1705.06532",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2156,7 +2157,7 @@
     {
       "id": "1705.08372",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2168,7 +2169,7 @@
     {
       "id": "1705.10288",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2268,7 +2269,7 @@
     {
       "id": "1707.01636",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2318,7 +2319,7 @@
     {
       "id": "1707.04099",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2330,7 +2331,7 @@
     {
       "id": "1707.04120",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2342,7 +2343,7 @@
     {
       "id": "1707.04344",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2354,7 +2355,7 @@
     {
       "id": "1707.04397",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2416,7 +2417,7 @@
     {
       "id": "1708.07200",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2441,7 +2442,7 @@
     {
       "id": "1709.01478",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2453,7 +2454,7 @@
     {
       "id": "1709.01955",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2465,7 +2466,7 @@
     {
       "id": "1709.02460",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2489,7 +2490,7 @@
     {
       "id": "1710.01752",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2540,7 +2541,7 @@
     {
       "id": "1710.07297",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2601,7 +2602,7 @@
     {
       "id": "1710.10047",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2613,7 +2614,7 @@
     {
       "id": "1710.10149",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2625,7 +2626,7 @@
     {
       "id": "1711.10309",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2637,7 +2638,7 @@
     {
       "id": "1711.00887",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2649,7 +2650,7 @@
     {
       "id": "1711.01185",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2673,7 +2674,7 @@
     {
       "id": "1711.02654",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2685,7 +2686,7 @@
     {
       "id": "1711.03528",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2697,7 +2698,7 @@
     {
       "id": "1711.03821",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2733,7 +2734,7 @@
     {
       "id": "1712.02065",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2745,7 +2746,7 @@
     {
       "id": "1712.02727",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -2757,7 +2758,7 @@
     {
       "id": "1712.04713",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2769,7 +2770,7 @@
     {
       "id": "1712.05263",
       "year": 2017,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2833,7 +2834,7 @@
     {
       "id": "1801.03101",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2894,7 +2895,7 @@
     {
       "id": "1802.00379",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2906,7 +2907,7 @@
     {
       "id": "1802.05505",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -2954,7 +2955,7 @@
     {
       "id": "1802.10424",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3014,7 +3015,7 @@
     {
       "id": "1803.04429",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -3051,7 +3052,7 @@
     {
       "id": "1803.11166",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -3076,7 +3077,7 @@
     {
       "id": "1804.06345",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -3088,7 +3089,7 @@
     {
       "id": "1804.06600",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3136,7 +3137,7 @@
     {
       "id": "1804.09794",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3160,7 +3161,7 @@
     {
       "id": "1805.00654",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3172,7 +3173,7 @@
     {
       "id": "1805.01313",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3258,7 +3259,7 @@
     {
       "id": "1806.00781",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -3283,7 +3284,7 @@
     {
       "id": "1806.04682",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -3334,7 +3335,7 @@
     {
       "id": "1806.10368",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3370,7 +3371,7 @@
     {
       "id": "1806.10933",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3407,7 +3408,7 @@
     {
       "id": "1807.01822",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3432,7 +3433,7 @@
     {
       "id": "1807.04797",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -3458,7 +3459,7 @@
     {
       "id": "1807.06840",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -3483,7 +3484,7 @@
     {
       "id": "1807.07738",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3495,7 +3496,7 @@
     {
       "id": "1807.09125",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -3532,7 +3533,7 @@
     {
       "id": "1808.04131",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -3642,7 +3643,7 @@
     {
       "id": "1809.04493",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -3668,7 +3669,7 @@
     {
       "id": "1809.05540",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -3680,7 +3681,7 @@
     {
       "id": "1809.06377",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3717,7 +3718,7 @@
     {
       "id": "1810.04151",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -3729,7 +3730,7 @@
     {
       "id": "1810.04157",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3754,7 +3755,7 @@
     {
       "id": "1810.05076",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3817,7 +3818,7 @@
     {
       "id": "1810.08112",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3843,7 +3844,7 @@
     {
       "id": "1810.09228",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -3868,7 +3869,7 @@
     {
       "id": "1810.13286",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -3905,7 +3906,7 @@
     {
       "id": "1811.01667",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -3968,7 +3969,7 @@
     {
       "id": "1811.12939",
       "year": 2018,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -4143,7 +4144,7 @@
     {
       "id": "1902.00497",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -4155,7 +4156,7 @@
     {
       "id": "1902.03935",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -4179,7 +4180,7 @@
     {
       "id": "1902.09551",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -4215,7 +4216,7 @@
     {
       "id": "1902.11099",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -4227,7 +4228,7 @@
     {
       "id": "1903.07297",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -4276,7 +4277,7 @@
     {
       "id": "1903.10491",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4288,7 +4289,7 @@
     {
       "id": "1903.10517",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4351,7 +4352,7 @@
     {
       "id": "1904.08441",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -4438,7 +4439,7 @@
     {
       "id": "1905.08221",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -4450,7 +4451,7 @@
     {
       "id": "1905.08523",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4462,7 +4463,7 @@
     {
       "id": "1905.08564",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4474,7 +4475,7 @@
     {
       "id": "1905.09615",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4510,7 +4511,7 @@
     {
       "id": "1906.00791",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4522,7 +4523,7 @@
     {
       "id": "1906.02204",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -4534,7 +4535,7 @@
     {
       "id": "1906.05292",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4570,7 +4571,7 @@
     {
       "id": "1907.02028",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4607,7 +4608,7 @@
     {
       "id": "1907.05872",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -4619,7 +4620,7 @@
     {
       "id": "1907.06004",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4643,7 +4644,7 @@
     {
       "id": "1907.08212",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4693,7 +4694,7 @@
     {
       "id": "1907.11664",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -4705,7 +4706,7 @@
     {
       "id": "1907.12579",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -4717,7 +4718,7 @@
     {
       "id": "1908.00853",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4816,7 +4817,7 @@
     {
       "id": "1908.11747",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4828,7 +4829,7 @@
     {
       "id": "1909.00750",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -4852,7 +4853,7 @@
     {
       "id": "1909.04932",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -4876,7 +4877,7 @@
     {
       "id": "1909.08352",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4950,7 +4951,7 @@
     {
       "id": "1910.05292",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -4974,7 +4975,7 @@
     {
       "id": "1910.06341",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -4998,7 +4999,7 @@
     {
       "id": "1910.09526",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5010,7 +5011,7 @@
     {
       "id": "1910.09548",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5034,7 +5035,7 @@
     {
       "id": "1910.11350",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5148,7 +5149,7 @@
     {
       "id": "1911.09664",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5160,7 +5161,7 @@
     {
       "id": "1911.11382",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -5172,7 +5173,7 @@
     {
       "id": "1912.01479",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5220,7 +5221,7 @@
     {
       "id": "1912.04038",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5232,7 +5233,7 @@
     {
       "id": "1912.04200",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5244,7 +5245,7 @@
     {
       "id": "1912.04347",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5293,7 +5294,7 @@
     {
       "id": "1912.06234",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5305,7 +5306,7 @@
     {
       "id": "1912.07922",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5344,7 +5345,7 @@
     {
       "id": "1912.11488",
       "year": 2019,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -5368,7 +5369,7 @@
     {
       "id": "2001.03520",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5456,7 +5457,7 @@
     {
       "id": "2001.08232",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5480,7 +5481,7 @@
     {
       "id": "2001.11980",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5504,7 +5505,7 @@
     {
       "id": "2002.00311",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5516,7 +5517,7 @@
     {
       "id": "2002.02893",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5577,7 +5578,7 @@
     {
       "id": "2003.00034",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5614,7 +5615,7 @@
     {
       "id": "2003.02825",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5626,7 +5627,7 @@
     {
       "id": "2003.03161",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5638,7 +5639,7 @@
     {
       "id": "2003.04516",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5650,7 +5651,7 @@
     {
       "id": "2003.07864",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5686,7 +5687,7 @@
     {
       "id": "2003.08891",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5748,7 +5749,7 @@
     {
       "id": "2005.00607",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5809,7 +5810,7 @@
     {
       "id": "2005.07715",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5833,7 +5834,7 @@
     {
       "id": "2005.14059",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -5871,7 +5872,7 @@
     {
       "id": "2006.02440",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5907,7 +5908,7 @@
     {
       "id": "2006.03099",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5971,7 +5972,7 @@
     {
       "id": "2006.13207",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -5995,7 +5996,7 @@
     {
       "id": "2006.16304",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -6031,7 +6032,7 @@
     {
       "id": "2007.07697",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6080,7 +6081,7 @@
     {
       "id": "2007.12016",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -6161,7 +6162,8 @@
       "cited": 198,
       "title": "Roadmap on Atomtronics: State of the art and perspective",
       "author": "L. Amico et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2008.04867",
@@ -6179,7 +6181,7 @@
     {
       "id": "2008.08585",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -6228,7 +6230,7 @@
     {
       "id": "2009.00560",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -6289,7 +6291,7 @@
     {
       "id": "2009.05310",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -6338,7 +6340,7 @@
     {
       "id": "2010.05871",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6350,7 +6352,7 @@
     {
       "id": "2010.07825",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6362,7 +6364,7 @@
     {
       "id": "2010.07838",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -6386,7 +6388,7 @@
     {
       "id": "2010.10535",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6398,7 +6400,7 @@
     {
       "id": "2010.11899",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6436,7 +6438,7 @@
     {
       "id": "2011.03031",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6525,7 +6527,7 @@
     {
       "id": "2011.09486",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6562,7 +6564,7 @@
     {
       "id": "2011.10583",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -6574,7 +6576,7 @@
     {
       "id": "2011.11022",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -6599,7 +6601,7 @@
     {
       "id": "2011.11624",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -6611,7 +6613,7 @@
     {
       "id": "2011.12295",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -6637,7 +6639,7 @@
     {
       "id": "2012.01834",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6662,7 +6664,7 @@
     {
       "id": "2012.03946",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6674,7 +6676,7 @@
     {
       "id": "2012.05310",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6686,7 +6688,7 @@
     {
       "id": "2012.08540",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -6723,19 +6725,20 @@
     {
       "id": "2012.10614",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
       "cited": 190,
       "title": "A concise review of Rydberg atom based quantum computation and quantum simulation",
       "author": "Xiaoling Wu et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2012.12268",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -6747,7 +6750,7 @@
     {
       "id": "2012.12276",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6759,7 +6762,7 @@
     {
       "id": "2012.12281",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6783,7 +6786,7 @@
     {
       "id": "2012.12739",
       "year": 2020,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6820,7 +6823,7 @@
     {
       "id": "2101.01936",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -6944,19 +6947,20 @@
     {
       "id": "2101.11099",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
       "cited": 11,
       "title": "Neural networks in quantum many-body physics: a hands-on tutorial",
       "author": "Juan Carrasquilla et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2101.11375",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -6968,7 +6972,7 @@
     {
       "id": "2102.00010",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7004,7 +7008,7 @@
     {
       "id": "2102.01675",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7041,7 +7045,7 @@
     {
       "id": "2102.13117",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7053,7 +7057,7 @@
     {
       "id": "2102.13160",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7078,7 +7082,7 @@
     {
       "id": "2103.04125",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7155,7 +7159,7 @@
     {
       "id": "2103.12364",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -7193,7 +7197,7 @@
     {
       "id": "2103.14383",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -7217,7 +7221,7 @@
     {
       "id": "2104.00699",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7266,7 +7270,7 @@
     {
       "id": "2104.11160",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7291,7 +7295,7 @@
     {
       "id": "2104.15044",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -7316,7 +7320,7 @@
     {
       "id": "2105.01155",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -7391,7 +7395,7 @@
     {
       "id": "2105.07134",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -7469,7 +7473,7 @@
     {
       "id": "2106.02042",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -7520,19 +7524,20 @@
     {
       "id": "2106.06459",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
       "cited": 5,
       "title": "Interactions of Ions and Ultracold Neutral Atom Ensembles in Composite Optical Dipole Traps: Developments and Perspectives",
       "author": "Leon Karpa",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2106.07414",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -7544,7 +7549,7 @@
     {
       "id": "2106.07673",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7593,7 +7598,7 @@
     {
       "id": "2107.00766",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -7617,7 +7622,7 @@
     {
       "id": "2107.03416",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7642,7 +7647,7 @@
     {
       "id": "2107.04817",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7679,7 +7684,7 @@
     {
       "id": "2107.08073",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -7716,7 +7721,7 @@
     {
       "id": "2107.11366",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7740,7 +7745,7 @@
     {
       "id": "2107.13745",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7752,7 +7757,7 @@
     {
       "id": "2107.14459",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7826,14 +7831,15 @@
     {
       "id": "2109.00548",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
       "cited": 469,
       "title": "Quantum Many-Body Scars and Hilbert Space Fragmentation: A Review of Exact Results",
       "author": "Sanjay Moudgalya et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2109.01063",
@@ -7864,7 +7870,7 @@
     {
       "id": "2109.02657",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7915,7 +7921,7 @@
     {
       "id": "2109.09724",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -7939,7 +7945,7 @@
     {
       "id": "2109.12916",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -7951,7 +7957,7 @@
     {
       "id": "2109.13254",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8013,7 +8019,7 @@
     {
       "id": "2110.01760",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8037,7 +8043,7 @@
     {
       "id": "2110.02203",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8113,7 +8119,7 @@
     {
       "id": "2110.08982",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -8125,7 +8131,7 @@
     {
       "id": "2110.09559",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8163,7 +8169,7 @@
     {
       "id": "2110.14059",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8187,7 +8193,7 @@
     {
       "id": "2110.14705",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8249,7 +8255,7 @@
     {
       "id": "2111.04132",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -8261,7 +8267,7 @@
     {
       "id": "2111.04378",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8286,7 +8292,7 @@
     {
       "id": "2111.05031",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8348,7 +8354,7 @@
     {
       "id": "2111.08715",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -8385,7 +8391,7 @@
     {
       "id": "2111.10956",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8397,7 +8403,7 @@
     {
       "id": "2111.11428",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8422,7 +8428,7 @@
     {
       "id": "2111.12314",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8434,7 +8440,7 @@
     {
       "id": "2111.12954",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -8460,7 +8466,7 @@
     {
       "id": "2111.14553",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8552,7 +8558,7 @@
     {
       "id": "2112.06422",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -8564,7 +8570,7 @@
     {
       "id": "2112.06573",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8656,7 +8662,7 @@
     {
       "id": "2112.10421",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8668,7 +8674,7 @@
     {
       "id": "2112.10790",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -8680,7 +8686,7 @@
     {
       "id": "2112.10789",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -8692,7 +8698,7 @@
     {
       "id": "2112.11046",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8755,7 +8761,7 @@
     {
       "id": "2112.14791",
       "year": 2021,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8779,7 +8785,7 @@
     {
       "id": "2201.00821",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -8791,7 +8797,7 @@
     {
       "id": "2201.01777",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8855,7 +8861,7 @@
     {
       "id": "2201.04665",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8879,7 +8885,7 @@
     {
       "id": "2201.06585",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -8891,7 +8897,7 @@
     {
       "id": "2201.08463",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8903,7 +8909,7 @@
     {
       "id": "2201.09590",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -8915,7 +8921,7 @@
     {
       "id": "2202.00699",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -8940,7 +8946,7 @@
     {
       "id": "2202.01204",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -8965,7 +8971,7 @@
     {
       "id": "2202.03860",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -8977,7 +8983,7 @@
     {
       "id": "2202.04654",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -9004,7 +9010,7 @@
     {
       "id": "2202.08540",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9043,7 +9049,7 @@
     {
       "id": "2202.11100",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9055,7 +9061,7 @@
     {
       "id": "2202.13681",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9080,7 +9086,7 @@
     {
       "id": "2203.00658",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -9092,7 +9098,7 @@
     {
       "id": "2203.01338",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9104,7 +9110,7 @@
     {
       "id": "2203.01541",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9116,7 +9122,7 @@
     {
       "id": "2203.01545",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9128,7 +9134,7 @@
     {
       "id": "2203.03994",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9140,7 +9146,7 @@
     {
       "id": "2203.04852",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9152,7 +9158,7 @@
     {
       "id": "2203.04988",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9164,7 +9170,7 @@
     {
       "id": "2203.08828",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9176,7 +9182,7 @@
     {
       "id": "2203.09495",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -9188,7 +9194,7 @@
     {
       "id": "2203.09896",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -9250,7 +9256,7 @@
     {
       "id": "2203.14818",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9262,7 +9268,7 @@
     {
       "id": "2203.15023",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -9300,7 +9306,7 @@
     {
       "id": "2203.17120",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -9312,7 +9318,7 @@
     {
       "id": "2204.00013",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9324,7 +9330,7 @@
     {
       "id": "2204.00632",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9375,7 +9381,7 @@
     {
       "id": "2204.05641",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -9387,7 +9393,7 @@
     {
       "id": "2204.07086",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9461,7 +9467,8 @@
       "cited": 4,
       "title": "Stabilizing Gauge Theories in Quantum Simulators: A Brief Review",
       "author": "Jad C. Halimeh et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2204.13718",
@@ -9516,7 +9523,7 @@
     {
       "id": "2205.04051",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9578,7 +9585,7 @@
     {
       "id": "2205.08541",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9665,7 +9672,7 @@
     {
       "id": "2205.13000",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -9769,7 +9776,7 @@
     {
       "id": "2206.01273",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9806,7 +9813,7 @@
     {
       "id": "2206.02843",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -9891,7 +9898,7 @@
     {
       "id": "2206.12385",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9903,7 +9910,7 @@
     {
       "id": "2206.15216",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9915,7 +9922,7 @@
     {
       "id": "2207.00385",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -9990,7 +9997,7 @@
     {
       "id": "2207.06571",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -10015,7 +10022,7 @@
     {
       "id": "2207.08829",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10052,7 +10059,7 @@
     {
       "id": "2207.11947",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10064,7 +10071,7 @@
     {
       "id": "2207.12930",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10090,7 +10097,7 @@
     {
       "id": "2207.14070",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10152,7 +10159,7 @@
     {
       "id": "2208.02909",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10176,7 +10183,7 @@
     {
       "id": "2208.11473",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10287,7 +10294,7 @@
     {
       "id": "2209.08080",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10311,7 +10318,7 @@
     {
       "id": "2209.10728",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10361,7 +10368,7 @@
     {
       "id": "2210.00475",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10373,7 +10380,7 @@
     {
       "id": "2210.01146",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10475,7 +10482,7 @@
     {
       "id": "2210.10115",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10487,7 +10494,7 @@
     {
       "id": "2210.10798",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10523,7 +10530,7 @@
     {
       "id": "2211.00017",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -10639,7 +10646,7 @@
     {
       "id": "2211.07933",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10729,7 +10736,7 @@
     {
       "id": "2211.15708",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10741,7 +10748,7 @@
     {
       "id": "2211.16943",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10766,7 +10773,7 @@
     {
       "id": "2212.01637",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -10778,7 +10785,7 @@
     {
       "id": "2212.02091",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10804,7 +10811,7 @@
     {
       "id": "2212.02517",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -10816,7 +10823,7 @@
     {
       "id": "2212.02543",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -10864,7 +10871,7 @@
     {
       "id": "2212.05437",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10914,7 +10921,7 @@
     {
       "id": "2212.07499",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10926,7 +10933,7 @@
     {
       "id": "2212.07744",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10966,7 +10973,7 @@
     {
       "id": "2212.10863",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -10978,7 +10985,7 @@
     {
       "id": "2212.12490",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -10990,7 +10997,7 @@
     {
       "id": "2212.14644",
       "year": 2022,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -11053,7 +11060,7 @@
     {
       "id": "2301.04450",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11065,7 +11072,7 @@
     {
       "id": "2301.04657",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -11090,7 +11097,7 @@
     {
       "id": "2301.05389",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11114,7 +11121,7 @@
     {
       "id": "2301.07127",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11126,7 +11133,7 @@
     {
       "id": "2301.08172",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11138,7 +11145,7 @@
     {
       "id": "2301.08417",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11177,7 +11184,7 @@
     {
       "id": "2301.13216",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11341,7 +11348,7 @@
     {
       "id": "2302.12293",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11365,7 +11372,7 @@
     {
       "id": "2302.13104",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -11389,7 +11396,7 @@
     {
       "id": "2302.14369",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11440,7 +11447,7 @@
     {
       "id": "2303.04259",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11465,7 +11472,7 @@
     {
       "id": "2303.06985",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -11502,7 +11509,7 @@
     {
       "id": "2303.08184",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11514,7 +11521,7 @@
     {
       "id": "2303.08650",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11526,7 +11533,7 @@
     {
       "id": "2303.08683",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -11588,7 +11595,7 @@
     {
       "id": "2303.12150",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11687,7 +11694,7 @@
     {
       "id": "2303.17470",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11723,7 +11730,7 @@
     {
       "id": "2304.04831",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11735,7 +11742,7 @@
     {
       "id": "2304.05252",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11784,7 +11791,7 @@
     {
       "id": "2304.09565",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11796,7 +11803,7 @@
     {
       "id": "2304.09833",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11808,7 +11815,7 @@
     {
       "id": "2304.12623",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11820,7 +11827,7 @@
     {
       "id": "2304.12927",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11832,7 +11839,7 @@
     {
       "id": "2304.12957",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -11876,12 +11883,13 @@
       "cited": 108,
       "title": "Neutral Atom Quantum Computing Hardware: Performance and End-User Perspective",
       "author": "Karen Wintersperger et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2305.00827",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -11906,7 +11914,7 @@
     {
       "id": "2305.02322",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -11959,7 +11967,7 @@
     {
       "id": "2305.03673",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -11999,7 +12007,7 @@
     {
       "id": "2305.07032",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12036,7 +12044,7 @@
     {
       "id": "2305.13322",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12062,7 +12070,7 @@
     {
       "id": "2305.11368",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12087,7 +12095,7 @@
     {
       "id": "2305.17309",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -12153,7 +12161,7 @@
     {
       "id": "2306.00883",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -12204,7 +12212,7 @@
     {
       "id": "2306.03019",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -12240,7 +12248,7 @@
     {
       "id": "2306.03921",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12265,7 +12273,7 @@
     {
       "id": "2306.07041",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12339,7 +12347,7 @@
     {
       "id": "2306.12210",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12376,7 +12384,7 @@
     {
       "id": "2306.14842",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -12591,7 +12599,7 @@
     {
       "id": "2308.01603",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -12603,7 +12611,7 @@
     {
       "id": "2308.02647",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -12717,7 +12725,7 @@
     {
       "id": "2309.03255",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12756,7 +12764,7 @@
     {
       "id": "2309.05715",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -12829,7 +12837,7 @@
     {
       "id": "2309.11543",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12853,7 +12861,7 @@
     {
       "id": "2309.12129",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -12865,7 +12873,7 @@
     {
       "id": "2309.12392",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -12902,7 +12910,7 @@
     {
       "id": "2310.00849",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -12928,7 +12936,7 @@
     {
       "id": "2310.02771",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13003,7 +13011,7 @@
     {
       "id": "2310.12905",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -13029,7 +13037,7 @@
     {
       "id": "2310.15936",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -13053,7 +13061,7 @@
     {
       "id": "2310.18242",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13077,7 +13085,7 @@
     {
       "id": "2311.00695",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13101,7 +13109,7 @@
     {
       "id": "2311.01785",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13177,7 +13185,7 @@
     {
       "id": "2311.11726",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13231,7 +13239,7 @@
     {
       "id": "2311.15575",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13255,7 +13263,7 @@
     {
       "id": "2311.16240",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13292,7 +13300,7 @@
     {
       "id": "2311.16758",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -13330,7 +13338,7 @@
     {
       "id": "2312.00755",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -13382,7 +13390,7 @@
     {
       "id": "2312.04436",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -13430,7 +13438,7 @@
     {
       "id": "2312.08065",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13515,7 +13523,7 @@
     {
       "id": "2312.12941",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -13527,7 +13535,7 @@
     {
       "id": "2312.14718",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -13539,7 +13547,7 @@
     {
       "id": "2312.14846",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13551,7 +13559,7 @@
     {
       "id": "2312.16288",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13563,7 +13571,7 @@
     {
       "id": "2312.17201",
       "year": 2023,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -13938,7 +13946,7 @@
     {
       "id": "2402.07653",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -13957,7 +13965,8 @@
       "cited": 0,
       "title": "Experimental roadmap for optimal state transfer and entanglement generation in power-law systems",
       "author": "Andrew Y. Guo et al.",
-      "group": "jqi"
+      "group": "jqi",
+      "review": true
     },
     {
       "id": "2402.09180",
@@ -14012,7 +14021,7 @@
     {
       "id": "2402.11056",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -14038,7 +14047,7 @@
     {
       "id": "2402.13644",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14050,7 +14059,7 @@
     {
       "id": "2402.13657",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14062,7 +14071,7 @@
     {
       "id": "2402.13873",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14100,7 +14109,7 @@
     {
       "id": "2402.15376",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14152,7 +14161,7 @@
     {
       "id": "2403.14656",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -14164,7 +14173,7 @@
     {
       "id": "2402.19392",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -14201,7 +14210,7 @@
     {
       "id": "2403.03202",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14225,7 +14234,7 @@
     {
       "id": "2403.08670",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -14310,7 +14319,7 @@
     {
       "id": "2403.11971",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14349,7 +14358,7 @@
     {
       "id": "2403.13790",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14361,7 +14370,7 @@
     {
       "id": "2403.15582",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -14373,7 +14382,7 @@
     {
       "id": "2404.00274",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -14385,7 +14394,7 @@
     {
       "id": "2404.00740",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14409,7 +14418,7 @@
     {
       "id": "2404.03980",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14421,7 +14430,7 @@
     {
       "id": "2404.04411",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -14433,7 +14442,7 @@
     {
       "id": "2404.06536",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14445,7 +14454,7 @@
     {
       "id": "2404.08055",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14457,7 +14466,7 @@
     {
       "id": "2404.09239",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14469,7 +14478,7 @@
     {
       "id": "2404.09935",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -14481,7 +14490,7 @@
     {
       "id": "2404.09978",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -14553,7 +14562,7 @@
     {
       "id": "2404.12180",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14617,7 +14626,7 @@
     {
       "id": "2404.18420",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -14823,12 +14832,13 @@
       "cited": 1,
       "title": "Ion-Based Quantum Computing Hardware: Performance and End-User Perspective",
       "author": "Thomas Strohm et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2405.14562",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -14853,7 +14863,7 @@
     {
       "id": "2405.14928",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14903,7 +14913,7 @@
     {
       "id": "2405.17949",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -14952,7 +14962,7 @@
     {
       "id": "2405.20384",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -15014,7 +15024,7 @@
     {
       "id": "2406.00091",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15026,7 +15036,7 @@
     {
       "id": "2405.21073",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -15051,7 +15061,7 @@
     {
       "id": "2406.00722",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15090,7 +15100,7 @@
     {
       "id": "2406.01440",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15155,7 +15165,7 @@
     {
       "id": "2406.06070",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -15167,7 +15177,7 @@
     {
       "id": "2406.06482",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -15191,7 +15201,7 @@
     {
       "id": "2406.07110",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -15215,7 +15225,7 @@
     {
       "id": "2406.08551",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -15308,7 +15318,7 @@
     {
       "id": "2406.16146",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15320,7 +15330,7 @@
     {
       "id": "2406.19153",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -15332,7 +15342,7 @@
     {
       "id": "2406.19872",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -15407,7 +15417,7 @@
     {
       "id": "2407.04927",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -15444,7 +15454,7 @@
     {
       "id": "2407.05918",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -15469,7 +15479,7 @@
     {
       "id": "2407.08405",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15545,7 +15555,7 @@
     {
       "id": "2407.12359",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15670,7 +15680,7 @@
     {
       "id": "2407.21681",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -15682,7 +15692,7 @@
     {
       "id": "2408.00209",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15707,7 +15717,7 @@
     {
       "id": "2408.01726",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15745,7 +15755,7 @@
     {
       "id": "2408.03109",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15757,7 +15767,7 @@
     {
       "id": "2408.04231",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15882,7 +15892,7 @@
     {
       "id": "2408.10514",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15894,7 +15904,7 @@
     {
       "id": "2408.12268",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -15906,7 +15916,7 @@
     {
       "id": "2408.12436",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -15918,7 +15928,7 @@
     {
       "id": "2408.12645",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -16154,7 +16164,7 @@
     {
       "id": "2409.05663",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16166,7 +16176,7 @@
     {
       "id": "2409.05941",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -16191,7 +16201,7 @@
     {
       "id": "2409.08497",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16217,7 +16227,7 @@
     {
       "id": "2409.09886",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -16241,7 +16251,7 @@
     {
       "id": "2409.11865",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -16290,7 +16300,7 @@
     {
       "id": "2409.15424",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -16327,7 +16337,7 @@
     {
       "id": "2409.16344",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -16339,7 +16349,7 @@
     {
       "id": "2409.17219",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -16351,7 +16361,7 @@
     {
       "id": "2409.17835",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -16363,7 +16373,7 @@
     {
       "id": "2409.18913",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -16426,7 +16436,7 @@
     {
       "id": "2410.05625",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16438,7 +16448,7 @@
     {
       "id": "2410.06047",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16476,7 +16486,7 @@
     {
       "id": "2410.11050",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16513,7 +16523,7 @@
     {
       "id": "2410.13934",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16538,7 +16548,7 @@
     {
       "id": "2410.16174",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16576,7 +16586,7 @@
     {
       "id": "2410.19129",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -16614,7 +16624,7 @@
     {
       "id": "2410.20653",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16638,7 +16648,7 @@
     {
       "id": "2410.21135",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -16650,7 +16660,7 @@
     {
       "id": "2410.21424",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -16714,7 +16724,7 @@
     {
       "id": "2411.02500",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -16889,7 +16899,7 @@
     {
       "id": "2411.09744",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -17005,7 +17015,7 @@
     {
       "id": "2411.13643",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17054,7 +17064,7 @@
     {
       "id": "2412.01850",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -17105,7 +17115,7 @@
     {
       "id": "2412.01503",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -17117,7 +17127,7 @@
     {
       "id": "2412.01571",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -17129,7 +17139,7 @@
     {
       "id": "2412.03114",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17141,7 +17151,7 @@
     {
       "id": "2412.03654",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17256,7 +17266,7 @@
     {
       "id": "2412.09481",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -17268,7 +17278,7 @@
     {
       "id": "2412.09576",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -17319,7 +17329,7 @@
     {
       "id": "2412.11201",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -17343,7 +17353,7 @@
     {
       "id": "2412.12019",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -17534,7 +17544,7 @@
     {
       "id": "2412.19305",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17546,7 +17556,7 @@
     {
       "id": "2412.20186",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17558,7 +17568,7 @@
     {
       "id": "2501.00552",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17570,7 +17580,7 @@
     {
       "id": "2501.00604",
       "year": 2024,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -17687,7 +17697,7 @@
     {
       "id": "2501.08179",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17699,7 +17709,7 @@
     {
       "id": "2501.08233",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17711,7 +17721,7 @@
     {
       "id": "2501.09742",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -17723,7 +17733,7 @@
     {
       "id": "2501.10494",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17774,7 +17784,7 @@
     {
       "id": "2501.15982",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -17814,7 +17824,7 @@
     {
       "id": "2502.00095",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -17839,7 +17849,7 @@
     {
       "id": "2502.03518",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -17876,7 +17886,7 @@
     {
       "id": "2502.05313",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -17913,7 +17923,7 @@
     {
       "id": "2502.07886",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -17937,7 +17947,7 @@
     {
       "id": "2502.09612",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18001,7 +18011,7 @@
     {
       "id": "2502.15501",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -18146,7 +18156,7 @@
     {
       "id": "2503.03801",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18182,7 +18192,7 @@
     {
       "id": "2503.07672",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18232,7 +18242,7 @@
     {
       "id": "2503.12520",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18256,7 +18266,7 @@
     {
       "id": "2503.12557",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -18371,7 +18381,7 @@
     {
       "id": "2503.17443",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18431,7 +18441,7 @@
     {
       "id": "2503.23464",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18615,7 +18625,7 @@
     {
       "id": "2504.12291",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18627,7 +18637,7 @@
     {
       "id": "2504.12383",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18639,7 +18649,7 @@
     {
       "id": "2504.13086",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -18651,7 +18661,7 @@
     {
       "id": "2504.15230",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18676,7 +18686,7 @@
     {
       "id": "2504.17014",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -18700,7 +18710,7 @@
     {
       "id": "2504.17659",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18724,7 +18734,7 @@
     {
       "id": "2504.19214",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -18736,7 +18746,7 @@
     {
       "id": "2504.19837",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -18760,7 +18770,7 @@
     {
       "id": "2505.01071",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -18785,7 +18795,7 @@
     {
       "id": "2505.01513",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -18809,7 +18819,7 @@
     {
       "id": "2505.06286",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -18833,7 +18843,7 @@
     {
       "id": "2505.04595",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18897,7 +18907,7 @@
     {
       "id": "2505.09314",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -18921,7 +18931,7 @@
     {
       "id": "2505.10365",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -18946,7 +18956,7 @@
     {
       "id": "2505.12979",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -19047,7 +19057,7 @@
     {
       "id": "2505.18143",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -19095,7 +19105,7 @@
     {
       "id": "2505.24366",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -19231,7 +19241,7 @@
     {
       "id": "2506.09865",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -19258,7 +19268,7 @@
     {
       "id": "2506.10806",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -19308,7 +19318,7 @@
     {
       "id": "2506.12138",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -19458,7 +19468,7 @@
     {
       "id": "2506.16820",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -19519,7 +19529,7 @@
     {
       "id": "2506.19228",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -19543,7 +19553,7 @@
     {
       "id": "2506.20618",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -19585,7 +19595,7 @@
     {
       "id": "2506.21299",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -19597,7 +19607,7 @@
     {
       "id": "2506.22387",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -19609,7 +19619,7 @@
     {
       "id": "2506.22669",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -19734,7 +19744,7 @@
     {
       "id": "2507.05379",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -19848,7 +19858,7 @@
     {
       "id": "2507.14422",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -19874,7 +19884,7 @@
     {
       "id": "2507.16751",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -19898,7 +19908,7 @@
     {
       "id": "2507.17488",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -19922,7 +19932,7 @@
     {
       "id": "2507.19153",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -19948,7 +19958,7 @@
     {
       "id": "2507.20625",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20011,7 +20021,7 @@
     {
       "id": "2507.22461",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20111,7 +20121,7 @@
     {
       "id": "2508.05737",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20147,7 +20157,7 @@
     {
       "id": "2508.06639",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -20195,7 +20205,7 @@
     {
       "id": "2508.08704",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -20377,7 +20387,7 @@
     {
       "id": "2509.00386",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20426,7 +20436,7 @@
     {
       "id": "2509.03355",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -20451,7 +20461,7 @@
     {
       "id": "2509.03514",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -20463,7 +20473,7 @@
     {
       "id": "2509.03586",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -20488,7 +20498,7 @@
     {
       "id": "2509.06373",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20540,7 +20550,7 @@
     {
       "id": "2509.12075",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20604,7 +20614,7 @@
     {
       "id": "2509.16036",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -20677,7 +20687,7 @@
     {
       "id": "2509.19944",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20689,7 +20699,7 @@
     {
       "id": "2509.21248",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20781,7 +20791,7 @@
     {
       "id": "2510.03024",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20943,7 +20953,7 @@
     {
       "id": "2510.11706",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -20981,7 +20991,7 @@
     {
       "id": "2510.13581",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -21020,7 +21030,7 @@
     {
       "id": "2510.16979",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -21032,7 +21042,7 @@
     {
       "id": "2510.17183",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21220,7 +21230,7 @@
     {
       "id": "2510.26295",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21257,7 +21267,7 @@
     {
       "id": "2510.27511",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21269,7 +21279,7 @@
     {
       "id": "2511.00325",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -21319,7 +21329,7 @@
     {
       "id": "2511.04414",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -21331,7 +21341,7 @@
     {
       "id": "2511.08268",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21343,7 +21353,7 @@
     {
       "id": "2511.09633",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21391,7 +21401,7 @@
     {
       "id": "2511.13279",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21466,7 +21476,7 @@
     {
       "id": "2511.17785",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -21619,7 +21629,7 @@
     {
       "id": "2512.02112",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21631,7 +21641,7 @@
     {
       "id": "2512.02753",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21693,7 +21703,7 @@
     {
       "id": "2512.04656",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21732,7 +21742,7 @@
     {
       "id": "2512.06760",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21769,7 +21779,7 @@
     {
       "id": "2512.08709",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21781,7 +21791,7 @@
     {
       "id": "2512.09037",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21793,7 +21803,7 @@
     {
       "id": "2512.09040",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -21805,7 +21815,7 @@
     {
       "id": "2512.09849",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -21830,7 +21840,7 @@
     {
       "id": "2512.12695",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21890,7 +21900,7 @@
     {
       "id": "2512.16097",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21940,7 +21950,7 @@
     {
       "id": "2512.18451",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21964,7 +21974,7 @@
     {
       "id": "2512.18765",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -21976,7 +21986,7 @@
     {
       "id": "2512.18952",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -22002,7 +22012,7 @@
     {
       "id": "2512.19801",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22014,7 +22024,7 @@
     {
       "id": "2512.19809",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -22026,7 +22036,7 @@
     {
       "id": "2512.19856",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22038,7 +22048,7 @@
     {
       "id": "2512.20357",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22063,7 +22073,7 @@
     {
       "id": "2512.21142",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -22087,7 +22097,7 @@
     {
       "id": "2512.22110",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22111,7 +22121,7 @@
     {
       "id": "2512.23794",
       "year": 2025,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -22174,7 +22184,7 @@
     {
       "id": "2601.01626",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22249,7 +22259,7 @@
     {
       "id": "2601.04943",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22312,7 +22322,7 @@
     {
       "id": "2601.08925",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22337,7 +22347,7 @@
     {
       "id": "2601.10347",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22388,7 +22398,7 @@
     {
       "id": "2601.15866",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22414,7 +22424,7 @@
     {
       "id": "2601.16275",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -22487,7 +22497,7 @@
     {
       "id": "2601.20114",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -22499,7 +22509,7 @@
     {
       "id": "2602.02251",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22596,7 +22606,7 @@
     {
       "id": "2602.06123",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -22621,7 +22631,7 @@
     {
       "id": "2602.07372",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -22645,7 +22655,7 @@
     {
       "id": "2602.11563",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -22657,7 +22667,7 @@
     {
       "id": "2602.11682",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -22735,7 +22745,7 @@
     {
       "id": "2602.14323",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -22898,7 +22908,8 @@
       "cited": 0,
       "title": "Quantum Deep Learning: A Comprehensive Review",
       "author": "Yanjun Ji et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2602.23237",
@@ -22943,7 +22954,7 @@
     {
       "id": "2603.02819",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -22994,7 +23005,7 @@
     {
       "id": "2603.07778",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -23048,7 +23059,7 @@
     {
       "id": "2603.12170",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -23176,7 +23187,7 @@
     {
       "id": "2603.20372",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -23219,7 +23230,7 @@
     {
       "id": "2603.23422",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -23258,7 +23269,7 @@
     {
       "id": "2603.24789",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -23384,7 +23395,7 @@
     {
       "id": "2604.03184",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -23520,7 +23531,7 @@
     {
       "id": "2604.11795",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -23532,7 +23543,7 @@
     {
       "id": "2604.11870",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -23569,7 +23580,7 @@
     {
       "id": "2604.13027",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -23594,7 +23605,7 @@
     {
       "id": "2604.13436",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -23654,7 +23665,7 @@
     {
       "id": "2604.16015",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -23704,7 +23715,7 @@
     {
       "id": "2604.18457",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -23728,7 +23739,7 @@
     {
       "id": "2604.18542",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -23740,7 +23751,7 @@
     {
       "id": "2604.18890",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -23752,7 +23763,7 @@
     {
       "id": "2604.19333",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -23832,7 +23843,7 @@
     {
       "id": "2604.24854",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -23869,7 +23880,7 @@
     {
       "id": "2604.25992",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -23907,7 +23918,7 @@
     {
       "id": "2605.00096",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -23919,7 +23930,7 @@
     {
       "id": "2605.01366",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24058,7 +24069,7 @@
     {
       "id": "2605.05297",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24070,7 +24081,7 @@
     {
       "id": "2605.06178",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24094,7 +24105,7 @@
     {
       "id": "2605.07668",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24170,7 +24181,7 @@
     {
       "id": "2605.13694",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24320,7 +24331,7 @@
     {
       "id": "2605.27166",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24345,7 +24356,7 @@
     {
       "id": "2605.29279",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24382,7 +24393,7 @@
     {
       "id": "2606.02283",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -24526,7 +24537,7 @@
     {
       "id": "2606.08536",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
@@ -24567,7 +24578,7 @@
     {
       "id": "2606.14352",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -24579,7 +24590,7 @@
     {
       "id": "2606.15605",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24605,14 +24616,15 @@
     {
       "id": "2606.16598",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.gauge",
       "fields": [
         "sim"
       ],
       "cited": 0,
       "title": "Ultracold atomic lattice systems for simulating topological phases: A review",
       "author": "Bei-Bei Wang et al.",
-      "group": null
+      "group": null,
+      "review": true
     },
     {
       "id": "2606.17849",
@@ -24630,7 +24642,7 @@
     {
       "id": "2606.19430",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24642,7 +24654,7 @@
     {
       "id": "2606.19444",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24832,7 +24844,7 @@
     {
       "id": "2606.31165",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24925,7 +24937,7 @@
     {
       "id": "2607.04991",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -24950,7 +24962,7 @@
     {
       "id": "2607.05216",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -25026,7 +25038,7 @@
     {
       "id": "2607.09247",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -25051,7 +25063,7 @@
     {
       "id": "2607.11038",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -25088,7 +25100,7 @@
     {
       "id": "2607.12848",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -25114,7 +25126,7 @@
     {
       "id": "2607.12988",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.eq",
       "fields": [
         "sim"
       ],
@@ -25164,7 +25176,7 @@
     {
       "id": "2607.17498",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
@@ -25176,7 +25188,7 @@
     {
       "id": "2607.17975",
       "year": 2026,
-      "lane": "sim",
+      "lane": "sim.dyn",
       "fields": [
         "sim"
       ],
