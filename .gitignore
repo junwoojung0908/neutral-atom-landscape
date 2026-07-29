@@ -22,6 +22,12 @@ data/corpus-raw.json
 data/corpus.json
 data/unclassified.json
 
+# fetch-corpus 이어받기 상태 사이드카
+data/.corpus-fetch-state.json
+
+# citations 재개 캐시
+data/.citations-cache.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
