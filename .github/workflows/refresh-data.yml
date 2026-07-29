@@ -1,0 +1,46 @@
+name: refresh-data
+
+# 월 1회 코퍼스·인용 재수집 → 데이터 커밋 → 배포 트리거.
+on:
+  schedule:
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Harvest + rebuild data
+        run: |
+          npx tsx scripts/fetch-corpus.ts --refresh
+          npx tsx scripts/count.ts
+          npx tsx scripts/citations.ts
+          npx tsx scripts/citations-fix.ts
+          npx tsx scripts/citations.ts
+          npx tsx scripts/work-types.ts || true
+          npx tsx scripts/timeline.ts
+          npx tsx scripts/branch-papers.ts
+          npx tsx scripts/taxonomy-check.ts || true
+      - run: npm run validate
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "data: monthly refresh ($(date -u +%Y-%m-%d))"
+          git push
+      - name: Trigger deploy (bot push doesn't auto-trigger)
+        run: gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
