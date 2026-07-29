@@ -306,14 +306,35 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     return s;
   }, [hoverEdges]);
 
+  // ★ 모든 보이는 원에 라벨 — 겹치면 우/좌/상/하 순으로 빈 자리, 그래도 없으면 우측 강제.
   const labels = useMemo(() => {
-    const out: { p: TPaper; x: number; y: number; lines: string[] }[] = [];
-    const placed: { x: number; y: number }[] = [];
+    const placed: { x1: number; y1: number; x2: number; y2: number }[] = [];
+    const out: { p: TPaper; lines: string[]; lx: number; ly: number }[] = [];
+    const fs = narrow ? 8.5 : 9;
     for (const v of visible) {
-      if (out.length >= 40) break;
-      if (placed.some((r) => Math.abs(r.y - v.y) < 18 && Math.abs(r.x - v.x) < 195)) continue;
-      placed.push({ x: v.x, y: v.y });
-      out.push({ p: v.p, x: v.x, y: v.y, lines: wrap2(v.p.title, narrow ? 17 : 24) });
+      const lines = wrap2(v.p.title, narrow ? 17 : 24);
+      const wText = Math.max(...lines.map((l) => l.length)) * fs * 0.56 + 26;
+      const hText = lines.length * (fs + 1.5) + 2;
+      const r = radius(v.p.cited);
+      const cands = [
+        { lx: v.x + r + 3, ly: v.y },
+        { lx: v.x - r - 3 - wText, ly: v.y },
+        { lx: v.x - wText / 2, ly: v.y - r - hText / 2 - 3 },
+        { lx: v.x - wText / 2, ly: v.y + r + hText / 2 + 3 },
+      ];
+      let chosen = cands[0];
+      let ok = false;
+      for (const c of cands) {
+        const rect = { x1: c.lx, y1: c.ly - hText / 2, x2: c.lx + wText, y2: c.ly + hText / 2 };
+        if (!placed.some((q2) => rect.x1 < q2.x2 && rect.x2 > q2.x1 && rect.y1 < q2.y2 && rect.y2 > q2.y1)) {
+          chosen = c;
+          placed.push(rect);
+          ok = true;
+          break;
+        }
+      }
+      if (!ok) placed.push({ x1: chosen.lx, y1: chosen.ly - hText / 2, x2: chosen.lx + wText, y2: chosen.ly + hText / 2 });
+      out.push({ p: v.p, lines, lx: chosen.lx, ly: chosen.ly });
     }
     return out;
   }, [visible, narrow]);
@@ -434,18 +455,15 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
               <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · 인용 ${p.cited}`}</title>
             </circle>
           ))}
-          {labels.map(({ p, x, y, lines }) => {
-            const lx = x + radius(p.cited) + 3;
-            return (
-              <text key={`lbl-${p.id}`} className="tlz-plabel" x={lx} y={y - (lines.length - 1) * 5 + 3}>
-                {lines.map((ln, i) => (
-                  <tspan key={i} x={lx} dy={i === 0 ? 0 : 10}>
-                    {ln}{i === lines.length - 1 ? <tspan className="tlz-cite"> · {p.cited}</tspan> : null}
-                  </tspan>
-                ))}
-              </text>
-            );
-          })}
+          {labels.map(({ p, lines, lx, ly }) => (
+          <text key={`lbl-${p.id}`} className="tlz-plabel" x={lx} y={ly - (lines.length - 1) * 5 + 3}>
+            {lines.map((ln, i) => (
+              <tspan key={i} x={lx} dy={i === 0 ? 0 : 10}>
+                {ln}{i === lines.length - 1 ? <tspan className="tlz-cite"> · {p.cited}</tspan> : null}
+              </tspan>
+            ))}
+          </text>
+        ))}
         </g>
 
         {/* 축 라벨 — 박스 가장자리 고정(클립 밖) */}
