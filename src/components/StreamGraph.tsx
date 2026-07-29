@@ -57,16 +57,16 @@ export default function StreamGraph() {
   return (
     <div className="stream">
       <div className="stream-head">
-        <span className="stream-tag">조사 층 · 측정</span>
+        <span className="stream-tag">Survey layer · measurement</span>
         <span className="kind-row">
-          <button className={`kind-btn${mode === "share" ? " on" : ""}`} onClick={() => setMode("share")}>구성비</button>
-          <button className={`kind-btn${mode === "abs" ? " on" : ""}`} onClick={() => setMode("abs")}>절대량</button>
+          <button className={`kind-btn${mode === "share" ? " on" : ""}`} onClick={() => setMode("share")}>Share</button>
+          <button className={`kind-btn${mode === "abs" ? " on" : ""}`} onClick={() => setMode("abs")}>Absolute</button>
         </span>
-        <span>질의 <code>{counts.version || "(미설정)"}</code></span>
-        <span>{counts.corpus_total.toLocaleString()}편</span>
+        <span>query <code>{counts.version || "(unset)"}</code></span>
+        <span>{counts.corpus_total.toLocaleString()} papers</span>
         {counts.corpus_total > 0 && (
           <span className={counts.unclassified_ratio > 0.15 ? "u-hole" : ""}>
-            미분류 {(counts.unclassified_ratio * 100).toFixed(1)}%
+            unclassified {(counts.unclassified_ratio * 100).toFixed(1)}%
           </span>
         )}
         {counts.corpus_total > 0 && (
@@ -82,7 +82,7 @@ export default function StreamGraph() {
       </div>
 
       {bands ? (
-        <svg className="stream-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="연도별 가지 구성비">
+        <svg className="stream-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Branch composition by year">
           {bands.map((b) => (
             <polygon
               key={b.id}
@@ -94,15 +94,15 @@ export default function StreamGraph() {
         </svg>
       ) : (
         <div className="stream-empty">
-          아직 코퍼스를 수집하지 않았습니다. <code>data/query.json</code> 을 채운 뒤{" "}
+          No corpus harvested yet. <code>data/query.json</code> 을 채운 뒤{" "}
           <code>npm run fetch-corpus</code> → <code>npm run count</code> → <code>npm run taxonomy</code>.
         </div>
       )}
 
       <p className="stream-note">
-        {mode === "share" ? <>연도별 <strong>100% 정규화</strong> — 구성비가 언제 이동했는지 보입니다.</> : <>연도별 <strong>절대량</strong> — 분야 전체의 성장이 보입니다.</>} 여러 가지에 걸친
-        논문은 <strong>1/k 분수 배분</strong>. 상단 히트율은 raw membership이라 합이 100%를 넘습니다.{" "}
-        <span className="u-legend">회색</span>은 어느 가지에도 안 걸린 미분류입니다.
+        {mode === "share" ? <>Per-year <strong>100% normalized</strong> — shows when composition shifted.</> : <>Per-year <strong>absolute counts</strong> — shows overall growth.</>} Papers spanning
+        multiple branches are <strong>fractionally allocated (1/k)</strong>. Header hit-rates are raw membership, so they exceed 100%.{" "}
+        <span className="u-legend">Grey</span> = unclassified (matched no branch terms).
       </p>
     </div>
   );

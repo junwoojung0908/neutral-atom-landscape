@@ -19,8 +19,8 @@ export default function BranchPanel({ branchId, onClose }: Props) {
   if (!d) return null;
 
   return (
-    <aside className="detail" aria-label="분야 상세">
-      <button className="detail-close" onClick={onClose} aria-label="닫기">
+    <aside className="detail" aria-label="Branch details">
+      <button className="detail-close" onClick={onClose} aria-label="Close">
         ×
       </button>
 
@@ -29,37 +29,36 @@ export default function BranchPanel({ branchId, onClose }: Props) {
           <span className="swatch" style={{ background: f?.color, marginRight: 5 }} aria-hidden="true" />
           가지
         </span>
-        <span className="badge">{d.count.toLocaleString()}편 (코퍼스)</span>
+        <span className="badge">{d.count.toLocaleString()} papers</span>
       </div>
 
-      <h2 className="detail-title">{f?.ko ?? branchId}</h2>
-      <p className="detail-ko">{f?.en}</p>
+      <h2 className="detail-title">{f?.en ?? branchId}</h2>
       <p className="detail-body" style={{ marginTop: 8 }}>{f?.blurb}</p>
 
       {f?.narrative && (
         <>
-          <h3 className="detail-h">서사</h3>
+          <h3 className="detail-h">Narrative</h3>
           <p className="detail-body">{f.narrative}</p>
         </>
       )}
 
       {d.topCited && d.topCited.length > 0 && (
         <>
-          <h3 className="detail-h">읽기 시작점 (인용 상위 · 자동 생성)</h3>
+          <h3 className="detail-h">Where to start reading (top cited · auto-generated)</h3>
           <ul className="bp-list">
             {d.topCited.map((p) => (
               <li key={p.id} className="bp-paper">
                 <a href={`https://arxiv.org/abs/${p.id}`} target="_blank" rel="noreferrer" className="bp-ptitle">
                   {displayTitle(p.title)}
                 </a>
-                <span className="bp-meta">{p.author} · {p.year} · 인용 {p.cited ?? 0}</span>
+                <span className="bp-meta">{p.author} · {p.year} · cited {p.cited ?? 0}</span>
               </li>
             ))}
           </ul>
         </>
       )}
 
-      <h3 className="detail-h">중추 (랜드마크 {d.landmarks.length})</h3>
+      <h3 className="detail-h">Pivotal (landmarks {d.landmarks.length})</h3>
       {d.landmarks.length ? (
         <ul className="bp-list">
           {d.landmarks.map((l: Landmark) => (
@@ -79,10 +78,10 @@ export default function BranchPanel({ branchId, onClose }: Props) {
           ))}
         </ul>
       ) : (
-        <p className="bp-empty">아직 없음 — 이 가지의 중추 논문은 손으로 채운다.</p>
+        <p className="bp-empty">None yet — landmarks for this branch are hand-curated.</p>
       )}
 
-      <h3 className="detail-h">확장 (코퍼스 최근 {d.papers.length}{d.count > d.papers.length ? ` / 총 ${d.count}` : ""})</h3>
+      <h3 className="detail-h">Extensions (latest {d.papers.length}{d.count > d.papers.length ? ` of ${d.count}` : ""})</h3>
       <ul className="bp-list">
         {d.papers.map((p) => (
           <li key={p.id} className="bp-paper">
@@ -94,7 +93,7 @@ export default function BranchPanel({ branchId, onClose }: Props) {
         ))}
       </ul>
       {d.count > d.papers.length && (
-        <p className="bp-empty">…외 {d.count - d.papers.length}편 (인용수 붙이면 중요도순 정렬 예정)</p>
+        <p className="bp-empty">…and {d.count - d.papers.length} more.</p>
       )}
     </aside>
   );

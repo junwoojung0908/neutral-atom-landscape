@@ -61,18 +61,18 @@ interface Props {
 
 // 줌아웃 대분류(5) — 세로 줌인하면 13개 세분류로 갈라짐(시맨틱 줌)
 const LANE_GROUPS = [
-  { id: "g.digital", ko: "디지털 컴퓨팅", color: "#4E79A7", children: ["qec", "gate", "readout"] },
-  { id: "g.sim", ko: "아날로그 시뮬레이션", color: "#E15759", children: ["sim.eq", "sim.dyn", "sim.gauge"] },
-  { id: "g.atom", ko: "원자종 · 계측", color: "#59A14F", children: ["species", "clock"] },
-  { id: "g.algo", ko: "알고리즘 · 검증", color: "#B07AA1", children: ["opt", "classical", "software"] },
-  { id: "g.scale", ko: "규모 · 연결", color: "#17BECF", children: ["scale", "net"] },
+  { id: "g.digital", ko: "Digital computing", color: "#4E79A7", children: ["qec", "gate", "readout"] },
+  { id: "g.sim", ko: "Analog simulation", color: "#E15759", children: ["sim.eq", "sim.dyn", "sim.gauge"] },
+  { id: "g.atom", ko: "Species · metrology", color: "#59A14F", children: ["species", "clock"] },
+  { id: "g.algo", ko: "Algorithms · verification", color: "#B07AA1", children: ["opt", "classical", "software"] },
+  { id: "g.scale", ko: "Scale · interconnects", color: "#17BECF", children: ["scale", "net"] },
 ];
 const SPLIT_KY = 2.2; // 이 세로 배율부터 세분류 표시
 
 const SIM_SUBS = [
-  { id: "sim.eq", ko: "시뮬레이션 · 평형 상", color: "#E15759", branch: "sim" },
-  { id: "sim.dyn", ko: "시뮬레이션 · 동역학", color: "#9E3B3E", branch: "sim" },
-  { id: "sim.gauge", ko: "시뮬레이션 · 게이지·위상", color: "#5C2223", branch: "sim" },
+  { id: "sim.eq", ko: "Simulation · phases", color: "#E15759", branch: "sim" },
+  { id: "sim.dyn", ko: "Simulation · dynamics", color: "#9E3B3E", branch: "sim" },
+  { id: "sim.gauge", ko: "Simulation · gauge/topo", color: "#5C2223", branch: "sim" },
 ];
 
 export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Props) {
@@ -104,7 +104,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const YEARW = PW / NYEARS;
 
   const laneMeta = useMemo(() => {
-    const all = firstLevelFields.flatMap((f) => (f.id === "sim" ? SIM_SUBS : [{ id: f.id, ko: f.ko, color: f.color, branch: f.id }]));
+    const all = firstLevelFields.flatMap((f) => (f.id === "sim" ? SIM_SUBS : [{ id: f.id, ko: f.en, color: f.color, branch: f.id }]));
     const byId2 = new Map(all.map((m) => [m.id, m]));
     // 대분류의 자식이 세로로 인접하도록 정렬
     return LANE_GROUPS.flatMap((g) => g.children.map((c) => byId2.get(c)!).filter(Boolean));
@@ -511,19 +511,19 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   return (
     <div className={`tlz${narrow ? " tlz-narrow" : ""}`}>
       <div className="tlz-help">
-        <span className="tlz-meta">코퍼스 {papers.length.toLocaleString()}편 · OpenAlex 인용 · 갱신 {UPDATED}</span>
+        <span className="tlz-meta">{papers.length.toLocaleString()} papers · OpenAlex citations · updated {UPDATED}</span>
         <span className="tlz-controls">
-          <span className="tlz-zlabel">연도</span><button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("x", 1.6, cx)}>＋</button>
+          <span className="tlz-zlabel">Year</span><button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("x", 1.6, cx)}>＋</button>
           <button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("x", 1 / 1.6, cx)}>－</button>
-          <span className="tlz-zlabel">가지</span><button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1.6, cy)}>＋</button>
+          <span className="tlz-zlabel">Lane</span><button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1.6, cy)}>＋</button>
           <button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1 / 1.6, cy)}>－</button>
-          <button className="tlz-reset" onClick={() => { cancelAnim(); setFitted(null); animateTo({ kx: 1, ky: 1, tx: 0, ty: 0 }); }}>초기화</button>
+          <button className="tlz-reset" onClick={() => { cancelAnim(); setFitted(null); animateTo({ kx: 1, ky: 1, tx: 0, ty: 0 }); }}>Reset</button>
           {fitted && laneMetaMap.has(fitted) && (
             <button className="tlz-reset tlz-listbtn" onClick={() => onSelectBranch(laneMetaMap.get(fitted)?.branch ?? fitted)}>
-              {laneMetaMap.get(fitted)?.ko} 논문 목록 ▸
+              {laneMetaMap.get(fitted)?.ko} paper list ▸
             </button>
           )}
-          <span className="tlz-hint">{narrow ? "핀치 가로=연도·세로=가지 · 드래그=이동 · 탭=상세" : "Shift+휠=연도 · Ctrl+휠=가지 · 드래그=이동 · 점 클릭=상세 · 속 빈 원=리뷰"}</span>
+          <span className="tlz-hint">{narrow ? "Pinch horiz=year · vert=lane · drag=pan · tap=details" : "Shift+wheel=year · Ctrl+wheel=lane · drag=pan · click=details · hollow=review"}</span>
         </span>
       </div>
 
@@ -531,11 +531,11 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
         <input
           className="tlz-search"
           type="search"
-          placeholder="논문 검색 (제목·저자·키워드)"
+          placeholder="Search papers (title · author · keyword)"
           value={q}
           onChange={(e) => setQ(e.target.value)}
         />
-        {qActive && <span className="tlz-hint">{matched.size}편 일치{matched.size >= 300 ? "+" : ""}</span>}
+        {qActive && <span className="tlz-hint">{matched.size}matched{matched.size >= 300 ? "+" : ""}</span>}
         {qActive && (
           <div className="tlz-dropdown">
             {byCited.filter((p) => matched.has(p.id)).slice(0, 8).map((p) => (
@@ -545,20 +545,20 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             ))}
           </div>
         )}
-        <span className="tlz-glabel">주요 그룹 강조:</span>
+        <span className="tlz-glabel">Highlight groups:</span>
         {groupCounts.map((g) => (
           <label key={g.id} className={`tlz-chip${checked.has(g.id) ? " on" : ""}`}>
             <input type="checkbox" checked={checked.has(g.id)} onChange={() => toggle(g.id)} />
             {g.label} ({g.n})
           </label>
         ))}
-        {grpActive && <button className="tlz-reset" onClick={() => setChecked(new Set())}>해제</button>}
+        {grpActive && <button className="tlz-reset" onClick={() => setChecked(new Set())}>Clear</button>}
       </div>
 
       <div className="tlz-svgwrap" ref={wrapRef}>
       {hpaper && (
         <div className="tlz-hoverinfo">
-          <strong>{displayTitle(hpaper.title)}</strong> · 인용 {hpaper.cited} · {hpaper.author} · PI {hpaper.pi || "?"} · {hpaper.year}
+          <strong>{displayTitle(hpaper.title)}</strong> · cited {hpaper.cited} · {hpaper.author} · PI {hpaper.pi || "?"} · {hpaper.year}
           {hpaper.group && <span className="tlz-hg"> · {groupLabel.get(hpaper.group) ?? hpaper.group}</span>}
           <span className="tlz-hf"> · {hpaper.fields.map((f) => fieldById.get(f)?.ko ?? f).join(", ")}</span>
         </div>
@@ -612,7 +612,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             return (
               <line key={`cur-${i}`} className={contests ? "tlz-cur-con" : "tlz-cur-imp"}
                 x1={a.x} y1={a.y} x2={b.x} y2={b.y}>
-                <title>{e.rel === "contests" ? "반박 (contests)" : e.rel}</title>
+                <title>{e.rel === "contests" ? "contests (rebuttal)" : e.rel}</title>
               </line>
             );
           })}
@@ -621,7 +621,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
               fillOpacity={dotOp(p)} stroke={dotRing(p) ? "var(--text)" : p.review ? (laneMetaMap.get(p.lane)?.color ?? "#888") : "none"}
               strokeWidth={dotRing(p) ? 1.5 : p.review ? 1.6 : 0}
               className="tlz-dot" onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onClick={() => onOpen(p)}>
-              <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · 인용 ${p.cited}${p.hot ? ' (최신 급상승 ↗)' : ''}`}</title>
+              <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · cited ${p.cited}${p.hot ? ' (rising ↗)' : ''}`}</title>
             </circle>
           ))}
           {labels.map(({ p, lead }, i) =>
@@ -659,7 +659,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           return (
             <text key={`ll-${row.id}`} className={`tlz-lanelabel${fitted === row.id ? " fit" : ""}`} x={M.l - 8} y={cyl}
               textAnchor="end" dominantBaseline="middle" fill={row.color} onClick={onClick}>
-              <title>클릭: 화면에 맞게 확대 (다시 클릭하면 복귀)</title>
+              <title>Click: fit this lane to screen (click again to reset)</title>
               {row.ko}
             </text>
           );

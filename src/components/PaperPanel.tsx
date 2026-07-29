@@ -31,23 +31,23 @@ export default function PaperPanel({ paperId, onNavigate, onClose }: Props) {
           <button className="bp-title-btn pp-nav" onClick={() => onNavigate(x.id)}>
             {displayTitle(x.title)}
           </button>
-          <span className="bp-meta">{x.author} · {x.year} · 인용 {x.cited}</span>
+          <span className="bp-meta">{x.author} · {x.year} · cited {x.cited}</span>
         </li>
       ))}
-      {items.length === 0 && <li className="bp-empty">코퍼스 안에는 없음</li>}
+      {items.length === 0 && <li className="bp-empty">none within the corpus</li>}
     </ul>
   );
 
   return (
-    <aside className="detail" aria-label="논문 상세">
-      <button className="detail-close" onClick={onClose} aria-label="닫기">×</button>
+    <aside className="detail" aria-label="Paper details">
+      <button className="detail-close" onClick={onClose} aria-label="Close">×</button>
       <div className="detail-badges">
-        {p.review && <span className="badge">리뷰</span>}
-        <span className="badge weight">인용 {p.cited}</span>
+        {p.review && <span className="badge">Review</span>}
+        <span className="badge weight">cited {p.cited}</span>
         {p.group && <span className="badge">{groupLabel.get(p.group) ?? p.group}</span>}
       </div>
       <h2 className="detail-title">{displayTitle(p.title)}</h2>
-      <p className="detail-byline">{p.author} · {p.year}{p.pi ? <span className="detail-affil"> · 교신(마지막 저자): {p.pi}</span> : null}</p>
+      <p className="detail-byline">{p.author} · {p.year}{p.pi ? <span className="detail-affil"> · corresponding (last author): {p.pi}</span> : null}</p>
       <div className="detail-fields">
         {p.fields.map((f) => (
           <span key={f} className="field-chip" style={{ borderColor: fieldById.get(f)?.color }}>
@@ -60,9 +60,9 @@ export default function PaperPanel({ paperId, onNavigate, onClose }: Props) {
           arXiv:{p.id} ↗
         </a>
       </p>
-      <h3 className="detail-h">딛고 선 논문 (이 논문이 인용, 코퍼스 내 {basedOn.length})</h3>
+      <h3 className="detail-h">Builds on (references, {basedOn.length} in corpus)</h3>
       {list(basedOn)}
-      <h3 className="detail-h">확장한 논문 (이 논문을 인용, 코퍼스 내 {extendedBy.length})</h3>
+      <h3 className="detail-h">Extended by (citations, {extendedBy.length} in corpus)</h3>
       {list(extendedBy)}
     </aside>
   );
