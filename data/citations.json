@@ -1,17 +1,7 @@
 {
-  "1501.01351": {
-    "oa": "https://openalex.org/W2040032964",
-    "cited": 6,
-    "year": 2015
-  },
   "1501.02041": {
     "oa": "https://openalex.org/W2011109561",
     "cited": 258,
-    "year": 2015
-  },
-  "1501.03269": {
-    "oa": "https://openalex.org/W2298477552",
-    "cited": 6,
     "year": 2015
   },
   "1501.03862": {
@@ -39,11 +29,6 @@
     "cited": 60,
     "year": 2015
   },
-  "1502.06429": {
-    "oa": "https://openalex.org/W1523238212",
-    "cited": 20,
-    "year": 2015
-  },
   "1503.02881": {
     "oa": "https://openalex.org/W1530569844",
     "cited": 26,
@@ -69,26 +54,6 @@
     "cited": 7,
     "year": 2015
   },
-  "1504.04898": {
-    "oa": "https://openalex.org/W4297685982",
-    "cited": 0,
-    "year": 2015
-  },
-  "1505.03183": {
-    "oa": "https://openalex.org/W2278996961",
-    "cited": 8,
-    "year": 2015
-  },
-  "1505.03859": {
-    "oa": "https://openalex.org/W1009399813",
-    "cited": 71,
-    "year": 2015
-  },
-  "1505.07152": {
-    "oa": "https://openalex.org/W4296563520",
-    "cited": 2,
-    "year": 2015
-  },
   "1506.04005": {
     "oa": "https://openalex.org/W2601753557",
     "cited": 4,
@@ -109,19 +74,9 @@
     "cited": 243,
     "year": 2015
   },
-  "1507.02480": {
-    "oa": "https://openalex.org/W836283546",
-    "cited": 3,
-    "year": 2015
-  },
   "1507.02997": {
     "oa": "https://openalex.org/W838176469",
     "cited": 73,
-    "year": 2015
-  },
-  "1507.03399": {
-    "oa": "https://openalex.org/W2225185664",
-    "cited": 20,
     "year": 2015
   },
   "1507.07958": {
@@ -134,24 +89,9 @@
     "cited": 148,
     "year": 2015
   },
-  "1507.05675": {
-    "oa": "https://openalex.org/W1871831941",
-    "cited": 12,
-    "year": 2015
-  },
-  "1508.01463": {
-    "oa": "https://openalex.org/W2282774963",
-    "cited": 0,
-    "year": 2015
-  },
   "1508.02308": {
     "oa": "https://openalex.org/W2260572998",
     "cited": 28,
-    "year": 2015
-  },
-  "1508.02480": {
-    "oa": "https://openalex.org/W1944382173",
-    "cited": 36,
     "year": 2015
   },
   "1508.04110": {
@@ -179,11 +119,6 @@
     "cited": 777,
     "year": 2016
   },
-  "1509.05450": {
-    "oa": "https://openalex.org/W2212881449",
-    "cited": 39,
-    "year": 2015
-  },
   "1509.06292": {
     "oa": "https://openalex.org/W2245730746",
     "cited": 15,
@@ -199,24 +134,9 @@
     "cited": 25,
     "year": 2016
   },
-  "1510.08032": {
-    "oa": "https://openalex.org/W1883192676",
-    "cited": 60,
-    "year": 2016
-  },
   "1510.08359": {
     "oa": "https://openalex.org/W2470908356",
     "cited": 51,
-    "year": 2016
-  },
-  "1510.08390": {
-    "oa": "https://openalex.org/W2211764488",
-    "cited": 13,
-    "year": 2015
-  },
-  "1510.09183": {
-    "oa": "https://openalex.org/W1908242451",
-    "cited": 122,
     "year": 2016
   },
   "1511.00025": {
@@ -244,11 +164,6 @@
     "cited": 30,
     "year": 2016
   },
-  "1512.02123": {
-    "oa": "https://openalex.org/W2291256726",
-    "cited": 62,
-    "year": 2016
-  },
   "1512.02753": {
     "oa": "https://openalex.org/W2190780488",
     "cited": 86,
@@ -259,11 +174,6 @@
     "cited": 9,
     "year": 2016
   },
-  "1512.04888": {
-    "oa": "https://openalex.org/W2214508773",
-    "cited": 22,
-    "year": 2016
-  },
   "1512.05740": {
     "oa": "https://openalex.org/W2201000082",
     "cited": 188,
@@ -272,21 +182,6 @@
   "1512.06241": {
     "oa": "https://openalex.org/W2461330149",
     "cited": 15,
-    "year": 2016
-  },
-  "1512.08480": {
-    "oa": "https://openalex.org/W2214034437",
-    "cited": 33,
-    "year": 2016
-  },
-  "1601.02567": {
-    "oa": "https://openalex.org/W2235167672",
-    "cited": 18,
-    "year": 2016
-  },
-  "1601.03579": {
-    "oa": "https://openalex.org/W2238853444",
-    "cited": 19,
     "year": 2016
   },
   "1601.03639": {
@@ -319,29 +214,14 @@
     "cited": 95,
     "year": 2016
   },
-  "1602.01538": {
-    "oa": "https://openalex.org/W2298510382",
-    "cited": 1,
-    "year": 2017
-  },
   "1602.01609": {
     "oa": "https://openalex.org/W2262277758",
     "cited": 33,
     "year": 2016
   },
-  "1602.02488": {
-    "oa": "https://openalex.org/W2258910307",
-    "cited": 1,
-    "year": 2016
-  },
   "1602.03261": {
     "oa": "https://openalex.org/W2339022216",
     "cited": 35,
-    "year": 2016
-  },
-  "1602.04143": {
-    "oa": "https://openalex.org/W2268549809",
-    "cited": 6,
     "year": 2016
   },
   "1602.04606": {
@@ -399,31 +279,6 @@
     "cited": 46,
     "year": 2016
   },
-  "1604.02314": {
-    "oa": "https://openalex.org/W2342243020",
-    "cited": 15,
-    "year": 2016
-  },
-  "1604.03005": {
-    "oa": "https://openalex.org/W2338520917",
-    "cited": 30,
-    "year": 2017
-  },
-  "1604.04246": {
-    "oa": "https://openalex.org/W2340601759",
-    "cited": 153,
-    "year": 2016
-  },
-  "1604.04658": {
-    "oa": "https://openalex.org/W2339167818",
-    "cited": 0,
-    "year": 2016
-  },
-  "1604.06385": {
-    "oa": "https://openalex.org/W2338932078",
-    "cited": 11,
-    "year": 2016
-  },
   "1604.08535": {
     "oa": "https://openalex.org/W2344456896",
     "cited": 30,
@@ -433,11 +288,6 @@
     "oa": "https://openalex.org/W2346806770",
     "cited": 866,
     "year": 2017
-  },
-  "1605.01996": {
-    "oa": "https://openalex.org/W2345621016",
-    "cited": 15,
-    "year": 2016
   },
   "1605.04456": {
     "oa": "https://openalex.org/W2402761122",
@@ -464,11 +314,6 @@
     "cited": 11,
     "year": 2016
   },
-  "1605.06603": {
-    "oa": "https://openalex.org/W2394751030",
-    "cited": 0,
-    "year": 2016
-  },
   "1605.08624": {
     "oa": "https://openalex.org/W2396529117",
     "cited": 111,
@@ -484,26 +329,6 @@
     "cited": 45,
     "year": 2017
   },
-  "1605.09568": {
-    "oa": "https://openalex.org/W2415544653",
-    "cited": 52,
-    "year": 2016
-  },
-  "1606.00562": {
-    "oa": "https://openalex.org/W2567287562",
-    "cited": 13,
-    "year": 2017
-  },
-  "1606.03885": {
-    "oa": "https://openalex.org/W2444621538",
-    "cited": 4,
-    "year": 2016
-  },
-  "1606.07603": {
-    "oa": "https://openalex.org/W2472746415",
-    "cited": 1,
-    "year": 2016
-  },
   "1606.08198": {
     "oa": "https://openalex.org/W2462473390",
     "cited": 63,
@@ -513,16 +338,6 @@
     "oa": "https://openalex.org/W2607712074",
     "cited": 30,
     "year": 2017
-  },
-  "1606.08791": {
-    "oa": "https://openalex.org/W3023910619",
-    "cited": 54,
-    "year": 2020
-  },
-  "1607.01984": {
-    "oa": "https://openalex.org/W2497867254",
-    "cited": 24,
-    "year": 2016
   },
   "1607.03044": {
     "oa": "https://openalex.org/W2480946816",
@@ -537,11 +352,6 @@
   "1607.06295": {
     "oa": "https://openalex.org/W2475382649",
     "cited": 117,
-    "year": 2017
-  },
-  "1607.07935": {
-    "oa": "https://openalex.org/W2515712915",
-    "cited": 1,
     "year": 2017
   },
   "1607.08323": {
@@ -569,19 +379,9 @@
     "cited": 40,
     "year": 2017
   },
-  "1608.03076": {
-    "oa": "https://openalex.org/W2485415472",
-    "cited": 43,
-    "year": 2016
-  },
   "1608.05717": {
     "oa": "https://openalex.org/W2512235621",
     "cited": 32,
-    "year": 2017
-  },
-  "1608.06068": {
-    "oa": "https://openalex.org/W2509579096",
-    "cited": 44,
     "year": 2017
   },
   "1608.07246": {
@@ -593,31 +393,6 @@
     "oa": "https://openalex.org/W2767966692",
     "cited": 1692,
     "year": 2018
-  },
-  "1609.01757": {
-    "oa": "https://openalex.org/W2511413138",
-    "cited": 17,
-    "year": 2016
-  },
-  "1609.02330": {
-    "oa": "https://openalex.org/W2520680041",
-    "cited": 47,
-    "year": 2016
-  },
-  "1609.02736": {
-    "oa": "https://openalex.org/W2519940344",
-    "cited": 5,
-    "year": 2017
-  },
-  "1609.09722": {
-    "oa": "https://openalex.org/W2529176740",
-    "cited": 11,
-    "year": 2016
-  },
-  "1610.03686": {
-    "oa": "https://openalex.org/W2531656504",
-    "cited": 1,
-    "year": 2017
   },
   "1610.07358": {
     "oa": "https://openalex.org/W2543517638",
@@ -634,19 +409,9 @@
     "cited": 59,
     "year": 2017
   },
-  "1611.01308": {
-    "oa": "https://openalex.org/W2514199155",
-    "cited": 14,
-    "year": 2016
-  },
   "1611.02184": {
     "oa": "https://openalex.org/W2551590878",
     "cited": 40,
-    "year": 2017
-  },
-  "1611.02284": {
-    "oa": "https://openalex.org/W2557206389",
-    "cited": 141,
     "year": 2017
   },
   "1611.02594": {
@@ -659,40 +424,15 @@
     "cited": 3,
     "year": 2016
   },
-  "1611.03288": {
-    "oa": "https://openalex.org/W2562136870",
-    "cited": 68,
-    "year": 2017
-  },
   "1611.04591": {
     "oa": "https://openalex.org/W2584095904",
     "cited": 25,
     "year": 2021
   },
-  "1611.04986": {
-    "oa": "https://openalex.org/W2584573372",
-    "cited": 0,
-    "year": 2016
-  },
   "1611.05156": {
     "oa": "https://openalex.org/W2559891205",
     "cited": 32,
     "year": 2016
-  },
-  "1611.08893": {
-    "oa": "https://openalex.org/W2557373425",
-    "cited": 22,
-    "year": 2017
-  },
-  "1611.09612": {
-    "oa": "https://openalex.org/W2557665953",
-    "cited": 16,
-    "year": 2018
-  },
-  "1612.00656": {
-    "oa": "https://openalex.org/W2752675930",
-    "cited": 132,
-    "year": 2017
   },
   "1612.05529": {
     "oa": "https://openalex.org/W2585832193",
@@ -709,49 +449,14 @@
     "cited": 149,
     "year": 2017
   },
-  "1701.00081": {
-    "oa": "https://openalex.org/W2586898721",
-    "cited": 34,
-    "year": 2017
-  },
   "1701.01426": {
     "oa": "https://openalex.org/W2588301500",
     "cited": 18,
     "year": 2017
   },
-  "1701.02915": {
-    "oa": "https://openalex.org/W2579433934",
-    "cited": 26,
-    "year": 2017
-  },
-  "1701.07686": {
-    "oa": "https://openalex.org/W2581670152",
-    "cited": 17,
-    "year": 2017
-  },
   "1702.00349": {
     "oa": "https://openalex.org/W2587672268",
     "cited": 166,
-    "year": 2017
-  },
-  "1702.02957": {
-    "oa": "https://openalex.org/W2606246413",
-    "cited": 19,
-    "year": 2017
-  },
-  "1702.05039": {
-    "oa": "https://openalex.org/W2589390816",
-    "cited": 9,
-    "year": 2017
-  },
-  "1702.05954": {
-    "oa": "https://openalex.org/W2594627912",
-    "cited": 61,
-    "year": 2017
-  },
-  "1702.07358": {
-    "oa": "https://openalex.org/W2593423226",
-    "cited": 34,
     "year": 2017
   },
   "1703.00580": {
@@ -794,16 +499,6 @@
     "cited": 20,
     "year": 2017
   },
-  "1703.09982": {
-    "oa": "https://openalex.org/W2599974382",
-    "cited": 33,
-    "year": 2017
-  },
-  "1704.04461": {
-    "oa": "https://openalex.org/W2607018844",
-    "cited": 84,
-    "year": 2018
-  },
   "1704.08837": {
     "oa": "https://openalex.org/W2610572093",
     "cited": 13,
@@ -812,11 +507,6 @@
   "1704.08982": {
     "oa": "https://openalex.org/W2611676557",
     "cited": 89,
-    "year": 2017
-  },
-  "1705.01487": {
-    "oa": "https://openalex.org/W2606831584",
-    "cited": 27,
     "year": 2017
   },
   "1705.01748": {
@@ -842,11 +532,6 @@
   "1705.04128": {
     "oa": "https://openalex.org/W2612222010",
     "cited": 53,
-    "year": 2017
-  },
-  "1705.04684": {
-    "oa": "https://openalex.org/W2614863396",
-    "cited": 25,
     "year": 2017
   },
   "1705.05700": {
@@ -879,25 +564,10 @@
     "cited": 69,
     "year": 2017
   },
-  "1706.00714": {
-    "oa": "https://openalex.org/W2621306660",
-    "cited": 10,
-    "year": 2017
-  },
   "1706.01995": {
     "oa": "https://openalex.org/W2622157906",
     "cited": 29,
     "year": 2021
-  },
-  "1706.03717": {
-    "oa": "https://openalex.org/W2612499786",
-    "cited": 171,
-    "year": 2018
-  },
-  "1706.03994": {
-    "oa": "https://openalex.org/W2619942156",
-    "cited": 15,
-    "year": 2017
   },
   "1706.07666": {
     "oa": "https://openalex.org/W2668416032",
@@ -918,16 +588,6 @@
     "oa": "https://openalex.org/W2724629864",
     "cited": 20,
     "year": 2017
-  },
-  "1707.02911": {
-    "oa": "https://openalex.org/W2735354949",
-    "cited": 36,
-    "year": 2017
-  },
-  "1707.03690": {
-    "oa": "https://openalex.org/W2736086505",
-    "cited": 1,
-    "year": 2018
   },
   "1707.04099": {
     "oa": "https://openalex.org/W3037339353",
@@ -969,40 +629,10 @@
     "cited": 198,
     "year": 2018
   },
-  "1708.07200": {
-    "oa": "https://openalex.org/W2785706414",
-    "cited": 23,
-    "year": 2018
-  },
-  "1709.01838": {
-    "oa": "https://openalex.org/W2752295642",
-    "cited": 71,
-    "year": 2018
-  },
-  "1709.01478": {
-    "oa": "https://openalex.org/W2751956272",
-    "cited": 149,
-    "year": 2018
-  },
-  "1709.01955": {
-    "oa": "https://openalex.org/W2598402373",
-    "cited": 29,
-    "year": 2017
-  },
   "1709.02460": {
     "oa": "https://openalex.org/W2752744193",
     "cited": 37,
     "year": 2017
-  },
-  "1709.08327": {
-    "oa": "https://openalex.org/W2772934545",
-    "cited": 71,
-    "year": 2017
-  },
-  "1710.01752": {
-    "oa": "https://openalex.org/W2763991405",
-    "cited": 37,
-    "year": 2018
   },
   "1710.01859": {
     "oa": "https://openalex.org/W2761913829",
@@ -1024,11 +654,6 @@
     "cited": 0,
     "year": 2018
   },
-  "1710.07582": {
-    "oa": "https://openalex.org/W2766999601",
-    "cited": 0,
-    "year": 2018
-  },
   "1710.07964": {
     "oa": "https://openalex.org/W2766603958",
     "cited": 22,
@@ -1039,25 +664,10 @@
     "cited": 26,
     "year": 2018
   },
-  "1710.08965": {
-    "oa": "https://openalex.org/W2766725381",
-    "cited": 8,
-    "year": 2017
-  },
-  "1710.10047": {
-    "oa": "https://openalex.org/W2766219671",
-    "cited": 20,
-    "year": 2018
-  },
   "1710.10149": {
     "oa": "https://openalex.org/W2765716028",
     "cited": 4,
     "year": 2017
-  },
-  "1711.10309": {
-    "oa": "https://openalex.org/W2769638876",
-    "cited": 23,
-    "year": 2018
   },
   "1711.00887": {
     "oa": "https://openalex.org/W3088109169",
@@ -1112,11 +722,6 @@
   "1712.04713": {
     "oa": "https://openalex.org/W2771149681",
     "cited": 21,
-    "year": 2018
-  },
-  "1712.05263": {
-    "oa": "https://openalex.org/W2772702779",
-    "cited": 33,
     "year": 2018
   },
   "1712.06306": {
@@ -1179,50 +784,15 @@
     "cited": 10,
     "year": 2018
   },
-  "1802.06599": {
-    "oa": "https://openalex.org/W2788512198",
-    "cited": 0,
-    "year": 2018
-  },
   "1802.10424": {
     "oa": "https://openalex.org/W2789110996",
     "cited": 212,
-    "year": 2018
-  },
-  "1803.01330": {
-    "oa": "https://openalex.org/W2793305566",
-    "cited": 38,
-    "year": 2018
-  },
-  "1803.02167": {
-    "oa": "https://openalex.org/W2789919404",
-    "cited": 33,
-    "year": 2018
-  },
-  "1803.02701": {
-    "oa": "https://openalex.org/W2963813159",
-    "cited": 8,
-    "year": 2018
-  },
-  "1803.02844": {
-    "oa": "https://openalex.org/W2908239895",
-    "cited": 11,
     "year": 2018
   },
   "1803.04429": {
     "oa": "https://openalex.org/W30230858",
     "cited": 0,
     "year": 2011
-  },
-  "1803.05358": {
-    "oa": "https://openalex.org/W2790105828",
-    "cited": 12,
-    "year": 2018
-  },
-  "1803.09480": {
-    "oa": "https://openalex.org/W2794824129",
-    "cited": 0,
-    "year": 2018
   },
   "1803.11166": {
     "oa": "https://openalex.org/W2794532682",
@@ -1279,11 +849,6 @@
     "cited": 14,
     "year": 2018
   },
-  "1805.02712": {
-    "oa": "https://openalex.org/W2800880048",
-    "cited": 28,
-    "year": 2018
-  },
   "1805.04934": {
     "oa": "https://openalex.org/W2800752395",
     "cited": 13,
@@ -1302,11 +867,6 @@
   "1805.10574": {
     "oa": "https://openalex.org/W2804519090",
     "cited": 15,
-    "year": 2018
-  },
-  "1806.00062": {
-    "oa": "https://openalex.org/W2805674184",
-    "cited": 47,
     "year": 2018
   },
   "1806.00781": {
@@ -1329,11 +889,6 @@
     "cited": 68,
     "year": 2018
   },
-  "1806.07094": {
-    "oa": "https://openalex.org/W2808934120",
-    "cited": 33,
-    "year": 2018
-  },
   "1806.09775": {
     "oa": "https://openalex.org/W2812242681",
     "cited": 45,
@@ -1349,19 +904,9 @@
     "cited": 0,
     "year": 2019
   },
-  "1806.10647": {
-    "oa": "https://openalex.org/W3033032555",
-    "cited": 1,
-    "year": 2020
-  },
   "1806.10933": {
     "oa": "https://openalex.org/W2810419645",
     "cited": 495,
-    "year": 2018
-  },
-  "1806.11440": {
-    "oa": "https://openalex.org/W2811459901",
-    "cited": 3,
     "year": 2018
   },
   "1807.01815": {
@@ -1379,11 +924,6 @@
     "cited": 259,
     "year": 2019
   },
-  "1807.04797": {
-    "oa": "https://openalex.org/W2883937054",
-    "cited": 15,
-    "year": 2018
-  },
   "1807.05795": {
     "oa": "https://openalex.org/W2883825669",
     "cited": 155,
@@ -1393,16 +933,6 @@
     "oa": "https://openalex.org/W2963980420",
     "cited": 6,
     "year": 2018
-  },
-  "1807.07586": {
-    "oa": "https://openalex.org/W2887223501",
-    "cited": 25,
-    "year": 2020
-  },
-  "1807.07738": {
-    "oa": "https://openalex.org/W2883631325",
-    "cited": 67,
-    "year": 2019
   },
   "1807.09125": {
     "oa": "https://openalex.org/W2883059126",
@@ -1444,11 +974,6 @@
     "cited": 49,
     "year": 2018
   },
-  "1809.00624": {
-    "oa": "https://openalex.org/W2892276510",
-    "cited": 16,
-    "year": 2018
-  },
   "1809.00993": {
     "oa": "https://openalex.org/W2891808688",
     "cited": 53,
@@ -1479,20 +1004,10 @@
     "cited": 548,
     "year": 2019
   },
-  "1809.06377": {
-    "oa": "https://openalex.org/W2891270022",
-    "cited": 52,
-    "year": 2019
-  },
   "1809.08957": {
     "oa": "https://openalex.org/W2949764428",
     "cited": 41,
     "year": 2019
-  },
-  "1809.09835": {
-    "oa": "https://openalex.org/W2894185872",
-    "cited": 16,
-    "year": 2020
   },
   "1810.04151": {
     "oa": "https://openalex.org/W2912084111",
@@ -1524,16 +1039,6 @@
     "cited": 205,
     "year": 2018
   },
-  "1810.06887": {
-    "oa": "https://openalex.org/W2896309793",
-    "cited": 13,
-    "year": 2019
-  },
-  "1810.07611": {
-    "oa": "https://openalex.org/W2897759172",
-    "cited": 19,
-    "year": 2019
-  },
   "1810.08112": {
     "oa": "https://openalex.org/W2896011821",
     "cited": 69,
@@ -1547,11 +1052,6 @@
   "1810.09228": {
     "oa": "https://openalex.org/W2897211415",
     "cited": 307,
-    "year": 2018
-  },
-  "1810.10851": {
-    "oa": "https://openalex.org/W2896978105",
-    "cited": 22,
     "year": 2018
   },
   "1810.13286": {
@@ -1574,11 +1074,6 @@
     "cited": 45,
     "year": 2019
   },
-  "1811.04776": {
-    "oa": "https://openalex.org/W2899712432",
-    "cited": 0,
-    "year": 2018
-  },
   "1811.06014": {
     "oa": "https://openalex.org/W2901291615",
     "cited": 146,
@@ -1588,11 +1083,6 @@
     "oa": "https://openalex.org/W2901213830",
     "cited": 8,
     "year": 2019
-  },
-  "1811.09275": {
-    "oa": "https://openalex.org/W2901253441",
-    "cited": 69,
-    "year": 2022
   },
   "1811.12939": {
     "oa": "https://openalex.org/W2903107593",
@@ -1644,11 +1134,6 @@
     "cited": 6,
     "year": 2018
   },
-  "1901.05685": {
-    "oa": "https://openalex.org/W2909382282",
-    "cited": 16,
-    "year": 2019
-  },
   "1901.09265": {
     "oa": "https://openalex.org/W2914904848",
     "cited": 7,
@@ -1672,11 +1157,6 @@
   "1902.03935": {
     "oa": "https://openalex.org/W2941205559",
     "cited": 75,
-    "year": 2019
-  },
-  "1902.09471": {
-    "oa": "https://openalex.org/W2915507801",
-    "cited": 94,
     "year": 2019
   },
   "1902.09551": {
@@ -1734,21 +1214,6 @@
     "cited": 14,
     "year": 2020
   },
-  "1904.04681": {
-    "oa": "https://openalex.org/W2937385231",
-    "cited": 5,
-    "year": 2019
-  },
-  "1904.07628": {
-    "oa": "https://openalex.org/W2964216131",
-    "cited": 17,
-    "year": 2019
-  },
-  "1904.08099": {
-    "oa": "https://openalex.org/W2939590434",
-    "cited": 17,
-    "year": 2019
-  },
   "1904.08441": {
     "oa": "https://openalex.org/W2940425080",
     "cited": 147,
@@ -1759,24 +1224,9 @@
     "cited": 53,
     "year": 2019
   },
-  "1904.09197": {
-    "oa": "https://openalex.org/W2935719249",
-    "cited": 45,
-    "year": 2019
-  },
-  "1904.10770": {
-    "oa": "https://openalex.org/W2942094171",
-    "cited": 3,
-    "year": 2019
-  },
   "1904.10934": {
     "oa": "https://openalex.org/W2972699571",
     "cited": 185,
-    "year": 2019
-  },
-  "1905.05247": {
-    "oa": "https://openalex.org/W2945323711",
-    "cited": 30,
     "year": 2019
   },
   "1905.05721": {
@@ -1788,21 +1238,6 @@
     "oa": "https://openalex.org/W2945557520",
     "cited": 12,
     "year": 2020
-  },
-  "1905.08523": {
-    "oa": "https://openalex.org/W2946298170",
-    "cited": 37,
-    "year": 2019
-  },
-  "1905.08564": {
-    "oa": "https://openalex.org/W2946318853",
-    "cited": 93,
-    "year": 2020
-  },
-  "1905.09615": {
-    "oa": "https://openalex.org/W2946110346",
-    "cited": 14,
-    "year": 2019
   },
   "1905.10937": {
     "oa": "https://openalex.org/W2965060396",
@@ -1852,16 +1287,6 @@
   "1907.04387": {
     "oa": "https://openalex.org/W2958366801",
     "cited": 36,
-    "year": 2019
-  },
-  "1907.05872": {
-    "oa": "https://openalex.org/W3028818982",
-    "cited": 202,
-    "year": 2020
-  },
-  "1907.06004": {
-    "oa": "https://openalex.org/W3102032163",
-    "cited": 18,
     "year": 2019
   },
   "1907.06736": {
@@ -1984,11 +1409,6 @@
     "cited": 64,
     "year": 2020
   },
-  "1909.11959": {
-    "oa": "https://openalex.org/W2999527384",
-    "cited": 73,
-    "year": 2021
-  },
   "1910.00392": {
     "oa": "https://openalex.org/W2971980097",
     "cited": 38,
@@ -2029,11 +1449,6 @@
     "cited": 13,
     "year": 2020
   },
-  "1910.11350": {
-    "oa": "https://openalex.org/W2981814694",
-    "cited": 191,
-    "year": 2020
-  },
   "1910.13100": {
     "oa": "https://openalex.org/W3016817171",
     "cited": 17,
@@ -2049,11 +1464,6 @@
     "cited": 482,
     "year": 2020
   },
-  "1911.00553": {
-    "oa": "https://openalex.org/W2983968812",
-    "cited": 25,
-    "year": 2020
-  },
   "1911.02316": {
     "oa": "https://openalex.org/W3014011271",
     "cited": 59,
@@ -2064,34 +1474,14 @@
     "cited": 78,
     "year": 2020
   },
-  "1911.05513": {
-    "oa": "https://openalex.org/W2985711888",
-    "cited": 41,
-    "year": 2020
-  },
   "1911.06397": {
     "oa": "https://openalex.org/W2986688997",
     "cited": 9,
     "year": 2020
   },
-  "1911.09664": {
-    "oa": "https://openalex.org/W3014146085",
-    "cited": 6,
-    "year": 2020
-  },
   "1911.11382": {
     "oa": "https://openalex.org/W2989943734",
     "cited": 79,
-    "year": 2020
-  },
-  "1912.01479": {
-    "oa": "https://openalex.org/W2993313062",
-    "cited": 53,
-    "year": 2020
-  },
-  "1912.01702": {
-    "oa": "https://openalex.org/W2993816397",
-    "cited": 39,
     "year": 2020
   },
   "1912.02198": {
@@ -2122,11 +1512,6 @@
   "1912.04504": {
     "oa": "https://openalex.org/W2995265475",
     "cited": 0,
-    "year": 2019
-  },
-  "1912.05675": {
-    "oa": "https://openalex.org/W2995223249",
-    "cited": 1,
     "year": 2019
   },
   "1912.06076": {
@@ -2164,11 +1549,6 @@
     "cited": 25,
     "year": 2020
   },
-  "2001.03520": {
-    "oa": "https://openalex.org/W3000615028",
-    "cited": 21,
-    "year": 2020
-  },
   "2001.04455": {
     "oa": "https://openalex.org/W2999503564",
     "cited": 380,
@@ -2199,25 +1579,10 @@
     "cited": 29,
     "year": 2020
   },
-  "2001.08232": {
-    "oa": "https://openalex.org/W3001955766",
-    "cited": 113,
-    "year": 2020
-  },
-  "2001.08440": {
-    "oa": "https://openalex.org/W2995870450",
-    "cited": 20,
-    "year": 2019
-  },
   "2001.11980": {
     "oa": "https://openalex.org/W3004107948",
     "cited": 4,
     "year": 2020
-  },
-  "2002.00013": {
-    "oa": "https://openalex.org/W4309922923",
-    "cited": 21,
-    "year": 2022
   },
   "2002.00311": {
     "oa": "https://openalex.org/W3003435066",
@@ -2279,11 +1644,6 @@
     "cited": 110,
     "year": 2020
   },
-  "2003.07864": {
-    "oa": "https://openalex.org/W3012488766",
-    "cited": 4,
-    "year": 2020
-  },
   "2003.08163": {
     "oa": "https://openalex.org/W3010884632",
     "cited": 4,
@@ -2299,19 +1659,9 @@
     "cited": 17,
     "year": 2020
   },
-  "2004.04431": {
-    "oa": "https://openalex.org/W3015262109",
-    "cited": 70,
-    "year": 2020
-  },
   "2004.06095": {
     "oa": "https://openalex.org/W3112161336",
     "cited": 218,
-    "year": 2020
-  },
-  "2004.08226": {
-    "oa": "https://openalex.org/W3016601587",
-    "cited": 17,
     "year": 2020
   },
   "2004.14720": {
@@ -2329,30 +1679,15 @@
     "cited": 10,
     "year": 2021
   },
-  "2005.05089": {
-    "oa": "https://openalex.org/W3022177045",
-    "cited": 25,
-    "year": 2020
-  },
   "2005.06949": {
     "oa": "https://openalex.org/W3093750689",
     "cited": 55,
-    "year": 2020
-  },
-  "2005.07491": {
-    "oa": "https://openalex.org/W3025934256",
-    "cited": 0,
     "year": 2020
   },
   "2005.07715": {
     "oa": "https://openalex.org/W3025003239",
     "cited": 87,
     "year": 2020
-  },
-  "2005.09552": {
-    "oa": "https://openalex.org/W3027827425",
-    "cited": 15,
-    "year": 2021
   },
   "2005.14059": {
     "oa": "https://openalex.org/W3031497571",
@@ -2378,11 +1713,6 @@
     "oa": "https://openalex.org/W3033321023",
     "cited": 56,
     "year": 2021
-  },
-  "2006.02916": {
-    "oa": "https://openalex.org/W3031392257",
-    "cited": 26,
-    "year": 2020
   },
   "2006.03099": {
     "oa": "https://openalex.org/W3033345484",
@@ -2414,30 +1744,15 @@
     "cited": 78,
     "year": 2021
   },
-  "2006.15921": {
-    "oa": "https://openalex.org/W3037660834",
-    "cited": 31,
-    "year": 2020
-  },
   "2006.16304": {
     "oa": "https://openalex.org/W3039397132",
     "cited": 5,
-    "year": 2020
-  },
-  "2007.00465": {
-    "oa": "https://openalex.org/W3038236086",
-    "cited": 19,
     "year": 2020
   },
   "2007.03296": {
     "oa": "https://openalex.org/W3038586672",
     "cited": 20,
     "year": 2020
-  },
-  "2007.07697": {
-    "oa": "https://openalex.org/W3043301985",
-    "cited": 22,
-    "year": 2021
   },
   "2007.09422": {
     "oa": "https://openalex.org/W3042998705",
@@ -2467,11 +1782,6 @@
   "2008.01293": {
     "oa": "https://openalex.org/W3047490109",
     "cited": 15,
-    "year": 2020
-  },
-  "2008.03112": {
-    "oa": "https://openalex.org/W3013351343",
-    "cited": 7,
     "year": 2020
   },
   "2008.03057": {
@@ -2509,25 +1819,10 @@
     "cited": 52,
     "year": 2020
   },
-  "2008.11736": {
-    "oa": "https://openalex.org/W3106682377",
-    "cited": 7,
-    "year": 2021
-  },
   "2009.00560": {
     "oa": "https://openalex.org/W3082251605",
     "cited": 12,
     "year": 2021
-  },
-  "2009.02004": {
-    "oa": "https://openalex.org/W3083280847",
-    "cited": 3,
-    "year": 2020
-  },
-  "2009.02399": {
-    "oa": "https://openalex.org/W3083144754",
-    "cited": 11,
-    "year": 2020
   },
   "2009.03230": {
     "oa": "https://openalex.org/W3132685641",
@@ -2564,19 +1859,9 @@
     "cited": 95,
     "year": 2021
   },
-  "2010.07825": {
-    "oa": "https://openalex.org/W3093274238",
-    "cited": 31,
-    "year": 2021
-  },
   "2010.07838": {
     "oa": "https://openalex.org/W3093358319",
     "cited": 32,
-    "year": 2021
-  },
-  "2010.08935": {
-    "oa": "https://openalex.org/W3118606156",
-    "cited": 17,
     "year": 2021
   },
   "2010.10535": {
@@ -2588,11 +1873,6 @@
     "oa": "https://openalex.org/W3107224257",
     "cited": 7,
     "year": 2020
-  },
-  "2010.12111": {
-    "oa": "https://openalex.org/W4206985469",
-    "cited": 3,
-    "year": 2022
   },
   "2011.01653": {
     "oa": "https://openalex.org/W3147123103",
@@ -2613,11 +1893,6 @@
     "oa": "https://openalex.org/W3106242438",
     "cited": 8,
     "year": 2021
-  },
-  "2011.06901": {
-    "oa": "https://openalex.org/W3204222986",
-    "cited": 19,
-    "year": 2020
   },
   "2011.08051": {
     "oa": "https://openalex.org/W4381714053",
@@ -2659,11 +1934,6 @@
     "cited": 5,
     "year": 2021
   },
-  "2011.11326": {
-    "oa": "https://openalex.org/W3103239930",
-    "cited": 8,
-    "year": 2020
-  },
   "2011.11624": {
     "oa": "https://openalex.org/W3107577803",
     "cited": 22,
@@ -2677,11 +1947,6 @@
   "2011.12310": {
     "oa": "https://openalex.org/W3108946329",
     "cited": 198,
-    "year": 2021
-  },
-  "2012.01834": {
-    "oa": "https://openalex.org/W3109633017",
-    "cited": 35,
     "year": 2021
   },
   "2012.02935": {
@@ -2767,11 +2032,6 @@
   "2101.02328": {
     "oa": "https://openalex.org/W3120831598",
     "cited": 52,
-    "year": 2021
-  },
-  "2101.03107": {
-    "oa": "https://openalex.org/W3119652861",
-    "cited": 2,
     "year": 2021
   },
   "2101.03168": {
@@ -2864,11 +2124,6 @@
     "cited": 4,
     "year": 2021
   },
-  "2103.04528": {
-    "oa": "https://openalex.org/W3134670853",
-    "cited": 14,
-    "year": 2021
-  },
   "2103.05184": {
     "oa": "https://openalex.org/W3134909878",
     "cited": 5,
@@ -2929,20 +2184,10 @@
     "cited": 26,
     "year": 2021
   },
-  "2104.06532": {
-    "oa": "https://openalex.org/W4221093060",
-    "cited": 10,
-    "year": 2022
-  },
   "2104.11160": {
     "oa": "https://openalex.org/W3156117724",
     "cited": 14,
     "year": 2022
-  },
-  "2104.14723": {
-    "oa": "https://openalex.org/W3205262182",
-    "cited": 24,
-    "year": 2021
   },
   "2104.15044": {
     "oa": "https://openalex.org/W3159806430",
@@ -2968,11 +2213,6 @@
     "oa": "https://openalex.org/W3158456055",
     "cited": 7,
     "year": 2021
-  },
-  "2105.05188": {
-    "oa": "https://openalex.org/W3160552716",
-    "cited": 32,
-    "year": 2022
   },
   "2105.06372": {
     "oa": "https://openalex.org/W3213857695",
@@ -3059,11 +2299,6 @@
     "cited": 47,
     "year": 2022
   },
-  "2106.12627": {
-    "oa": "https://openalex.org/W4296794220",
-    "cited": 235,
-    "year": 2022
-  },
   "2107.00766": {
     "oa": "https://openalex.org/W3179964333",
     "cited": 9,
@@ -3124,11 +2359,6 @@
     "cited": 15,
     "year": 2021
   },
-  "2107.13745": {
-    "oa": "https://openalex.org/W3184158710",
-    "cited": 3,
-    "year": 2021
-  },
   "2107.14459": {
     "oa": "https://openalex.org/W3191494141",
     "cited": 168,
@@ -3139,20 +2369,10 @@
     "cited": 4,
     "year": 2022
   },
-  "2108.02436": {
-    "oa": "https://openalex.org/W3191236955",
-    "cited": 25,
-    "year": 2022
-  },
   "2108.04790": {
     "oa": "https://openalex.org/W3189895774",
     "cited": 127,
     "year": 2022
-  },
-  "2108.09470": {
-    "oa": "https://openalex.org/W3195585843",
-    "cited": 3,
-    "year": 2021
   },
   "2108.11895": {
     "oa": "https://openalex.org/W3195799027",
@@ -3178,11 +2398,6 @@
     "oa": "https://openalex.org/W4297125677",
     "cited": 33,
     "year": 2022
-  },
-  "2109.03741": {
-    "oa": "https://openalex.org/W3196639356",
-    "cited": 0,
-    "year": 2021
   },
   "2109.05730": {
     "oa": "https://openalex.org/W3199133003",
@@ -3217,16 +2432,6 @@
   "2109.14709": {
     "oa": "https://openalex.org/W4293187826",
     "cited": 6,
-    "year": 2022
-  },
-  "2109.14915": {
-    "oa": "https://openalex.org/W4224292305",
-    "cited": 18,
-    "year": 2022
-  },
-  "2110.00050": {
-    "oa": "https://openalex.org/W4226303972",
-    "cited": 21,
     "year": 2022
   },
   "2110.01760": {
@@ -3289,11 +2494,6 @@
     "cited": 2,
     "year": 2022
   },
-  "2110.14059": {
-    "oa": "https://openalex.org/W4205506839",
-    "cited": 12,
-    "year": 2022
-  },
   "2110.14645": {
     "oa": "https://openalex.org/W3208787009",
     "cited": 69,
@@ -3329,11 +2529,6 @@
     "cited": 0,
     "year": 2021
   },
-  "2111.04378": {
-    "oa": "https://openalex.org/W4226438567",
-    "cited": 23,
-    "year": 2022
-  },
   "2111.04384": {
     "oa": "https://openalex.org/W3213614447",
     "cited": 35,
@@ -3357,21 +2552,6 @@
   "2111.06534": {
     "oa": "https://openalex.org/W3213957187",
     "cited": 4,
-    "year": 2021
-  },
-  "2111.08598": {
-    "oa": "https://openalex.org/W4290861272",
-    "cited": 21,
-    "year": 2022
-  },
-  "2111.08715": {
-    "oa": "https://openalex.org/W3214256779",
-    "cited": 38,
-    "year": 2022
-  },
-  "2111.09088": {
-    "oa": "https://openalex.org/W3213415564",
-    "cited": 0,
     "year": 2021
   },
   "2111.09915": {
@@ -3409,11 +2589,6 @@
     "cited": 20,
     "year": 2022
   },
-  "2111.14553": {
-    "oa": "https://openalex.org/W4311403663",
-    "cited": 3,
-    "year": 2022
-  },
   "2111.14653": {
     "oa": "https://openalex.org/W3216583973",
     "cited": 114,
@@ -3423,11 +2598,6 @@
     "oa": "https://openalex.org/W4309426904",
     "cited": 4,
     "year": 2021
-  },
-  "2111.15333": {
-    "oa": "https://openalex.org/W3216681821",
-    "cited": 12,
-    "year": 2022
   },
   "2112.00991": {
     "oa": "https://openalex.org/W3216183141",
@@ -3479,11 +2649,6 @@
     "cited": 67,
     "year": 2022
   },
-  "2112.09900": {
-    "oa": "https://openalex.org/W4200435452",
-    "cited": 3,
-    "year": 2021
-  },
   "2112.10421": {
     "oa": "https://openalex.org/W4225131022",
     "cited": 11,
@@ -3508,11 +2673,6 @@
     "oa": "https://openalex.org/W4294164024",
     "cited": 9,
     "year": 2022
-  },
-  "2112.13688": {
-    "oa": "https://openalex.org/W4323033916",
-    "cited": 20,
-    "year": 2023
   },
   "2112.14589": {
     "oa": "https://openalex.org/W4224254118",
@@ -3574,16 +2734,6 @@
     "cited": 8,
     "year": 2024
   },
-  "2201.09590": {
-    "oa": "https://openalex.org/W37802940",
-    "cited": 0,
-    "year": 2009
-  },
-  "2202.00699": {
-    "oa": "https://openalex.org/W4283806959",
-    "cited": 30,
-    "year": 2022
-  },
   "2202.00903": {
     "oa": "https://openalex.org/W4221165705",
     "cited": 2,
@@ -3598,11 +2748,6 @@
     "oa": "https://openalex.org/W4221139983",
     "cited": 30,
     "year": 2022
-  },
-  "2202.03860": {
-    "oa": "https://openalex.org/W4322626527",
-    "cited": 11,
-    "year": 2023
   },
   "2202.04654": {
     "oa": "https://openalex.org/W4400282325",
@@ -3789,11 +2934,6 @@
     "cited": 4,
     "year": 2022
   },
-  "2204.13718": {
-    "oa": "https://openalex.org/W4294276234",
-    "cited": 45,
-    "year": 2022
-  },
   "2205.01602": {
     "oa": "https://openalex.org/W4229053956",
     "cited": 0,
@@ -3888,16 +3028,6 @@
     "oa": "https://openalex.org/W4313561834",
     "cited": 2,
     "year": 2023
-  },
-  "2205.15302": {
-    "oa": "https://openalex.org/W4311978749",
-    "cited": 39,
-    "year": 2022
-  },
-  "2206.00096": {
-    "oa": "https://openalex.org/W4303453881",
-    "cited": 13,
-    "year": 2022
   },
   "2206.00144": {
     "oa": "https://openalex.org/W4386525478",
@@ -4024,11 +3154,6 @@
     "cited": 4,
     "year": 2022
   },
-  "2207.11947": {
-    "oa": "https://openalex.org/W4306412220",
-    "cited": 164,
-    "year": 2022
-  },
   "2207.12930": {
     "oa": "https://openalex.org/W4322495337",
     "cited": 183,
@@ -4054,16 +3179,6 @@
     "cited": 4,
     "year": 2022
   },
-  "2208.01869": {
-    "oa": "https://openalex.org/W4323865402",
-    "cited": 19,
-    "year": 2023
-  },
-  "2208.02100": {
-    "oa": "https://openalex.org/W4318195177",
-    "cited": 5,
-    "year": 2023
-  },
   "2208.02909": {
     "oa": "https://openalex.org/W4404040835",
     "cited": 4,
@@ -4087,11 +3202,6 @@
   "2208.12159": {
     "oa": "https://openalex.org/W4385577554",
     "cited": 18,
-    "year": 2023
-  },
-  "2209.00201": {
-    "oa": "https://openalex.org/W4317040112",
-    "cited": 1,
     "year": 2023
   },
   "2209.02047": {
@@ -4119,11 +3229,6 @@
     "cited": 47,
     "year": 2023
   },
-  "2209.08080": {
-    "oa": "https://openalex.org/W4401331608",
-    "cited": 6,
-    "year": 2024
-  },
   "2209.09234": {
     "oa": "https://openalex.org/W4296563192",
     "cited": 2,
@@ -4148,11 +3253,6 @@
     "oa": "https://openalex.org/W4312189878",
     "cited": 12,
     "year": 2022
-  },
-  "2210.00475": {
-    "oa": "https://openalex.org/W4302011376",
-    "cited": 2,
-    "year": 2023
   },
   "2210.01146": {
     "oa": "https://openalex.org/W4323355253",
@@ -4239,11 +3339,6 @@
     "cited": 17,
     "year": 2023
   },
-  "2211.04748": {
-    "oa": "https://openalex.org/W4318540924",
-    "cited": 11,
-    "year": 2023
-  },
   "2211.05140": {
     "oa": "https://openalex.org/W4383896776",
     "cited": 17,
@@ -4277,11 +3372,6 @@
   "2211.09780": {
     "oa": "https://openalex.org/W4309398772",
     "cited": 13,
-    "year": 2022
-  },
-  "2211.09880": {
-    "oa": "https://openalex.org/W4306944376",
-    "cited": 3,
     "year": 2022
   },
   "2211.12162": {
@@ -4374,11 +3464,6 @@
     "cited": 1,
     "year": 2023
   },
-  "2212.07744": {
-    "oa": "https://openalex.org/W4385507811",
-    "cited": 10,
-    "year": 2023
-  },
   "2212.08799": {
     "oa": "https://openalex.org/W4389135169",
     "cited": 29,
@@ -4433,11 +3518,6 @@
     "oa": "https://openalex.org/W4407193252",
     "cited": 10,
     "year": 2025
-  },
-  "2301.05377": {
-    "oa": "https://openalex.org/W4318983726",
-    "cited": 0,
-    "year": 2023
   },
   "2301.05389": {
     "oa": "https://openalex.org/W4387332930",
@@ -4629,11 +3709,6 @@
     "cited": 60,
     "year": 2023
   },
-  "2303.10044": {
-    "oa": "https://openalex.org/W4366348181",
-    "cited": 11,
-    "year": 2023
-  },
   "2303.10051": {
     "oa": "https://openalex.org/W4389794602",
     "cited": 72,
@@ -4694,19 +3769,9 @@
     "cited": 25,
     "year": 2023
   },
-  "2304.05252": {
-    "oa": "https://openalex.org/W4388410992",
-    "cited": 11,
-    "year": 2023
-  },
   "2304.05420": {
     "oa": "https://openalex.org/W4387542025",
     "cited": 496,
-    "year": 2023
-  },
-  "2304.05863": {
-    "oa": "https://openalex.org/W4365456815",
-    "cited": 0,
     "year": 2023
   },
   "2304.08402": {
@@ -4754,16 +3819,6 @@
     "cited": 108,
     "year": 2023
   },
-  "2305.00827": {
-    "oa": "https://openalex.org/W4385658251",
-    "cited": 20,
-    "year": 2023
-  },
-  "2305.01465": {
-    "oa": "https://openalex.org/W4368754598",
-    "cited": 0,
-    "year": 2023
-  },
   "2305.02322": {
     "oa": "https://openalex.org/W4399328418",
     "cited": 21,
@@ -4798,11 +3853,6 @@
     "oa": "https://openalex.org/W4387517741",
     "cited": 220,
     "year": 2023
-  },
-  "2305.07032": {
-    "oa": "https://openalex.org/W4392383967",
-    "cited": 39,
-    "year": 2024
   },
   "2305.06409": {
     "oa": "https://openalex.org/W4376311892",
@@ -4959,11 +4009,6 @@
     "cited": 9,
     "year": 2024
   },
-  "2307.03002": {
-    "oa": "https://openalex.org/W4384934586",
-    "cited": 4,
-    "year": 2023
-  },
   "2307.04342": {
     "oa": "https://openalex.org/W4392004830",
     "cited": 32,
@@ -5059,11 +4104,6 @@
     "cited": 53,
     "year": 2024
   },
-  "2308.08329": {
-    "oa": "https://openalex.org/W4386457211",
-    "cited": 16,
-    "year": 2023
-  },
   "2308.08648": {
     "oa": "https://openalex.org/W4386044358",
     "cited": 14,
@@ -5099,16 +4139,6 @@
     "cited": 4,
     "year": 2024
   },
-  "2309.06013": {
-    "oa": "https://openalex.org/W4386721742",
-    "cited": 1,
-    "year": 2023
-  },
-  "2309.08257": {
-    "oa": "https://openalex.org/W4391346560",
-    "cited": 12,
-    "year": 2024
-  },
   "2309.08572": {
     "oa": "https://openalex.org/W4386839864",
     "cited": 0,
@@ -5118,11 +4148,6 @@
     "oa": "https://openalex.org/W4386874865",
     "cited": 3,
     "year": 2023
-  },
-  "2309.10873": {
-    "oa": "https://openalex.org/W4417268204",
-    "cited": 1,
-    "year": 2025
   },
   "2309.11543": {
     "oa": "https://openalex.org/W4403245713",
@@ -5294,11 +4319,6 @@
     "cited": 29,
     "year": 2025
   },
-  "2311.16240": {
-    "oa": "https://openalex.org/W4405237003",
-    "cited": 5,
-    "year": 2024
-  },
   "2311.16365": {
     "oa": "https://openalex.org/W4401584189",
     "cited": 9,
@@ -5318,11 +4338,6 @@
     "oa": "https://openalex.org/W4417271831",
     "cited": 0,
     "year": 2025
-  },
-  "2311.18616": {
-    "oa": "https://openalex.org/W4394843097",
-    "cited": 4,
-    "year": 2024
   },
   "2312.00755": {
     "oa": "https://openalex.org/W4389326235",
@@ -5349,11 +4364,6 @@
     "cited": 5,
     "year": 2024
   },
-  "2312.05218": {
-    "oa": "https://openalex.org/W4389600469",
-    "cited": 1,
-    "year": 2023
-  },
   "2312.06327": {
     "oa": "https://openalex.org/W4400583733",
     "cited": 3,
@@ -5363,11 +4373,6 @@
     "oa": "https://openalex.org/W4319077934",
     "cited": 5,
     "year": 2023
-  },
-  "2312.08065": {
-    "oa": "https://openalex.org/W4396670431",
-    "cited": 9,
-    "year": 2024
   },
   "2312.08703": {
     "oa": "https://openalex.org/W4399321676",
@@ -5388,11 +4393,6 @@
     "oa": "https://openalex.org/W4402483208",
     "cited": 9,
     "year": 2024
-  },
-  "2312.11594": {
-    "oa": "https://openalex.org/W4388485359",
-    "cited": 11,
-    "year": 2023
   },
   "2312.11432": {
     "oa": "https://openalex.org/W4398142335",
@@ -5489,11 +4489,6 @@
     "cited": 41,
     "year": 2024
   },
-  "2401.12312": {
-    "oa": "https://openalex.org/W4401741615",
-    "cited": 3,
-    "year": 2024
-  },
   "2401.13593": {
     "oa": "https://openalex.org/W4396857461",
     "cited": 36,
@@ -5584,11 +4579,6 @@
     "cited": 7,
     "year": 2024
   },
-  "2402.10075": {
-    "oa": "https://openalex.org/W4391901134",
-    "cited": 0,
-    "year": 2024
-  },
   "2402.10651": {
     "oa": "https://openalex.org/W4406230449",
     "cited": 9,
@@ -5602,16 +4592,6 @@
   "2402.13134": {
     "oa": "https://openalex.org/W4404008073",
     "cited": 16,
-    "year": 2024
-  },
-  "2402.13644": {
-    "oa": "https://openalex.org/W4392126135",
-    "cited": 0,
-    "year": 2024
-  },
-  "2402.13657": {
-    "oa": "https://openalex.org/W4392126136",
-    "cited": 1,
     "year": 2024
   },
   "2402.13873": {
@@ -5679,11 +4659,6 @@
     "cited": 0,
     "year": 2024
   },
-  "2403.08742": {
-    "oa": "https://openalex.org/W4402442257",
-    "cited": 2,
-    "year": 2024
-  },
   "2403.09517": {
     "oa": "https://openalex.org/W4407701195",
     "cited": 27,
@@ -5719,11 +4694,6 @@
     "cited": 83,
     "year": 2025
   },
-  "2403.12405": {
-    "oa": "https://openalex.org/W4393027225",
-    "cited": 0,
-    "year": 2024
-  },
   "2403.13790": {
     "oa": "https://openalex.org/W4409737124",
     "cited": 9,
@@ -5744,11 +4714,6 @@
     "cited": 0,
     "year": 2024
   },
-  "2404.01951": {
-    "oa": "https://openalex.org/W4400450962",
-    "cited": 3,
-    "year": 2024
-  },
   "2404.03980": {
     "oa": "https://openalex.org/W4394591835",
     "cited": 0,
@@ -5767,11 +4732,6 @@
   "2404.08055": {
     "oa": "https://openalex.org/W4394838673",
     "cited": 2,
-    "year": 2024
-  },
-  "2404.09239": {
-    "oa": "https://openalex.org/W4394867864",
-    "cited": 0,
     "year": 2024
   },
   "2404.09935": {
@@ -5807,11 +4767,6 @@
   "2404.11860": {
     "oa": "https://openalex.org/W4394973209",
     "cited": 0,
-    "year": 2024
-  },
-  "2404.12180": {
-    "oa": "https://openalex.org/W4394971397",
-    "cited": 2,
     "year": 2024
   },
   "2404.12360": {
@@ -5854,19 +4809,9 @@
     "cited": 2,
     "year": 2024
   },
-  "2405.01528": {
-    "oa": "https://openalex.org/W4396651369",
-    "cited": 0,
-    "year": 2024
-  },
   "2405.01945": {
     "oa": "https://openalex.org/W4405187345",
     "cited": 8,
-    "year": 2024
-  },
-  "2405.03618": {
-    "oa": "https://openalex.org/W4403193922",
-    "cited": 1,
     "year": 2024
   },
   "2405.04514": {
@@ -5929,11 +4874,6 @@
     "cited": 0,
     "year": 2024
   },
-  "2405.14928": {
-    "oa": "https://openalex.org/W4402910949",
-    "cited": 9,
-    "year": 2024
-  },
   "2405.15095": {
     "oa": "https://openalex.org/W4408153009",
     "cited": 11,
@@ -5943,11 +4883,6 @@
     "oa": "https://openalex.org/W4399115831",
     "cited": 1,
     "year": 2024
-  },
-  "2405.17541": {
-    "oa": "https://openalex.org/W4411728448",
-    "cited": 5,
-    "year": 2025
   },
   "2405.17949": {
     "oa": "https://openalex.org/W4399151726",
@@ -5977,11 +4912,6 @@
   "2405.20476": {
     "oa": "https://openalex.org/W4402641610",
     "cited": 4,
-    "year": 2024
-  },
-  "2405.20844": {
-    "oa": "https://openalex.org/W4399317795",
-    "cited": 0,
     "year": 2024
   },
   "2405.21019": {
@@ -6074,11 +5004,6 @@
     "cited": 1,
     "year": 2024
   },
-  "2406.08948": {
-    "oa": "https://openalex.org/W4399695434",
-    "cited": 1,
-    "year": 2024
-  },
   "2406.09747": {
     "oa": "https://openalex.org/W4399759050",
     "cited": 0,
@@ -6108,11 +5033,6 @@
     "oa": "https://openalex.org/W4403705919",
     "cited": 5,
     "year": 2024
-  },
-  "2406.19872": {
-    "oa": "https://openalex.org/W4400221716",
-    "cited": 4,
-    "year": 2025
   },
   "2407.01133": {
     "oa": "https://openalex.org/W4400341980",
@@ -6244,23 +5164,8 @@
     "cited": 0,
     "year": 2024
   },
-  "2407.21681": {
-    "oa": "https://openalex.org/W4406435997",
-    "cited": 2,
-    "year": 2025
-  },
-  "2408.00209": {
-    "oa": "https://openalex.org/W4401307081",
-    "cited": 0,
-    "year": 2024
-  },
   "2408.01400": {
     "oa": "https://openalex.org/W4403703464",
-    "cited": 0,
-    "year": 2024
-  },
-  "2408.01726": {
-    "oa": "https://openalex.org/W4403367699",
     "cited": 0,
     "year": 2024
   },
@@ -6271,11 +5176,6 @@
   },
   "2408.02741": {
     "oa": "https://openalex.org/W4403622568",
-    "cited": 0,
-    "year": 2024
-  },
-  "2408.03109": {
-    "oa": "https://openalex.org/W4403445293",
     "cited": 0,
     "year": 2024
   },
@@ -6329,11 +5229,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2408.12268": {
-    "oa": "https://openalex.org/W4404058243",
-    "cited": 0,
-    "year": 2024
-  },
   "2408.12436": {
     "oa": "https://openalex.org/W4405663055",
     "cited": 0,
@@ -6347,11 +5242,6 @@
   "2408.14251": {
     "oa": "https://openalex.org/W4407741379",
     "cited": 12,
-    "year": 2025
-  },
-  "2408.14673": {
-    "oa": "https://openalex.org/W4417268069",
-    "cited": 1,
     "year": 2025
   },
   "2408.14904": {
@@ -6429,11 +5319,6 @@
     "cited": 0,
     "year": 2024
   },
-  "2409.04892": {
-    "oa": "https://openalex.org/W4404994625",
-    "cited": 2,
-    "year": 2024
-  },
   "2409.05663": {
     "oa": "https://openalex.org/W4406799133",
     "cited": 4,
@@ -6451,11 +5336,6 @@
   },
   "2409.08497": {
     "oa": "https://openalex.org/W4403661818",
-    "cited": 0,
-    "year": 2024
-  },
-  "2409.09235": {
-    "oa": "https://openalex.org/W4403666882",
     "cited": 0,
     "year": 2024
   },
@@ -6499,11 +5379,6 @@
     "cited": 0,
     "year": 2024
   },
-  "2409.15598": {
-    "oa": "https://openalex.org/W4403786391",
-    "cited": 0,
-    "year": 2024
-  },
   "2409.16344": {
     "oa": "https://openalex.org/W4403789062",
     "cited": 0,
@@ -6511,11 +5386,6 @@
   },
   "2409.17835": {
     "oa": "https://openalex.org/W4417214134",
-    "cited": 1,
-    "year": 2025
-  },
-  "2409.18913": {
-    "oa": "https://openalex.org/W4408519012",
     "cited": 1,
     "year": 2025
   },
@@ -6574,11 +5444,6 @@
     "cited": 7,
     "year": 2025
   },
-  "2410.13934": {
-    "oa": "https://openalex.org/W4408319781",
-    "cited": 2,
-    "year": 2025
-  },
   "2410.16174": {
     "oa": "https://openalex.org/W4411787877",
     "cited": 17,
@@ -6588,16 +5453,6 @@
     "oa": "https://openalex.org/W4404261002",
     "cited": 23,
     "year": 2025
-  },
-  "2410.18913": {
-    "oa": "https://openalex.org/W4409666222",
-    "cited": 13,
-    "year": 2025
-  },
-  "2410.19129": {
-    "oa": "https://openalex.org/W4404995163",
-    "cited": 8,
-    "year": 2024
   },
   "2410.19284": {
     "oa": "https://openalex.org/W4404311467",
@@ -6683,11 +5538,6 @@
     "oa": "https://openalex.org/W4404405410",
     "cited": 19,
     "year": 2026
-  },
-  "2411.07726": {
-    "oa": "https://openalex.org/W4404406018",
-    "cited": 0,
-    "year": 2024
   },
   "2411.08177": {
     "oa": "https://openalex.org/W4404037736",
@@ -6884,11 +5734,6 @@
     "cited": 2,
     "year": 2025
   },
-  "2412.10145": {
-    "oa": "https://openalex.org/W4410564529",
-    "cited": 8,
-    "year": 2025
-  },
   "2412.11201": {
     "oa": "https://openalex.org/W4409923199",
     "cited": 2,
@@ -7001,11 +5846,6 @@
   },
   "2501.02779": {
     "oa": "https://openalex.org/W4406122498",
-    "cited": 0,
-    "year": 2025
-  },
-  "2501.02983": {
-    "oa": "https://openalex.org/W4406123342",
     "cited": 0,
     "year": 2025
   },
@@ -7199,11 +6039,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2503.03801": {
-    "oa": "https://openalex.org/W4416111767",
-    "cited": 0,
-    "year": 2025
-  },
   "2503.04081": {
     "oa": "https://openalex.org/W4416112400",
     "cited": 0,
@@ -7319,20 +6154,10 @@
     "cited": 0,
     "year": 2026
   },
-  "2504.06977": {
-    "oa": "https://openalex.org/W4417248526",
-    "cited": 0,
-    "year": 2025
-  },
   "2504.08170": {
     "oa": "https://openalex.org/W7129959698",
     "cited": 0,
     "year": 2026
-  },
-  "2504.08333": {
-    "oa": "https://openalex.org/W4414529374",
-    "cited": 0,
-    "year": 2025
   },
   "2504.08598": {
     "oa": "https://openalex.org/W7125518570",
@@ -7388,11 +6213,6 @@
     "oa": "https://openalex.org/W4416893847",
     "cited": 0,
     "year": 2025
-  },
-  "2504.19837": {
-    "oa": "https://openalex.org/W7126219408",
-    "cited": 0,
-    "year": 2026
   },
   "2505.01071": {
     "oa": "https://openalex.org/W4410822751",
@@ -7479,11 +6299,6 @@
     "cited": 5,
     "year": 2025
   },
-  "2505.14798": {
-    "oa": "https://openalex.org/W4415320320",
-    "cited": 0,
-    "year": 2025
-  },
   "2505.15473": {
     "oa": "https://openalex.org/W4415025371",
     "cited": 0,
@@ -7524,11 +6339,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2506.02501": {
-    "oa": "https://openalex.org/W4415133328",
-    "cited": 0,
-    "year": 2025
-  },
   "2506.03010": {
     "oa": "https://openalex.org/W4415135885",
     "cited": 1,
@@ -7539,20 +6349,10 @@
     "cited": 0,
     "year": 2025
   },
-  "2506.04057": {
-    "oa": "https://openalex.org/W4413341728",
-    "cited": 0,
-    "year": 2025
-  },
   "2506.04084": {
     "oa": "https://openalex.org/W4416074991",
     "cited": 0,
     "year": 2025
-  },
-  "2506.05050": {
-    "oa": "https://openalex.org/W7128169888",
-    "cited": 0,
-    "year": 2026
   },
   "2506.05804": {
     "oa": "https://openalex.org/W4417097411",
@@ -7624,11 +6424,6 @@
     "cited": 1,
     "year": 2026
   },
-  "2506.13898": {
-    "oa": "https://openalex.org/W4415311292",
-    "cited": 0,
-    "year": 2025
-  },
   "2506.14711": {
     "oa": "https://openalex.org/W4414689485",
     "cited": 8,
@@ -7659,11 +6454,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2506.16973": {
-    "oa": "https://openalex.org/W4417539427",
-    "cited": 0,
-    "year": 2025
-  },
   "2506.16974": {
     "oa": "https://openalex.org/W7117482356",
     "cited": 0,
@@ -7672,11 +6462,6 @@
   "2506.18979": {
     "oa": "https://openalex.org/W4414682116",
     "cited": 0,
-    "year": 2025
-  },
-  "2506.19172": {
-    "oa": "https://openalex.org/W4413342489",
-    "cited": 10,
     "year": 2025
   },
   "2506.19228": {
@@ -7711,11 +6496,6 @@
   },
   "2506.22669": {
     "oa": "https://openalex.org/W4416505937",
-    "cited": 0,
-    "year": 2025
-  },
-  "2506.23928": {
-    "oa": "https://openalex.org/W4417423271",
     "cited": 0,
     "year": 2025
   },
@@ -7819,11 +6599,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2507.20625": {
-    "oa": "https://openalex.org/W7125597596",
-    "cited": 0,
-    "year": 2026
-  },
   "2507.21396": {
     "oa": "https://openalex.org/W4417267814",
     "cited": 0,
@@ -7884,16 +6659,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2508.06733": {
-    "oa": "https://openalex.org/W4416176705",
-    "cited": 0,
-    "year": 2025
-  },
-  "2508.08009": {
-    "oa": "https://openalex.org/W4413342446",
-    "cited": 4,
-    "year": 2025
-  },
   "2508.08439": {
     "oa": "https://openalex.org/W4416858268",
     "cited": 0,
@@ -7946,11 +6711,6 @@
   },
   "2509.01665": {
     "oa": "https://openalex.org/W4416695993",
-    "cited": 0,
-    "year": 2025
-  },
-  "2509.02726": {
-    "oa": "https://openalex.org/W4417409232",
     "cited": 0,
     "year": 2025
   },
@@ -8024,11 +6784,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2509.18834": {
-    "oa": "https://openalex.org/W4416258558",
-    "cited": 0,
-    "year": 2025
-  },
   "2509.24691": {
     "oa": "https://openalex.org/W4415337144",
     "cited": 0,
@@ -8052,11 +6807,6 @@
   "2510.02940": {
     "oa": "https://openalex.org/W4416370819",
     "cited": 1,
-    "year": 2025
-  },
-  "2510.03024": {
-    "oa": "https://openalex.org/W4416370975",
-    "cited": 0,
     "year": 2025
   },
   "2510.04288": {
@@ -8124,20 +6874,10 @@
     "cited": 4,
     "year": 2025
   },
-  "2510.16570": {
-    "oa": "https://openalex.org/W7162473819",
-    "cited": 0,
-    "year": 2026
-  },
   "2510.16836": {
     "oa": "https://openalex.org/W7124169325",
     "cited": 0,
     "year": 2026
-  },
-  "2510.16979": {
-    "oa": "https://openalex.org/W4415961040",
-    "cited": 0,
-    "year": 2025
   },
   "2510.17183": {
     "oa": "https://openalex.org/W4415962869",
@@ -8189,11 +6929,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2510.27511": {
-    "oa": "https://openalex.org/W7103902345",
-    "cited": 0,
-    "year": 2025
-  },
   "2511.00325": {
     "oa": "https://openalex.org/W4415936608",
     "cited": 0,
@@ -8211,11 +6946,6 @@
   },
   "2511.04359": {
     "oa": "https://openalex.org/W4416025568",
-    "cited": 0,
-    "year": 2025
-  },
-  "2511.04414": {
-    "oa": "https://openalex.org/W4416025978",
     "cited": 0,
     "year": 2025
   },
@@ -8243,21 +6973,6 @@
     "oa": "https://openalex.org/W7161772696",
     "cited": 0,
     "year": 2026
-  },
-  "2511.13279": {
-    "oa": "https://openalex.org/W7135086371",
-    "cited": 0,
-    "year": 2026
-  },
-  "2511.15047": {
-    "oa": "https://openalex.org/W7106317672",
-    "cited": 0,
-    "year": 2025
-  },
-  "2511.15439": {
-    "oa": "https://openalex.org/W7106284937",
-    "cited": 0,
-    "year": 2025
   },
   "2511.16220": {
     "oa": "https://openalex.org/W4416550406",
@@ -8519,11 +7234,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2512.22110": {
-    "oa": "https://openalex.org/W7117542110",
-    "cited": 0,
-    "year": 2025
-  },
   "2512.22569": {
     "oa": "https://openalex.org/W7162068546",
     "cited": 0,
@@ -8559,11 +7269,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2601.02199": {
-    "oa": "https://openalex.org/W7119153701",
-    "cited": 0,
-    "year": 2026
-  },
   "2601.03141": {
     "oa": "https://openalex.org/W7118575118",
     "cited": 0,
@@ -8581,11 +7286,6 @@
   },
   "2601.04364": {
     "oa": "https://openalex.org/W7120056170",
-    "cited": 0,
-    "year": 2026
-  },
-  "2601.04943": {
-    "oa": "https://openalex.org/W7120268634",
     "cited": 0,
     "year": 2026
   },
@@ -8616,11 +7316,6 @@
   },
   "2601.10144": {
     "oa": "https://openalex.org/W7124443382",
-    "cited": 0,
-    "year": 2026
-  },
-  "2601.10347": {
-    "oa": "https://openalex.org/W7124426662",
     "cited": 0,
     "year": 2026
   },
@@ -8704,11 +7399,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2602.04420": {
-    "oa": "https://openalex.org/W7128057212",
-    "cited": 0,
-    "year": 2026
-  },
   "2602.05432": {
     "oa": "https://openalex.org/W7127924236",
     "cited": 0,
@@ -8729,11 +7419,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2602.07372": {
-    "oa": "https://openalex.org/W7128543056",
-    "cited": 0,
-    "year": 2026
-  },
   "2602.09596": {
     "oa": "https://openalex.org/W7128035451",
     "cited": 8,
@@ -8741,11 +7426,6 @@
   },
   "2602.11563": {
     "oa": "https://openalex.org/W7128812853",
-    "cited": 0,
-    "year": 2026
-  },
-  "2602.11682": {
-    "oa": "https://openalex.org/W7128771219",
     "cited": 0,
     "year": 2026
   },
@@ -8891,11 +7571,6 @@
   },
   "2603.11191": {
     "oa": "https://openalex.org/W7135196345",
-    "cited": 0,
-    "year": 2026
-  },
-  "2603.12170": {
-    "oa": "https://openalex.org/W7135169821",
     "cited": 0,
     "year": 2026
   },
@@ -9129,11 +7804,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2604.15912": {
-    "oa": "https://openalex.org/W7154979778",
-    "cited": 0,
-    "year": 2026
-  },
   "2604.16015": {
     "oa": "https://openalex.org/W7154975017",
     "cited": 0,
@@ -9184,11 +7854,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2604.21206": {
-    "oa": "https://openalex.org/W7155570021",
-    "cited": 0,
-    "year": 2026
-  },
   "2604.21955": {
     "oa": "https://openalex.org/W7156289347",
     "cited": 0,
@@ -9216,11 +7881,6 @@
   },
   "2604.25884": {
     "oa": "https://openalex.org/W7157913451",
-    "cited": 0,
-    "year": 2026
-  },
-  "2604.25992": {
-    "oa": "https://openalex.org/W7158770009",
     "cited": 0,
     "year": 2026
   },
@@ -9304,11 +7964,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2605.07627": {
-    "oa": "https://openalex.org/W7160845641",
-    "cited": 0,
-    "year": 2026
-  },
   "2605.07668": {
     "oa": "https://openalex.org/W7160877717",
     "cited": 0,
@@ -9384,11 +8039,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2605.19466": {
-    "oa": "https://openalex.org/W7161786236",
-    "cited": 0,
-    "year": 2026
-  },
   "2605.19471": {
     "oa": "https://openalex.org/W7161779833",
     "cited": 0,
@@ -9459,11 +8109,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2606.04768": {
-    "oa": "https://openalex.org/W7163559215",
-    "cited": 0,
-    "year": 2026
-  },
   "2606.05060": {
     "oa": "https://openalex.org/W7163534388",
     "cited": 0,
@@ -9491,11 +8136,6 @@
   },
   "2606.12030": {
     "oa": "https://openalex.org/W7164369269",
-    "cited": 0,
-    "year": 2026
-  },
-  "2606.14352": {
-    "oa": "https://openalex.org/W7164800610",
     "cited": 0,
     "year": 2026
   },
@@ -9569,11 +8209,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2606.27224": {
-    "oa": "https://openalex.org/W7166063373",
-    "cited": 0,
-    "year": 2026
-  },
   "2606.27249": {
     "oa": "https://openalex.org/W7166055278",
     "cited": 0,
@@ -9606,11 +8241,6 @@
   },
   "2606.31833": {
     "oa": "https://openalex.org/W7166805473",
-    "cited": 0,
-    "year": 2026
-  },
-  "2607.00513": {
-    "oa": "https://openalex.org/W7167041734",
     "cited": 0,
     "year": 2026
   },
@@ -9699,11 +8329,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2607.12848": {
-    "oa": "https://openalex.org/W7168352324",
-    "cited": 0,
-    "year": 2026
-  },
   "2607.12948": {
     "oa": "https://openalex.org/W7168347441",
     "cited": 0,
@@ -9716,11 +8341,6 @@
   },
   "2607.13008": {
     "oa": "https://openalex.org/W7168360224",
-    "cited": 0,
-    "year": 2026
-  },
-  "2607.15612": {
-    "oa": "https://openalex.org/W7169803418",
     "cited": 0,
     "year": 2026
   },
@@ -9751,11 +8371,6 @@
   },
   "2607.20616": {
     "oa": "https://openalex.org/W7170854725",
-    "cited": 0,
-    "year": 2026
-  },
-  "2607.20905": {
-    "oa": "https://openalex.org/W7170638335",
     "cited": 0,
     "year": 2026
   },

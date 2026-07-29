@@ -5,8 +5,6 @@
     "ko": "오류정정 · 논리 큐비트",
     "en": "quantum error correction & logical qubits",
     "color": "#4E79A7",
-    "wavelength_nm": 420,
-    "wavelength_note": "Rb 5S→6P, 420+1013 2광자 여기의 하단 레그",
     "adjacent": [
       "gate",
       "scale"
@@ -19,7 +17,6 @@
     "ko": "고효율 부호 (qLDPC)",
     "en": "high-rate codes",
     "color": "#4E79A7",
-    "wavelength_nm": null,
     "adjacent": [],
     "blurb": "표면부호 대신 고효율 부호를 쓰는 노선. 중성원자의 이동 가능한 연결도가 전제."
   },
@@ -29,8 +26,6 @@
     "ko": "측정 · 중간회로 판독",
     "en": "readout & mid-circuit measurement",
     "color": "#F28E2B",
-    "wavelength_nm": 461,
-    "wavelength_note": "Sr ¹S₀→¹P₁ 청색. 형광 이미징에 실제로 쓰이는 선",
     "adjacent": [
       "gate",
       "clock"
@@ -43,8 +38,6 @@
     "ko": "아날로그 양자 시뮬레이션",
     "en": "analog quantum simulation",
     "color": "#E15759",
-    "wavelength_nm": 480,
-    "wavelength_note": "Rb 5P→Rydberg, 780+480 여기의 상단 레그",
     "adjacent": [
       "opt",
       "species"
@@ -57,8 +50,6 @@
     "ko": "원자종 · 큐비트 인코딩",
     "en": "atomic species & qubit encoding",
     "color": "#76B7B2",
-    "wavelength_nm": 556,
-    "wavelength_note": "Yb ¹S₀→³P₁ 협선폭",
     "adjacent": [
       "sim",
       "clock"
@@ -71,8 +62,6 @@
     "ko": "트위저 분자",
     "en": "molecules in tweezers",
     "color": "#76B7B2",
-    "wavelength_nm": 589,
-    "wavelength_note": "Na D선 (NaCs 등 이종핵 분자 조립)",
     "adjacent": [],
     "blurb": "극성 분자의 장거리 쌍극자 상호작용. 규모는 작지만 시뮬레이션 가능한 해밀토니안의 종류를 넓힘."
   },
@@ -82,8 +71,6 @@
     "ko": "계측 · 광시계",
     "en": "metrology & optical clocks",
     "color": "#59A14F",
-    "wavelength_nm": 698,
-    "wavelength_note": "⁸⁷Sr ¹S₀→³P₀ 시계 전이",
     "adjacent": [
       "species",
       "readout"
@@ -96,8 +83,6 @@
     "ko": "조합 최적화 · 아날로그 알고리즘",
     "en": "combinatorial optimization (MIS / QUBO)",
     "color": "#EDC948",
-    "wavelength_nm": 780,
-    "wavelength_note": "Rb D2. MIS 실험 대부분이 Rb 어레이 기반",
     "adjacent": [
       "sim",
       "classical"
@@ -110,8 +95,6 @@
     "ko": "고전 대조 · 벤치마킹",
     "en": "classical simulability & benchmarking",
     "color": "#B07AA1",
-    "wavelength_nm": null,
-    "wavelength_note": "실험 파장 없음 — 이론/CS 가지. 스펙트럼 밖 무채색으로 정직하게 표시",
     "adjacent": [
       "opt",
       "scale"
@@ -124,8 +107,6 @@
     "ko": "게이트 충실도 · 제어",
     "en": "gate fidelity & control",
     "color": "#FF9DA7",
-    "wavelength_nm": 1013,
-    "wavelength_note": "Rb 6P→Rydberg, 420+1013 여기의 상단 레그. 비가시광 근사색",
     "adjacent": [
       "qec",
       "readout"
@@ -138,8 +119,6 @@
     "ko": "대규모 배열 · 어레이 공학",
     "en": "scaling & array engineering",
     "color": "#9C755F",
-    "wavelength_nm": 1064,
-    "wavelength_note": "트위저 가둠광. 비가시광 근사색",
     "adjacent": [
       "qec",
       "classical"
@@ -152,7 +131,6 @@
     "ko": "결맞음 수송 · 재구성 연결성",
     "en": "coherent transport",
     "color": "#9C755F",
-    "wavelength_nm": null,
     "adjacent": [],
     "blurb": "얽힘을 유지한 채 원자를 옮긴다. 고정 배선 연결도라는 다른 플랫폼의 제약을 중성원자만 갖지 않게 함."
   },
@@ -162,8 +140,6 @@
     "ko": "광 상호연결 · 모듈러",
     "en": "photonic interconnects & modularity",
     "color": "#17BECF",
-    "wavelength_nm": 1550,
-    "wavelength_note": "telecom C-band 1550 nm (원자-광자 인터페이스·광섬유 네트워킹). 근적외 — 근사색",
     "adjacent": [
       "scale",
       "clock"
@@ -176,8 +152,6 @@
     "ko": "컴파일 · 아키텍처 · 제어 스택",
     "en": "compilation, architecture, control stack",
     "color": "#7F7F7F",
-    "wavelength_nm": null,
-    "wavelength_note": "실험 파장 없음 — classical 과 같이 스펙트럼 밖(무채색). classical 과 대칭: classical 은 하드웨어 주장을 반박, software 는 하드웨어에 봉사",
     "adjacent": [
       "classical",
       "qec"
