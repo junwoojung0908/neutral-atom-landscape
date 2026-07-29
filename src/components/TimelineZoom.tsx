@@ -53,6 +53,16 @@ interface Props {
   selectedId?: string | null;
 }
 
+// 줌아웃 대분류(5) — 세로 줌인하면 13개 세분류로 갈라짐(시맨틱 줌)
+const LANE_GROUPS = [
+  { id: "g.digital", ko: "디지털 컴퓨팅", color: "#4E79A7", children: ["qec", "gate", "readout"] },
+  { id: "g.sim", ko: "아날로그 시뮬레이션", color: "#E15759", children: ["sim.eq", "sim.dyn", "sim.gauge"] },
+  { id: "g.atom", ko: "원자종 · 계측", color: "#59A14F", children: ["species", "clock"] },
+  { id: "g.algo", ko: "알고리즘 · 검증", color: "#B07AA1", children: ["opt", "classical", "software"] },
+  { id: "g.scale", ko: "규모 · 연결", color: "#17BECF", children: ["scale", "net"] },
+];
+const SPLIT_KY = 2.2; // 이 세로 배율부터 세분류 표시
+
 const SIM_SUBS = [
   { id: "sim.eq", ko: "시뮬레이션 · 평형 상", color: "#E15759", branch: "sim" },
   { id: "sim.dyn", ko: "시뮬레이션 · 동역학", color: "#9E3B3E", branch: "sim" },
@@ -87,12 +97,20 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const PW = W - M.l - M.r;
   const YEARW = PW / NYEARS;
 
-  const laneMeta = useMemo(
-    () => firstLevelFields.flatMap((f) => (f.id === "sim" ? SIM_SUBS : [{ id: f.id, ko: f.ko, color: f.color, branch: f.id }])),
-    [],
-  );
+  const laneMeta = useMemo(() => {
+    const all = firstLevelFields.flatMap((f) => (f.id === "sim" ? SIM_SUBS : [{ id: f.id, ko: f.ko, color: f.color, branch: f.id }]));
+    const byId2 = new Map(all.map((m) => [m.id, m]));
+    // 대분류의 자식이 세로로 인접하도록 정렬
+    return LANE_GROUPS.flatMap((g) => g.children.map((c) => byId2.get(c)!).filter(Boolean));
+  }, []);
   const laneMetaMap = useMemo(() => new Map(laneMeta.map((m) => [m.id, m])), [laneMeta]);
   const lanes = laneMeta.map((m) => m.id);
+  const groupOfLane = useMemo(() => {
+    const m = new Map<string, (typeof LANE_GROUPS)[number]>();
+    for (const g of LANE_GROUPS) for (const c of g.children) m.set(c, g);
+    return m;
+  }, []);
+
   const laneH = PH / lanes.length;
   const laneIndex = useMemo(() => new Map(lanes.map((id, i) => [id, i])), [lanes]);
   const binW = PW / NBINS;
@@ -130,6 +148,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   }, []);
 
   const [view, setView] = useState<View>({ kx: 1, ky: 1, tx: 0, ty: 0 });
+  const coarse = view.ky < SPLIT_KY; // 줌아웃 = 대분류 5개
   const [hover, setHover] = useState<string | null>(null);
   const [checked, setChecked] = useState<Set<string>>(new Set());
   const [q, setQ] = useState("");
@@ -179,19 +198,24 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     }
   };
 
-  // 레인 클릭: 그 분야가 화면 위아래에 딱 맞게 확대(토글)
-  const fitLane = (id: string) => {
-    const i = laneIndex.get(id) ?? 0;
+  // 행(대분류/세분류) 클릭: 화면 위아래에 딱 맞게 확대(토글). 대분류를 fit 하면
+  // 배율이 SPLIT_KY 를 넘으며 자동으로 세분류로 갈라진다 — 시맨틱 줌.
+  const fitRow = (id: string, startIdx: number, len: number) => {
     if (fitted === id) {
       setFitted(null);
       animateTo({ ky: 1, ty: 0 });
       return;
     }
-    const ky = lanes.length; // laneH * ky == PH → 위아래 딱 맞음
-    const laneTop = M.t + i * laneH;
+    const ky = lanes.length / len;
+    const laneTop = M.t + startIdx * laneH;
     const ty = M.t - laneTop * ky;
     setFitted(id);
     animateTo({ ky, ty });
+  };
+  const fitLane = (id: string) => fitRow(id, laneIndex.get(id) ?? 0, 1);
+  const fitGroup = (g: (typeof LANE_GROUPS)[number]) => {
+    const start = laneIndex.get(g.children[0]) ?? 0;
+    fitRow(g.id, start, g.children.length);
   };
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number } | null>(null);
@@ -284,7 +308,19 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     return s;
   }, [qn]);
 
-  // 레인당 K개 (기본 2, 줌인할수록 증가) — 특정 분야 쏠림 방지
+  const byGroupSorted = useMemo(() => {
+    const m = new Map<string, TPaper[]>();
+    for (const p of byCited) {
+      const g = groupOfLane.get(p.lane);
+      if (!g) continue;
+      const arr = m.get(g.id);
+      if (arr) arr.push(p);
+      else m.set(g.id, [p]);
+    }
+    return m;
+  }, [byCited, groupOfLane]);
+
+  // 행당 K개 (기본 2, 줌인할수록 증가). 줌아웃=대분류 5행(≈10개), 줌인=세분류 13행.
   const perLane = clamp(Math.round(2 * Math.sqrt(view.kx * view.ky)), 2, 500);
   const visible = useMemo(() => {
     const out: { p: TPaper; x: number; y: number }[] = [];
@@ -298,12 +334,13 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       if (x > M.l - 30 && x < W - M.r + 30 && y > M.t - 30 && y < H - M.b + 30) out.push({ p, x, y });
     };
     const picked: TPaper[] = [];
-    for (const arr of byLaneSorted.values()) for (const p of arr.slice(0, perLane)) picked.push(p);
+    const src = coarse ? byGroupSorted : byLaneSorted;
+    for (const arr of src.values()) for (const p of arr.slice(0, perLane)) picked.push(p);
     picked.sort((a, b) => b.cited - a.cited); // 라벨 우선순위 = 인용순
     for (const p of picked) push(p);
     if (qn) for (const p of papers) if (matched.has(p.id)) push(p);
     return out;
-  }, [perLane, view, pos, byLaneSorted, qn, matched]);
+  }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched]);
 
   const posS = useMemo(() => new Map(visible.map((v) => [v.p.id, v])), [visible]);
   const visSet = useMemo(() => new Set(visible.map((v) => v.p.id)), [visible]);
@@ -385,7 +422,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           <span className="tlz-zlabel">가지</span><button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1.6, cy)}>＋</button>
           <button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1 / 1.6, cy)}>－</button>
           <button className="tlz-reset" onClick={() => { cancelAnim(); setFitted(null); animateTo({ kx: 1, ky: 1, tx: 0, ty: 0 }); }}>초기화</button>
-          {fitted && (
+          {fitted && laneMetaMap.has(fitted) && (
             <button className="tlz-reset tlz-listbtn" onClick={() => onSelectBranch(laneMetaMap.get(fitted)?.branch ?? fitted)}>
               {laneMetaMap.get(fitted)?.ko} 논문 목록 ▸
             </button>
@@ -448,9 +485,12 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
 
         {/* 클립된 내용: 밴드·엣지·점·라벨 */}
         <g clipPath="url(#tlz-plot)">
-          {lanes.map((id, i) =>
-            i % 2 === 0 ? (
-              <rect key={`band-${id}`} className="tlz-laneband" x={M.l} y={sy(M.t + i * laneH)} width={PW} height={laneH * view.ky} />
+          {(coarse
+            ? LANE_GROUPS.map((g, gi) => ({ key: g.id, start: laneIndex.get(g.children[0]) ?? 0, len: g.children.length, on: gi % 2 === 0 }))
+            : lanes.map((id, i) => ({ key: id, start: i, len: 1, on: i % 2 === 0 }))
+          ).map((b) =>
+            b.on ? (
+              <rect key={`band-${b.key}`} className="tlz-laneband" x={M.l} y={sy(M.t + b.start * laneH)} width={PW} height={b.len * laneH * view.ky} />
             ) : null,
           )}
           {/* 적응형 세로 그리드: 줌인(kx≥2)이면 연도별, 아니면 3년 경계 */}
@@ -488,25 +528,28 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
         </g>
 
         {/* 축 라벨 — 박스 가장자리 고정(클립 밖) */}
-        {lanes.map((id, i) => {
-          const m = laneMetaMap.get(id);
+        {(coarse
+          ? LANE_GROUPS.map((g) => ({ id: g.id, ko: g.ko, color: g.color, start: laneIndex.get(g.children[0]) ?? 0, len: g.children.length, group: g }))
+          : lanes.map((id, i) => { const m = laneMetaMap.get(id)!; return { id, ko: m.ko, color: m.color, start: i, len: 1, group: null as null | (typeof LANE_GROUPS)[number] }; })
+        ).map((row) => {
+          const onClick = () => (row.group ? fitGroup(row.group) : fitLane(row.id));
           if (narrow) {
-            const yTop = sy(M.t + i * laneH) + 9;
+            const yTop = sy(M.t + row.start * laneH) + 9;
             if (yTop < M.t + 4 || yTop > H - M.b - 2) return null;
             return (
-              <text key={`ll-${id}`} className={`tlz-lanelabel tlz-lanein${fitted === id ? " fit" : ""}`}
-                x={M.l + 4} y={yTop} textAnchor="start" fill={m?.color} onClick={() => fitLane(id)}>
-                {m?.ko}
+              <text key={`ll-${row.id}`} className={`tlz-lanelabel tlz-lanein${fitted === row.id ? " fit" : ""}`}
+                x={M.l + 4} y={yTop} textAnchor="start" fill={row.color} onClick={onClick}>
+                {row.ko}
               </text>
             );
           }
-          const cyl = sy(M.t + i * laneH + laneH * 0.5);
+          const cyl = sy(M.t + row.start * laneH + (row.len * laneH) * 0.5);
           if (cyl < M.t - 4 || cyl > H - M.b + 4) return null;
           return (
-            <text key={`ll-${id}`} className={`tlz-lanelabel${fitted === id ? " fit" : ""}`} x={M.l - 8} y={cyl}
-              textAnchor="end" dominantBaseline="middle" fill={m?.color} onClick={() => fitLane(id)}>
-              <title>클릭: 이 분야를 화면에 맞게 확대 (다시 클릭하면 복귀)</title>
-              {m?.ko}
+            <text key={`ll-${row.id}`} className={`tlz-lanelabel${fitted === row.id ? " fit" : ""}`} x={M.l - 8} y={cyl}
+              textAnchor="end" dominantBaseline="middle" fill={row.color} onClick={onClick}>
+              <title>클릭: 화면에 맞게 확대 (다시 클릭하면 복귀)</title>
+              {row.ko}
             </text>
           );
         })}
