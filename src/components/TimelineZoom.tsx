@@ -434,36 +434,51 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     return s;
   }, [hoverEdges]);
 
-  // ★ 모든 보이는 원에 라벨 — 겹치면 우/좌/상/하 순으로 빈 자리, 그래도 없으면 우측 강제.
+  // ★ 모든 보이는 원에 라벨 — 8방향×4거리에서 빈 자리 탐색(점·라벨 모두 회피),
+  //   가까운 자리가 없으면 멀리 놓고 가는 지시선으로 연결. 겹침 강제 배치는 최후에만.
   const labels = useMemo(() => {
-    const placed: { x1: number; y1: number; x2: number; y2: number }[] = [];
-    const out: { p: TPaper; lines: string[]; lx: number; ly: number }[] = [];
+    interface Rect { x1: number; y1: number; x2: number; y2: number }
+    const hit = (placed: Rect[], r2: Rect) =>
+      placed.some((q2) => r2.x1 < q2.x2 && r2.x2 > q2.x1 && r2.y1 < q2.y2 && r2.y2 > q2.y1);
+    // 점 자체도 장애물 — 라벨이 다른 원을 덮지 않게
+    const placed: Rect[] = visible.map((v) => {
+      const r = radius(v.p.score);
+      return { x1: v.x - r, y1: v.y - r, x2: v.x + r, y2: v.y + r };
+    });
+    const out: { p: TPaper; lines: string[]; lx: number; ly: number; lead: { x1: number; y1: number; x2: number; y2: number } | null }[] = [];
     const fs = narrow ? 8.5 : 9;
+    const DIRS = [[1, 0], [-1, 0], [1, -1], [1, 1], [-1, -1], [-1, 1], [0, -1], [0, 1]];
+    const DISTS = [4, 16, 30, 46];
     for (const v of visible) {
       const lines = wrap2(v.p.title, narrow ? 18 : 26, 3);
       const wText = Math.max(...lines.map((l) => l.length)) * fs * 0.56 + 26;
       const hText = lines.length * (fs + 1.5) + 2;
       const r = radius(v.p.score);
-      const cands = [
-        { lx: v.x + r + 3, ly: v.y },
-        { lx: v.x - r - 3 - wText, ly: v.y },
-        { lx: v.x - wText / 2, ly: v.y - r - hText / 2 - 3 },
-        { lx: v.x - wText / 2, ly: v.y + r + hText / 2 + 3 },
-      ];
-      let chosen = cands[0];
-      let ok = false;
-      for (const c of cands) {
-        const rect = { x1: c.lx, y1: c.ly - hText / 2, x2: c.lx + wText, y2: c.ly + hText / 2 };
-        if (rect.x1 < M.l + 2) continue; // 플롯 왼쪽 경계 밖(잘림) 후보 제외
-        if (!placed.some((q2) => rect.x1 < q2.x2 && rect.x2 > q2.x1 && rect.y1 < q2.y2 && rect.y2 > q2.y1)) {
-          chosen = c;
+      let chosen: { lx: number; ly: number; dist: number; dx: number; dy: number } | null = null;
+      search: for (const dist of DISTS) {
+        for (const [dx, dy] of DIRS) {
+          const ax = v.x + dx * (r + dist);
+          const ay = v.y + dy * (r + dist) * 0.8;
+          const lx = dx > 0 ? ax : dx < 0 ? ax - wText : ax - wText / 2;
+          const rect: Rect = { x1: lx - 2, y1: ay - hText / 2, x2: lx + wText, y2: ay + hText / 2 };
+          if (rect.x1 < M.l + 2 || rect.x2 > W - 2 || rect.y1 < M.t + 1 || rect.y2 > H - M.b - 1) continue;
+          if (hit(placed, rect)) continue;
           placed.push(rect);
-          ok = true;
-          break;
+          chosen = { lx, ly: ay, dist, dx, dy };
+          break search;
         }
       }
-      if (!ok) placed.push({ x1: chosen.lx, y1: chosen.ly - hText / 2, x2: chosen.lx + wText, y2: chosen.ly + hText / 2 });
-      out.push({ p: v.p, lines, lx: chosen.lx, ly: chosen.ly });
+      if (!chosen) {
+        const lx = v.x + r + 4;
+        chosen = { lx, ly: v.y, dist: 4, dx: 1, dy: 0 };
+        placed.push({ x1: lx - 2, y1: v.y - hText / 2, x2: lx + wText, y2: v.y + hText / 2 });
+      }
+      const lead =
+        chosen.dist >= 16
+          ? { x1: v.x + chosen.dx * r, y1: v.y + chosen.dy * r * 0.8,
+              x2: chosen.dx > 0 ? chosen.lx - 2 : chosen.dx < 0 ? chosen.lx + wText - 24 : chosen.lx + wText / 2, y2: chosen.ly }
+          : null;
+      out.push({ p: v.p, lines, lx: chosen.lx, ly: chosen.ly, lead });
     }
     return out;
   }, [visible, narrow]);
@@ -603,7 +618,10 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
               <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · 인용 ${p.cited}${p.hot ? ' (최신 급상승 ↗)' : ''}`}</title>
             </circle>
           ))}
-          {labels.map(({ p, lines, lx, ly }) => (
+          {labels.map(({ p, lead }, i) =>
+          lead ? <line key={`ld-${p.id}-${i}`} className="tlz-lead" x1={lead.x1} y1={lead.y1} x2={lead.x2} y2={lead.y2} /> : null,
+        )}
+        {labels.map(({ p, lines, lx, ly }) => (
           <text key={`lbl-${p.id}`} className="tlz-plabel" x={lx} y={ly - (lines.length - 1) * 5 + 3}>
             {lines.map((ln, i) => (
               <tspan key={i} x={lx} dy={i === 0 ? 0 : 10}>

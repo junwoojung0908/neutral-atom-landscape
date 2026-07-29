@@ -800,3 +800,9 @@ input[type="range"] {
 .about code { font-family: var(--mono); background: var(--panel-2); padding: 0 4px; border-radius: 4px; }
 .about a { color: var(--focus); }
 .about-foot { margin-top: 18px; color: var(--muted); }
+
+.tlz-lead {
+  stroke: var(--muted);
+  stroke-width: 0.7;
+  stroke-opacity: 0.55;
+}
