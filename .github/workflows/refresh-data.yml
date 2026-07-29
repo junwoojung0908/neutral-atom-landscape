@@ -30,6 +30,7 @@ jobs:
           npx tsx scripts/work-types.ts || true
           npx tsx scripts/timeline.ts
           npx tsx scripts/branch-papers.ts
+          # 미분류가 15% 미만으로 정상화되면 '--strict' 로 바꿔 hard fail 로 올릴 것 (질의 열화 감시)
           npx tsx scripts/taxonomy-check.ts || true
       - run: npm run validate
       - name: Commit refreshed data

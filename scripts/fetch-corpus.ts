@@ -32,17 +32,16 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outPath = resolve(root, "data/corpus-raw.json");
 const statePath = resolve(root, "data/.corpus-fetch-state.json");
 
-interface Corpus {
+import { passesGate, type CorpusGate } from "./boundary.ts";
+interface Corpus extends CorpusGate {
   categories: string[];
   date_range: { from: string; to: string };
-  include: string[];
-  exclude: string[];
 }
 const query = JSON.parse(readFileSync(resolve(root, "data/query.json"), "utf8")) as { corpus: Corpus };
 const c = query.corpus;
 
-if (!c.include.length) {
-  console.log("query.json 의 corpus.include 가 비어 있습니다. 채운 뒤 다시 실행하세요.");
+if (!c.strong.length) {
+  console.log("query.json 의 corpus.strong 이 비어 있습니다.");
   process.exit(0);
 }
 
@@ -60,32 +59,24 @@ function buildCorpusQuery(): string {
   // ★ 양성부(include AND cat AND date)를 하나의 그룹으로 묶은 뒤 ANDNOT 로 제외한다.
   //   arXiv 불리언은 좌결합이라 그룹핑 없이 `A ANDNOT B AND date` 를 쓰면 date 가
   //   ANDNOT 하위로 묶여 날짜 제한이 전역에 안 걸린다(1993년 논문 유입으로 관측된 버그).
-  const inc = orGroup(c.include.map((t) => `${phrase("ti", t)}+OR+${phrase("abs", t)}`));
+  // API 쪽은 넓게(strong OR "Rydberg") 받고, 정밀 경계는 로컬 passesGate 가 적용한다.
+  const incTerms = [...c.strong, "Rydberg"];
+  const inc = orGroup(incTerms.map((t) => `${phrase("ti", t)}+OR+${phrase("abs", t)}`));
   const parts = [inc];
   if (c.categories.length) parts.push(orGroup(c.categories.map((x) => `cat:${x}`)));
   const from = stamp(c.date_range.from, false);
   const to = stamp(c.date_range.to, true);
   if (from && to) parts.push(`submittedDate:[${from}+TO+${to}]`);
   let q = `%28${parts.join("+AND+")}%29`;
-  if (c.exclude.length) {
-    q += "+ANDNOT+" + orGroup(c.exclude.map((t) => `${phrase("ti", t)}+OR+${phrase("abs", t)}`));
+  if (c.hard_exclude.length) {
+    q += "+ANDNOT+" + orGroup(c.hard_exclude.map((t) => `${phrase("ti", t)}+OR+${phrase("abs", t)}`));
   }
   return q;
 }
 
-/**
- * arXiv 느슨한 구문 매칭 보정: %22구문%22 을 arXiv 가 엄격히 처리하지 않아 무관 논문이
- * 딸려온다. query.json 의 의도(구문이 실제로 존재)에 맞게, 제목+초록에 include 구문이
- * 하나라도 substring 으로 들어있고 exclude 구문은 없는 논문만 남긴다. 위양성만 제거.
- */
+/** 플랫폼 게이트(boundary.ts) — API 느슨매칭 보정 겸 scope 경계 적용 */
 function localPrecisionFilter(papers: Paper[]): Paper[] {
-  const inc = c.include.map((t) => t.toLowerCase());
-  const exc = c.exclude.map((t) => t.toLowerCase());
-  return papers.filter((p) => {
-    const hay = `${p.title} ${p.abstract}`.toLowerCase();
-    if (exc.some((x) => hay.includes(x))) return false;
-    return inc.some((t) => hay.includes(t));
-  });
+  return papers.filter((p) => passesGate(`${p.title} ${p.abstract}`, c));
 }
 
 interface Paper {

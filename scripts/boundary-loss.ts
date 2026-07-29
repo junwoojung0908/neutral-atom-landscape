@@ -8,7 +8,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
-import { passesBoundary } from "./boundary.ts";
+import { passesGate } from "./boundary.ts";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const rd = (p: string) => JSON.parse(readFileSync(resolve(root, p), "utf8"));
@@ -22,7 +22,7 @@ interface Raw { id: string; title: string; abstract: string }
 const classified = rd("data/corpus.json") as Rec[];
 const raw = rd("data/corpus-raw.json") as Raw[];
 const corpus = rd("data/query.json").corpus as {
-  strong: string[]; weak: string[]; weak_context: string[]; exclude: string[];
+  strong: string[]; weak_context: string[]; hard_exclude: string[]; soft_exclude: string[];
 };
 const byId = new Map(raw.map((p) => [p.id, `${p.title} ${p.abstract}`]));
 
@@ -31,7 +31,7 @@ const dropped: Record<string, number> = {};
 let survivors = 0;
 for (const r of classified) {
   const hay = byId.get(r.id) ?? "";
-  const survive = passesBoundary(hay, corpus);
+  const survive = passesGate(hay, corpus);
   if (survive) survivors++;
   for (const f of r.matched_fields) {
     total[f] = (total[f] ?? 0) + 1;

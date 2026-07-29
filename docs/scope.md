@@ -44,3 +44,13 @@
   질의 정의 코퍼스의 재현율 한계 사례로 남긴다 — 수동 추가는 하지 않는다(코퍼스는 질의가 정의).
 - 고인용(≥20)인데 코퍼스 내부 인용 연결이 0인 논문 ~19편은 오류가 아니라
   경계 주제(고전하 이온 시계, 격자 Hubbard, 폴라리톤 등)로 확인됨.
+
+## 플랫폼 게이트 (2026-07-30 도입 — scripts/boundary.ts 단일 정의)
+- strong 구문(트위저/배열/neutral atom 등) → 편입, **soft_exclude 면제**
+  (이전 exclude 가 "quantum gas microscope"/"ion crystal" substring 으로 IN-판정
+  하이브리드를 자르던 충돌 해소 — soft_exclude 는 비-strong 논문에만 적용)
+- bare "Rydberg" → weak_context(array·tweezer·qubit·quantum gate/comput/simulat·
+  register·dress·chain 등) 필요. 증기셀 센싱·분자 분광·벌크 기체가 여기서 차단됨
+- 손실 감사(도입 시): 분류 2,029 중 14.1% 탈락. 15% 초과 2개 가지(net·species)의
+  탈락 표본은 앙상블 광학·분광 = scope-OUT 확인. 코퍼스 3,185→2,432, 미분류 36.3→28.3%
+- 잔여 미분류 28.3% 는 경계(Q1) 아닌 가지 용어(Q2) 갭 — 15% 목표는 용어 보강으로

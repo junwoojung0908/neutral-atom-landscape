@@ -15,6 +15,8 @@ export default function AboutPage() {
       <h3>코퍼스</h3>
       <ul>
         <li>출처: arXiv API (quant-ph · physics.atom-ph, 2015–2026), 질의 버전 <code>{counts.version}</code></li>
+        <li><strong>플랫폼 게이트</strong>: 트위저/배열 구문은 그대로 편입, bare “Rydberg”는 배열·큐비트·게이트·시뮬레이션
+          맥락어가 함께 있어야 편입(증기셀 센싱·분자 분광·벌크 기체 차단). 게이트 손실은 분류 논문의 14%로 측정·감사됨</li>
         <li>범위: 개별 주소지정 가능한 중성원자 배열(트위저) 기반 양자정보·시뮬레이션 —
           자세한 IN/OUT 기준은 저장소의 <a href="https://github.com/junwoojung0908/neutral-atom-landscape/blob/main/docs/scope.md" target="_blank" rel="noreferrer">docs/scope.md</a></li>
         <li>규모: {counts.corpus_total.toLocaleString()}편, 그중 분류 {counts.classified.toLocaleString()}편 ·
@@ -45,6 +47,8 @@ export default function AboutPage() {
         <li>출판 DOI 가 없는 arXiv 전용 ~680편은 인용 과소집계(프리프린트 레코드)</li>
         <li>연구그룹 배지는 last-author 기준 주요 그룹만 (~13% 커버리지) — 없는 그룹 = 판단 아님, 미큐레이션</li>
         <li>정본 랜드마크 점검에서 확인된 누락 1편(Browaeys–Lahaye 2020 리뷰, 카테고리 필터 추정)</li>
+        <li><code>software</code> 가지는 구조적 과소집계 — 해당 문헌 다수가 cs.AR/cs.ET 등 CS 카테고리라 quant-ph 코퍼스 밖</li>
+        <li><code>readout</code>(~2%)은 규모가 작지만 결함허용의 독립 전제(비파괴 측정·erasure 검출)라 가지로 유지 — 편집상 결정</li>
         <li>인용 그래프는 지지/반박을 구분하지 못함 — 빨간 점선(contests)만 손 큐레이션</li>
       </ul>
 

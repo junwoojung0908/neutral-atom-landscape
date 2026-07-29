@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 
 const WIDE = 0.3, THIN = 0.03, SAME = 0.5, HOLE = 0.15;
+const STRICT = process.argv.includes("--strict"); // 미분류>15% 를 hard fail 로 (게이트 정상화 후 cron 에 켤 것)
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const rd = (p: string) => JSON.parse(readFileSync(resolve(root, p), "utf8"));
@@ -105,6 +106,10 @@ if (corpusTotal === 0) {
 
   console.log(flags.length ? `택소노미 플래그 ${flags.length}건 — report/taxonomy.md 확인` : `택소노미 플래그 없음`);
   finish();
+  if (STRICT && uRatio > HOLE) {
+    console.error(`✗ --strict: 미분류 ${(uRatio * 100).toFixed(1)}% > 15%`);
+    process.exit(1);
+  }
 }
 
 function finish() {

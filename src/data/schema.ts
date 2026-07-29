@@ -16,8 +16,8 @@ export const FieldSchema = z.object({
   ko: z.string().min(1),
   en: z.string().min(1),
   color: HexColor,
-  /** 색의 근거가 되는 대표 파장. 이론/CS 성격 가지는 null. */
-  wavelength_nm: z.number().positive().nullable(),
+  /** (폐기된 색-파장 은유의 잔재 — 과거 데이터 호환용) */
+  wavelength_nm: z.number().positive().nullable().optional(),
   wavelength_note: z.string().optional(),
   /** 원형 배치 순서 최적화용 인접 희망 목록 */
   adjacent: z.array(z.string()),
