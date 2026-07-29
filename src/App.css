@@ -97,12 +97,10 @@
 .tlz-hint {
   color: var(--muted);
 }
-.tlz-laneband {
-  fill: #ffffff;
-  opacity: 0.025;
-}
-@media (prefers-color-scheme: light) {
-  .tlz-laneband { fill: #000000; opacity: 0.04; }
+.tlz-lanesep {
+  stroke: var(--border);
+  stroke-opacity: 0.55;
+  stroke-width: 1;
 }
 .tlz-groups {
   display: flex;

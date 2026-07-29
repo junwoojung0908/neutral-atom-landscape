@@ -590,11 +590,11 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
         {/* 클립된 내용: 밴드·엣지·점·라벨 */}
         <g clipPath="url(#tlz-plot)">
           {(coarse
-            ? LANE_GROUPS.map((g, gi) => ({ key: g.id, start: laneIndex.get(g.children[0]) ?? 0, len: g.children.length, on: gi % 2 === 0 }))
-            : lanes.map((id, i) => ({ key: id, start: i, len: 1, on: i % 2 === 0 }))
+            ? LANE_GROUPS.map((g) => ({ key: g.id, start: laneIndex.get(g.children[0]) ?? 0 }))
+            : lanes.map((id, i) => ({ key: id, start: i }))
           ).map((b) =>
-            b.on ? (
-              <rect key={`band-${b.key}`} className="tlz-laneband" x={M.l} y={sy(M.t + b.start * laneH)} width={PW} height={b.len * laneH * view.ky} />
+            b.start > 0 ? (
+              <line key={`sep-${b.key}`} className="tlz-lanesep" x1={M.l} y1={sy(M.t + b.start * laneH)} x2={W - M.r} y2={sy(M.t + b.start * laneH)} />
             ) : null,
           )}
           {/* 적응형 세로 그리드: 줌인(kx≥2)이면 연도별, 아니면 3년 경계 */}
@@ -626,8 +626,8 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           })}
           <g filter="url(#atomGlow)">
           {visible.map(({ p, x, y }) => (
-            <circle key={p.id} cx={x} cy={y} r={radius(p.score)} fill={p.review ? "var(--frame)" : (laneMetaMap.get(p.lane)?.color ?? "#888")}
-              fillOpacity={dotOp(p)} stroke={dotRing(p) ? "var(--text)" : p.review ? (laneMetaMap.get(p.lane)?.color ?? "#888") : "none"}
+            <circle key={p.id} cx={x} cy={y} r={radius(p.score)} fill={p.review ? "var(--frame)" : "var(--atom)"}
+              fillOpacity={dotOp(p)} stroke={dotRing(p) ? "var(--atom)" : p.review ? "var(--atom)" : "none"}
               strokeWidth={dotRing(p) ? 1.5 : p.review ? 1.6 : 0}
               className="tlz-dot" onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onClick={() => onOpen(p)}>
               <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · cited ${p.cited}${p.hot ? ' (rising ↗)' : ''}`}</title>
@@ -668,7 +668,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             if (yTop < M.t + 4 || yTop > H - M.b - 2) return null;
             return (
               <text key={`ll-${row.id}`} className={`tlz-lanelabel tlz-lanein${fitted === row.id ? " fit" : ""}`}
-                x={M.l + 4} y={yTop} textAnchor="start" fill={row.color} onClick={onClick}>
+                x={M.l + 4} y={yTop} textAnchor="start" fill={fitted === row.id ? "var(--atom)" : "var(--muted)"} onClick={onClick}>
                 {row.ko}
               </text>
             );
@@ -677,7 +677,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           if (cyl < M.t - 4 || cyl > H - M.b + 4) return null;
           return (
             <text key={`ll-${row.id}`} className={`tlz-lanelabel${fitted === row.id ? " fit" : ""}`} x={M.l - 8} y={cyl}
-              textAnchor="end" dominantBaseline="middle" fill={row.color} onClick={onClick}>
+              textAnchor="end" dominantBaseline="middle" fill={fitted === row.id ? "var(--atom)" : "var(--muted)"} onClick={onClick}>
               <title>Click: fit this lane to screen (click again to reset)</title>
               {row.ko}
             </text>
