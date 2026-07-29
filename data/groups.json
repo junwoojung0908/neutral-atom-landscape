@@ -1,0 +1,26 @@
+[
+  { "id": "harvard-mit", "label": "Harvard/MIT",
+    "pis": [
+      { "name_variants": ["Mikhail D. Lukin", "M. D. Lukin"] },
+      { "name_variants": ["Vladan Vuletic", "Vladan Vuletić"] },
+      { "name_variants": ["Kang-Kuen Ni"] }
+    ] },
+  { "id": "palaiseau", "label": "Institut d'Optique (Palaiseau)",
+    "pis": [
+      { "name_variants": ["Antoine Browaeys"] },
+      { "name_variants": ["Thierry Lahaye"] }
+    ] },
+  { "id": "caltech", "label": "Caltech (Endres)", "pis": [ { "name_variants": ["Manuel Endres"] } ] },
+  { "id": "wisconsin", "label": "Wisconsin (Saffman)", "pis": [ { "name_variants": ["M. Saffman", "Mark Saffman"] } ] },
+  { "id": "jila", "label": "JILA/Colorado (Kaufman)", "pis": [ { "name_variants": ["Adam M. Kaufman", "Adam Kaufman"] } ] },
+  { "id": "princeton", "label": "Princeton (Thompson)", "pis": [ { "name_variants": ["Jeff D. Thompson", "Jeff Thompson", "Jeff D Thompson"] } ] },
+  { "id": "chicago", "label": "Chicago (Bernien)", "pis": [ { "name_variants": ["Hannes Bernien"] } ] },
+  { "id": "mpq", "label": "MPQ (Zeiher)", "pis": [ { "name_variants": ["Johannes Zeiher"] } ] },
+  { "id": "jqi", "label": "JQI/Maryland (Gorshkov)", "pis": [ { "name_variants": ["Alexey V. Gorshkov"] } ] },
+  { "id": "kaist", "label": "KAIST (Ahn)", "pis": [ { "name_variants": ["Jaewook Ahn"] } ] },
+  { "id": "ustc", "label": "USTC (Pan)", "pis": [ { "name_variants": ["Jian-Wei Pan"] } ] },
+  { "id": "wipm", "label": "WIPM Wuhan (Zhan)", "pis": [ { "name_variants": ["Mingsheng Zhan", "Ming-Sheng Zhan"] } ] },
+  { "id": "innsbruck", "label": "Innsbruck (Pichler)", "pis": [ { "name_variants": ["Hannes Pichler"] } ] },
+  { "id": "PLACEHOLDER_qian", "label": "Jing Qian (소속 확인요)", "pis": [ { "name_variants": ["Jing Qian"] } ] },
+  { "id": "PLACEHOLDER_shao", "label": "Shao (소속 확인요)", "pis": [ { "name_variants": ["X. Q. Shao", "Xiao-Qiang Shao"] } ] }
+]

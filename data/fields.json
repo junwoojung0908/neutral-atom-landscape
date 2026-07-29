@@ -4,10 +4,13 @@
     "parent": null,
     "ko": "오류정정 · 논리 큐비트",
     "en": "quantum error correction & logical qubits",
-    "color": "#8B5CF6",
+    "color": "#4E79A7",
     "wavelength_nm": 420,
     "wavelength_note": "Rb 5S→6P, 420+1013 2광자 여기의 하단 레그",
-    "adjacent": ["gate", "scale"],
+    "adjacent": [
+      "gate",
+      "scale"
+    ],
     "blurb": "부호 설계, 논리 게이트, 매직 상태, FT 아키텍처. 2024년 이후 분야의 무게중심이 이동한 곳."
   },
   {
@@ -15,7 +18,7 @@
     "parent": "qec",
     "ko": "고효율 부호 (qLDPC)",
     "en": "high-rate codes",
-    "color": "#8B5CF6",
+    "color": "#4E79A7",
     "wavelength_nm": null,
     "adjacent": [],
     "blurb": "표면부호 대신 고효율 부호를 쓰는 노선. 중성원자의 이동 가능한 연결도가 전제."
@@ -25,10 +28,13 @@
     "parent": null,
     "ko": "측정 · 중간회로 판독",
     "en": "readout & mid-circuit measurement",
-    "color": "#3B82F6",
+    "color": "#F28E2B",
     "wavelength_nm": 461,
     "wavelength_note": "Sr ¹S₀→¹P₁ 청색. 형광 이미징에 실제로 쓰이는 선",
-    "adjacent": ["gate", "clock"],
+    "adjacent": [
+      "gate",
+      "clock"
+    ],
     "blurb": "비파괴 이미징, 회로 중간 측정과 피드포워드, erasure 검출. FT의 필수 전제이면서 별도의 광학 문제."
   },
   {
@@ -36,10 +42,13 @@
     "parent": null,
     "ko": "아날로그 양자 시뮬레이션",
     "en": "analog quantum simulation",
-    "color": "#22D3EE",
+    "color": "#E15759",
     "wavelength_nm": 480,
     "wavelength_note": "Rb 5P→Rydberg, 780+480 여기의 상단 레그",
-    "adjacent": ["opt", "species"],
+    "adjacent": [
+      "opt",
+      "species"
+    ],
     "blurb": "다체 동역학, 위상 상, 스핀 모형. 분야가 계산기로 불리기 전부터 있던 원래의 목적."
   },
   {
@@ -47,10 +56,13 @@
     "parent": null,
     "ko": "원자종 · 큐비트 인코딩",
     "en": "atomic species & qubit encoding",
-    "color": "#4ADE80",
+    "color": "#76B7B2",
     "wavelength_nm": 556,
     "wavelength_note": "Yb ¹S₀→³P₁ 협선폭",
-    "adjacent": ["sim", "clock"],
+    "adjacent": [
+      "sim",
+      "clock"
+    ],
     "blurb": "알칼리 vs 알칼리토류, 핵스핀 큐비트, 준안정 상태, 이종 원자. 준위 구조를 코드 이론의 자원으로 쓰는 축."
   },
   {
@@ -58,7 +70,7 @@
     "parent": "species",
     "ko": "트위저 분자",
     "en": "molecules in tweezers",
-    "color": "#4ADE80",
+    "color": "#76B7B2",
     "wavelength_nm": 589,
     "wavelength_note": "Na D선 (NaCs 등 이종핵 분자 조립)",
     "adjacent": [],
@@ -69,10 +81,13 @@
     "parent": null,
     "ko": "계측 · 광시계",
     "en": "metrology & optical clocks",
-    "color": "#E23E57",
+    "color": "#59A14F",
     "wavelength_nm": 698,
     "wavelength_note": "⁸⁷Sr ¹S₀→³P₀ 시계 전이",
-    "adjacent": ["species", "readout"],
+    "adjacent": [
+      "species",
+      "readout"
+    ],
     "blurb": "트위저 시계, 스핀 스퀴징, 얽힘 강화 계측. 하드웨어의 첫 실용 출구일 가능성."
   },
   {
@@ -80,10 +95,13 @@
     "parent": null,
     "ko": "조합 최적화 · 아날로그 알고리즘",
     "en": "combinatorial optimization (MIS / QUBO)",
-    "color": "#FF6B4A",
+    "color": "#EDC948",
     "wavelength_nm": 780,
     "wavelength_note": "Rb D2. MIS 실험 대부분이 Rb 어레이 기반",
-    "adjacent": ["sim", "classical"],
+    "adjacent": [
+      "sim",
+      "classical"
+    ],
     "blurb": "Rydberg 봉쇄를 독립집합 제약으로 읽는 사상. 아날로그 하드웨어의 유일한 상업적 출구이자 가장 논쟁적인 주장."
   },
   {
@@ -91,10 +109,13 @@
     "parent": null,
     "ko": "고전 대조 · 벤치마킹",
     "en": "classical simulability & benchmarking",
-    "color": "#94A3B8",
+    "color": "#B07AA1",
     "wavelength_nm": null,
     "wavelength_note": "실험 파장 없음 — 이론/CS 가지. 스펙트럼 밖 무채색으로 정직하게 표시",
-    "adjacent": ["opt", "scale"],
+    "adjacent": [
+      "opt",
+      "scale"
+    ],
     "blurb": "텐서 네트워크 대조, 복잡도 논증, 검증 방법론. 다른 여덟 가지의 주장이 얼마나 버티는지를 재는 가지."
   },
   {
@@ -102,10 +123,13 @@
     "parent": null,
     "ko": "게이트 충실도 · 제어",
     "en": "gate fidelity & control",
-    "color": "#F0ABFC",
+    "color": "#FF9DA7",
     "wavelength_nm": 1013,
     "wavelength_note": "Rb 6P→Rydberg, 420+1013 여기의 상단 레그. 비가시광 근사색",
-    "adjacent": ["qec", "readout"],
+    "adjacent": [
+      "qec",
+      "readout"
+    ],
     "blurb": "Rydberg 게이트 프로토콜, 펄스 설계, erasure conversion. 충실도 수치 하나가 상위 층 전체의 가능 여부를 결정."
   },
   {
@@ -113,10 +137,13 @@
     "parent": null,
     "ko": "대규모 배열 · 어레이 공학",
     "en": "scaling & array engineering",
-    "color": "#B4306B",
+    "color": "#9C755F",
     "wavelength_nm": 1064,
     "wavelength_note": "트위저 가둠광. 비가시광 근사색",
-    "adjacent": ["qec", "classical"],
+    "adjacent": [
+      "qec",
+      "classical"
+    ],
     "blurb": "원자 수, 연속 재장전, 진공·광학계 공학. 규모와 품질이 상충한다는 통념이 최근 깨지는 중."
   },
   {
@@ -124,19 +151,37 @@
     "parent": "scale",
     "ko": "결맞음 수송 · 재구성 연결성",
     "en": "coherent transport",
-    "color": "#B4306B",
+    "color": "#9C755F",
     "wavelength_nm": null,
     "adjacent": [],
     "blurb": "얽힘을 유지한 채 원자를 옮긴다. 고정 배선 연결도라는 다른 플랫폼의 제약을 중성원자만 갖지 않게 함."
   },
   {
-    "id": "scale.net",
-    "parent": "scale",
+    "id": "net",
+    "parent": null,
     "ko": "광 상호연결 · 모듈러",
-    "en": "photonic interconnects",
-    "color": "#B4306B",
+    "en": "photonic interconnects & modularity",
+    "color": "#17BECF",
+    "wavelength_nm": 1550,
+    "wavelength_note": "telecom C-band 1550 nm (원자-광자 인터페이스·광섬유 네트워킹). 근적외 — 근사색",
+    "adjacent": [
+      "scale",
+      "clock"
+    ],
+    "blurb": "캐비티·나노포토닉·광섬유로 원자-광자 얽힘을 만들어 한 챔버의 큐비트 상한을 모듈러 구조로 우회하는 경로. scale과 같은 목표(규모)를 향한 다른 전략이라 하위가 아닌 별개 가지."
+  },
+  {
+    "id": "software",
+    "parent": null,
+    "ko": "컴파일 · 아키텍처 · 제어 스택",
+    "en": "compilation, architecture, control stack",
+    "color": "#7F7F7F",
     "wavelength_nm": null,
-    "adjacent": [],
-    "blurb": "캐비티 QED, 원자-광자 얽힘. 한 챔버의 큐비트 수 상한을 모듈러 구조로 우회하는 경로."
+    "wavelength_note": "실험 파장 없음 — classical 과 같이 스펙트럼 밖(무채색). classical 과 대칭: classical 은 하드웨어 주장을 반박, software 는 하드웨어에 봉사",
+    "adjacent": [
+      "classical",
+      "qec"
+    ],
+    "blurb": "컴파일러·큐비트 매핑·라우팅·제어 스택·자원 추정. 하드웨어에 봉사하는 계산과학으로, 하드웨어를 반박하는 classical 과 정반대 관계라 나란히 두는 것 자체가 정보다."
   }
 ]
