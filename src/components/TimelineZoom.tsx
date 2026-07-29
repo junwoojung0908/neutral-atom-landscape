@@ -8,8 +8,8 @@ import groupsJson from "../../data/groups.json";
 // 박스형 무한줌. x(연도)·y(가지) 축을 독립적으로 줌. 축 라벨은 박스 가장자리에 고정,
 // 내용만 클립. 줌인할수록(면적↑) 저인용 논문이 더 드러남(LOD).
 const W = 1000;
-const H = 440; // 세로 조밀 — 축이 항상 화면 안에
-const M = { l: 156, r: 30, t: 10, b: 26 };
+const H = 360; // 세로 조밀 — 두 축이 항상 한 화면에
+const M = { l: 156, r: 30, t: 8, b: 22 };
 const Y0 = 2015;
 const Y1 = 2026;
 const NYEARS = Y1 - Y0 + 1; // 12
@@ -220,18 +220,14 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
         {grpActive && <button className="tlz-reset" onClick={() => setChecked(new Set())}>해제</button>}
       </div>
 
-      <div className="tlz-hoverinfo">
-        {hpaper ? (
-          <>
-            <strong>{displayTitle(hpaper.title)}</strong> · 인용 {hpaper.cited} · {hpaper.author} · {hpaper.year}
-            {hpaper.group && <span className="tlz-hg"> · {groupLabel.get(hpaper.group) ?? hpaper.group}</span>}
-            <span className="tlz-hf"> · {hpaper.fields.map((f) => fieldById.get(f)?.ko ?? f).join(", ")}</span>
-          </>
-        ) : (
-          <span className="tlz-hint">점에 마우스를 올리면 제목·인용·그룹·가지가 여기 표시됩니다.</span>
-        )}
-      </div>
-
+      <div className="tlz-svgwrap">
+      {hpaper && (
+        <div className="tlz-hoverinfo">
+          <strong>{displayTitle(hpaper.title)}</strong> · 인용 {hpaper.cited} · {hpaper.author} · {hpaper.year}
+          {hpaper.group && <span className="tlz-hg"> · {groupLabel.get(hpaper.group) ?? hpaper.group}</span>}
+          <span className="tlz-hf"> · {hpaper.fields.map((f) => fieldById.get(f)?.ko ?? f).join(", ")}</span>
+        </div>
+      )}
       <svg ref={svgRef} className="tlz-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet"
         onMouseDown={(e) => (drag.current = { x: e.clientX, y: e.clientY })}
         onMouseMove={(e) => {
@@ -315,6 +311,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
         <rect className="tlz-frame" x={M.l} y={M.t} width={PW} height={PH} fill="none" />
         <line className="tlz-axis" x1={M.l} y1={H - M.b} x2={W - M.r} y2={H - M.b} />
       </svg>
+      </div>
     </div>
   );
 }
