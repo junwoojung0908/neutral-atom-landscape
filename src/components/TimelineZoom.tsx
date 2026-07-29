@@ -35,11 +35,12 @@ const surname = (name?: string) => {
   return parts.length ? parts[parts.length - 1] : "";
 };
 
-function ringArc(cx: number, cy: number, r: number, a0: number, a1: number): string {
+function wedge(cx: number, cy: number, r: number, a0: number, a1: number): string {
   const x0 = cx + r * Math.cos(a0), y0 = cy + r * Math.sin(a0);
   const x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1);
-  return `M ${x0} ${y0} A ${r} ${r} 0 ${a1 - a0 > Math.PI ? 1 : 0} 1 ${x1} ${y1}`;
+  return `M ${cx} ${cy} L ${x0} ${y0} A ${r} ${r} 0 ${a1 - a0 > Math.PI ? 1 : 0} 1 ${x1} ${y1} Z`;
 }
+
 
 function wrap2(t: string, maxLen = 26, maxLines = 3): string[] {
   const words = displayTitle(t).split(/\s+/);
@@ -585,10 +586,17 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           <clipPath id="tlz-plot"><rect x={M.l} y={M.t} width={PW} height={PH} /></clipPath>
           {/* 형광 PSF: 밝은 코어 → 소프트 가장자리 */}
           <radialGradient id="atomCore">
-            <stop offset="0%" stopColor="var(--atom)" stopOpacity="1" />
-            <stop offset="55%" stopColor="var(--atom)" stopOpacity="0.85" />
-            <stop offset="100%" stopColor="var(--atom)" stopOpacity="0.1" />
+            <stop offset="0%" stopColor="var(--atom)" stopOpacity="0.95" />
+            <stop offset="45%" stopColor="var(--atom)" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="var(--atom)" stopOpacity="0" />
           </radialGradient>
+          {firstLevelFields.map((f) => (
+            <radialGradient key={`bg-${f.id}`} id={`bg-${f.id}`}>
+              <stop offset="0%" stopColor={f.color} stopOpacity="1" />
+              <stop offset="60%" stopColor={f.color} stopOpacity="0.85" />
+              <stop offset="100%" stopColor={f.color} stopOpacity="0.12" />
+            </radialGradient>
+          ))}
           {/* 형광 글로우 — 점 그룹 전체에 한 번만 합성(성능) */}
           <filter id="atomGlow" x="-60%" y="-60%" width="220%" height="220%">
             <feGaussianBlur stdDeviation="1.8" result="b" />
@@ -639,31 +647,28 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           <g filter="url(#atomGlow)">
           {visible.map(({ p, x, y }) => {
             const r = radius(p.score);
-            const rimOp = Math.min(dotOp(p) + 0.1, 0.7);
             const m = p.fields.length;
             const seg = (2 * Math.PI) / Math.max(m, 1);
-            const gap = m > 1 ? 0.22 : 0;
             return (
               <g key={p.id}>
+                {!p.review && (m === 1 ? (
+                  <circle cx={x} cy={y} r={r} fill={`url(#bg-${p.fields[0]})`} fillOpacity={dotOp(p)} pointerEvents="none" />
+                ) : (
+                  p.fields.map((f, i) => (
+                    <path key={f} d={wedge(x, y, r, -Math.PI / 2 + i * seg, -Math.PI / 2 + (i + 1) * seg)}
+                      fill={fieldById.get(f)?.color ?? "var(--muted)"} fillOpacity={dotOp(p) * 0.8} pointerEvents="none" />
+                  ))
+                ))}
+                {!p.review && (
+                  <circle cx={x} cy={y} r={r * 0.9} fill="url(#atomCore)" fillOpacity={Math.min(dotOp(p) + 0.15, 0.95)} pointerEvents="none" />
+                )}
                 <circle cx={x} cy={y} r={r}
-                  fill={p.review ? "var(--frame)" : "url(#atomCore)"}
-                  fillOpacity={dotOp(p)}
+                  fill={p.review ? "var(--frame)" : "transparent"}
                   stroke={dotRing(p) ? "var(--atom)" : p.review ? "var(--atom)" : "none"}
                   strokeWidth={dotRing(p) ? 1.5 : p.review ? 1.4 : 0}
                   className="tlz-dot" onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onClick={() => onOpen(p)}>
                   <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · cited ${p.cited}${p.hot ? ' (rising ↗)' : ''}`}</title>
                 </circle>
-                {/* 분야 림: 은은한 색 호 — 여러 분야면 세그먼트 분할 */}
-                {!p.review && p.fields.map((f, i) => {
-                  const a0 = -Math.PI / 2 + i * seg + gap / 2;
-                  const a1 = -Math.PI / 2 + (i + 1) * seg - gap / 2;
-                  const col = fieldById.get(f)?.color ?? "var(--muted)";
-                  return m === 1 ? (
-                    <circle key={f} cx={x} cy={y} r={r + 1.6} fill="none" stroke={col} strokeWidth={1.2} strokeOpacity={rimOp} className="tlz-rim" />
-                  ) : (
-                    <path key={f} d={ringArc(x, y, r + 1.6, a0, a1)} fill="none" stroke={col} strokeWidth={1.2} strokeOpacity={rimOp} className="tlz-rim" />
-                  );
-                })}
               </g>
             );
           })}
