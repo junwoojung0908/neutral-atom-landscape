@@ -707,7 +707,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             if (yTop < M.t + 4 || yTop > H - M.b - 2) return null;
             return (
               <text key={`ll-${row.id}`} className={`tlz-lanelabel tlz-lanein${fitted === row.id ? " fit" : ""}`}
-                x={M.l + 4} y={yTop} textAnchor="start" fill={fitted === row.id ? "var(--atom)" : "var(--muted)"} onClick={onClick}>
+                x={M.l + 4} y={yTop} textAnchor="start" fill={fitted === row.id ? "var(--atom)" : row.color} onClick={onClick}>
                 {row.ko}
               </text>
             );
@@ -716,7 +716,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           if (cyl < M.t - 4 || cyl > H - M.b + 4) return null;
           return (
             <text key={`ll-${row.id}`} className={`tlz-lanelabel${fitted === row.id ? " fit" : ""}`} x={M.l - 8} y={cyl}
-              textAnchor="end" dominantBaseline="middle" fill={fitted === row.id ? "var(--atom)" : "var(--muted)"} onClick={onClick}>
+              textAnchor="end" dominantBaseline="middle" fill={fitted === row.id ? "var(--atom)" : row.color} onClick={onClick}>
               <title>Click: fit this lane to screen (click again to reset)</title>
               {row.ko}
             </text>
