@@ -10,8 +10,9 @@
       "scale"
     ],
     "blurb": "Code design, logical gates, magic states, FT architecture. Where the field's center of mass moved after 2024.",
-    "narrative": "Until 2023 this branch was one where theory ran ahead of experiment. Bluvstein 2023 (a logical processor with transversal gates on reconfigurable arrays) inverted that relationship, and the field's center of mass shifted from physical-qubit performance to logical-layer operation. Three fronts now: lowering thresholds via erasure conversion, exploiting movable connectivity for high-rate qLDPC codes, and running actual algorithms on logical qubits. Every structural card neutral atoms hold over superconductors — arbitrary connectivity, identical atoms — is being cashed in here.",
-    "narrative_updated": "2026-07-30"
+    "narrative": "Until 2023 this branch was one where theory ran ahead of experiment. [[bluvstein24]] (a logical processor with transversal gates on reconfigurable arrays) inverted that relationship, and the field's center of mass shifted from physical-qubit performance to logical-layer operation. Three fronts now: lowering thresholds via erasure conversion, exploiting movable connectivity for high-rate qLDPC codes, and running actual algorithms on logical qubits. Every structural card neutral atoms hold over superconductors — arbitrary connectivity, identical atoms — is being cashed in here.",
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "qec.ldpc",
@@ -34,7 +35,8 @@
     ],
     "blurb": "Non-destructive imaging, mid-circuit measurement with feedforward, erasure detection. A prerequisite for FT and a distinct optics problem.",
     "narrative": "Fluorescence imaging heats and loses atoms — so 'watching while you compute' is its own optics problem. Non-destructive imaging and mid-circuit measurement are prerequisites for error correction, and erasure detection (measurement that knows where an error occurred) is a rare case of a 2022 theory proposal reaching experiment within a year. Small in volume (~2% of the corpus), but the bottleneck of two other branches — gates and QEC — gets resolved here.",
-    "narrative_updated": "2026-07-30"
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "sim",
@@ -48,7 +50,8 @@
     ],
     "blurb": "Many-body dynamics, topological phases, spin models. The field's original purpose, predating its life as a computer.",
     "narrative": "This is the field's headwater — Rydberg interactions implemented many-body Hamiltonians directly before neutral atoms were ever called computers. Quantum scars, discovered by accident on a 51-atom array (2017), upended thermalization lore and became a subfield of their own; the 256-atom spin-liquid observation (2021) showed analog simulators can discover new phases of matter. Still the corpus's largest mass, but the digital side (QEC, gates) has grown faster over the last three years — whether the headwater is yielding to its tributaries is this map's plot line.",
-    "narrative_updated": "2026-07-30"
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "species",
@@ -62,7 +65,8 @@
     ],
     "blurb": "Alkali vs alkaline-earth, nuclear-spin qubits, metastable states, dual species. Treating level structure as a resource for code theory.",
     "narrative": "Which atom to use was once a matter of convenience; it became a matter of resources. Weight shifted from the simplicity of alkalis (Rb, Cs) to the rich level structure of alkaline earths (Sr, Yb) for three reasons: long coherence in nuclear-spin qubits, erasure conversion via metastable states, and a metrology interface through clock transitions. The omg architecture — reading level structure as a design resource for error models — is this viewpoint's apex. Tweezer molecules extend the same logic to broaden the kinds of interactions available.",
-    "narrative_updated": "2026-07-30"
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "species.molecules",
@@ -85,7 +89,8 @@
     ],
     "blurb": "Tweezer clocks, spin squeezing, entanglement-enhanced metrology. Possibly the hardware's first practical exit.",
     "narrative": "The first practical exit for neutral-atom hardware may be clocks, not computation. Tweezer clocks add single-atom control to lattice-clock precision, and spin squeezing with entanglement-enhanced metrology opens the road below the standard quantum limit. Results like half-minute-coherence tweezer clocks show this branch selling the same technology as QEC — individual control, non-destructive measurement — as a different product.",
-    "narrative_updated": "2026-07-30"
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "opt",
@@ -98,8 +103,9 @@
       "classical"
     ],
     "blurb": "Reading Rydberg blockade as an independent-set constraint. The analog hardware's one commercial exit and its most contested claim.",
-    "narrative": "When Pichler 2018 pointed out the structural isomorphism between Rydberg blockade and maximum-independent-set constraints, analog hardware acquired a native problem. Ebadi 2022 (289 qubits) is nearly the only experiment to claim quantum advantage head-on atop it — which makes this branch both the commercial exit and the field's most contested claim. The red dashed line (contests) on this map lives here; for the other side of the argument, see the classical branch.",
-    "narrative_updated": "2026-07-30"
+    "narrative": "When [[pichler18]] pointed out the structural isomorphism between Rydberg blockade and maximum-independent-set constraints, analog hardware acquired a native problem. [[ebadi22]] (289 qubits) is nearly the only experiment to claim quantum advantage head-on atop it — which makes this branch both the commercial exit and the field's most contested claim. The red dashed line (contests) on this map lives here; for the other side of the argument, see the classical branch.",
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "classical",
@@ -112,8 +118,9 @@
       "scale"
     ],
     "blurb": "Tensor-network baselines, complexity arguments, verification methodology. The branch that measures how well the other branches' claims hold up.",
-    "narrative": "This branch measures how well the other ten branches' claims survive. Andrist 2023 showed Ebadi's benchmark instances fall to classical solvers in minutes; notably, such rebuttals are shifting from outside attack to the field's internal self-verification — including from inside hardware vendors. Tensor-network baselines and verification protocols keep raising the bar for the phrase 'quantum advantage.' The healthier this branch, the more credible everyone else's claims.",
-    "narrative_updated": "2026-07-30"
+    "narrative": "This branch measures how well the other ten branches' claims survive. [[andrist23]] showed [[ebadi22]]'s benchmark instances fall to classical solvers in minutes; notably, such rebuttals are shifting from outside attack to the field's internal self-verification — including from inside hardware vendors. Tensor-network baselines and verification protocols keep raising the bar for the phrase 'quantum advantage.' The healthier this branch, the more credible everyone else's claims.",
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "gate",
@@ -127,7 +134,8 @@
     ],
     "blurb": "Rydberg gate protocols, pulse design, erasure conversion. One fidelity number decides the viability of every layer above.",
     "narrative": "A single two-qubit fidelity number decides the viability of every layer above it — QEC and algorithms alike. Rydberg blockade gates went from the 97% range (mid-2010s) past 99.5% in 2023, entering fault-tolerance-threshold territory; much of that jump came from pulse design (time-optimal control) and from the erasure-conversion idea of making errors visible rather than absent. The question now is not few-qubit records but holding that number across arrays of hundreds.",
-    "narrative_updated": "2026-07-30"
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "scale",
@@ -141,7 +149,8 @@
     ],
     "blurb": "Atom number, continuous reloading, vacuum and optics engineering. The scale-vs-quality trade-off keeps getting broken.",
     "narrative": "Arrays that bragged about 100 atoms (2017) passed 1,000 (2022), reached 6,100 tweezers (2024), and continuous operation of 3,000 qubits (2025). The folk theorem that scale costs quality has been repeatedly broken; the bottleneck has moved from optical power or vacuum to continuous reloading — replacing lost atoms in real time. This branch's numbers are the denominator of every roadmap: logical qubit counts cannot exceed physical atom counts.",
-    "narrative_updated": "2026-07-30"
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "scale.transport",
@@ -164,7 +173,8 @@
     ],
     "blurb": "Cavity and nanophotonic atom–photon entanglement. Routing around the single-chamber limit with modular architecture.",
     "narrative": "There is a ceiling on how many atoms one vacuum chamber can hold, and this branch routes around it not with a bigger chamber but with entanglement between chambers. Cavity and nanophotonic interfaces create atom–photon entanglement; fiber links the modules — the same goal as the scale branch (more qubits) by a different strategy. Telecom wavelength conversion and atom–photon entanglement fidelity are the current bottlenecks; the moment modular architecture works, this branch is promoted from supporting cast to architectural axis.",
-    "narrative_updated": "2026-07-30"
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   },
   {
     "id": "software",
@@ -178,6 +188,7 @@
     ],
     "blurb": "Compilers, qubit mapping and routing, control stacks, resource estimation. Computer science in service of the hardware.",
     "narrative": "The moment hardware demonstrated logical qubits, the bottleneck moved to software — routing that physically moves atoms, zoned-architecture scheduling, and neutral-atom-specific compilation cannot reuse superconducting toolchains. This branch is the mirror image of classical: both are computer science, but classical rebuts the hardware's claims while software serves them. On this map it is structurally undercounted (much of the literature lives in CS categories) — it is larger than it looks.",
-    "narrative_updated": "2026-07-30"
+    "narrative_updated": "2026-07-30",
+    "narrative_provenance": "ai-draft"
   }
 ]
