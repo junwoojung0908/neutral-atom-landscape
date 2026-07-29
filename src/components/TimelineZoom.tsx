@@ -29,13 +29,13 @@ function hash(s: string): number {
 }
 const radius = (c: number) => clamp(2.2 + Math.sqrt(c) * 0.45, 2.2, 16);
 
-function wrap2(t: string): string[] {
+function wrap2(t: string, maxLen = 24): string[] {
   const words = displayTitle(t).split(/\s+/);
   const lines: string[] = [];
   let cur = "";
   for (const w of words) {
     if (lines.length >= 2) break;
-    if ((cur + " " + w).trim().length > 24) { lines.push(cur.trim()); cur = w; }
+    if ((cur + " " + w).trim().length > maxLen) { lines.push(cur.trim()); cur = w; }
     else cur = (cur + " " + w).trim();
   }
   if (lines.length < 2 && cur) lines.push(cur.trim());
@@ -60,8 +60,8 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const wrapRef = useRef<HTMLDivElement>(null);
   const [H, setH] = useState(420);
   const [narrow, setNarrow] = useState(false);
-  const W = narrow ? 560 : 1000;
-  const M = narrow ? { l: 128, r: 10, t: 8, b: 20 } : { l: 156, r: 14, t: 8, b: 22 };
+  const W = narrow ? 400 : 1000;
+  const M = narrow ? { l: 108, r: 8, t: 6, b: 18 } : { l: 156, r: 14, t: 8, b: 22 };
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
@@ -70,7 +70,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       if (r.width > 50) {
         const nw = r.width < 620;
         setNarrow(nw);
-        const w = nw ? 560 : 1000;
+        const w = nw ? 400 : 1000;
         setH(clamp(Math.round((w * r.height) / r.width), 240, 1400));
       }
     };
@@ -313,10 +313,10 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       if (out.length >= 40) break;
       if (placed.some((r) => Math.abs(r.y - v.y) < 18 && Math.abs(r.x - v.x) < 195)) continue;
       placed.push({ x: v.x, y: v.y });
-      out.push({ p: v.p, x: v.x, y: v.y, lines: wrap2(v.p.title) });
+      out.push({ p: v.p, x: v.x, y: v.y, lines: wrap2(v.p.title, narrow ? 17 : 24) });
     }
     return out;
-  }, [visible]);
+  }, [visible, narrow]);
 
   const grpActive = checked.size > 0;
   const qActive = qn.length > 0;
@@ -338,10 +338,10 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       <div className="tlz-help">
         <span className="tlz-meta">코퍼스 {papers.length.toLocaleString()}편 · OpenAlex 인용 · 갱신 {UPDATED}</span>
         <span className="tlz-controls">
-          연도<button className="tlz-reset" onClick={() => zoomAxis("x", 1.6, cx)}>＋</button>
-          <button className="tlz-reset" onClick={() => zoomAxis("x", 1 / 1.6, cx)}>－</button>
-          가지<button className="tlz-reset" onClick={() => zoomAxis("y", 1.6, cy)}>＋</button>
-          <button className="tlz-reset" onClick={() => zoomAxis("y", 1 / 1.6, cy)}>－</button>
+          <span className="tlz-zlabel">연도</span><button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("x", 1.6, cx)}>＋</button>
+          <button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("x", 1 / 1.6, cx)}>－</button>
+          <span className="tlz-zlabel">가지</span><button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1.6, cy)}>＋</button>
+          <button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1 / 1.6, cy)}>－</button>
           <button className="tlz-reset" onClick={() => { cancelAnim(); setFitted(null); animateTo({ kx: 1, ky: 1, tx: 0, ty: 0 }); }}>초기화</button>
           {fitted && (
             <button className="tlz-reset tlz-listbtn" onClick={() => onSelectBranch(laneMetaMap.get(fitted)?.branch ?? fitted)}>
