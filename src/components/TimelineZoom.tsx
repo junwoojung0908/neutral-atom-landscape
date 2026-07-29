@@ -157,6 +157,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   });
   const coarse = view.ky < SPLIT_KY; // 줌아웃 = 대분류 5개
   const [hover, setHover] = useState<string | null>(null);
+  const eff = hover ?? selectedId ?? null; // 강조 대상(hover 우선, 없으면 선택 논문)
   const [checked, setChecked] = useState<Set<string>>(
     () => new Set((new URLSearchParams(window.location.search).get("g") ?? "").split(",").filter(Boolean)),
   );
@@ -382,13 +383,14 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const picked: TPaper[] = [];
     const src = coarse ? byGroupSorted : byLaneSorted;
     for (const arr of src.values()) for (const p of arr.slice(0, perLane)) picked.push(p);
-    // 큐레이션 관계(논쟁 등) 양끝 논문은 LOD 와 무관하게 항상 표시
-    for (const e of curatedEdges) for (const id of [e.from, e.to]) {
-      const p = byId.get(id);
-      if (p) picked.push(p);
-    }
     picked.sort((a, b) => b.score - a.score); // 라벨 우선순위 = 중요도(score)순
     for (const p of picked) push(p);
+    if (eff) for (const e of curatedEdges) {
+      if (e.from === eff || e.to === eff) {
+        const other = byId.get(e.from === eff ? e.to : e.from);
+        if (other) push(other);
+      }
+    }
     if (qn) for (const p of papers) if (matched.has(p.id)) push(p);
     // 겹침 완화: 3회 반복 분리 + 논문당 총 이동 12 상한(위치 안정성)
     const origin = out.map((o) => ({ x: o.x, y: o.y }));
@@ -415,7 +417,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       if (d > 12) { out[i].x = origin[i].x + (dx / d) * 12; out[i].y = origin[i].y + (dy / d) * 12; }
     }
     return out;
-  }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched]);
+  }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched, eff]);
 
   const posS = useMemo(() => new Map(visible.map((v) => [v.p.id, v])), [visible]);
   const visSet = useMemo(() => new Set(visible.map((v) => v.p.id)), [visible]);
@@ -423,7 +425,6 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     () => citeEdges.filter((e) => majorIds.has(e.from) && majorIds.has(e.to) && visSet.has(e.from) && visSet.has(e.to)),
     [majorIds, visSet],
   );
-  const eff = hover ?? selectedId ?? null;
   const hoverEdges = useMemo(
     () => (eff ? citeEdges.filter((e) => (e.from === eff || e.to === eff) && visSet.has(e.from) && visSet.has(e.to)) : []),
     [eff, visSet],
@@ -598,15 +599,15 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             const a = posS.get(e.from), b = posS.get(e.to);
             return a && b ? <line key={`hv-${i}`} className="tlz-edge-hi" x1={a.x} y1={a.y} x2={b.x} y2={b.y} /> : null;
           })}
-          {/* 큐레이션 관계: contests=빨간 점선, proposes→implements=진한 실선 */}
-          {curatedEdges.map((e, i) => {
+          {/* 큐레이션 관계는 관련 논문 hover/선택 시에만 (표본이 적어 상시 표시는 임의로 보임) */}
+          {eff && curatedEdges.filter((e) => e.from === eff || e.to === eff).map((e, i) => {
             const a = posS.get(e.from), b = posS.get(e.to);
             if (!a || !b) return null;
             const contests = e.rel === "contests";
             return (
               <line key={`cur-${i}`} className={contests ? "tlz-cur-con" : "tlz-cur-imp"}
                 x1={a.x} y1={a.y} x2={b.x} y2={b.y}>
-                <title>{e.rel}</title>
+                <title>{e.rel === "contests" ? "반박 (contests)" : e.rel}</title>
               </line>
             );
           })}
