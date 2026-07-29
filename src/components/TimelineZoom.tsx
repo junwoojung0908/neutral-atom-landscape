@@ -97,6 +97,66 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
   const [hover, setHover] = useState<string | null>(null);
   const [checked, setChecked] = useState<Set<string>>(new Set());
   const [q, setQ] = useState("");
+  const [fitted, setFitted] = useState<string | null>(null); // 화면에 맞춰 확대된 레인
+  const raf = useRef<number | null>(null);
+
+  // 부드러운 전환: 현재 view → target (ease-in-out cubic, ~450ms)
+  const animateTo = (target: Partial<View>) => {
+    if (raf.current) cancelAnimationFrame(raf.current);
+    const from = { ...viewRef.current };
+    const to = { ...from, ...target };
+    const t0 = performance.now();
+    const D = 450;
+    const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+    let done = false;
+    const step = (now: number) => {
+      const t = clamp((now - t0) / D, 0, 1);
+      const e = ease(t);
+      setView({
+        kx: from.kx + (to.kx - from.kx) * e,
+        ky: from.ky + (to.ky - from.ky) * e,
+        tx: from.tx + (to.tx - from.tx) * e,
+        ty: from.ty + (to.ty - from.ty) * e,
+      });
+      if (t < 1) raf.current = requestAnimationFrame(step);
+      else {
+        raf.current = null;
+        done = true;
+      }
+    };
+    raf.current = requestAnimationFrame(step);
+    // 안전장치: 탭이 백그라운드라 rAF 가 멈춰도 최종 상태는 보장
+    window.setTimeout(() => {
+      if (!done && raf.current) {
+        cancelAnimationFrame(raf.current);
+        raf.current = null;
+        setView(to);
+      }
+    }, D + 120);
+  };
+  const viewRef = useRef(view);
+  viewRef.current = view;
+  const cancelAnim = () => {
+    if (raf.current) {
+      cancelAnimationFrame(raf.current);
+      raf.current = null;
+    }
+  };
+
+  // 레인 클릭: 그 분야가 화면 위아래에 딱 맞게 확대(토글)
+  const fitLane = (id: string) => {
+    const i = laneIndex.get(id) ?? 0;
+    if (fitted === id) {
+      setFitted(null);
+      animateTo({ ky: 1, ty: 0 });
+      return;
+    }
+    const ky = lanes.length; // laneH * ky == PH → 위아래 딱 맞음
+    const laneTop = M.t + i * laneH;
+    const ty = M.t - laneTop * ky;
+    setFitted(id);
+    animateTo({ ky, ty });
+  };
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number } | null>(null);
 
@@ -118,6 +178,8 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
     const onWheel = (e: WheelEvent) => {
       if (!e.ctrlKey && !e.metaKey && !e.shiftKey) return; // 평소 휠 = 페이지 스크롤
       e.preventDefault();
+      cancelAnim();
+      setFitted(null);
       const p = toSvg(e.clientX, e.clientY);
       const f = Math.exp(-e.deltaY * 0.0016);
       if (e.shiftKey) zoomAxis("x", f, p.x); // Shift+휠 = 연도 줌
@@ -209,7 +271,12 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
           <button className="tlz-reset" onClick={() => zoomAxis("x", 1 / 1.6, cx)}>－</button>
           가지<button className="tlz-reset" onClick={() => zoomAxis("y", 1.6, cy)}>＋</button>
           <button className="tlz-reset" onClick={() => zoomAxis("y", 1 / 1.6, cy)}>－</button>
-          <button className="tlz-reset" onClick={() => setView({ kx: 1, ky: 1, tx: 0, ty: 0 })}>초기화</button>
+          <button className="tlz-reset" onClick={() => { cancelAnim(); setFitted(null); animateTo({ kx: 1, ky: 1, tx: 0, ty: 0 }); }}>초기화</button>
+          {fitted && (
+            <button className="tlz-reset tlz-listbtn" onClick={() => onSelectBranch(fitted)}>
+              {fieldById.get(fitted)?.ko} 논문 목록 ▸
+            </button>
+          )}
           <span className="tlz-hint">Shift+휠=연도 · Ctrl+휠=가지 · 드래그=이동 · 점 클릭=arXiv</span>
         </span>
       </div>
@@ -242,7 +309,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
         </div>
       )}
       <svg ref={svgRef} className="tlz-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet"
-        onMouseDown={(e) => (drag.current = { x: e.clientX, y: e.clientY })}
+        onMouseDown={(e) => { cancelAnim(); drag.current = { x: e.clientX, y: e.clientY }; }}
         onMouseMove={(e) => {
           if (!drag.current) return;
           const r = svgRef.current!.getBoundingClientRect();
@@ -305,8 +372,11 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
           if (cyl < M.t - 4 || cyl > H - M.b + 4) return null;
           const f = fieldById.get(id);
           return (
-            <text key={`ll-${id}`} className="tlz-lanelabel" x={M.l - 8} y={cyl} textAnchor="end" dominantBaseline="middle"
-              fill={f?.color} onClick={() => onSelectBranch(id)}>{f?.ko}</text>
+            <text key={`ll-${id}`} className={`tlz-lanelabel${fitted === id ? " fit" : ""}`} x={M.l - 8} y={cyl}
+              textAnchor="end" dominantBaseline="middle" fill={f?.color} onClick={() => fitLane(id)}>
+              <title>클릭: 이 분야를 화면에 맞게 확대 (다시 클릭하면 복귀)</title>
+              {f?.ko}
+            </text>
           );
         })}
         {/* 하단 연도축 — 항상 고정, 줌 정도에 따라 3년 bin ↔ 연도별로 촘촘해짐 */}

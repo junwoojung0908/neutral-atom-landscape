@@ -690,3 +690,12 @@ input[type="range"] {
   font-size: 11px;
   width: 200px;
 }
+
+.tlz-lanelabel.fit {
+  font-weight: 800;
+  text-decoration: underline;
+}
+.tlz-listbtn {
+  border-color: var(--focus);
+  color: var(--focus);
+}
