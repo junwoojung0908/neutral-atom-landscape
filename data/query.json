@@ -1,67 +1,236 @@
 {
-  "version": "",
+  "version": "2026-07-29",
   "corpus": {
-    "categories": ["quant-ph", "physics.atom-ph"],
-    "date_range": { "from": "2015-01-01", "to": "2026-07-31" },
+    "categories": [
+      "quant-ph",
+      "physics.atom-ph"
+    ],
+    "date_range": {
+      "from": "2015-01-01",
+      "to": "2026-07-31"
+    },
     "include": [
-      "Rydberg", "optical tweezer", "optical tweezers", "tweezer array",
-      "atom array", "neutral atom", "neutral-atom", "atom-by-atom", "reconfigurable atom"
+      "Rydberg",
+      "optical tweezer",
+      "optical tweezers",
+      "tweezer array",
+      "atom array",
+      "neutral atom",
+      "neutral-atom",
+      "atom-by-atom",
+      "reconfigurable atom"
     ],
     "exclude": [
-      "Rydberg polariton", "Rydberg exciton", "Rydberg blockade in semiconductor",
-      "excitonic Rydberg", "Rydberg series in molecules",
-      "vapor cell", "room-temperature vapor", "rydberg sensor", "atomic receiver",
-      "electric field measurement", "electric field strength", "electrometry",
-      "microwave electric field", "rf sensing",
-      "ultralong-range", "ultra-long-range", "potential energy curve", "rydberg constant", "photoassociation",
-      "rydberg gas", "wave packet", "matter wave",
-      "rate coefficient", "charge transfer", "charge exchange", "ionization threshold", "lamb shift",
-      "ion crystal", "quantum gas microscope"
+      "Rydberg polariton",
+      "Rydberg exciton",
+      "Rydberg blockade in semiconductor",
+      "excitonic Rydberg",
+      "Rydberg series in molecules",
+      "vapor cell",
+      "room-temperature vapor",
+      "rydberg sensor",
+      "atomic receiver",
+      "electric field measurement",
+      "electric field strength",
+      "electrometry",
+      "microwave electric field",
+      "rf sensing",
+      "ultralong-range",
+      "ultra-long-range",
+      "potential energy curve",
+      "rydberg constant",
+      "photoassociation",
+      "rydberg gas",
+      "wave packet",
+      "matter wave",
+      "rate coefficient",
+      "charge transfer",
+      "charge exchange",
+      "ionization threshold",
+      "lamb shift",
+      "ion crystal",
+      "quantum gas microscope"
     ]
   },
   "fields": {
     "qec": {
-      "terms": ["error correction", "logical qubit", "surface code", "color code", "fault-tolerant", "fault tolerance", "stabilizer", "magic state", "qLDPC", "code distance", "transversal gate", "decoder", "syndrome"],
+      "terms": [
+        "error correction",
+        "logical qubit",
+        "surface code",
+        "color code",
+        "fault-tolerant",
+        "fault tolerance",
+        "stabilizer",
+        "magic state",
+        "qLDPC",
+        "code distance",
+        "transversal gate",
+        "decoder",
+        "syndrome"
+      ],
       "exclusions": []
     },
     "readout": {
-      "terms": ["mid-circuit", "midcircuit", "non-destructive", "nondestructive", "state detection", "erasure detection", "leakage detection", "ancilla measurement", "imaging fidelity", "site-resolved imaging"],
+      "terms": [
+        "mid-circuit",
+        "midcircuit",
+        "non-destructive",
+        "nondestructive",
+        "state detection",
+        "erasure detection",
+        "leakage detection",
+        "ancilla measurement",
+        "imaging fidelity",
+        "site-resolved imaging"
+      ],
       "exclusions": []
     },
     "sim": {
-      "terms": ["quantum simulation", "quantum simulator", "many-body", "spin model", "Ising model", "XY model", "quantum magnetism", "topological order", "spin liquid", "thermalization", "quantum scar", "quench dynamics", "phase diagram"],
+      "terms": [
+        "quantum simulation",
+        "quantum simulator",
+        "many-body",
+        "spin model",
+        "Ising model",
+        "XY model",
+        "quantum magnetism",
+        "topological order",
+        "spin liquid",
+        "thermalization",
+        "quantum scar",
+        "quench dynamics",
+        "phase diagram"
+      ],
       "exclusions": []
     },
     "species": {
-      "terms": ["alkaline-earth", "alkaline earth", "nuclear spin qubit", "metastable", "ytterbium", "strontium", "omg architecture", "dual-species", "two-species", "hyperfine qubit", "polar molecule", "molecular qubit"],
+      "terms": [
+        "alkaline-earth",
+        "alkaline earth",
+        "nuclear spin qubit",
+        "metastable",
+        "ytterbium",
+        "strontium",
+        "omg architecture",
+        "dual-species",
+        "two-species",
+        "hyperfine qubit",
+        "polar molecule",
+        "molecular qubit"
+      ],
       "exclusions": []
     },
     "clock": {
-      "terms": ["optical clock", "clock transition", "spin squeezing", "quantum metrology", "frequency standard", "magic wavelength", "atomic clock", "squeezed state", "Heisenberg limit"],
+      "terms": [
+        "optical clock",
+        "clock transition",
+        "spin squeezing",
+        "quantum metrology",
+        "frequency standard",
+        "magic wavelength",
+        "atomic clock",
+        "squeezed state",
+        "Heisenberg limit"
+      ],
       "exclusions": []
     },
     "opt": {
-      "terms": ["maximum independent set", "combinatorial optimization", "QUBO", "MaxCut", "QAOA", "adiabatic algorithm", "unit-disk graph", "graph problem", "optimization problem", "annealing schedule"],
+      "terms": [
+        "maximum independent set",
+        "combinatorial optimization",
+        "QUBO",
+        "MaxCut",
+        "QAOA",
+        "adiabatic algorithm",
+        "unit-disk graph",
+        "graph problem",
+        "optimization problem",
+        "annealing schedule"
+      ],
       "exclusions": []
     },
     "classical": {
-      "terms": ["tensor network", "matrix product state", "classical simulation", "classical algorithm", "simulated annealing", "quantum advantage", "computational hardness", "benchmarking", "verification protocol", "classically simulable"],
+      "terms": [
+        "tensor network",
+        "matrix product state",
+        "classical simulation",
+        "classical algorithm",
+        "simulated annealing",
+        "quantum advantage",
+        "computational hardness",
+        "benchmarking",
+        "verification protocol",
+        "classically simulable"
+      ],
       "exclusions": []
     },
     "gate": {
-      "terms": ["gate fidelity", "two-qubit gate", "entangling gate", "controlled-Z", "CZ gate", "Bell state fidelity", "erasure conversion", "pulse shaping", "Rydberg blockade", "Raman transition", "single-qubit gate"],
+      "terms": [
+        "gate fidelity",
+        "two-qubit gate",
+        "entangling gate",
+        "controlled-Z",
+        "CZ gate",
+        "Bell state fidelity",
+        "erasure conversion",
+        "pulse shaping",
+        "Rydberg blockade",
+        "Raman transition",
+        "single-qubit gate"
+      ],
       "exclusions": []
     },
     "scale": {
-      "terms": ["atom loss", "rearrangement", "atom reloading", "continuous operation", "atom transport", "coherent transport", "trap depth", "spatial light modulator", "acousto-optic deflector", "optical conveyor", "array size", "vacuum lifetime"],
+      "terms": [
+        "atom loss",
+        "rearrangement",
+        "atom reloading",
+        "continuous operation",
+        "atom transport",
+        "coherent transport",
+        "trap depth",
+        "spatial light modulator",
+        "acousto-optic deflector",
+        "optical conveyor",
+        "array size",
+        "vacuum lifetime"
+      ],
       "exclusions": []
     },
     "net": {
-      "terms": ["cavity", "optical cavity", "nanophotonic", "photonic interface", "atom-photon", "quantum network", "quantum repeater", "quantum memory", "entanglement distribution", "fiber coupling", "modular architecture", "interconnect"],
+      "terms": [
+        "cavity",
+        "optical cavity",
+        "nanophotonic",
+        "photonic interface",
+        "atom-photon",
+        "quantum network",
+        "quantum repeater",
+        "quantum memory",
+        "entanglement distribution",
+        "fiber coupling",
+        "modular architecture",
+        "interconnect"
+      ],
       "exclusions": []
     },
     "software": {
-      "terms": ["circuit compilation", "qubit mapping", "qubit routing", "transpilation", "ZX calculus", "scheduling", "control stack", "control plane", "instruction set", "architecture simulation", "resource estimation", "pulse-level control", "hardware-software co-design"],
+      "terms": [
+        "circuit compilation",
+        "qubit mapping",
+        "qubit routing",
+        "transpilation",
+        "ZX calculus",
+        "scheduling",
+        "control stack",
+        "control plane",
+        "instruction set",
+        "architecture simulation",
+        "resource estimation",
+        "pulse-level control",
+        "hardware-software co-design"
+      ],
       "exclusions": []
     }
   }
