@@ -8,8 +8,7 @@ import groupsJson from "../../data/groups.json";
 // 박스형 무한줌. x(연도)·y(가지) 축을 독립적으로 줌. 축 라벨은 박스 가장자리에 고정,
 // 내용만 클립. 줌인할수록(면적↑) 저인용 논문이 더 드러남(LOD).
 const W = 1000;
-const H = 360; // 세로 조밀 — 두 축이 항상 한 화면에
-const M = { l: 156, r: 30, t: 8, b: 22 };
+const M = { l: 156, r: 14, t: 8, b: 22 };
 const Y0 = 2015;
 const Y1 = 2026;
 const NYEARS = Y1 - Y0 + 1; // 12
@@ -18,8 +17,8 @@ const BIN_LABELS = ["2015–17", "2018–20", "2021–23", "2024–26"];
 const MAJOR = 18;
 const UPDATED = "2026-07-29";
 const PW = W - M.l - M.r; // plot width
-const PH = H - M.t - M.b;
 const YEARW = PW / NYEARS;
+// 세로(H)는 컨테이너 비율에 맞춰 동적 — 축이 화면 양끝에 붙는다(글자 왜곡 없음).
 
 const groupsMeta = groupsJson as { id: string; label: string }[];
 const groupLabel = new Map(groupsMeta.map((g) => [g.id, g.label]));
@@ -53,6 +52,20 @@ interface Props {
 }
 
 export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const [H, setH] = useState(420);
+  useEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => {
+      const r = el.getBoundingClientRect();
+      if (r.width > 50) setH(clamp(Math.round((W * r.height) / r.width), 240, 900));
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+  const PH = H - M.t - M.b;
+
   const lanes = firstLevelFields.map((f) => f.id);
   const laneH = PH / lanes.length;
   const laneIndex = useMemo(() => new Map(lanes.map((id, i) => [id, i])), [lanes]);
@@ -220,7 +233,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
         {grpActive && <button className="tlz-reset" onClick={() => setChecked(new Set())}>해제</button>}
       </div>
 
-      <div className="tlz-svgwrap">
+      <div className="tlz-svgwrap" ref={wrapRef}>
       {hpaper && (
         <div className="tlz-hoverinfo">
           <strong>{displayTitle(hpaper.title)}</strong> · 인용 {hpaper.cited} · {hpaper.author} · {hpaper.year}
