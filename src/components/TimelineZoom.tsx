@@ -29,18 +29,20 @@ function hash(s: string): number {
 }
 const radius = (c: number) => clamp(2.2 + Math.sqrt(c) * 0.45, 2.2, 16);
 
-function wrap2(t: string, maxLen = 24): string[] {
+function wrap2(t: string, maxLen = 26, maxLines = 3): string[] {
   const words = displayTitle(t).split(/\s+/);
   const lines: string[] = [];
   let cur = "";
   for (const w of words) {
-    if (lines.length >= 2) break;
-    if ((cur + " " + w).trim().length > maxLen) { lines.push(cur.trim()); cur = w; }
-    else cur = (cur + " " + w).trim();
+    if ((cur + " " + w).trim().length > maxLen) {
+      lines.push(cur.trim());
+      cur = w;
+      if (lines.length >= maxLines) break;
+    } else cur = (cur + " " + w).trim();
   }
-  if (lines.length < 2 && cur) lines.push(cur.trim());
-  else if (cur && lines.length === 2) lines[1] = lines[1].slice(0, 22) + "…";
-  return lines.filter(Boolean).slice(0, 2);
+  if (lines.length < maxLines && cur) lines.push(cur.trim());
+  else if (lines.length >= maxLines) lines[maxLines - 1] = lines[maxLines - 1].slice(0, maxLen - 1) + "…";
+  return lines.filter(Boolean).slice(0, maxLines);
 }
 
 interface View { kx: number; ky: number; tx: number; ty: number }
@@ -271,7 +273,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     return s;
   }, [qn]);
 
-  const cutoff = clamp(Math.round(55 * Math.sqrt(view.kx * view.ky)), 55, papers.length);
+  const cutoff = clamp(Math.round(32 * Math.sqrt(view.kx * view.ky)), 32, papers.length);
   const visible = useMemo(() => {
     const out: { p: TPaper; x: number; y: number }[] = [];
     const push = (p: TPaper) => {
@@ -312,7 +314,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const out: { p: TPaper; lines: string[]; lx: number; ly: number }[] = [];
     const fs = narrow ? 8.5 : 9;
     for (const v of visible) {
-      const lines = wrap2(v.p.title, narrow ? 17 : 24);
+      const lines = wrap2(v.p.title, narrow ? 18 : 26, 3);
       const wText = Math.max(...lines.map((l) => l.length)) * fs * 0.56 + 26;
       const hText = lines.length * (fs + 1.5) + 2;
       const r = radius(v.p.cited);
@@ -326,6 +328,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       let ok = false;
       for (const c of cands) {
         const rect = { x1: c.lx, y1: c.ly - hText / 2, x2: c.lx + wText, y2: c.ly + hText / 2 };
+        if (rect.x1 < M.l + 2) continue; // 플롯 왼쪽 경계 밖(잘림) 후보 제외
         if (!placed.some((q2) => rect.x1 < q2.x2 && rect.x2 > q2.x1 && rect.y1 < q2.y2 && rect.y2 > q2.y1)) {
           chosen = c;
           placed.push(rect);
