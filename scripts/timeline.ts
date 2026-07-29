@@ -89,6 +89,7 @@ const papers = cls.map((p) => {
     ...(() => { const sc = scoreOf(p.id, p.year, cit[p.id]?.cited ?? 0); return { score: sc.score, hot: sc.hot || undefined }; })(),
     title: r?.title ?? p.id,
     author: a0 ? `${a0}${(r?.authors?.length ?? 1) > 1 ? " et al." : ""}` : "",
+    pi: r?.authors?.length ? r.authors[r.authors.length - 1] : "",
     group: groupOf(p.id),
     review: isReview(p.id, r?.title ?? "") || undefined,
   };

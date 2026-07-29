@@ -29,6 +29,11 @@ function hash(s: string): number {
   return ((h % 1000) + 1000) % 1000;
 }
 const radius = (c: number) => clamp(2.2 + Math.sqrt(c) * 0.45, 2.2, 16);
+/** 마지막 저자(교신 관례)의 성만 — 라벨용 */
+const surname = (name?: string) => {
+  const parts = (name ?? "").trim().split(/\s+/);
+  return parts.length ? parts[parts.length - 1] : "";
+};
 
 function wrap2(t: string, maxLen = 26, maxLines = 3): string[] {
   const words = displayTitle(t).split(/\s+/);
@@ -452,7 +457,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const DISTS = [4, 16, 30, 46];
     for (const v of visible) {
       const lines = wrap2(v.p.title, narrow ? 18 : 26, 3);
-      const wText = Math.max(...lines.map((l) => l.length)) * fs * 0.56 + 26;
+      const wText = Math.max(...lines.map((l) => l.length)) * fs * 0.56 + 26 + surname(v.p.pi).length * fs * 0.56;
       const hText = lines.length * (fs + 1.5) + 2;
       const r = radius(v.p.score);
       let chosen: { lx: number; ly: number; dist: number; dx: number; dy: number } | null = null;
@@ -553,7 +558,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       <div className="tlz-svgwrap" ref={wrapRef}>
       {hpaper && (
         <div className="tlz-hoverinfo">
-          <strong>{displayTitle(hpaper.title)}</strong> · 인용 {hpaper.cited} · {hpaper.author} · {hpaper.year}
+          <strong>{displayTitle(hpaper.title)}</strong> · 인용 {hpaper.cited} · {hpaper.author} · PI {hpaper.pi || "?"} · {hpaper.year}
           {hpaper.group && <span className="tlz-hg"> · {groupLabel.get(hpaper.group) ?? hpaper.group}</span>}
           <span className="tlz-hf"> · {hpaper.fields.map((f) => fieldById.get(f)?.ko ?? f).join(", ")}</span>
         </div>
@@ -626,7 +631,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           <text key={`lbl-${p.id}`} className="tlz-plabel" x={lx} y={ly - (lines.length - 1) * 5 + 3}>
             {lines.map((ln, i) => (
               <tspan key={i} x={lx} dy={i === 0 ? 0 : 10}>
-                {ln}{i === lines.length - 1 ? <tspan className="tlz-cite"> · {p.cited}{p.hot ? "↗" : ""}</tspan> : null}
+                {ln}{i === lines.length - 1 ? <tspan className="tlz-cite"> · {p.cited}{p.hot ? "↗" : ""}{surname(p.pi) ? ` · ${surname(p.pi)}` : ""}</tspan> : null}
               </tspan>
             ))}
           </text>

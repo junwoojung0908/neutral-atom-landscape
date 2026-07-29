@@ -29,6 +29,7 @@ export default function AboutPage() {
           <code> max(인용, 인용/연차 × 4)</code> 로 환산 — 최신 임팩트가 절대 인용에 묻히지 않게.
           보정된 논문({hot}편)은 <strong>↗</strong> 표시</li>
         <li>*주요 저널 판별: DOI 접두(Nature 계열·Science·PNAS·Quantum·PRL·PRX·RMP)</li>
+        <li>라벨의 저자명은 <strong>마지막 저자</strong>(AMO 교신저자 관례의 근사) — 실제 교신저자 메타데이터가 아님</li>
         <li>리뷰 논문은 속 빈 원 (OpenAlex type + 제목 휴리스틱 — type 은 부분 수집 상태라 불완전)</li>
       </ul>
 

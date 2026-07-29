@@ -47,7 +47,7 @@ export default function PaperPanel({ paperId, onNavigate, onClose }: Props) {
         {p.group && <span className="badge">{groupLabel.get(p.group) ?? p.group}</span>}
       </div>
       <h2 className="detail-title">{displayTitle(p.title)}</h2>
-      <p className="detail-byline">{p.author} · {p.year}</p>
+      <p className="detail-byline">{p.author} · {p.year}{p.pi ? <span className="detail-affil"> · 교신(마지막 저자): {p.pi}</span> : null}</p>
       <div className="detail-fields">
         {p.fields.map((f) => (
           <span key={f} className="field-chip" style={{ borderColor: fieldById.get(f)?.color }}>

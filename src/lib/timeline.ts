@@ -9,6 +9,7 @@ export interface TPaper {
   cited: number;
   title: string;
   author: string;
+  pi?: string;
   group: string | null;
   review?: boolean;
   score: number;
