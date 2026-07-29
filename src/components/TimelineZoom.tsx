@@ -61,18 +61,18 @@ interface Props {
 
 // 줌아웃 대분류(5) — 세로 줌인하면 13개 세분류로 갈라짐(시맨틱 줌)
 const LANE_GROUPS = [
-  { id: "g.digital", ko: "Digital computing", color: "#4E79A7", children: ["qec", "gate", "readout"] },
-  { id: "g.sim", ko: "Analog simulation", color: "#E15759", children: ["sim.eq", "sim.dyn", "sim.gauge"] },
-  { id: "g.atom", ko: "Species · metrology", color: "#59A14F", children: ["species", "clock"] },
-  { id: "g.algo", ko: "Algorithms · verification", color: "#B07AA1", children: ["opt", "classical", "software"] },
-  { id: "g.scale", ko: "Scale · interconnects", color: "#17BECF", children: ["scale", "net"] },
+  { id: "g.digital", ko: "Digital computing", color: "#6EA8E5", children: ["qec", "gate", "readout"] },
+  { id: "g.sim", ko: "Analog simulation", color: "#FF6B6E", children: ["sim.eq", "sim.dyn", "sim.gauge"] },
+  { id: "g.atom", ko: "Species · metrology", color: "#7ED67E", children: ["species", "clock"] },
+  { id: "g.algo", ko: "Algorithms · verification", color: "#C99BD9", children: ["opt", "classical", "software"] },
+  { id: "g.scale", ko: "Scale · interconnects", color: "#3FD3E5", children: ["scale", "net"] },
 ];
 const SPLIT_KY = 2.2; // 이 세로 배율부터 세분류 표시
 
 const SIM_SUBS = [
-  { id: "sim.eq", ko: "Simulation · phases", color: "#E15759", branch: "sim" },
-  { id: "sim.dyn", ko: "Simulation · dynamics", color: "#9E3B3E", branch: "sim" },
-  { id: "sim.gauge", ko: "Simulation · gauge/topo", color: "#5C2223", branch: "sim" },
+  { id: "sim.eq", ko: "Simulation · phases", color: "#FF7B7E", branch: "sim" },
+  { id: "sim.dyn", ko: "Simulation · dynamics", color: "#E05C60", branch: "sim" },
+  { id: "sim.gauge", ko: "Simulation · gauge/topo", color: "#B04A4F", branch: "sim" },
 ];
 
 export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Props) {
@@ -80,7 +80,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const [H, setH] = useState(420);
   const [narrow, setNarrow] = useState(false);
   const W = narrow ? 400 : 1000;
-  const M = narrow ? { l: 14, r: 8, t: 6, b: 18 } : { l: 156, r: 14, t: 8, b: 22 };
+  const M = narrow ? { l: 14, r: 8, t: 6, b: 18 } : { l: 172, r: 14, t: 8, b: 22 };
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
@@ -560,7 +560,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
         <div className="tlz-hoverinfo">
           <strong>{displayTitle(hpaper.title)}</strong> · cited {hpaper.cited} · {hpaper.author} · PI {hpaper.pi || "?"} · {hpaper.year}
           {hpaper.group && <span className="tlz-hg"> · {groupLabel.get(hpaper.group) ?? hpaper.group}</span>}
-          <span className="tlz-hf"> · {hpaper.fields.map((f) => fieldById.get(f)?.ko ?? f).join(", ")}</span>
+          <span className="tlz-hf"> · {hpaper.fields.map((f) => fieldById.get(f)?.en ?? f).join(", ")}</span>
         </div>
       )}
       <svg ref={svgRef} className="tlz-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet"
@@ -577,6 +577,14 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
         onMouseUp={() => (drag.current = null)} onMouseLeave={() => { drag.current = null; }}>
         <defs>
           <clipPath id="tlz-plot"><rect x={M.l} y={M.t} width={PW} height={PH} /></clipPath>
+          {/* 형광 글로우 — 점 그룹 전체에 한 번만 합성(성능) */}
+          <filter id="atomGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="1.8" result="b" />
+            <feMerge>
+              <feMergeNode in="b" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
         </defs>
 
         {/* 클립된 내용: 밴드·엣지·점·라벨 */}
@@ -616,14 +624,25 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
               </line>
             );
           })}
+          <g filter="url(#atomGlow)">
           {visible.map(({ p, x, y }) => (
-            <circle key={p.id} cx={x} cy={y} r={radius(p.score)} fill={p.review ? "var(--panel)" : (laneMetaMap.get(p.lane)?.color ?? "#888")}
+            <circle key={p.id} cx={x} cy={y} r={radius(p.score)} fill={p.review ? "var(--frame)" : (laneMetaMap.get(p.lane)?.color ?? "#888")}
               fillOpacity={dotOp(p)} stroke={dotRing(p) ? "var(--text)" : p.review ? (laneMetaMap.get(p.lane)?.color ?? "#888") : "none"}
               strokeWidth={dotRing(p) ? 1.5 : p.review ? 1.6 : 0}
               className="tlz-dot" onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onClick={() => onOpen(p)}>
               <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · cited ${p.cited}${p.hot ? ' (rising ↗)' : ''}`}</title>
             </circle>
           ))}
+          </g>
+          {/* 시그니처: 트랩 링 — hover/선택된 점 바깥에서 조여드는 가는 링 */}
+          {eff && posS.get(eff) && (() => {
+            const v = posS.get(eff)!;
+            const r0 = radius(v.p.score);
+            return (
+              <circle key={`trap-${eff}`} className="tlz-trapring" cx={v.x} cy={v.y} r={r0 + 4}
+                style={{ ["--r0" as never]: `${r0 + 13}px`, ["--r1" as never]: `${r0 + 4}px` }} />
+            );
+          })()}
           {labels.map(({ p, lead }, i) =>
           lead ? <line key={`ld-${p.id}-${i}`} className="tlz-lead" x1={lead.x1} y1={lead.y1} x2={lead.x2} y2={lead.y2} /> : null,
         )}

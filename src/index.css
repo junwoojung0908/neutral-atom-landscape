@@ -1,18 +1,22 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: dark light;
 
-  --bg: #ffffff;
-  --panel: #f6f7f9;
-  --panel-2: #eceef1;
-  --border: #d7dbe0;
-  --text: #1a1c20;
-  --muted: #6b7280;
-  --neutral-edge: #8a909a;
-  --hub: #c3c8cf;
-  --focus: #3b82f6;
+  /* "형광 이미지" 토큰 — 플롯(CCD 프레임)이 사이트에서 가장 어둡다 */
+  --frame: #05070C;
+  --bg: #0C111B;
+  --panel: #131926;
+  --panel-2: #182033;
+  --border: #222B3B;
+  --text: #E8ECF4;
+  --muted: #8B94A7;
+  --atom: #F2F6FF;
+  --neutral-edge: #566073;
+  --hub: #2A3346;
+  --focus: #6EA8E5;
 
-  --sans: system-ui, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+  --display: "Bricolage Grotesque", "IBM Plex Sans", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
 
   font: 15px/1.5 var(--sans);
   color: var(--text);
@@ -20,36 +24,31 @@
   -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --bg: #0f1115;
-    --panel: #171a20;
-    --panel-2: #1f232b;
-    --border: #2a2f37;
-    --text: #e6e8eb;
-    --muted: #9aa0a8;
-    --neutral-edge: #6b7280;
-    --hub: #3a4048;
-    --focus: #60a5fa;
+    --frame: #EDF0F6;
+    --bg: #FFFFFF;
+    --panel: #F6F7FA;
+    --panel-2: #ECEFF4;
+    --border: #D8DDE6;
+    --text: #171B24;
+    --muted: #5D6675;
+    --atom: #0E1420;
+    --neutral-edge: #9AA3B2;
+    --hub: #C9D0DC;
+    --focus: #2F6DB5;
   }
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2, h3 { font-weight: 600; margin: 0; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 
-body {
-  margin: 0;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 600;
-  margin: 0;
-}
-
-:focus-visible {
-  outline: 2px solid var(--focus);
-  outline-offset: 2px;
+/* 데이터·축·배지·패널 라벨 공통 mono 규격 */
+.mono-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }

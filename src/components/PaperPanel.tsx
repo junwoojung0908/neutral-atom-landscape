@@ -51,7 +51,7 @@ export default function PaperPanel({ paperId, onNavigate, onClose }: Props) {
       <div className="detail-fields">
         {p.fields.map((f) => (
           <span key={f} className="field-chip" style={{ borderColor: fieldById.get(f)?.color }}>
-            {fieldById.get(f)?.ko ?? f}
+            {fieldById.get(f)?.en ?? f}
           </span>
         ))}
       </div>

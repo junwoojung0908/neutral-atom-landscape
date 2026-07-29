@@ -28,7 +28,10 @@
   gap: 10px;
 }
 .topbar h1 {
-  font-size: 15px;
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 .topbar .sub {
   color: var(--muted);
@@ -79,7 +82,11 @@
   padding: 2px 2px 6px;
 }
 .tlz-meta {
-  font-weight: 600;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
   color: var(--text);
 }
 .tlz-controls {
@@ -91,8 +98,11 @@
   color: var(--muted);
 }
 .tlz-laneband {
-  fill: var(--panel-2);
-  opacity: 0.45;
+  fill: #ffffff;
+  opacity: 0.025;
+}
+@media (prefers-color-scheme: light) {
+  .tlz-laneband { fill: #000000; opacity: 0.04; }
 }
 .tlz-groups {
   display: flex;
@@ -109,6 +119,7 @@
   font-weight: 600;
 }
 .tlz-chip {
+  font-size: 11px;
   display: inline-flex;
   align-items: center;
   gap: 3px;
@@ -191,15 +202,19 @@
 }
 .tlz-grid {
   stroke: var(--border);
-  stroke-opacity: 0.35;
+  stroke-opacity: 0.45;
 }
 .tlz-year {
+  font-family: var(--mono);
   font-size: 10px;
+  letter-spacing: 0.06em;
   fill: var(--muted);
 }
 .tlz-lanelabel {
-  font-size: 11px;
-  font-weight: 600;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
   cursor: pointer;
 }
 .tlz-lanelabel:hover {
@@ -222,15 +237,33 @@
 }
 .tlz-dot {
   cursor: pointer;
+  transition: fill-opacity 150ms ease;
 }
-.tlz-dot:hover {
-  stroke: var(--text);
-  stroke-width: 1.5;
+.tlz-trapring {
+  fill: none;
+  stroke: var(--atom);
+  stroke-width: 1;
+  opacity: 0.85;
+  pointer-events: none;
+  animation: trap 150ms ease-out;
+}
+@keyframes trap {
+  from { r: var(--r0); opacity: 0; }
+  to { r: var(--r1); opacity: 0.85; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tlz-trapring { animation: none; }
+  .tlz-dot { transition: none; }
 }
 .tlz-plabel {
   font-size: 9px;
   fill: var(--text);
+  opacity: 0.92;
   pointer-events: none;
+}
+.tlz-cite {
+  font-family: var(--mono);
+  font-size: 8px;
 }
 
 /* ---- survey layer (측정) ---- */
@@ -249,9 +282,10 @@
 }
 .stream-tag,
 .layer-tag {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text);
   border: 1px solid var(--border);
@@ -537,9 +571,12 @@ input[type="range"] {
   margin-bottom: 10px;
 }
 .badge {
-  font-size: 11px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   padding: 2px 7px;
-  border-radius: 999px;
+  border-radius: 4px;
   border: 1px solid var(--border);
   color: var(--muted);
 }
@@ -582,11 +619,14 @@ input[type="range"] {
   border: 1.5px solid var(--neutral-edge);
 }
 .detail-h {
-  font-size: 12px;
+  font-family: var(--mono);
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   color: var(--muted);
-  margin: 14px 0 4px;
+  margin: 16px 0 5px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
 }
 .detail-body {
   font-size: 13.5px;
@@ -647,7 +687,8 @@ input[type="range"] {
   text-decoration: underline;
 }
 .bp-meta {
-  font-size: 11px;
+  font-family: var(--mono);
+  font-size: 10.5px;
   color: var(--muted);
 }
 .bp-refs {
@@ -788,13 +829,14 @@ input[type="range"] {
 .nav-links { margin-left: auto; display: flex; gap: 12px; }
 .nav-links .nav-link { margin-left: 0; }
 .about {
-  max-width: 760px;
+  max-width: 68ch;
   margin: 0 auto;
-  padding: 18px 20px 40px;
-  font-size: 14px;
-  line-height: 1.65;
+  padding: 26px 20px 56px;
+  font-size: 15px;
+  line-height: 1.7;
 }
-.about h3 { margin: 18px 0 6px; font-size: 15px; }
+.about h2 { font-family: var(--display); font-size: 26px; font-weight: 700; margin-bottom: 10px; }
+.about h3 { font-family: var(--display); margin: 26px 0 8px; font-size: 17px; font-weight: 600; }
 .about ul { padding-left: 20px; margin: 4px 0; }
 .about li { margin: 3px 0; }
 .about code { font-family: var(--mono); background: var(--panel-2); padding: 0 4px; border-radius: 4px; }
