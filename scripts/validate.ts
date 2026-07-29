@@ -111,10 +111,22 @@ for (const f of fields) {
   }
 }
 
-// TODO(서사 우선): narrative 를 쓰기 시작하면 "weight>=4 인 노드는 어떤 가지의
-//   narrative 에서 [[id]] 로 언급돼야 한다" 검사를 켠다. 지금은 narrative 가 전부
-//   비어 있어 전량 실패하므로 넣지 않는다. thesis/weight_rationale 필수 검사는
-//   schema 를 optional 로 바꿔 이미 제거됨.
+// ---- 서사 ↔ entity 배선 검사 ----
+{
+  const narratives = fields.map((f) => String((f as Record<string, unknown>).narrative ?? ""));
+  const mentioned = new Set<string>();
+  for (const n of narratives) for (const m of n.matchAll(/\[\[(\w+)\]\]/g)) mentioned.add(m[1]);
+  // [1-4] 비실재 entity 참조 → ERROR
+  for (const id of mentioned) {
+    if (!entityIds.has(id)) errors.push(`[narrative] [[${id}]] 가 존재하지 않는 entity 를 가리킴`);
+  }
+  // [1-3] weight>=4 인데 어떤 서사에도 언급 안 됨 → WARN (ERROR 승격은 운영자 결정)
+  for (const e of entities) {
+    if (typeof e.weight === "number" && e.weight >= 4 && !mentioned.has(String(e.id))) {
+      warnings.push(`weight>=4 entity "${e.id}" 가 어떤 narrative 에서도 [[id]] 로 언급되지 않음`);
+    }
+  }
+}
 
 // ---- entity → field 참조 & verified 경고 ----
 for (const e of entities) {

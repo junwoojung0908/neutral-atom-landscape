@@ -833,8 +833,8 @@ input[type="range"] {
   font-size: 15px;
   line-height: 1.7;
 }
-.about h2 { font-family: var(--display); font-size: 26px; font-weight: 700; margin-bottom: 10px; }
-.about h3 { font-family: var(--display); margin: 26px 0 8px; font-size: 17px; font-weight: 600; }
+.about h2 { font-family: var(--display); font-size: 32px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 12px; }
+.about h3 { font-family: var(--display); margin: 28px 0 8px; font-size: 20px; font-weight: 600; }
 .about ul { padding-left: 20px; margin: 4px 0; }
 .about li { margin: 3px 0; }
 .about code { font-family: var(--mono); background: var(--panel-2); padding: 0 4px; border-radius: 4px; }
@@ -846,3 +846,20 @@ input[type="range"] {
   stroke-width: 0.7;
   stroke-opacity: 0.55;
 }
+
+.nar-chip {
+  display: inline;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--focus);
+  border-radius: 5px;
+  font: inherit;
+  font-size: 13px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.nar-chip:hover { border-color: var(--focus); }
+
+.nar-prov { margin-left: 6px; font-size: 9px; }
+.nar-ai-draft { color: var(--muted); }
+.nar-edited, .nar-author { color: var(--focus); border-color: var(--focus); }

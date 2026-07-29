@@ -68,7 +68,7 @@ export default function App() {
         {selPaper ? (
           <PaperPanel paperId={selPaper} onNavigate={setSelPaper} onClose={() => setSelPaper(null)} />
         ) : ui.branch ? (
-          <BranchPanel branchId={ui.branch} onClose={() => update({ branch: null })} />
+          <BranchPanel branchId={ui.branch} onClose={() => update({ branch: null })} onOpenPaper={(ax) => setSelPaper(ax)} />
         ) : null}
       </div>
     </div>
