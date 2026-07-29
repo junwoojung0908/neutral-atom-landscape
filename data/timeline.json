@@ -2834,7 +2834,7 @@
       "score": 4,
       "title": "Anomalous excitation enhancement with Rydberg-dressed atoms",
       "author": "Xiaoqian Chai et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "1711.10309",
@@ -3574,7 +3574,7 @@
       "score": 68,
       "title": "Unconventional Rydberg pumping and applications in quantum information processing",
       "author": "D. X. Li et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "1806.07094",
@@ -4859,7 +4859,7 @@
       "score": 18,
       "title": "Adiabatic and high-fidelity quantum gates with hybrid Rydberg-Rydberg interactions",
       "author": "Dongmin Yu et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "1905.11728",
@@ -5842,7 +5842,7 @@
       "score": 2,
       "title": "Scalability and high-efficiency of an $(n+1)$-qubit Toffoli gate sphere via blockaded Rydberg atoms",
       "author": "Dongmin Yu et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "2001.05141",
@@ -6570,7 +6570,7 @@
       "score": 1,
       "title": "Spheroidal-structure-based multi-qubit Toffoli gate via asymmetric Rydberg interaction",
       "author": "Dongmin Yu et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "2007.12016",
@@ -11001,7 +11001,7 @@
       "score": 2,
       "title": "Cooling neutral atoms into maximal entanglement in the Rydberg blockade regime",
       "author": "Wei-Lin Mu et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2208.11473",
@@ -13874,7 +13874,7 @@
       "score": 1,
       "title": "High-tolerance antiblockade SWAP gates using optimal pulse drivings",
       "author": "Wan-Xia Li et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "2309.08257",
@@ -14776,7 +14776,7 @@
       "score": 6,
       "title": "Generation of complete graph states in a spin-$1/2$ Heisenberg chain with a globally optimized magnetic field",
       "author": "X. X. Li et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2401.04075",
@@ -15827,7 +15827,7 @@
       "score": 0,
       "title": "Active robustness against the detuning-error for Rydberg quantum gates",
       "author": "Qing-Ling Hou et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "2404.12180",
@@ -16115,7 +16115,7 @@
       "score": 5,
       "title": "Simulation of a feedback-based algorithm for quantum optimization for a realistic neutral atom system with an optimized small-angle controlled-phase gate",
       "author": "S. X. Li et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2405.11450",
@@ -16265,7 +16265,7 @@
       "score": 0,
       "title": "Parity-controlled gate in a two-dimensional neutral-atom array",
       "author": "F. Q. Guo et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2405.20384",
@@ -20360,7 +20360,7 @@
       "score": 0,
       "title": "Multiobjective Optimization for Robust Holonomic Quantum Gates",
       "author": "Min-Hua Zhang et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "2504.17659",
@@ -22490,7 +22490,7 @@
       "score": 0,
       "title": "Scalable Steady-State Entanglement with Floquet-Engineered Stabilizer Pumping in Neutral Atom Arrays",
       "author": "F. Q. Guo et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2509.18834",
@@ -23656,7 +23656,7 @@
       "score": 0,
       "title": "Enhancing ground-state interaction strength of neutral atoms via Floquet stroboscopic dynamics",
       "author": "Y. Wei et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2512.07127",
@@ -24472,7 +24472,7 @@
       "score": 0,
       "title": "Engineering the non-Hermitian Su-Schrieffer-Heeger model with skin effects in Rydberg atom arrays",
       "author": "J. N. Bai et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2602.02251",
@@ -24867,7 +24867,7 @@
       "score": 0,
       "title": "Optimized ancillary drive for fast Rydberg entangling gates",
       "author": "Rui Li et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "2602.22883",
@@ -25177,7 +25177,7 @@
       "score": 0,
       "title": "Accelerated Rydberg electromagnetically induced transparency quantum memory via shortcuts to adiabaticity",
       "author": "Y. Wei et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2603.20294",
@@ -25399,7 +25399,7 @@
       "score": 0,
       "title": "Multipartite controlled-NOT gates using molecules and Rydberg atoms",
       "author": "Yi-Han Bai et al.",
-      "group": "PLACEHOLDER_shao"
+      "group": "nenu"
     },
     {
       "id": "2604.00816",
@@ -26101,7 +26101,7 @@
       "score": 0,
       "title": "Intelligent Optimal Control of Rydberg Gates with Incremental-Update Deep Reinforcement Learning",
       "author": "Yue Cai et al.",
-      "group": "PLACEHOLDER_qian"
+      "group": "ecnu"
     },
     {
       "id": "2605.04663",

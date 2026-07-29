@@ -21,6 +21,6 @@
   { "id": "ustc", "label": "USTC (Pan)", "pis": [ { "name_variants": ["Jian-Wei Pan"] } ] },
   { "id": "wipm", "label": "WIPM Wuhan (Zhan)", "pis": [ { "name_variants": ["Mingsheng Zhan", "Ming-Sheng Zhan"] } ] },
   { "id": "innsbruck", "label": "Innsbruck (Pichler)", "pis": [ { "name_variants": ["Hannes Pichler"] } ] },
-  { "id": "PLACEHOLDER_qian", "label": "Jing Qian (소속 확인요)", "pis": [ { "name_variants": ["Jing Qian"] } ] },
-  { "id": "PLACEHOLDER_shao", "label": "Shao (소속 확인요)", "pis": [ { "name_variants": ["X. Q. Shao", "Xiao-Qiang Shao"] } ] }
+  { "id": "ecnu", "label": "ECNU (Qian)", "pis": [ { "name_variants": ["Jing Qian"] } ] },
+  { "id": "nenu", "label": "NENU (Shao)", "pis": [ { "name_variants": ["X. Q. Shao", "Xiao-Qiang Shao"] } ] }
 ]
