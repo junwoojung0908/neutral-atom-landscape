@@ -159,7 +159,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const animateTo = (target: Partial<View>) => {
     if (raf.current) cancelAnimationFrame(raf.current);
     const from = { ...viewRef.current };
-    const to = { ...from, ...target };
+    const to = clampView({ ...from, ...target } as View);
     const t0 = performance.now();
     const D = 450;
     const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
@@ -167,12 +167,12 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const step = (now: number) => {
       const t = clamp((now - t0) / D, 0, 1);
       const e = ease(t);
-      setView({
+      setView(clampView({
         kx: from.kx + (to.kx - from.kx) * e,
         ky: from.ky + (to.ky - from.ky) * e,
         tx: from.tx + (to.tx - from.tx) * e,
         ty: from.ty + (to.ty - from.ty) * e,
-      });
+      }));
       if (t < 1) raf.current = requestAnimationFrame(step);
       else {
         raf.current = null;
@@ -213,6 +213,18 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     animateTo({ ky, ty });
   };
   const fitLane = (id: string) => fitRow(id, laneIndex.get(id) ?? 0, 1);
+  // fit 상태에서 컨테이너 높이가 변하면(버튼 등장·모바일 URL바) 즉시 재정렬
+  useEffect(() => {
+    if (!fitted) return;
+    const g = LANE_GROUPS.find((x) => x.id === fitted);
+    const start = g ? laneIndex.get(g.children[0]) ?? 0 : laneIndex.get(fitted) ?? 0;
+    const len = g ? g.children.length : laneMetaMap.has(fitted) ? 1 : 0;
+    if (!len) return;
+    const ky = lanes.length / len;
+    const laneTop = M.t + start * laneH;
+    setView((v) => clampView({ ...v, ky, ty: M.t - laneTop * ky }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [H]);
   const fitGroup = (g: (typeof LANE_GROUPS)[number]) => {
     const start = laneIndex.get(g.children[0]) ?? 0;
     fitRow(g.id, start, g.children.length);
@@ -246,11 +258,11 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       setView((v) => {
         const kx = clamp(v.kx * fx, 1, 40);
         const ky = clamp(v.ky * fy, 1, 40);
-        return {
+        return clampView({
           kx, ky,
           tx: c.x - (c.x - v.tx) * (kx / v.kx),
           ty: c.y - (c.y - v.ty) * (ky / v.ky),
-        };
+        });
       });
       pinch.current = { x1: a.clientX, y1: a.clientY, x2: b.clientX, y2: b.clientY };
     } else if (e.touches.length === 1 && drag.current && svgRef.current) {
@@ -259,7 +271,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       const dx = ((t.clientX - drag.current.x) / r.width) * W;
       const dy = ((t.clientY - drag.current.y) / r.height) * H;
       drag.current = { x: t.clientX, y: t.clientY };
-      setView((v) => ({ ...v, tx: v.tx + dx, ty: v.ty + dy }));
+      setView((v) => clampView({ ...v, tx: v.tx + dx, ty: v.ty + dy }));
     }
   };
   const onTouchEnd = (e: React.TouchEvent) => {
@@ -267,12 +279,20 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     if (e.touches.length === 0) drag.current = null;
   };
 
+  // 팬/줌 경계: 플롯 영역이 항상 콘텐츠로 덮이도록 tx/ty 를 가둠 (빈 데로 못 나감)
+  const clampView = (v: View): View => ({
+    kx: v.kx,
+    ky: v.ky,
+    tx: clamp(v.tx, (W - M.r) * (1 - v.kx), M.l * (1 - v.kx)),
+    ty: clamp(v.ty, (H - M.b) * (1 - v.ky), M.t * (1 - v.ky)),
+  });
+
   const sx = (bx: number) => view.tx + bx * view.kx;
   const sy = (by: number) => view.ty + by * view.ky;
   const zoomAxis = (axis: "x" | "y", f: number, focus: number) =>
     setView((v) => {
-      if (axis === "x") { const kx = clamp(v.kx * f, 1, 40); return { ...v, kx, tx: focus - (focus - v.tx) * (kx / v.kx) }; }
-      const ky = clamp(v.ky * f, 1, 40); return { ...v, ky, ty: focus - (focus - v.ty) * (ky / v.ky) };
+      if (axis === "x") { const kx = clamp(v.kx * f, 1, 40); return clampView({ ...v, kx, tx: focus - (focus - v.tx) * (kx / v.kx) }); }
+      const ky = clamp(v.ky * f, 1, 40); return clampView({ ...v, ky, ty: focus - (focus - v.ty) * (ky / v.ky) });
     });
 
   const toSvg = (cx: number, cy: number) => {
@@ -339,6 +359,24 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     picked.sort((a, b) => b.cited - a.cited); // 라벨 우선순위 = 인용순
     for (const p of picked) push(p);
     if (qn) for (const p of papers) if (matched.has(p.id)) push(p);
+    // 겹침 완화: 화면 좌표에서 3회 반복 분리(작은 이동이라 연도 왜곡 미미, 라벨 배치도 개선)
+    for (let it = 0; it < 3; it++) {
+      for (let i = 0; i < out.length; i++) {
+        for (let j = i + 1; j < out.length; j++) {
+          const a = out[i], b = out[j];
+          const ra = radius(a.p.cited), rb = radius(b.p.cited);
+          const dx = b.x - a.x, dy = b.y - a.y;
+          const d = Math.hypot(dx, dy) || 1;
+          const min = ra + rb + 3;
+          if (d < min) {
+            const push2 = (min - d) / 2;
+            const ux = dx / d, uy = dy / d;
+            a.x -= ux * push2; a.y -= uy * push2;
+            b.x += ux * push2; b.y += uy * push2;
+          }
+        }
+      }
+    }
     return out;
   }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched]);
 
@@ -476,7 +514,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
           const dx = ((e.clientX - drag.current.x) / r.width) * W;
           const dy = ((e.clientY - drag.current.y) / r.height) * H;
           drag.current = { x: e.clientX, y: e.clientY };
-          setView((v) => ({ ...v, tx: v.tx + dx, ty: v.ty + dy }));
+          setView((v) => clampView({ ...v, tx: v.tx + dx, ty: v.ty + dy }));
         }}
         onMouseUp={() => (drag.current = null)} onMouseLeave={() => { drag.current = null; }}>
         <defs>
