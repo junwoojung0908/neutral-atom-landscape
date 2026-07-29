@@ -38,9 +38,6 @@ jobs:
 
   deploy:
     needs: build
-    # private 유지 동안엔 Pages 배포를 수동 트리거로만 실행한다 (push 는 validate+build
-    # 게이트만 돌려 CI 로 쓴다). 공개하기로 정하면 아래 if 줄을 지워 push→배포로 바꿔라.
-    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
