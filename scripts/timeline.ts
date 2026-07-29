@@ -60,6 +60,21 @@ const REVIEW_TITLE = /\breview\b|colloquium|roadmap|perspective|tutorial|primer\
 const isReview = (id: string, title: string) =>
   workTypes[id] === "review" || REVIEW_TITLE.test(title);
 
+// 중요도 점수: 기본=절대 인용. 최근 3년 논문이 (주요저널 or 인용>=20)이면
+// 단위시간당 인용을 4년치로 환산해 max(절대, 환산) — 최신 임팩트가 묻히지 않게.
+const NOW = new Date().getFullYear() + new Date().getMonth() / 12;
+const MAJOR_DOI = /(10\.1038\/|10\.1126\/|10\.1073\/|10\.22331\/|physrevlett|physrevx|prxquantum|revmodphys)/i;
+const rawDoi = new Map((rd("data/corpus-raw.json") as { id: string; doi?: string | null }[]).map((x) => [x.id, x.doi ?? ""]));
+function scoreOf(id: string, year: number, cited: number): { score: number; hot: boolean } {
+  const age = Math.max(NOW - (year + 0.5), 0.5);
+  const major = MAJOR_DOI.test(rawDoi.get(id) ?? "");
+  if (age <= 3 && (major || cited >= 20)) {
+    const boosted = Math.round((cited / age) * 4);
+    if (boosted > cited) return { score: boosted, hot: true };
+  }
+  return { score: cited, hot: false };
+}
+
 const papers = cls.map((p) => {
   const r = rawById.get(p.id) as { title?: string; authors?: string[]; abstract?: string } | undefined;
   const a0 = r?.authors?.[0] ?? "";
@@ -71,6 +86,7 @@ const papers = cls.map((p) => {
     lane: ln,
     fields: p.matched_fields,
     cited: cit[p.id]?.cited ?? 0,
+    ...(() => { const sc = scoreOf(p.id, p.year, cit[p.id]?.cited ?? 0); return { score: sc.score, hot: sc.hot || undefined }; })(),
     title: r?.title ?? p.id,
     author: a0 ? `${a0}${(r?.authors?.length ?? 1) > 1 ? " et al." : ""}` : "",
     group: groupOf(p.id),

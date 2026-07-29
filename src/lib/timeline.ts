@@ -11,6 +11,8 @@ export interface TPaper {
   author: string;
   group: string | null;
   review?: boolean;
+  score: number;
+  hot?: boolean;
 }
 export const papers = (tl as { papers: TPaper[] }).papers;
 export const citeEdges = edgesJson as { from: string; to: string }[];

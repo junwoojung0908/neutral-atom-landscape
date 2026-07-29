@@ -128,7 +128,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     return m;
   }, [laneIndex, laneH, YEARW, M.l, M.t]);
 
-  const byCited = useMemo(() => papers.slice().sort((a, b) => b.cited - a.cited), []);
+  const byCited = useMemo(() => papers.slice().sort((a, b) => b.score - a.score), []); // score = 인용 + 최신 속도 보정
   // 레인별 인용순 — LOD 를 레인 단위로 할당해 화면 밀도를 균등화
   const byLaneSorted = useMemo(() => {
     const m = new Map<string, TPaper[]>();
@@ -356,7 +356,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const picked: TPaper[] = [];
     const src = coarse ? byGroupSorted : byLaneSorted;
     for (const arr of src.values()) for (const p of arr.slice(0, perLane)) picked.push(p);
-    picked.sort((a, b) => b.cited - a.cited); // 라벨 우선순위 = 인용순
+    picked.sort((a, b) => b.score - a.score); // 라벨 우선순위 = 중요도(score)순
     for (const p of picked) push(p);
     if (qn) for (const p of papers) if (matched.has(p.id)) push(p);
     // 겹침 완화: 화면 좌표에서 3회 반복 분리(작은 이동이라 연도 왜곡 미미, 라벨 배치도 개선)
@@ -364,7 +364,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       for (let i = 0; i < out.length; i++) {
         for (let j = i + 1; j < out.length; j++) {
           const a = out[i], b = out[j];
-          const ra = radius(a.p.cited), rb = radius(b.p.cited);
+          const ra = radius(a.p.score), rb = radius(b.p.score);
           const dx = b.x - a.x, dy = b.y - a.y;
           const d = Math.hypot(dx, dy) || 1;
           const min = ra + rb + 3;
@@ -406,7 +406,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       const lines = wrap2(v.p.title, narrow ? 18 : 26, 3);
       const wText = Math.max(...lines.map((l) => l.length)) * fs * 0.56 + 26;
       const hText = lines.length * (fs + 1.5) + 2;
-      const r = radius(v.p.cited);
+      const r = radius(v.p.score);
       const cands = [
         { lx: v.x + r + 3, ly: v.y },
         { lx: v.x - r - 3 - wText, ly: v.y },
@@ -434,9 +434,9 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const grpActive = checked.size > 0;
   const qActive = qn.length > 0;
   // 밝기(불투명도) = 인용수 로그 스케일 — 크기와 함께 이중 인코딩으로 대비
-  const maxCited = byCited[0]?.cited ?? 1;
+  const maxCited = byCited[0]?.score ?? 1;
   const logDen = Math.log10(1 + maxCited);
-  const baseOp = (p: TPaper) => 0.22 + 0.7 * (Math.log10(1 + p.cited) / logDen);
+  const baseOp = (p: TPaper) => 0.22 + 0.7 * (Math.log10(1 + p.score) / logDen);
   const dotOp = (p: TPaper) => {
     if (qActive) return matched.has(p.id) ? Math.max(baseOp(p), 0.9) : 0.1;
     if (grpActive) return p.group && checked.has(p.group) ? Math.max(baseOp(p), 0.9) : 0.1;
@@ -547,18 +547,18 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             return a && b ? <line key={`hv-${i}`} className="tlz-edge-hi" x1={a.x} y1={a.y} x2={b.x} y2={b.y} /> : null;
           })}
           {visible.map(({ p, x, y }) => (
-            <circle key={p.id} cx={x} cy={y} r={radius(p.cited)} fill={p.review ? "var(--panel)" : (laneMetaMap.get(p.lane)?.color ?? "#888")}
+            <circle key={p.id} cx={x} cy={y} r={radius(p.score)} fill={p.review ? "var(--panel)" : (laneMetaMap.get(p.lane)?.color ?? "#888")}
               fillOpacity={dotOp(p)} stroke={dotRing(p) ? "var(--text)" : p.review ? (laneMetaMap.get(p.lane)?.color ?? "#888") : "none"}
               strokeWidth={dotRing(p) ? 1.5 : p.review ? 1.6 : 0}
               className="tlz-dot" onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onClick={() => onOpen(p)}>
-              <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · 인용 ${p.cited}`}</title>
+              <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · 인용 ${p.cited}${p.hot ? ' (최신 급상승 ↗)' : ''}`}</title>
             </circle>
           ))}
           {labels.map(({ p, lines, lx, ly }) => (
           <text key={`lbl-${p.id}`} className="tlz-plabel" x={lx} y={ly - (lines.length - 1) * 5 + 3}>
             {lines.map((ln, i) => (
               <tspan key={i} x={lx} dy={i === 0 ? 0 : 10}>
-                {ln}{i === lines.length - 1 ? <tspan className="tlz-cite"> · {p.cited}</tspan> : null}
+                {ln}{i === lines.length - 1 ? <tspan className="tlz-cite"> · {p.cited}{p.hot ? "↗" : ""}</tspan> : null}
               </tspan>
             ))}
           </text>
