@@ -11,8 +11,18 @@
     "validate": "tsx scripts/validate.ts",
     "hydrate": "tsx scripts/hydrate.ts",
     "fetch-corpus": "tsx scripts/fetch-corpus.ts",
+    "corpus-audit": "tsx scripts/corpus-audit.ts",
+    "unclassified-split": "tsx scripts/unclassified-split.ts",
     "count": "tsx scripts/count.ts",
-    "taxonomy": "tsx scripts/taxonomy-check.ts"
+    "taxonomy": "tsx scripts/taxonomy-check.ts",
+    "term-trajectory": "tsx scripts/term-trajectory.ts",
+    "group-trajectory": "tsx scripts/group-trajectory.ts",
+    "author-candidates": "tsx scripts/author-candidates.ts",
+    "trajectories": "tsx scripts/trajectories.ts",
+    "branch-papers": "tsx scripts/branch-papers.ts",
+    "citations": "tsx scripts/citations.ts",
+    "timeline": "tsx scripts/timeline.ts",
+    "citations-fix": "tsx scripts/citations-fix.ts"
   },
   "dependencies": {
     "d3-force": "^3.0.0",

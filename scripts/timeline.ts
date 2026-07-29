@@ -1,0 +1,66 @@
+/**
+ * timeline — 줌 타임라인용 논문 데이터. 각 논문: 연도·레인(가장 특이한 소속 가지)·인용수·제목·저자.
+ * 인용수 = LOD(줌 레벨별 표시). citation-edges 는 followup 링크(별도 파일 그대로 씀).
+ * 결과 → data/timeline.json
+ *
+ * 사용: npm run timeline   (corpus.json, citations.json, corpus-raw.json, counts.json)
+ */
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+
+const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const rd = (p: string) => JSON.parse(readFileSync(resolve(root, p), "utf8"));
+for (const f of ["data/corpus.json", "data/citations.json", "data/corpus-raw.json", "data/counts.json"])
+  if (!existsSync(resolve(root, f))) { console.log(`${f} 없음.`); process.exit(0); }
+
+const cls = rd("data/corpus.json") as { id: string; year: number; matched_fields: string[] }[];
+const cit = rd("data/citations.json") as Record<string, { cited: number; year: number }>;
+const rawById = new Map((rd("data/corpus-raw.json") as { id: string; title: string; authors: string[] }[]).map((p) => [p.id, p]));
+const branchHits = (rd("data/counts.json") as { branch_hits: Record<string, number> }).branch_hits;
+
+// 논문 → 연구그룹: 마지막 저자 key 가 groups.json 의 어느 그룹에 속하는지
+const groups = rd("data/groups.json") as { id: string; pis: { name_variants: string[] }[] }[];
+const akey = (n: string) => {
+  const p = n.trim().split(/\s+/).filter(Boolean);
+  if (p.length < 2) return null;
+  const s = p[p.length - 1].toLowerCase().replace(/[^a-z\-]/g, "");
+  const i = p[0].toLowerCase().replace(/[^a-z]/g, "")[0];
+  return s && i ? `${s} ${i}` : null;
+};
+const keyToGroup = new Map<string, string>();
+for (const g of groups) for (const pi of g.pis) for (const v of pi.name_variants) {
+  const k = akey(v);
+  if (k && !keyToGroup.has(k)) keyToGroup.set(k, g.id);
+}
+function groupOf(id: string): string | null {
+  const as = rawById.get(id)?.authors;
+  if (!as?.length) return null;
+  return keyToGroup.get(akey(as[as.length - 1]) ?? "") ?? null;
+}
+
+// 레인 = 소속 가지 중 코퍼스에서 가장 희소한(=가장 특이한) 가지. 단일 레인 배치.
+function lane(fields: string[]): string {
+  return fields.slice().sort((a, b) => (branchHits[a] ?? 1e9) - (branchHits[b] ?? 1e9))[0];
+}
+
+const papers = cls.map((p) => {
+  const r = rawById.get(p.id);
+  const a0 = r?.authors?.[0] ?? "";
+  return {
+    id: p.id,
+    year: p.year,
+    lane: lane(p.matched_fields),
+    fields: p.matched_fields,
+    cited: cit[p.id]?.cited ?? 0,
+    title: r?.title ?? p.id,
+    author: a0 ? `${a0}${(r?.authors?.length ?? 1) > 1 ? " et al." : ""}` : "",
+    group: groupOf(p.id),
+  };
+});
+
+writeFileSync(resolve(root, "data/timeline.json"), JSON.stringify({ papers }, null, 2) + "\n");
+const byCited = papers.slice().sort((a, b) => b.cited - a.cited);
+console.log(`timeline: ${papers.length}편. 인용>0: ${papers.filter((p) => p.cited > 0).length}`);
+console.log(`상위: ${byCited.slice(0, 3).map((p) => `${p.cited}(${p.lane})`).join(", ")}`);
+console.log("data/timeline.json 생성됨");
