@@ -4,7 +4,7 @@
     "parent": null,
     "ko": "오류정정 · 논리 큐비트",
     "en": "Error correction · logical qubits",
-    "color": "#6EA8E5",
+    "color": "#6E8CB8",
     "adjacent": [
       "gate",
       "scale"
@@ -18,7 +18,7 @@
     "parent": "qec",
     "ko": "고효율 부호 (qLDPC)",
     "en": "high-rate codes",
-    "color": "#6EA8E5",
+    "color": "#6E8CB8",
     "adjacent": [],
     "blurb": "High-rate codes (qLDPC) enabled by movable connectivity."
   },
@@ -27,7 +27,7 @@
     "parent": null,
     "ko": "측정 · 중간회로 판독",
     "en": "Measurement · mid-circuit readout",
-    "color": "#FFA94D",
+    "color": "#C9A36E",
     "adjacent": [
       "gate",
       "clock"
@@ -41,7 +41,7 @@
     "parent": null,
     "ko": "아날로그 양자 시뮬레이션",
     "en": "Analog quantum simulation",
-    "color": "#FF6B6E",
+    "color": "#C97B7D",
     "adjacent": [
       "opt",
       "species"
@@ -55,7 +55,7 @@
     "parent": null,
     "ko": "원자종 · 큐비트 인코딩",
     "en": "Atomic species · qubit encoding",
-    "color": "#63D8CE",
+    "color": "#6FAFA9",
     "adjacent": [
       "sim",
       "clock"
@@ -69,7 +69,7 @@
     "parent": "species",
     "ko": "트위저 분자",
     "en": "molecules in tweezers",
-    "color": "#63D8CE",
+    "color": "#6FAFA9",
     "adjacent": [],
     "blurb": "Polar molecules in tweezers — long-range dipolar interactions."
   },
@@ -78,7 +78,7 @@
     "parent": null,
     "ko": "계측 · 광시계",
     "en": "Metrology · optical clocks",
-    "color": "#7ED67E",
+    "color": "#7FAF87",
     "adjacent": [
       "species",
       "readout"
@@ -92,7 +92,7 @@
     "parent": null,
     "ko": "조합 최적화 · 아날로그 알고리즘",
     "en": "Combinatorial optimization (MIS/QUBO)",
-    "color": "#FFD95E",
+    "color": "#C4B476",
     "adjacent": [
       "sim",
       "classical"
@@ -106,7 +106,7 @@
     "parent": null,
     "ko": "고전 대조 · 벤치마킹",
     "en": "Classical baselines · benchmarking",
-    "color": "#C99BD9",
+    "color": "#A88BB8",
     "adjacent": [
       "opt",
       "scale"
@@ -120,7 +120,7 @@
     "parent": null,
     "ko": "게이트 충실도 · 제어",
     "en": "Gate fidelity · control",
-    "color": "#FF9DB6",
+    "color": "#C98A99",
     "adjacent": [
       "qec",
       "readout"
@@ -134,7 +134,7 @@
     "parent": null,
     "ko": "대규모 배열 · 어레이 공학",
     "en": "Large arrays · array engineering",
-    "color": "#C7A088",
+    "color": "#B08A72",
     "adjacent": [
       "qec",
       "classical"
@@ -148,7 +148,7 @@
     "parent": "scale",
     "ko": "결맞음 수송 · 재구성 연결성",
     "en": "coherent transport",
-    "color": "#C7A088",
+    "color": "#B08A72",
     "adjacent": [],
     "blurb": "Coherent transport: moving atoms without losing entanglement."
   },
@@ -157,7 +157,7 @@
     "parent": null,
     "ko": "광 상호연결 · 모듈러",
     "en": "Photonic interconnects · modularity",
-    "color": "#3FD3E5",
+    "color": "#62A8B8",
     "adjacent": [
       "scale",
       "clock"
@@ -171,7 +171,7 @@
     "parent": null,
     "ko": "컴파일 · 아키텍처 · 제어 스택",
     "en": "Compilation · architecture · control stack",
-    "color": "#98A2B3",
+    "color": "#8B94A7",
     "adjacent": [
       "classical",
       "qec"
