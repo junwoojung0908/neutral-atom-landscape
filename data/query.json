@@ -9,7 +9,14 @@
     ],
     "exclude": [
       "Rydberg polariton", "Rydberg exciton", "Rydberg blockade in semiconductor",
-      "excitonic Rydberg", "Rydberg series in molecules"
+      "excitonic Rydberg", "Rydberg series in molecules",
+      "vapor cell", "room-temperature vapor", "rydberg sensor", "atomic receiver",
+      "electric field measurement", "electric field strength", "electrometry",
+      "microwave electric field", "rf sensing",
+      "ultralong-range", "ultra-long-range", "potential energy curve", "rydberg constant", "photoassociation",
+      "rydberg gas", "wave packet", "matter wave",
+      "rate coefficient", "charge transfer", "charge exchange", "ionization threshold", "lamb shift",
+      "ion crystal", "quantum gas microscope"
     ]
   },
   "fields": {
@@ -47,6 +54,14 @@
     },
     "scale": {
       "terms": ["atom loss", "rearrangement", "atom reloading", "continuous operation", "atom transport", "coherent transport", "trap depth", "spatial light modulator", "acousto-optic deflector", "optical conveyor", "array size", "vacuum lifetime"],
+      "exclusions": []
+    },
+    "net": {
+      "terms": ["cavity", "optical cavity", "nanophotonic", "photonic interface", "atom-photon", "quantum network", "quantum repeater", "quantum memory", "entanglement distribution", "fiber coupling", "modular architecture", "interconnect"],
+      "exclusions": []
+    },
+    "software": {
+      "terms": ["circuit compilation", "qubit mapping", "qubit routing", "transpilation", "ZX calculus", "scheduling", "control stack", "control plane", "instruction set", "architecture simulation", "resource estimation", "pulse-level control", "hardware-software co-design"],
       "exclusions": []
     }
   }
