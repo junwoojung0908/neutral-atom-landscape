@@ -35,3 +35,12 @@
 - `lattice` / `optical lattice` 를 코퍼스 편입어(weak_context 등)로 넣지 마라 —
   양자기체 현미경·Hubbard 문헌 전체(수천 편)가 유입되어 코퍼스 성격이 바뀐다.
   lattice+Rydberg 하이브리드는 Rydberg 맥락으로 별도 판정한다.
+
+## 알려진 누락 (정직 기록)
+- **Browaeys–Lahaye 리뷰** "Many-body physics with individually controlled Rydberg atoms"
+  (Nat. Phys. 16, 132, 2020) — 정본 랜드마크 점검(2026-07-29)에서 코퍼스에 없음이 확인됨.
+  원인 미확정(arXiv API 플레이키로 진단 중단): 1차 카테고리(cond-mat 계열 추정)가
+  corpus.categories(quant-ph, physics.atom-ph) 필터에 걸리지 않았을 가능성이 유력.
+  질의 정의 코퍼스의 재현율 한계 사례로 남긴다 — 수동 추가는 하지 않는다(코퍼스는 질의가 정의).
+- 고인용(≥20)인데 코퍼스 내부 인용 연결이 0인 논문 ~19편은 오류가 아니라
+  경계 주제(고전하 이온 시계, 격자 Hubbard, 폴라리톤 등)로 확인됨.
