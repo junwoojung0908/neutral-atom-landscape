@@ -4,6 +4,7 @@ import type { TPaper } from "../lib/timeline.ts";
 import { firstLevelFields, fieldById } from "../data/loader.ts";
 import { displayTitle } from "../lib/format.ts";
 import groupsJson from "../../data/groups.json";
+import { counts } from "../lib/survey.ts";
 
 // 박스형 무한줌. x(연도)·y(가지) 축을 독립적으로 줌. 축 라벨은 박스 가장자리에 고정,
 // 내용만 클립. 줌인할수록(면적↑) 저인용 논문이 더 드러남(LOD).
@@ -15,7 +16,7 @@ const NYEARS = Y1 - Y0 + 1; // 12
 const NBINS = 4;
 const BIN_LABELS = ["2015–17", "2018–20", "2021–23", "2024–26"];
 const MAJOR = 18;
-const UPDATED = "2026-07-29";
+const UPDATED = counts.generated_at ?? "2026-07-29";
 const PW = W - M.l - M.r; // plot width
 const YEARW = PW / NYEARS;
 // 세로(H)는 컨테이너 비율에 맞춰 동적 — 축이 화면 양끝에 붙는다(글자 왜곡 없음).
@@ -49,9 +50,16 @@ interface View { kx: number; ky: number; tx: number; ty: number }
 interface Props {
   onOpen: (p: TPaper) => void;
   onSelectBranch: (id: string) => void;
+  selectedId?: string | null;
 }
 
-export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
+const SIM_SUBS = [
+  { id: "sim.eq", ko: "시뮬레이션 · 평형 상", color: "#E15759", branch: "sim" },
+  { id: "sim.dyn", ko: "시뮬레이션 · 동역학", color: "#9E3B3E", branch: "sim" },
+  { id: "sim.gauge", ko: "시뮬레이션 · 게이지·위상", color: "#5C2223", branch: "sim" },
+];
+
+export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const [H, setH] = useState(420);
   useEffect(() => {
@@ -66,7 +74,12 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
   }, []);
   const PH = H - M.t - M.b;
 
-  const lanes = firstLevelFields.map((f) => f.id);
+  const laneMeta = useMemo(
+    () => firstLevelFields.flatMap((f) => (f.id === "sim" ? SIM_SUBS : [{ id: f.id, ko: f.ko, color: f.color, branch: f.id }])),
+    [],
+  );
+  const laneMetaMap = useMemo(() => new Map(laneMeta.map((m) => [m.id, m])), [laneMeta]);
+  const lanes = laneMeta.map((m) => m.id);
   const laneH = PH / lanes.length;
   const laneIndex = useMemo(() => new Map(lanes.map((id, i) => [id, i])), [lanes]);
   const binW = PW / NBINS;
@@ -225,9 +238,10 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
     () => citeEdges.filter((e) => majorIds.has(e.from) && majorIds.has(e.to) && visSet.has(e.from) && visSet.has(e.to)),
     [majorIds, visSet],
   );
+  const eff = hover ?? selectedId ?? null;
   const hoverEdges = useMemo(
-    () => (hover ? citeEdges.filter((e) => (e.from === hover || e.to === hover) && visSet.has(e.from) && visSet.has(e.to)) : []),
-    [hover, visSet],
+    () => (eff ? citeEdges.filter((e) => (e.from === eff || e.to === eff) && visSet.has(e.from) && visSet.has(e.to)) : []),
+    [eff, visSet],
   );
   const connected = useMemo(() => {
     const s = new Set<string>();
@@ -252,11 +266,11 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
   const dotOp = (p: TPaper) => {
     if (qActive) return matched.has(p.id) ? 0.95 : 0.12;
     if (grpActive) return p.group && checked.has(p.group) ? 0.95 : 0.14;
-    if (hover) return p.id === hover ? 1 : connected.has(p.id) ? 0.72 : 0.22;
+    if (eff) return p.id === eff ? 1 : connected.has(p.id) ? 0.72 : 0.22;
     return 0.85;
   };
   const dotRing = (p: TPaper) =>
-    qActive ? matched.has(p.id) : grpActive ? !!(p.group && checked.has(p.group)) : hover === p.id;
+    qActive ? matched.has(p.id) : grpActive ? !!(p.group && checked.has(p.group)) : eff === p.id;
 
   const hpaper = hover ? byId.get(hover) : null;
   const toggle = (id: string) => setChecked((s) => { const n = new Set(s); n.has(id) ? n.delete(id) : n.add(id); return n; });
@@ -273,11 +287,11 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
           <button className="tlz-reset" onClick={() => zoomAxis("y", 1 / 1.6, cy)}>－</button>
           <button className="tlz-reset" onClick={() => { cancelAnim(); setFitted(null); animateTo({ kx: 1, ky: 1, tx: 0, ty: 0 }); }}>초기화</button>
           {fitted && (
-            <button className="tlz-reset tlz-listbtn" onClick={() => onSelectBranch(fitted)}>
-              {fieldById.get(fitted)?.ko} 논문 목록 ▸
+            <button className="tlz-reset tlz-listbtn" onClick={() => onSelectBranch(laneMetaMap.get(fitted)?.branch ?? fitted)}>
+              {laneMetaMap.get(fitted)?.ko} 논문 목록 ▸
             </button>
           )}
-          <span className="tlz-hint">Shift+휠=연도 · Ctrl+휠=가지 · 드래그=이동 · 점 클릭=arXiv</span>
+          <span className="tlz-hint">Shift+휠=연도 · Ctrl+휠=가지 · 드래그=이동 · 점 클릭=상세 · 속 빈 원=리뷰</span>
         </span>
       </div>
 
@@ -290,6 +304,15 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
           onChange={(e) => setQ(e.target.value)}
         />
         {qActive && <span className="tlz-hint">{matched.size}편 일치{matched.size >= 300 ? "+" : ""}</span>}
+        {qActive && (
+          <div className="tlz-dropdown">
+            {byCited.filter((p) => matched.has(p.id)).slice(0, 8).map((p) => (
+              <button key={p.id} className="tlz-dditem" onClick={() => { onOpen(p); setQ(""); }}>
+                {displayTitle(p.title).slice(0, 60)} <span className="tlz-cite2">· {p.cited} · {p.year}</span>
+              </button>
+            ))}
+          </div>
+        )}
         <span className="tlz-glabel">주요 그룹 강조:</span>
         {groupCounts.map((g) => (
           <label key={g.id} className={`tlz-chip${checked.has(g.id) ? " on" : ""}`}>
@@ -346,8 +369,9 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
             return a && b ? <line key={`hv-${i}`} className="tlz-edge-hi" x1={a.x} y1={a.y} x2={b.x} y2={b.y} /> : null;
           })}
           {visible.map(({ p, x, y }) => (
-            <circle key={p.id} cx={x} cy={y} r={radius(p.cited)} fill={fieldById.get(p.lane)?.color ?? "#888"}
-              fillOpacity={dotOp(p)} stroke={dotRing(p) ? "var(--text)" : "none"} strokeWidth={dotRing(p) ? 1.5 : 0}
+            <circle key={p.id} cx={x} cy={y} r={radius(p.cited)} fill={p.review ? "var(--panel)" : (laneMetaMap.get(p.lane)?.color ?? "#888")}
+              fillOpacity={dotOp(p)} stroke={dotRing(p) ? "var(--text)" : p.review ? (laneMetaMap.get(p.lane)?.color ?? "#888") : "none"}
+              strokeWidth={dotRing(p) ? 1.5 : p.review ? 1.6 : 0}
               className="tlz-dot" onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onClick={() => onOpen(p)}>
               <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · 인용 ${p.cited}`}</title>
             </circle>
@@ -370,12 +394,12 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
         {lanes.map((id, i) => {
           const cyl = sy(M.t + i * laneH + laneH * 0.5);
           if (cyl < M.t - 4 || cyl > H - M.b + 4) return null;
-          const f = fieldById.get(id);
+          const m = laneMetaMap.get(id);
           return (
             <text key={`ll-${id}`} className={`tlz-lanelabel${fitted === id ? " fit" : ""}`} x={M.l - 8} y={cyl}
-              textAnchor="end" dominantBaseline="middle" fill={f?.color} onClick={() => fitLane(id)}>
+              textAnchor="end" dominantBaseline="middle" fill={m?.color} onClick={() => fitLane(id)}>
               <title>클릭: 이 분야를 화면에 맞게 확대 (다시 클릭하면 복귀)</title>
-              {f?.ko}
+              {m?.ko}
             </text>
           );
         })}

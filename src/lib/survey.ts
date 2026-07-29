@@ -3,6 +3,7 @@ import countsJson from "../../data/counts.json";
 /** count.ts 산출물. 조사 층(측정)의 데이터. */
 export interface Counts {
   version: string;
+  generated_at?: string;
   corpus_total: number;
   classified: number;
   unclassified_total: number;

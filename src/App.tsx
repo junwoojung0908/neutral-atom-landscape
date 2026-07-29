@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PaperPanel from "./components/PaperPanel.tsx";
 import TimelineZoom from "./components/TimelineZoom.tsx";
 import BranchPanel from "./components/BranchPanel.tsx";
 import StreamGraph from "./components/StreamGraph.tsx";
@@ -7,6 +8,7 @@ import "./App.css";
 
 export default function App() {
   const [ui, update] = useUiState();
+  const [selPaper, setSelPaper] = useState<string | null>(null);
   const [page, setPage] = useState(() => (window.location.hash === "#growth" ? "growth" : "timeline"));
   useEffect(() => {
     const on = () => setPage(window.location.hash === "#growth" ? "growth" : "timeline");
@@ -40,11 +42,16 @@ export default function App() {
       <div className="stage2">
         <div className="tlz-wrap">
           <TimelineZoom
-            onOpen={(p) => window.open(`https://arxiv.org/abs/${p.id}`, "_blank", "noopener")}
-            onSelectBranch={(id) => update({ branch: id })}
+            onOpen={(p) => { setSelPaper(p.id); update({ branch: null }); }}
+            onSelectBranch={(id) => { update({ branch: id }); setSelPaper(null); }}
+            selectedId={selPaper}
           />
         </div>
-        {ui.branch && <BranchPanel branchId={ui.branch} onClose={() => update({ branch: null })} />}
+        {selPaper ? (
+          <PaperPanel paperId={selPaper} onNavigate={setSelPaper} onClose={() => setSelPaper(null)} />
+        ) : ui.branch ? (
+          <BranchPanel branchId={ui.branch} onClose={() => update({ branch: null })} />
+        ) : null}
       </div>
     </div>
   );
