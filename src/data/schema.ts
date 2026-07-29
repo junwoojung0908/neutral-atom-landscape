@@ -26,6 +26,8 @@ export const FieldSchema = z.object({
   narrative: z.string().optional(),
   /** 서사 마지막 갱신일 (YYYY-MM-DD). */
   narrative_updated: DateString.optional(),
+  /** 서사 출처: AI 초안 / 운영자 수정 / 운영자 직접 작성 */
+  narrative_provenance: z.enum(["ai-draft", "edited", "author"]).optional(),
 });
 export type Field = z.infer<typeof FieldSchema>;
 

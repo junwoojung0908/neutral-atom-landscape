@@ -1,5 +1,6 @@
 import { counts } from "../lib/survey.ts";
 import { papers } from "../lib/timeline.ts";
+import { fields } from "../data/loader.ts";
 
 /** Methodology & limitations — every number auditable by the reader. */
 export default function AboutPage() {
@@ -53,14 +54,18 @@ export default function AboutPage() {
         <li>Research-group badges cover major groups only via last author (~13% of papers) — absence means
           uncurated, not a judgment</li>
         <li>One confirmed miss in a landmark recall check (Browaeys–Lahaye 2020 review; category filter suspected)</li>
-        <li>The <code>software</code> branch is structurally undercounted — much of that literature lives in
-          cs.AR/cs.ET, outside the quant-ph corpus</li>
+        <li>The <code>software</code> branch is structurally undercounted: the corpus is restricted to the
+          quant-ph and physics.atom-ph arXiv categories, so papers with a cs.* primary classification
+          (much of the compilation/architecture literature) are not harvested</li>
         <li><code>readout</code> (~2%) is small but kept as a branch: an independent prerequisite of fault
           tolerance (non-destructive measurement, erasure detection) — an editorial decision</li>
         <li>The citation graph cannot distinguish support from rebuttal — only the red dashed lines (contests)
           are hand-curated</li>
-        <li>Branch <strong>narratives</strong> are AI-assisted drafts (written 2026-07-30), maintained under the
-          operator's review</li>
+        <li>Branch <strong>narratives</strong> are labeled per branch:{" "}
+          {(["ai-draft", "edited", "author"] as const)
+            .map((k) => `${fields.filter((f) => f.narrative && f.narrative_provenance === k).length} ${k}`)
+            .join(" · ")}{" "}
+          — provenance shown next to each narrative</li>
       </ul>
 
       <p className="about-foot">
