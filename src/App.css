@@ -734,7 +734,14 @@ input[type="range"] {
 .tlz-svg {
   touch-action: none; /* 핀치·드래그를 페이지 스크롤과 분리 */
 }
-.tlz-narrow .tlz-lanelabel { font-size: 8.5px; }
+.tlz-narrow .tlz-lanelabel { font-size: 9px; }
+.tlz-lanein {
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 3px;
+  font-weight: 700;
+  opacity: 0.9;
+}
 .tlz-narrow .tlz-year { font-size: 9.5px; }
 .tlz-narrow .tlz-plabel { font-size: 8.5px; }
 .tlz-narrow .tlz-plabel .tlz-cite { font-size: 8px; }
