@@ -38,3 +38,4 @@ data/.citations-cache.json
 *.njsproj
 *.sln
 *.sw?
+data/.doi-recovery-cache.json
