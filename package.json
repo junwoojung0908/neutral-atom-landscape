@@ -22,7 +22,8 @@
     "branch-papers": "tsx scripts/branch-papers.ts",
     "citations": "tsx scripts/citations.ts",
     "timeline": "tsx scripts/timeline.ts",
-    "citations-fix": "tsx scripts/citations-fix.ts"
+    "citations-fix": "tsx scripts/citations-fix.ts",
+    "work-types": "tsx scripts/work-types.ts"
   },
   "dependencies": {
     "d3-force": "^3.0.0",

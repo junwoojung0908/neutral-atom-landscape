@@ -19,6 +19,9 @@ for (const f of ["data/corpus.json", "data/corpus-raw.json", "data/entities.json
 const CAP = 60;
 interface Rawp { id: string; title: string; authors: string[]; year: number }
 const cls = rd("data/corpus.json") as { id: string; year: number; matched_fields: string[] }[];
+let citations: Record<string, { cited: number }> = {};
+try { citations = rd("data/citations.json"); } catch { /* 없음 */ }
+const citedOf = (id: string) => citations[id]?.cited ?? 0;
 const rawById = new Map((rd("data/corpus-raw.json") as Rawp[]).map((p) => [p.id, p]));
 const fields = rd("data/fields.json") as { id: string; parent: string | null; ko: string }[];
 const firstLevel = fields.filter((f) => f.parent === null).map((f) => f.id);
@@ -36,20 +39,20 @@ for (const b of firstLevel) {
   const inBranch = cls.filter((p) => p.matched_fields.includes(b));
   const byYear: Record<string, number> = {};
   for (const p of inBranch) byYear[p.year] = (byYear[p.year] ?? 0) + 1;
-  const papers = inBranch
-    .slice()
-    .sort((a, c) => c.year - a.year)
-    .slice(0, CAP)
-    .map((p) => {
-      const r = rawById.get(p.id);
-      const a0 = r?.authors?.[0] ?? "";
-      return {
-        id: p.id,
-        year: p.year,
-        title: r?.title ?? p.id,
-        author: a0 ? `${a0}${(r?.authors?.length ?? 1) > 1 ? " et al." : ""}` : "",
-      };
-    });
+  const brief = (p: { id: string; year: number }) => {
+    const r = rawById.get(p.id);
+    const a0 = r?.authors?.[0] ?? "";
+    return {
+      id: p.id,
+      year: p.year,
+      title: r?.title ?? p.id,
+      author: a0 ? `${a0}${(r?.authors?.length ?? 1) > 1 ? " et al." : ""}` : "",
+      cited: citedOf(p.id),
+    };
+  };
+  const papers = inBranch.slice().sort((a, c) => c.year - a.year).slice(0, CAP).map(brief);
+  // 자동 읽기 시작점: 인용 상위 8 (알고리즘 생성임을 UI에 명시)
+  const topCited = inBranch.slice().sort((a, c) => citedOf(c.id) - citedOf(a.id)).slice(0, 8).map(brief);
   const landmarks = entities
     .filter((e) => e.fields.map(firstOf).includes(b))
     .sort((a, c) => c.weight - a.weight)
@@ -57,7 +60,7 @@ for (const b of firstLevel) {
       id: e.id, label: e.label, byline: e.byline, venue: e.venue, year: e.year,
       weight: e.weight, refs: e.refs,
     }));
-  out[b] = { count: inBranch.length, byYear, landmarks, papers };
+  out[b] = { count: inBranch.length, byYear, landmarks, papers, topCited };
 }
 
 writeFileSync(resolve(root, "data/branch-papers.json"), JSON.stringify(out, null, 2) + "\n");

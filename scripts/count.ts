@@ -80,6 +80,7 @@ writeFileSync(
   JSON.stringify(
     {
       version: query.version,
+      generated_at: new Date().toISOString().slice(0, 10),
       corpus_total: corpusTotal,
       classified: classified.length,
       unclassified_total: unclassified.length,

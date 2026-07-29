@@ -44,18 +44,37 @@ function lane(fields: string[]): string {
   return fields.slice().sort((a, b) => (branchHits[a] ?? 1e9) - (branchHits[b] ?? 1e9))[0];
 }
 
+// sim(분류의 ~40%)은 해상도 실패 → 뷰 전용 서브레인 3개로 분해 (택소노미 11가지는 불변).
+const SIM_GAUGE = ["lattice gauge", "gauge theor", "topological", "spin liquid", "symmetry-protected", "symmetry protected", "anyon", "toric", "string breaking", "chern"];
+const SIM_DYN = ["quench", "thermaliz", "scar", "many-body localization", "kibble-zurek", "kibble zurek", "floquet", "driven", "dynamics", "relaxation", "prethermal", "hydrodynam", "entanglement growth", "information spreading"];
+function simSub(hay: string): string {
+  if (SIM_GAUGE.some((t) => hay.includes(t))) return "sim.gauge";
+  if (SIM_DYN.some((t) => hay.includes(t))) return "sim.dyn";
+  return "sim.eq";
+}
+
+// 리뷰 판정: OpenAlex type(있으면) + 제목 휴리스틱
+let workTypes: Record<string, string> = {};
+try { workTypes = rd("data/work-types.json"); } catch { /* 아직 없음 */ }
+const REVIEW_TITLE = /\breview\b|colloquium|roadmap|perspective|tutorial|primer\b/i;
+const isReview = (id: string, title: string) =>
+  workTypes[id] === "review" || REVIEW_TITLE.test(title);
+
 const papers = cls.map((p) => {
-  const r = rawById.get(p.id);
+  const r = rawById.get(p.id) as { title?: string; authors?: string[]; abstract?: string } | undefined;
   const a0 = r?.authors?.[0] ?? "";
+  let ln = lane(p.matched_fields);
+  if (ln === "sim") ln = simSub(`${r?.title ?? ""} ${r?.abstract ?? ""}`.toLowerCase());
   return {
     id: p.id,
     year: p.year,
-    lane: lane(p.matched_fields),
+    lane: ln,
     fields: p.matched_fields,
     cited: cit[p.id]?.cited ?? 0,
     title: r?.title ?? p.id,
     author: a0 ? `${a0}${(r?.authors?.length ?? 1) > 1 ? " et al." : ""}` : "",
     group: groupOf(p.id),
+    review: isReview(p.id, r?.title ?? "") || undefined,
   };
 });
 
