@@ -8,15 +8,18 @@ import groupsJson from "../../data/groups.json";
 // 박스형 무한줌. x(연도)·y(가지) 축을 독립적으로 줌. 축 라벨은 박스 가장자리에 고정,
 // 내용만 클립. 줌인할수록(면적↑) 저인용 논문이 더 드러남(LOD).
 const W = 1000;
-const H = 620;
-const M = { l: 156, r: 30, t: 16, b: 34 };
+const H = 440; // 세로 조밀 — 축이 항상 화면 안에
+const M = { l: 156, r: 30, t: 10, b: 26 };
 const Y0 = 2015;
+const Y1 = 2026;
+const NYEARS = Y1 - Y0 + 1; // 12
 const NBINS = 4;
 const BIN_LABELS = ["2015–17", "2018–20", "2021–23", "2024–26"];
 const MAJOR = 18;
 const UPDATED = "2026-07-29";
 const PW = W - M.l - M.r; // plot width
 const PH = H - M.t - M.b;
+const YEARW = PW / NYEARS;
 
 const groupsMeta = groupsJson as { id: string; label: string }[];
 const groupLabel = new Map(groupsMeta.map((g) => [g.id, g.label]));
@@ -27,8 +30,7 @@ function hash(s: string): number {
   for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
   return ((h % 1000) + 1000) % 1000;
 }
-const radius = (c: number) => clamp(2.4 + Math.sqrt(c) * 0.5, 2.4, 20);
-const binOf = (y: number) => clamp(Math.floor((y - Y0) / 3), 0, NBINS - 1);
+const radius = (c: number) => clamp(2.2 + Math.sqrt(c) * 0.45, 2.2, 16);
 
 function wrap2(t: string): string[] {
   const words = displayTitle(t).split(/\s+/);
@@ -56,17 +58,18 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
   const laneIndex = useMemo(() => new Map(lanes.map((id, i) => [id, i])), [lanes]);
   const binW = PW / NBINS;
 
+  // 점 x = 실제 연도 좌표(+연도폭 내 지터) — 줌인 시 연도 눈금과 정직하게 정합
   const pos = useMemo(() => {
     const m = new Map<string, { x: number; y: number }>();
     for (const p of papers) {
       const li = laneIndex.get(p.lane) ?? 0;
-      const cx = M.l + (binOf(p.year) + 0.5) * binW;
-      const x = cx + (hash(p.id + "x") / 1000 - 0.5) * binW * 0.78;
+      const yr = clamp(p.year, Y0, Y1);
+      const x = M.l + (yr - Y0 + 0.5) * YEARW + (hash(p.id + "x") / 1000 - 0.5) * YEARW * 0.86;
       const y = M.t + li * laneH + laneH * 0.5 + (hash(p.id + "y") / 1000 - 0.5) * laneH * 0.8;
       m.set(p.id, { x, y });
     }
     return m;
-  }, [laneIndex, laneH, binW]);
+  }, [laneIndex, laneH]);
 
   const byCited = useMemo(() => papers.slice().sort((a, b) => b.cited - a.cited), []);
   const byId = useMemo(() => new Map(papers.map((p) => [p.id, p])), []);
@@ -251,9 +254,13 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
               <rect key={`band-${id}`} className="tlz-laneband" x={M.l} y={sy(M.t + i * laneH)} width={PW} height={laneH * view.ky} />
             ) : null,
           )}
-          {BIN_LABELS.map((_, b) =>
-            b > 0 ? <line key={`g-${b}`} className="tlz-grid" x1={sx(M.l + b * binW)} y1={M.t} x2={sx(M.l + b * binW)} y2={H - M.b} /> : null,
-          )}
+          {/* 적응형 세로 그리드: 줌인(kx≥2)이면 연도별, 아니면 3년 경계 */}
+          {(view.kx >= 2
+            ? Array.from({ length: NYEARS + 1 }, (_, i) => M.l + i * YEARW)
+            : Array.from({ length: NBINS - 1 }, (_, b) => M.l + (b + 1) * binW)
+          ).map((bx, i) => (
+            <line key={`g-${i}`} className="tlz-grid" x1={sx(bx)} y1={M.t} x2={sx(bx)} y2={H - M.b} />
+          ))}
           {backbone.map((e, i) => {
             const a = posS.get(e.from), b = posS.get(e.to);
             return a && b ? <line key={`bb-${i}`} className="tlz-edge" x1={a.x} y1={a.y} x2={b.x} y2={b.y} /> : null;
@@ -293,11 +300,18 @@ export default function TimelineZoom({ onOpen, onSelectBranch }: Props) {
               fill={f?.color} onClick={() => onSelectBranch(id)}>{f?.ko}</text>
           );
         })}
-        {BIN_LABELS.map((lab, b) => {
-          const x = sx(M.l + (b + 0.5) * binW);
-          if (x < M.l - 4 || x > W - M.r + 4) return null;
-          return <text key={`yl-${b}`} className="tlz-year" x={x} y={H - 12} textAnchor="middle">{lab}</text>;
-        })}
+        {/* 하단 연도축 — 항상 고정, 줌 정도에 따라 3년 bin ↔ 연도별로 촘촘해짐 */}
+        {view.kx >= 2
+          ? Array.from({ length: NYEARS }, (_, i) => Y0 + i).map((yr) => {
+              const x = sx(M.l + (yr - Y0 + 0.5) * YEARW);
+              if (x < M.l - 4 || x > W - M.r + 4) return null;
+              return <text key={`yl-${yr}`} className="tlz-year" x={x} y={H - 8} textAnchor="middle">{yr}</text>;
+            })
+          : BIN_LABELS.map((lab, b) => {
+              const x = sx(M.l + (b + 0.5) * binW);
+              if (x < M.l - 4 || x > W - M.r + 4) return null;
+              return <text key={`yl-${b}`} className="tlz-year" x={x} y={H - 8} textAnchor="middle">{lab}</text>;
+            })}
         <rect className="tlz-frame" x={M.l} y={M.t} width={PW} height={PH} fill="none" />
         <line className="tlz-axis" x1={M.l} y1={H - M.b} x2={W - M.r} y2={H - M.b} />
       </svg>
