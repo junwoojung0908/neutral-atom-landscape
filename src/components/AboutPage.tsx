@@ -50,7 +50,9 @@ export default function AboutPage() {
 
       <h3>Known limitations (honest record)</h3>
       <ul>
-        <li>~600 arXiv-only papers (no published DOI) have undercounted citations (preprint records)</li>
+        <li>661 papers lack a published DOI in arXiv metadata; a Crossref recovery scan (title + first-author
+          match) found candidate published records for 193 of them (pending manual merge) — the remaining 468
+          appear genuinely arXiv-only. Until merged, citations for these are undercounted</li>
         <li>Research-group badges cover major groups only via last author (~13% of papers) — absence means
           uncurated, not a judgment</li>
         <li>One confirmed miss in a landmark recall check (Browaeys–Lahaye 2020 review; category filter suspected)</li>
