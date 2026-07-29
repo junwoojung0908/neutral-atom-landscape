@@ -35,6 +35,12 @@ const surname = (name?: string) => {
   return parts.length ? parts[parts.length - 1] : "";
 };
 
+function ringArc(cx: number, cy: number, r: number, a0: number, a1: number): string {
+  const x0 = cx + r * Math.cos(a0), y0 = cy + r * Math.sin(a0);
+  const x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1);
+  return `M ${x0} ${y0} A ${r} ${r} 0 ${a1 - a0 > Math.PI ? 1 : 0} 1 ${x1} ${y1}`;
+}
+
 function wrap2(t: string, maxLen = 26, maxLines = 3): string[] {
   const words = displayTitle(t).split(/\s+/);
   const lines: string[] = [];
@@ -61,11 +67,11 @@ interface Props {
 
 // 줌아웃 대분류(5) — 세로 줌인하면 13개 세분류로 갈라짐(시맨틱 줌)
 const LANE_GROUPS = [
-  { id: "g.digital", ko: "Digital computing", color: "#6EA8E5", children: ["qec", "gate", "readout"] },
-  { id: "g.sim", ko: "Analog simulation", color: "#FF6B6E", children: ["sim.eq", "sim.dyn", "sim.gauge"] },
-  { id: "g.atom", ko: "Species · metrology", color: "#7ED67E", children: ["species", "clock"] },
-  { id: "g.algo", ko: "Algorithms · verification", color: "#C99BD9", children: ["opt", "classical", "software"] },
-  { id: "g.scale", ko: "Scale · interconnects", color: "#3FD3E5", children: ["scale", "net"] },
+  { id: "g.digital", ko: "Digital computing", color: "#6E8CB8", children: ["qec", "gate", "readout"] },
+  { id: "g.sim", ko: "Analog simulation", color: "#C97B7D", children: ["sim.eq", "sim.dyn", "sim.gauge"] },
+  { id: "g.atom", ko: "Species · metrology", color: "#7FAF87", children: ["species", "clock"] },
+  { id: "g.algo", ko: "Algorithms · verification", color: "#A88BB8", children: ["opt", "classical", "software"] },
+  { id: "g.scale", ko: "Scale · interconnects", color: "#62A8B8", children: ["scale", "net"] },
 ];
 const SPLIT_KY = 2.2; // 이 세로 배율부터 세분류 표시
 
@@ -577,6 +583,12 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
         onMouseUp={() => (drag.current = null)} onMouseLeave={() => { drag.current = null; }}>
         <defs>
           <clipPath id="tlz-plot"><rect x={M.l} y={M.t} width={PW} height={PH} /></clipPath>
+          {/* 형광 PSF: 밝은 코어 → 소프트 가장자리 */}
+          <radialGradient id="atomCore">
+            <stop offset="0%" stopColor="var(--atom)" stopOpacity="1" />
+            <stop offset="55%" stopColor="var(--atom)" stopOpacity="0.85" />
+            <stop offset="100%" stopColor="var(--atom)" stopOpacity="0.1" />
+          </radialGradient>
           {/* 형광 글로우 — 점 그룹 전체에 한 번만 합성(성능) */}
           <filter id="atomGlow" x="-60%" y="-60%" width="220%" height="220%">
             <feGaussianBlur stdDeviation="1.8" result="b" />
@@ -625,14 +637,36 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             );
           })}
           <g filter="url(#atomGlow)">
-          {visible.map(({ p, x, y }) => (
-            <circle key={p.id} cx={x} cy={y} r={radius(p.score)} fill={p.review ? "var(--frame)" : "var(--atom)"}
-              fillOpacity={dotOp(p)} stroke={dotRing(p) ? "var(--atom)" : p.review ? "var(--atom)" : "none"}
-              strokeWidth={dotRing(p) ? 1.5 : p.review ? 1.6 : 0}
-              className="tlz-dot" onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onClick={() => onOpen(p)}>
-              <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · cited ${p.cited}${p.hot ? ' (rising ↗)' : ''}`}</title>
-            </circle>
-          ))}
+          {visible.map(({ p, x, y }) => {
+            const r = radius(p.score);
+            const rimOp = Math.min(dotOp(p) + 0.1, 0.7);
+            const m = p.fields.length;
+            const seg = (2 * Math.PI) / Math.max(m, 1);
+            const gap = m > 1 ? 0.22 : 0;
+            return (
+              <g key={p.id}>
+                <circle cx={x} cy={y} r={r}
+                  fill={p.review ? "var(--frame)" : "url(#atomCore)"}
+                  fillOpacity={dotOp(p)}
+                  stroke={dotRing(p) ? "var(--atom)" : p.review ? "var(--atom)" : "none"}
+                  strokeWidth={dotRing(p) ? 1.5 : p.review ? 1.4 : 0}
+                  className="tlz-dot" onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onClick={() => onOpen(p)}>
+                  <title>{`${displayTitle(p.title)}\n${p.author} · ${p.year} · cited ${p.cited}${p.hot ? ' (rising ↗)' : ''}`}</title>
+                </circle>
+                {/* 분야 림: 은은한 색 호 — 여러 분야면 세그먼트 분할 */}
+                {!p.review && p.fields.map((f, i) => {
+                  const a0 = -Math.PI / 2 + i * seg + gap / 2;
+                  const a1 = -Math.PI / 2 + (i + 1) * seg - gap / 2;
+                  const col = fieldById.get(f)?.color ?? "var(--muted)";
+                  return m === 1 ? (
+                    <circle key={f} cx={x} cy={y} r={r + 1.6} fill="none" stroke={col} strokeWidth={1.2} strokeOpacity={rimOp} className="tlz-rim" />
+                  ) : (
+                    <path key={f} d={ringArc(x, y, r + 1.6, a0, a1)} fill="none" stroke={col} strokeWidth={1.2} strokeOpacity={rimOp} className="tlz-rim" />
+                  );
+                })}
+              </g>
+            );
+          })}
           </g>
           {/* 시그니처: 트랩 링 — hover/선택된 점 바깥에서 조여드는 가는 링 */}
           {eff && posS.get(eff) && (() => {
