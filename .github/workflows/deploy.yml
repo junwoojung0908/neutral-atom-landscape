@@ -30,6 +30,8 @@ jobs:
       # ★ 배포 게이트: 데이터 검증이 실패하면 여기서 워크플로가 멈춘다.
       - name: Validate data (deploy gate)
         run: npm run validate
+      - name: Data invariants (selftest)
+        run: npm run selftest
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
