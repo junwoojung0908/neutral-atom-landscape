@@ -8,8 +8,6 @@ import { counts } from "../lib/survey.ts";
 
 // 박스형 무한줌. x(연도)·y(가지) 축을 독립적으로 줌. 축 라벨은 박스 가장자리에 고정,
 // 내용만 클립. 줌인할수록(면적↑) 저인용 논문이 더 드러남(LOD).
-const W = 1000;
-const M = { l: 156, r: 14, t: 8, b: 22 };
 const Y0 = 2015;
 const Y1 = 2026;
 const NYEARS = Y1 - Y0 + 1; // 12
@@ -17,8 +15,7 @@ const NBINS = 4;
 const BIN_LABELS = ["2015–17", "2018–20", "2021–23", "2024–26"];
 const MAJOR = 18;
 const UPDATED = counts.generated_at ?? "2026-07-29";
-const PW = W - M.l - M.r; // plot width
-const YEARW = PW / NYEARS;
+// W·여백은 화면폭에 따라(모바일=좁은 viewBox → 글자가 물리적으로 읽히는 크기 유지),
 // 세로(H)는 컨테이너 비율에 맞춰 동적 — 축이 화면 양끝에 붙는다(글자 왜곡 없음).
 
 const groupsMeta = groupsJson as { id: string; label: string }[];
@@ -62,17 +59,30 @@ const SIM_SUBS = [
 export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const [H, setH] = useState(420);
+  const [narrow, setNarrow] = useState(false);
+  const W = narrow ? 560 : 1000;
+  const M = narrow ? { l: 128, r: 10, t: 8, b: 20 } : { l: 156, r: 14, t: 8, b: 22 };
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
-    const ro = new ResizeObserver(() => {
+    const measure = () => {
       const r = el.getBoundingClientRect();
-      if (r.width > 50) setH(clamp(Math.round((W * r.height) / r.width), 240, 900));
-    });
+      if (r.width > 50) {
+        const nw = r.width < 620;
+        setNarrow(nw);
+        const w = nw ? 560 : 1000;
+        setH(clamp(Math.round((w * r.height) / r.width), 240, 1400));
+      }
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
     ro.observe(el);
-    return () => ro.disconnect();
+    window.addEventListener("resize", measure); // RO 미발화 엣지케이스 백업
+    return () => { ro.disconnect(); window.removeEventListener("resize", measure); };
   }, []);
   const PH = H - M.t - M.b;
+  const PW = W - M.l - M.r;
+  const YEARW = PW / NYEARS;
 
   const laneMeta = useMemo(
     () => firstLevelFields.flatMap((f) => (f.id === "sim" ? SIM_SUBS : [{ id: f.id, ko: f.ko, color: f.color, branch: f.id }])),
@@ -95,7 +105,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       m.set(p.id, { x, y });
     }
     return m;
-  }, [laneIndex, laneH]);
+  }, [laneIndex, laneH, YEARW, M.l, M.t]);
 
   const byCited = useMemo(() => papers.slice().sort((a, b) => b.cited - a.cited), []);
   const byId = useMemo(() => new Map(papers.map((p) => [p.id, p])), []);
@@ -172,6 +182,53 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   };
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number } | null>(null);
+  const pinch = useRef<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    cancelAnim();
+    if (e.touches.length === 2) {
+      const [a, b] = [e.touches[0], e.touches[1]];
+      pinch.current = { x1: a.clientX, y1: a.clientY, x2: b.clientX, y2: b.clientY };
+      drag.current = null;
+      setFitted(null);
+    } else if (e.touches.length === 1) {
+      drag.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    }
+  };
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (e.touches.length === 2 && pinch.current) {
+      const [a, b] = [e.touches[0], e.touches[1]];
+      const prev = pinch.current;
+      const dxPrev = Math.max(Math.abs(prev.x1 - prev.x2), 12);
+      const dyPrev = Math.max(Math.abs(prev.y1 - prev.y2), 12);
+      const dxNow = Math.max(Math.abs(a.clientX - b.clientX), 12);
+      const dyNow = Math.max(Math.abs(a.clientY - b.clientY), 12);
+      const c = toSvg((a.clientX + b.clientX) / 2, (a.clientY + b.clientY) / 2);
+      const fx = dxNow / dxPrev;
+      const fy = dyNow / dyPrev;
+      setView((v) => {
+        const kx = clamp(v.kx * fx, 1, 40);
+        const ky = clamp(v.ky * fy, 1, 40);
+        return {
+          kx, ky,
+          tx: c.x - (c.x - v.tx) * (kx / v.kx),
+          ty: c.y - (c.y - v.ty) * (ky / v.ky),
+        };
+      });
+      pinch.current = { x1: a.clientX, y1: a.clientY, x2: b.clientX, y2: b.clientY };
+    } else if (e.touches.length === 1 && drag.current && svgRef.current) {
+      const r = svgRef.current.getBoundingClientRect();
+      const t = e.touches[0];
+      const dx = ((t.clientX - drag.current.x) / r.width) * W;
+      const dy = ((t.clientY - drag.current.y) / r.height) * H;
+      drag.current = { x: t.clientX, y: t.clientY };
+      setView((v) => ({ ...v, tx: v.tx + dx, ty: v.ty + dy }));
+    }
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (e.touches.length < 2) pinch.current = null;
+    if (e.touches.length === 0) drag.current = null;
+  };
 
   const sx = (bx: number) => view.tx + bx * view.kx;
   const sy = (by: number) => view.ty + by * view.ky;
@@ -277,7 +334,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const cx = M.l + PW / 2, cy = M.t + PH / 2;
 
   return (
-    <div className="tlz">
+    <div className={`tlz${narrow ? " tlz-narrow" : ""}`}>
       <div className="tlz-help">
         <span className="tlz-meta">코퍼스 {papers.length.toLocaleString()}편 · OpenAlex 인용 · 갱신 {UPDATED}</span>
         <span className="tlz-controls">
@@ -291,7 +348,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
               {laneMetaMap.get(fitted)?.ko} 논문 목록 ▸
             </button>
           )}
-          <span className="tlz-hint">Shift+휠=연도 · Ctrl+휠=가지 · 드래그=이동 · 점 클릭=상세 · 속 빈 원=리뷰</span>
+          <span className="tlz-hint">{narrow ? "핀치 가로=연도·세로=가지 · 드래그=이동 · 탭=상세" : "Shift+휠=연도 · Ctrl+휠=가지 · 드래그=이동 · 점 클릭=상세 · 속 빈 원=리뷰"}</span>
         </span>
       </div>
 
@@ -332,6 +389,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
         </div>
       )}
       <svg ref={svgRef} className="tlz-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet"
+        onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}
         onMouseDown={(e) => { cancelAnim(); drag.current = { x: e.clientX, y: e.clientY }; }}
         onMouseMove={(e) => {
           if (!drag.current) return;
