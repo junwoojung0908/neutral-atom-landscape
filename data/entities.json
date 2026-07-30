@@ -121,5 +121,145 @@
     ],
     "metadata_source": "api",
     "verified": "2026-07-28"
+  },
+  {
+    "id": "bernien17",
+    "kind": "work",
+    "label": "Probing many-body dynamics on a 51-atom quantum simulator",
+    "byline": "Hannes Bernien et al.",
+    "venue": "Nature 551, 579-584",
+    "year": 2017,
+    "fields": [
+      "sim"
+    ],
+    "weight": 5,
+    "refs": [
+      {
+        "type": "arxiv",
+        "value": "1707.04344"
+      }
+    ],
+    "metadata_source": "api",
+    "verified": "2026-07-30"
+  },
+  {
+    "id": "turner18",
+    "kind": "work",
+    "label": "Quantum many-body scars",
+    "byline": "Christopher J. Turner, Alexios A. Michailidis, Dmitry A. Abanin, Maksym Serbyn, Zlatko Papic",
+    "venue": "Nature Physics",
+    "year": 2017,
+    "fields": [
+      "sim"
+    ],
+    "weight": 4,
+    "refs": [
+      {
+        "type": "arxiv",
+        "value": "1711.03528"
+      }
+    ],
+    "metadata_source": "api",
+    "verified": "2026-07-30"
+  },
+  {
+    "id": "semeghini21",
+    "kind": "work",
+    "label": "Probing Topological Spin Liquids on a Programmable Quantum Simulator",
+    "byline": "Giulia Semeghini et al.",
+    "venue": "Science 374, 1242",
+    "year": 2021,
+    "fields": [
+      "sim"
+    ],
+    "weight": 4,
+    "refs": [
+      {
+        "type": "arxiv",
+        "value": "2104.04119"
+      }
+    ],
+    "metadata_source": "api",
+    "verified": "2026-07-30"
+  },
+  {
+    "id": "evered23",
+    "kind": "work",
+    "label": "High-fidelity parallel entangling gates on a neutral atom quantum computer",
+    "byline": "Simon J. Evered et al.",
+    "venue": "Nature 622, 268-272",
+    "year": 2023,
+    "fields": [
+      "gate"
+    ],
+    "weight": 4,
+    "refs": [
+      {
+        "type": "arxiv",
+        "value": "2304.05420"
+      }
+    ],
+    "metadata_source": "api",
+    "verified": "2026-07-30"
+  },
+  {
+    "id": "manetsch24",
+    "kind": "work",
+    "label": "A tweezer array with 6100 highly coherent atomic qubits",
+    "byline": "Hannah J. Manetsch, Gyohei Nomura, Elie Bataille, Kon H. Leung, Xudong Lv, Manuel Endres",
+    "venue": "Nature 647, 60-67",
+    "year": 2024,
+    "fields": [
+      "scale"
+    ],
+    "weight": 4,
+    "refs": [
+      {
+        "type": "arxiv",
+        "value": "2403.12021"
+      }
+    ],
+    "metadata_source": "api",
+    "verified": "2026-07-30"
+  },
+  {
+    "id": "chiu25",
+    "kind": "work",
+    "label": "Continuous operation of a coherent 3,000-qubit system",
+    "byline": "Neng-Chun Chiu et al.",
+    "venue": "Nature 646, pages 1075-1080",
+    "year": 2025,
+    "fields": [
+      "scale"
+    ],
+    "weight": 4,
+    "refs": [
+      {
+        "type": "arxiv",
+        "value": "2506.20660"
+      }
+    ],
+    "metadata_source": "api",
+    "verified": "2026-07-30"
+  },
+  {
+    "id": "young20",
+    "kind": "work",
+    "label": "A tweezer clock with half-minute atomic coherence at optical frequencies and high relative stability",
+    "byline": "Aaron W. Young, William J. Eckner, William R. Milner, Dhruv Kedar, Matthew A. Norcia, Eric Oelker, Nathan Schine, Jun Ye, Adam M. Kaufman",
+    "venue": "Nature 588, 408-413",
+    "year": 2020,
+    "fields": [
+      "clock"
+    ],
+    "weight": 4,
+    "refs": [
+      {
+        "type": "arxiv",
+        "value": "2004.06095"
+      }
+    ],
+    "metadata_source": "api",
+    "verified": "2026-07-30"
   }
 ]
