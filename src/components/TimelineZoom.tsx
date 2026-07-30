@@ -64,10 +64,12 @@ interface Props {
   onOpen: (p: TPaper) => void;
   onSelectBranch: (id: string) => void;
   selectedId?: string | null;
+  /** Start-here 가이드: 정거장 arXiv id 목록 + 현재 인덱스. 있으면 정거장만 밝히고 경로선을 그린다. */
+  tour?: { ids: string[]; idx: number } | null;
 }
 
 // 줌아웃 대분류(5) — 세로 줌인하면 13개 세분류로 갈라짐(시맨틱 줌)
-const LANE_GROUPS = [
+export const LANE_GROUPS = [
   { id: "g.digital", ko: "Digital computing", color: "#6E8CB8", children: ["qec", "gate", "readout"] },
   { id: "g.sim", ko: "Analog simulation", color: "#C97B7D", children: ["sim.eq", "sim.dyn", "sim.gauge"] },
   { id: "g.atom", ko: "Species · metrology", color: "#7FAF87", children: ["species", "clock"] },
@@ -82,9 +84,10 @@ const SIM_SUBS = [
   { id: "sim.gauge", ko: "Simulation · gauge/topo", color: "#B04A4F", branch: "sim" },
 ];
 
-export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Props) {
+export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const [H, setH] = useState(420);
+  const [measured, setMeasured] = useState(false);
   const [narrow, setNarrow] = useState(false);
   const W = narrow ? 400 : 1000;
   const M = narrow ? { l: 14, r: 8, t: 6, b: 18 } : { l: 172, r: 14, t: 8, b: 22 };
@@ -98,6 +101,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
         setNarrow(nw);
         const w = nw ? 400 : 1000;
         setH(clamp(Math.round((w * r.height) / r.width), 240, 1400));
+        setMeasured(true);
       }
     };
     measure();
@@ -251,6 +255,36 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const start = laneIndex.get(g.children[0]) ?? 0;
     fitRow(g.id, start, g.children.length);
   };
+  // Story 의 "Recent movement" 카드 진입: ?fl=<branch>&fr=1 → 해당 가지 fit + 최근 2년 줌 (1회성)
+  const pendingFocus = useRef<{ branch: string; recent: boolean } | null>((() => {
+    const p = new URLSearchParams(window.location.search);
+    const fl = p.get("fl");
+    return fl ? { branch: fl, recent: p.get("fr") === "1" } : null;
+  })());
+  useEffect(() => {
+    if (!measured || !pendingFocus.current) return;
+    const { branch, recent } = pendingFocus.current;
+    pendingFocus.current = null;
+    const g = branch === "sim" ? LANE_GROUPS.find((x) => x.id === "g.sim") : undefined;
+    const fitId = g ? g.id : laneIndex.has(branch) ? branch : null;
+    if (!fitId) return;
+    const start = laneIndex.get(g ? g.children[0] : branch) ?? 0;
+    const len = g ? g.children.length : 1;
+    const ky = lanes.length / len;
+    const target: Partial<View> = { ky, ty: M.t - (M.t + start * laneH) * ky };
+    if (recent) {
+      const kx = NYEARS / 2; // 최근 2년이 화면을 채우도록
+      target.kx = kx;
+      target.tx = (W - M.r) * (1 - kx); // 오른쪽 끝(최신)으로
+    }
+    setFitted(fitId);
+    animateTo(target);
+    const p = new URLSearchParams(window.location.search);
+    p.delete("fl"); p.delete("fr");
+    const qs = p.toString();
+    window.history.replaceState(null, "", (qs ? `${window.location.pathname}?${qs}` : window.location.pathname) + window.location.hash);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [measured]);
   // 뷰·그룹·검색을 URL 에 동기화(공유용). 다른 키는 보존.
   useEffect(() => {
     const t = window.setTimeout(() => {
@@ -404,6 +438,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       }
     }
     if (qn) for (const p of papers) if (matched.has(p.id)) push(p);
+    if (tour) for (const id of tour.ids) { const p = byId.get(id); if (p) push(p); } // 정거장은 LOD 무시하고 항상 표시
     // 겹침 완화: 3회 반복 분리 + 논문당 총 이동 12 상한(위치 안정성)
     const origin = out.map((o) => ({ x: o.x, y: o.y }));
     for (let it = 0; it < 3; it++) {
@@ -429,7 +464,9 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       if (d > 12) { out[i].x = origin[i].x + (dx / d) * 12; out[i].y = origin[i].y + (dy / d) * 12; }
     }
     return out;
-  }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched, eff]);
+  }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched, eff, tour]);
+  const tourSet = useMemo(() => new Set(tour?.ids ?? []), [tour]);
+  const tourCur = tour ? tour.ids[tour.idx] : null;
 
   const posS = useMemo(() => new Map(visible.map((v) => [v.p.id, v])), [visible]);
   const visSet = useMemo(() => new Set(visible.map((v) => v.p.id)), [visible]);
@@ -462,7 +499,9 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
     const fs = narrow ? 8.5 : 9;
     const DIRS = [[1, 0], [-1, 0], [1, -1], [1, 1], [-1, -1], [-1, 1], [0, -1], [0, 1]];
     const DISTS = [4, 16, 30, 46];
-    for (const v of visible) {
+    // 가이드 모드에선 정거장 라벨만 — 나머지는 dim 이라 라벨이 소음이 된다
+    const labelSrc = tour ? visible.filter((v) => tourSet.has(v.p.id)) : visible;
+    for (const v of labelSrc) {
       const lines = wrap2(v.p.title, narrow ? 18 : 26, 3);
       const wText = Math.max(...lines.map((l) => l.length)) * fs * 0.56 + 26 + surname(v.p.pi).length * fs * 0.56;
       const hText = lines.length * (fs + 1.5) + 2;
@@ -494,7 +533,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
       out.push({ p: v.p, lines, lx: chosen.lx, ly: chosen.ly, lead });
     }
     return out;
-  }, [visible, narrow]);
+  }, [visible, narrow, tour, tourSet]);
 
   const grpActive = checked.size > 0;
   const qActive = qn.length > 0;
@@ -503,13 +542,18 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
   const logDen = Math.log10(1 + maxCited);
   const baseOp = (p: TPaper) => 0.22 + 0.7 * (Math.log10(1 + p.score) / logDen);
   const dotOp = (p: TPaper) => {
+    if (tour) {
+      if (p.id === tourCur || p.id === eff) return 1; // 현재 정거장(+hover)만 완전히 밝게
+      if (tourSet.has(p.id)) return 0.5;
+      return 0.08;
+    }
     if (qActive) return matched.has(p.id) ? Math.max(baseOp(p), 0.9) : 0.1;
     if (grpActive) return p.group && checked.has(p.group) ? Math.max(baseOp(p), 0.9) : 0.1;
     if (eff) return p.id === eff ? 1 : connected.has(p.id) ? Math.min(baseOp(p) + 0.18, 0.95) : 0.12;
     return baseOp(p);
   };
   const dotRing = (p: TPaper) =>
-    qActive ? matched.has(p.id) : grpActive ? !!(p.group && checked.has(p.group)) : eff === p.id;
+    tour ? p.id === tourCur : qActive ? matched.has(p.id) : grpActive ? !!(p.group && checked.has(p.group)) : eff === p.id;
 
   const hpaper = hover ? byId.get(hover) : null;
   const toggle = (id: string) => setChecked((s) => { const n = new Set(s); n.has(id) ? n.delete(id) : n.add(id); return n; });
@@ -632,6 +676,15 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             const a = posS.get(e.from), b = posS.get(e.to);
             return a && b ? <line key={`hv-${i}`} className="tlz-edge-hi" x1={a.x} y1={a.y} x2={b.x} y2={b.y} /> : null;
           })}
+          {/* 가이드 모드: 지나온 정거장 사이 경로선 */}
+          {tour && (() => {
+            const pts = tour.ids.slice(0, tour.idx + 1)
+              .map((id) => posS.get(id))
+              .filter((v): v is NonNullable<typeof v> => !!v);
+            return pts.length >= 2
+              ? <polyline className="tlz-tourpath" points={pts.map((v) => `${v.x},${v.y}`).join(" ")} />
+              : null;
+          })()}
           {/* 큐레이션 관계는 관련 논문 hover/선택 시에만 (표본이 적어 상시 표시는 임의로 보임) */}
           {eff && curatedEdges.filter((e) => e.from === eff || e.to === eff).map((e, i) => {
             const a = posS.get(e.from), b = posS.get(e.to);
@@ -679,6 +732,15 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId }: Pro
             const r0 = radius(v.p.score);
             return (
               <circle key={`trap-${eff}`} className="tlz-trapring" cx={v.x} cy={v.y} r={r0 + 4}
+                style={{ ["--r0" as never]: `${r0 + 13}px`, ["--r1" as never]: `${r0 + 4}px` }} />
+            );
+          })()}
+          {/* 가이드 모드: 현재 정거장에도 트랩 링 */}
+          {tourCur && tourCur !== eff && posS.get(tourCur) && (() => {
+            const v = posS.get(tourCur)!;
+            const r0 = radius(v.p.score);
+            return (
+              <circle key={`trap-t-${tourCur}-${tour?.idx}`} className="tlz-trapring" cx={v.x} cy={v.y} r={r0 + 4}
                 style={{ ["--r0" as never]: `${r0 + 13}px`, ["--r1" as never]: `${r0 + 4}px` }} />
             );
           })()}

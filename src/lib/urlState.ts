@@ -38,7 +38,8 @@ function write(s: UiState) {
   if (s.traj) p.set("traj", "1");
   if (s.branch) p.set("br", s.branch);
   const qs = p.toString();
-  window.history.replaceState(null, "", qs ? `${window.location.pathname}?${qs}` : window.location.pathname);
+  // 해시 라우팅(#/story 등)을 보존한다
+  window.history.replaceState(null, "", (qs ? `${window.location.pathname}?${qs}` : window.location.pathname) + window.location.hash);
 }
 
 export function useUiState(): [UiState, (patch: Partial<UiState>) => void] {

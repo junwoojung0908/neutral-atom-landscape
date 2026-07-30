@@ -1,41 +1,11 @@
 import { branchPapers } from "../lib/branchPapers.ts";
-import entitiesJson from "../../data/entities.json";
 import type { Landmark } from "../lib/branchPapers.ts";
 import { fieldById } from "../data/loader.ts";
 import { displayTitle } from "../lib/format.ts";
+import ChipText from "./ChipText.tsx";
 
 function refHref(r: { type: string; value: string }): string {
   return r.type === "doi" ? `https://doi.org/${r.value}` : `https://arxiv.org/abs/${r.value}`;
-}
-
-interface Ent { id: string; byline: string; year: number; refs: { type: string; value: string }[] }
-const entById = new Map((entitiesJson as Ent[]).map((e) => [e.id, e]));
-const chipLabel = (e: Ent) => {
-  const first = e.byline.split(" et al")[0].split(",")[0].trim();
-  const surname2 = first.split(/\s+/).pop() ?? first;
-  return `${surname2} ${e.year}`;
-};
-const arxivOf = (e: Ent) => e.refs.find((r) => r.type === "arxiv")?.value ?? null;
-
-/** [[id]] 마크업 → 클릭 칩 (PaperPanel 열기 + 타임라인 하이라이트) */
-function Narrative({ text, onOpenPaper }: { text: string; onOpenPaper: (arxivId: string) => void }) {
-  const parts = text.split(/(\[\[\w+\]\])/g);
-  return (
-    <p className="detail-body">
-      {parts.map((seg, i) => {
-        const m = seg.match(/^\[\[(\w+)\]\]$/);
-        if (!m) return <span key={i}>{seg}</span>;
-        const e = entById.get(m[1]);
-        if (!e) return <span key={i}>{seg}</span>;
-        const ax = arxivOf(e);
-        return (
-          <button key={i} className="nar-chip" disabled={!ax} onClick={() => ax && onOpenPaper(ax)}>
-            {chipLabel(e)}
-          </button>
-        );
-      })}
-    </p>
-  );
 }
 
 interface Props {
@@ -76,7 +46,7 @@ export default function BranchPanel({ branchId, onClose, onOpenPaper }: Props) {
               </span>
             )}
           </h3>
-          <Narrative text={f.narrative} onOpenPaper={onOpenPaper} />
+          <p className="detail-body"><ChipText text={f.narrative} onOpenPaper={onOpenPaper} /></p>
         </>
       )}
 
