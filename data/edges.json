@@ -1,4 +1,7 @@
 [
   { "from": "pichler18", "to": "ebadi22", "rel": "proposes→implements" },
-  { "from": "andrist23", "to": "ebadi22", "rel": "contests" }
+  { "from": "andrist23", "to": "ebadi22", "rel": "contests" },
+  { "from": "turner18", "to": "bernien17", "rel": "extends" },
+  { "from": "bluvstein24", "to": "evered23", "rel": "extends" },
+  { "from": "chiu25", "to": "manetsch24", "rel": "alternative-to" }
 ]
