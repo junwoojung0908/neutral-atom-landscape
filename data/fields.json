@@ -103,9 +103,9 @@
       "classical"
     ],
     "blurb": "Reading Rydberg blockade as an independent-set constraint. The analog hardware's one commercial exit and its most contested claim.",
-    "narrative": "When [[pichler18]] pointed out the structural isomorphism between Rydberg blockade and maximum-independent-set constraints, analog hardware acquired a native problem. [[ebadi22]] (289 qubits) is nearly the only experiment to claim quantum advantage head-on atop it — which makes this branch both the commercial exit and the field's most contested claim. The red dashed line (contests) on this map lives here; for the other side of the argument, see the classical branch.",
+    "narrative": "When [[pichler18]] pointed out the structural isomorphism between Rydberg blockade and maximum-independent-set constraints, analog hardware acquired a native problem. [[ebadi22]] (289 qubits) then claimed quantum speedup on that problem head-on — the boldest claim in this corpus. The pattern that followed is the field's in miniature: claim in 2022, audit of its benchmark instances in 2023 — and the gap between those dates is where 'advantage' actually lives. This branch remains the platform's commercial exit; whether it is also a scientific one is being decided in the classical branch, not here.",
     "narrative_updated": "2026-07-30",
-    "narrative_provenance": "ai-draft"
+    "narrative_provenance": "edited"
   },
   {
     "id": "classical",
@@ -118,9 +118,9 @@
       "scale"
     ],
     "blurb": "Tensor-network baselines, complexity arguments, verification methodology. The branch that measures how well the other branches' claims hold up.",
-    "narrative": "This branch measures how well the other ten branches' claims survive. [[andrist23]] showed [[ebadi22]]'s benchmark instances fall to classical solvers in minutes; notably, such rebuttals are shifting from outside attack to the field's internal self-verification — including from inside hardware vendors. Tensor-network baselines and verification protocols keep raising the bar for the phrase 'quantum advantage.' The healthier this branch, the more credible everyone else's claims.",
+    "narrative": "If the field's claims have consistently outrun the tools for checking them, this branch is where the tools catch up. [[andrist23]] showed [[ebadi22]]'s benchmark instances fall to classical solvers in minutes — and the notable part is who says such things now: rebuttals have moved from outside attack to internal self-verification, including from inside hardware vendors. Tensor-network baselines, hardness analyses, and verification protocols keep raising the price of the phrase 'quantum advantage.' On this map the audit is drawn as a supporting lane; read it as the frontier — every claim in the other ten branches is only as good as what survives here.",
     "narrative_updated": "2026-07-30",
-    "narrative_provenance": "ai-draft"
+    "narrative_provenance": "edited"
   },
   {
     "id": "gate",
