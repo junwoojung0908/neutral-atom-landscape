@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-30",
+  "version": "2026-07-30b",
   "corpus": {
     "categories": [
       "quant-ph",
@@ -65,7 +65,12 @@
       "ionization threshold",
       "lamb shift",
       "ion crystal",
-      "quantum gas microscope"
+      "quantum gas microscope",
+      "cross section",
+      "orbital angular momentum",
+      "rydberg ion",
+      "paul trap",
+      "bose-einstein condens"
     ]
   },
   "fields": {
