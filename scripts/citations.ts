@@ -31,6 +31,9 @@ const cachePath = resolve(root, "data/.citations-cache.json");
 interface Raw { id: string; doi: string | null }
 const classified = rd("data/corpus.json") as { id: string; year: number }[];
 const rawById = new Map((rd("data/corpus-raw.json") as Raw[]).map((p) => [p.id, p]));
+// 수동 승인된 출판 DOI 오버레이 (Crossref 복구, report/doi-recovery.md 근거)
+let doiOverrides: Record<string, string> = {};
+try { doiOverrides = rd("data/doi-overrides.json"); } catch { /* 없음 */ }
 
 // 각 논문의 조회 DOI: 출판 DOI 우선, 없으면 arXiv-DOI 폴백
 const bareDoi = (d: string) => d.replace(/^https?:\/\/doi\.org\//i, "").toLowerCase().trim();
@@ -38,7 +41,7 @@ const isArxivDoi = (d: string) => /^10\.48550\/arxiv\./i.test(d);
 interface Target { arxiv: string; doi: string; fromArxiv: boolean }
 const targets: Target[] = classified.map((p) => {
   const r = rawById.get(p.id);
-  const pub = r?.doi && !isArxivDoi(r.doi) ? bareDoi(r.doi) : null;
+  const pub = (r?.doi && !isArxivDoi(r.doi) ? bareDoi(r.doi) : null) ?? (doiOverrides[p.id] ? bareDoi(doiOverrides[p.id]) : null);
   return pub
     ? { arxiv: p.id, doi: pub, fromArxiv: false }
     : { arxiv: p.id, doi: `10.48550/arxiv.${p.id}`, fromArxiv: true };
