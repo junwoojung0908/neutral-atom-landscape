@@ -34,7 +34,7 @@
       "clock"
     ],
     "blurb": "Non-destructive imaging, mid-circuit measurement with feedforward, erasure detection. A prerequisite for FT and a distinct optics problem.",
-    "narrative": "Fluorescence imaging heats and loses atoms — so 'watching while you compute' is its own optics problem. Non-destructive imaging and mid-circuit measurement are prerequisites for error correction, and erasure detection (measurement that knows where an error occurred) is a rare case of a 2022 theory proposal reaching experiment within a year. Small in volume (~2% of the corpus), but the bottleneck of two other branches — gates and QEC — gets resolved here.",
+    "narrative": "Fluorescence imaging heats and loses atoms — so 'watching while you compute' is its own optics problem. Non-destructive imaging and mid-circuit measurement are prerequisites for error correction, and erasure detection (measurement that knows where an error occurred) is a rare case of a 2022 theory proposal ([[wu22]]) reaching experiment within a year. Small in volume (~2% of the corpus), but the bottleneck of two other branches — gates and QEC — gets resolved here.",
     "narrative_updated": "2026-07-30",
     "narrative_provenance": "ai-draft"
   },
@@ -49,7 +49,7 @@
       "species"
     ],
     "blurb": "Many-body dynamics, topological phases, spin models. The field's original purpose, predating its life as a computer.",
-    "narrative": "This is the field's headwater — Rydberg interactions implemented many-body Hamiltonians directly before neutral atoms were ever called computers. Quantum scars, discovered by accident on a 51-atom array (2017), upended thermalization lore and became a subfield of their own; the 256-atom spin-liquid observation (2021) showed analog simulators can discover new phases of matter. Still the corpus's largest mass, but the digital side (QEC, gates) has grown faster over the last three years — whether the headwater is yielding to its tributaries is this map's plot line.",
+    "narrative": "This is the field's headwater — Rydberg interactions implemented many-body Hamiltonians directly before neutral atoms were ever called computers. Quantum scars ([[turner18]]), discovered by accident on a 51-atom array ([[bernien17]]), upended thermalization lore and became a subfield of their own; the 256-atom spin-liquid observation ([[semeghini21]]) showed analog simulators can discover new phases of matter. Still the corpus's largest mass, but the digital side (QEC, gates) has grown faster over the last three years — whether the headwater is yielding to its tributaries is this map's plot line.",
     "narrative_updated": "2026-07-30",
     "narrative_provenance": "ai-draft"
   },
@@ -88,7 +88,7 @@
       "readout"
     ],
     "blurb": "Tweezer clocks, spin squeezing, entanglement-enhanced metrology. Possibly the hardware's first practical exit.",
-    "narrative": "The first practical exit for neutral-atom hardware may be clocks, not computation. Tweezer clocks add single-atom control to lattice-clock precision, and spin squeezing with entanglement-enhanced metrology opens the road below the standard quantum limit. Results like half-minute-coherence tweezer clocks show this branch selling the same technology as QEC — individual control, non-destructive measurement — as a different product.",
+    "narrative": "The first practical exit for neutral-atom hardware may be clocks, not computation. Tweezer clocks add single-atom control to lattice-clock precision, and spin squeezing with entanglement-enhanced metrology opens the road below the standard quantum limit. Results like half-minute-coherence tweezer clocks ([[young20]]) show this branch selling the same technology as QEC — individual control, non-destructive measurement — as a different product.",
     "narrative_updated": "2026-07-30",
     "narrative_provenance": "ai-draft"
   },
@@ -133,7 +133,7 @@
       "readout"
     ],
     "blurb": "Rydberg gate protocols, pulse design, erasure conversion. One fidelity number decides the viability of every layer above.",
-    "narrative": "A single two-qubit fidelity number decides the viability of every layer above it — QEC and algorithms alike. Rydberg blockade gates went from the 97% range (mid-2010s) past 99.5% in 2023, entering fault-tolerance-threshold territory; much of that jump came from pulse design (time-optimal control) and from the erasure-conversion idea of making errors visible rather than absent. The question now is not few-qubit records but holding that number across arrays of hundreds.",
+    "narrative": "A single two-qubit fidelity number decides the viability of every layer above it — QEC and algorithms alike. Rydberg blockade gates went from the 97% range (mid-2010s) past 99.5% in 2023 ([[evered23]]), entering fault-tolerance-threshold territory; much of that jump came from pulse design (time-optimal control) and from the erasure-conversion idea of making errors visible rather than absent. The question now is not few-qubit records but holding that number across arrays of hundreds.",
     "narrative_updated": "2026-07-30",
     "narrative_provenance": "ai-draft"
   },
@@ -148,7 +148,7 @@
       "classical"
     ],
     "blurb": "Atom number, continuous reloading, vacuum and optics engineering. The scale-vs-quality trade-off keeps getting broken.",
-    "narrative": "Arrays that bragged about 100 atoms (2017) passed 1,000 (2022), reached 6,100 tweezers (2024), and continuous operation of 3,000 qubits (2025). The folk theorem that scale costs quality has been repeatedly broken; the bottleneck has moved from optical power or vacuum to continuous reloading — replacing lost atoms in real time. This branch's numbers are the denominator of every roadmap: logical qubit counts cannot exceed physical atom counts.",
+    "narrative": "Arrays that bragged about 100 atoms (2017) passed 1,000 (2022), reached 6,100 tweezers ([[manetsch24]]), and continuous operation of 3,000 qubits ([[chiu25]]). The folk theorem that scale costs quality has been repeatedly broken; the bottleneck has moved from optical power or vacuum to continuous reloading — replacing lost atoms in real time. This branch's numbers are the denominator of every roadmap: logical qubit counts cannot exceed physical atom counts.",
     "narrative_updated": "2026-07-30",
     "narrative_provenance": "ai-draft"
   },
