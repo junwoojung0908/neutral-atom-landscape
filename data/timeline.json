@@ -116,21 +116,6 @@
       "group": null
     },
     {
-      "id": "1503.07417",
-      "year": 2015,
-      "lane": "species",
-      "fields": [
-        "sim",
-        "species"
-      ],
-      "cited": 9,
-      "score": 9,
-      "title": "Intercombination Effects in Resonant Energy Transfer",
-      "author": "C. L. Vaillant et al.",
-      "pi": "M. P. A. Jones",
-      "group": null
-    },
-    {
       "id": "1504.01886",
       "year": 2015,
       "lane": "sim.dyn",
@@ -673,21 +658,6 @@
       "group": null
     },
     {
-      "id": "1602.05006",
-      "year": 2016,
-      "lane": "species",
-      "fields": [
-        "sim",
-        "species"
-      ],
-      "cited": 23,
-      "score": 23,
-      "title": "Towards Rydberg quantum logic with trapped ions",
-      "author": "P. Bachor et al.",
-      "pi": "F. Schmidt-Kaler",
-      "group": null
-    },
-    {
       "id": "1602.06313",
       "year": 2016,
       "lane": "sim.gauge",
@@ -1196,20 +1166,6 @@
       "group": null
     },
     {
-      "id": "1611.02184",
-      "year": 2016,
-      "lane": "species",
-      "fields": [
-        "species"
-      ],
-      "cited": 40,
-      "score": 40,
-      "title": "A single strontium Rydberg ion confined in a Paul trap",
-      "author": "Gerard Higgins et al.",
-      "pi": "Markus Hennrich",
-      "group": null
-    },
-    {
       "id": "1611.02594",
       "year": 2016,
       "lane": "sim.gauge",
@@ -1310,21 +1266,6 @@
       "pi": "Sebastian Hofferberth",
       "group": null,
       "review": true
-    },
-    {
-      "id": "1701.01426",
-      "year": 2017,
-      "lane": "readout",
-      "fields": [
-        "net",
-        "readout"
-      ],
-      "cited": 18,
-      "score": 18,
-      "title": "Measuring the dispersive frequency shift of a rectangular microwave cavity induced by an ensemble of Rydberg atoms",
-      "author": "M. Stammeier et al.",
-      "pi": "A. Wallraff",
-      "group": null
     },
     {
       "id": "1702.00349",
@@ -3403,20 +3344,6 @@
       "group": null
     },
     {
-      "id": "1902.11099",
-      "year": 2019,
-      "lane": "sim.eq",
-      "fields": [
-        "sim"
-      ],
-      "cited": 20,
-      "score": 20,
-      "title": "Exploring non-equilibrium phases of the generalized Dicke model with a trapped Rydberg ion quantum simulator",
-      "author": "F. M. Gambetta et al.",
-      "pi": "W. Li",
-      "group": null
-    },
-    {
       "id": "1903.07297",
       "year": 2019,
       "lane": "sim.gauge",
@@ -4083,20 +4010,6 @@
       "title": "Doppler-resilient ground-Rydberg transition and its application in high-fidelity entangling gates with neutral atoms",
       "author": "Xiao-Feng Shi",
       "pi": "Xiao-Feng Shi",
-      "group": null
-    },
-    {
-      "id": "1910.05292",
-      "year": 2019,
-      "lane": "sim.dyn",
-      "fields": [
-        "sim"
-      ],
-      "cited": 28,
-      "score": 28,
-      "title": "Ultrafast creation of overlapping Rydberg electrons in an atomic BEC and Mott-insulator lattice",
-      "author": "Michiteru Mizoguchi et al.",
-      "pi": "Kenji Ohmori",
       "group": null
     },
     {
@@ -4771,20 +4684,6 @@
       "title": "Atom-Photon Spin-Exchange Collisions Mediated by Rydberg Dressing",
       "author": "Fan Yang et al.",
       "pi": "Li You",
-      "group": null
-    },
-    {
-      "id": "2003.08891",
-      "year": 2020,
-      "lane": "sim.eq",
-      "fields": [
-        "sim"
-      ],
-      "cited": 17,
-      "score": 17,
-      "title": "Trapped Rydberg ions: a new platform for quantum information processing",
-      "author": "Arezoo Mokhberi et al.",
-      "pi": "Ferdinand Schmidt-Kaler",
       "group": null
     },
     {
@@ -7326,20 +7225,6 @@
       "group": null
     },
     {
-      "id": "2111.05031",
-      "year": 2021,
-      "lane": "sim.dyn",
-      "fields": [
-        "sim"
-      ],
-      "cited": 4,
-      "score": 4,
-      "title": "Dynamics of atoms within atoms",
-      "author": "S. Tiwari et al.",
-      "pi": "S. Wüster",
-      "group": null
-    },
-    {
       "id": "2111.06217",
       "year": 2021,
       "lane": "qec",
@@ -9784,22 +9669,6 @@
       "group": "kaist"
     },
     {
-      "id": "2211.09252",
-      "year": 2022,
-      "lane": "readout",
-      "fields": [
-        "gate",
-        "readout",
-        "scale"
-      ],
-      "cited": 3,
-      "score": 3,
-      "title": "A quantum register using collective excitations in a Bose-Einstein condensate",
-      "author": "Elisha Haber et al.",
-      "pi": "Nicholas P. Bigelow",
-      "group": null
-    },
-    {
       "id": "2211.09312",
       "year": 2022,
       "lane": "qec",
@@ -10013,20 +9882,6 @@
       "title": "SupercheQ: Quantum Advantage for Distributed Databases",
       "author": "E. R. Anschuetz et al.",
       "pi": "T. Tomesh",
-      "group": null
-    },
-    {
-      "id": "2212.05437",
-      "year": 2022,
-      "lane": "sim.dyn",
-      "fields": [
-        "sim"
-      ],
-      "cited": 7,
-      "score": 7,
-      "title": "Experimental Demonstration of Stationary Dark-State Polaritons Dressed by Dipole-Dipole Interaction",
-      "author": "Bongjune Kim et al.",
-      "pi": "Ite A. Yu",
       "group": null
     },
     {
@@ -11734,21 +11589,6 @@
       "group": null
     },
     {
-      "id": "2307.01418",
-      "year": 2023,
-      "lane": "species",
-      "fields": [
-        "species"
-      ],
-      "cited": 9,
-      "score": 12,
-      "hot": true,
-      "title": "Sympathetic cooling and slowing of molecules with Rydberg atoms",
-      "author": "Chi Zhang et al.",
-      "pi": "Nicholas R. Hutzler",
-      "group": null
-    },
-    {
       "id": "2307.04342",
       "year": 2023,
       "lane": "scale",
@@ -12919,20 +12759,6 @@
       "group": null
     },
     {
-      "id": "2312.14718",
-      "year": 2023,
-      "lane": "sim.eq",
-      "fields": [
-        "sim"
-      ],
-      "cited": 2,
-      "score": 2,
-      "title": "Tripartite quantum Rabi model with trapped Rydberg ions",
-      "author": "Thomas J. Hamlyn et al.",
-      "pi": "Weibin Li",
-      "group": null
-    },
-    {
       "id": "2312.14846",
       "year": 2023,
       "lane": "sim.dyn",
@@ -13861,20 +13687,6 @@
       "title": "Quantum walks and correlated dynamics in an interacting synthetic Rydberg lattice",
       "author": "Tao Chen et al.",
       "pi": "Jacob P. Covey",
-      "group": null
-    },
-    {
-      "id": "2404.03980",
-      "year": 2024,
-      "lane": "sim.dyn",
-      "fields": [
-        "sim"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Phenomenology of a Rydberg impurity in an ideal Bose Einstein condensate",
-      "author": "Aileen A. T. Durst et al.",
-      "pi": "Matthew T. Eiles",
       "group": null
     },
     {
@@ -16980,21 +16792,6 @@
       "title": "Ultrafast high-fidelity state readout of single neutral atom",
       "author": "Jian Wang et al.",
       "pi": "Guang-Can Guo",
-      "group": null
-    },
-    {
-      "id": "2412.13699",
-      "year": 2024,
-      "lane": "qec",
-      "fields": [
-        "gate",
-        "qec"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Two-qubit gate protocols with microwave-dressed Rydberg ions in a linear Paul trap",
-      "author": "Joseph W. P. Wilkinson et al.",
-      "pi": "Igor Lesanovsky",
       "group": null
     },
     {
@@ -20720,20 +20517,6 @@
       "group": null
     },
     {
-      "id": "2510.07372",
-      "year": 2025,
-      "lane": "gate",
-      "fields": [
-        "gate"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Proposals for experimentally realizing (mostly) quantum-autonomous gates",
-      "author": "José Antonio Marín Guzmán et al.",
-      "pi": "Nicole Yunger Halpern",
-      "group": null
-    },
-    {
       "id": "2510.07532",
       "year": 2025,
       "lane": "qec",
@@ -21256,20 +21039,6 @@
       "group": null
     },
     {
-      "id": "2511.16220",
-      "year": 2025,
-      "lane": "clock",
-      "fields": [
-        "clock"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Diffuse Laser Cooling Based on the $6\\mathrm{P}_{3/2}$ Excited State of Rubidium Atoms via 420 nm Blue Light",
-      "author": "Jia Zhang et al.",
-      "pi": "Jingbiao Chen",
-      "group": null
-    },
-    {
       "id": "2511.16303",
       "year": 2025,
       "lane": "scale",
@@ -21297,20 +21066,6 @@
       "title": "Correction of chain losses in trapped ion quantum computers",
       "author": "Nolan J. Coble et al.",
       "pi": "Nicolas Delfosse",
-      "group": null
-    },
-    {
-      "id": "2511.17785",
-      "year": 2025,
-      "lane": "sim.eq",
-      "fields": [
-        "sim"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Twisted Electron Collisions Enhance the Production of Circular Rydberg States",
-      "author": "H. S. Parker et al.",
-      "pi": "A. L. Harris",
       "group": null
     },
     {
@@ -21806,21 +21561,6 @@
       "group": null
     },
     {
-      "id": "2512.16641",
-      "year": 2025,
-      "lane": "qec",
-      "fields": [
-        "gate",
-        "qec"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Fast Native Three-Qubit Gates and Fault-Tolerant Quantum Error Correction with Trapped Rydberg Ions",
-      "author": "Katrin Bolsmann et al.",
-      "pi": "Markus Müller",
-      "group": null
-    },
-    {
       "id": "2512.16774",
       "year": 2025,
       "lane": "scale",
@@ -22105,20 +21845,6 @@
       "title": "Overcoming Stark-Shift Constraints in Phase-Controlled Rydberg Two-Qubit Gates",
       "author": "Ignacio R. Sola et al.",
       "pi": "Bo Y. Chang",
-      "group": null
-    },
-    {
-      "id": "2601.01626",
-      "year": 2026,
-      "lane": "sim.dyn",
-      "fields": [
-        "sim"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Quantum simulation with Rydberg ions in a Penning trap",
-      "author": "Wilson S. Martins et al.",
-      "pi": "Igor Lesanovsky",
       "group": null
     },
     {
@@ -23667,20 +23393,6 @@
       "title": "Coherent Rydberg excitation of single atoms using a pulsed fiber amplifier",
       "author": "Ying-Wen Zhang et al.",
       "pi": "Peng Xu",
-      "group": null
-    },
-    {
-      "id": "2604.13859",
-      "year": 2026,
-      "lane": "gate",
-      "fields": [
-        "gate"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Decoupling of the STIRAP and Microwave-Dressing paths in Trapped Rydberg Ion Gates",
-      "author": "K. N. Zlatanov et al.",
-      "pi": "N. V. Vitanov",
       "group": null
     },
     {

@@ -34,11 +34,6 @@
     "cited": 26,
     "year": 2015
   },
-  "1503.07417": {
-    "oa": "https://openalex.org/W2211593953",
-    "cited": 9,
-    "year": 2015
-  },
   "1504.01886": {
     "oa": "https://openalex.org/W2084665109",
     "cited": 66,
@@ -229,11 +224,6 @@
     "cited": 49,
     "year": 2016
   },
-  "1602.05006": {
-    "oa": "https://openalex.org/W3102554585",
-    "cited": 23,
-    "year": 2016
-  },
   "1602.06313": {
     "oa": "https://openalex.org/W2299768518",
     "cited": 368,
@@ -409,11 +399,6 @@
     "cited": 59,
     "year": 2017
   },
-  "1611.02184": {
-    "oa": "https://openalex.org/W2551590878",
-    "cited": 40,
-    "year": 2017
-  },
   "1611.02594": {
     "oa": "https://openalex.org/W2555649822",
     "cited": 93,
@@ -447,11 +432,6 @@
   "1612.08053": {
     "oa": "https://openalex.org/W2565938906",
     "cited": 149,
-    "year": 2017
-  },
-  "1701.01426": {
-    "oa": "https://openalex.org/W2588301500",
-    "cited": 18,
     "year": 2017
   },
   "1702.00349": {
@@ -1174,11 +1154,6 @@
     "cited": 58,
     "year": 2020
   },
-  "1902.11099": {
-    "oa": "https://openalex.org/W2916269841",
-    "cited": 20,
-    "year": 2019
-  },
   "1903.07297": {
     "oa": "https://openalex.org/W2920957100",
     "cited": 23,
@@ -1414,11 +1389,6 @@
     "cited": 38,
     "year": 2020
   },
-  "1910.05292": {
-    "oa": "https://openalex.org/W3038113288",
-    "cited": 28,
-    "year": 2020
-  },
   "1910.05540": {
     "oa": "https://openalex.org/W2979749064",
     "cited": 4,
@@ -1652,11 +1622,6 @@
   "2003.08709": {
     "oa": "https://openalex.org/W3012066638",
     "cited": 13,
-    "year": 2020
-  },
-  "2003.08891": {
-    "oa": "https://openalex.org/W3011173531",
-    "cited": 17,
     "year": 2020
   },
   "2004.06095": {
@@ -2534,11 +2499,6 @@
     "cited": 35,
     "year": 2024
   },
-  "2111.05031": {
-    "oa": "https://openalex.org/W3213851599",
-    "cited": 4,
-    "year": 2022
-  },
   "2111.06217": {
     "oa": "https://openalex.org/W3212024045",
     "cited": 30,
@@ -3359,11 +3319,6 @@
     "cited": 5,
     "year": 2023
   },
-  "2211.09252": {
-    "oa": "https://openalex.org/W4388500044",
-    "cited": 3,
-    "year": 2023
-  },
   "2211.09312": {
     "oa": "https://openalex.org/W4321210334",
     "cited": 12,
@@ -3438,11 +3393,6 @@
     "oa": "https://openalex.org/W4310926769",
     "cited": 5,
     "year": 2022
-  },
-  "2212.05437": {
-    "oa": "https://openalex.org/W4387048041",
-    "cited": 7,
-    "year": 2023
   },
   "2212.06349": {
     "oa": "https://openalex.org/W3211317625",
@@ -4004,11 +3954,6 @@
     "cited": 14,
     "year": 2023
   },
-  "2307.01418": {
-    "oa": "https://openalex.org/W4391023944",
-    "cited": 9,
-    "year": 2024
-  },
   "2307.04342": {
     "oa": "https://openalex.org/W4392004830",
     "cited": 32,
@@ -4404,11 +4349,6 @@
     "cited": 1,
     "year": 2023
   },
-  "2312.14718": {
-    "oa": "https://openalex.org/W4399213055",
-    "cited": 2,
-    "year": 2024
-  },
   "2312.14846": {
     "oa": "https://openalex.org/W4390215426",
     "cited": 0,
@@ -4711,11 +4651,6 @@
   },
   "2404.00740": {
     "oa": "https://openalex.org/W4393903905",
-    "cited": 0,
-    "year": 2024
-  },
-  "2404.03980": {
-    "oa": "https://openalex.org/W4394591835",
     "cited": 0,
     "year": 2024
   },
@@ -6834,11 +6769,6 @@
     "cited": 0,
     "year": 2025
   },
-  "2510.07372": {
-    "oa": "https://openalex.org/W4416017780",
-    "cited": 0,
-    "year": 2025
-  },
   "2510.07818": {
     "oa": "https://openalex.org/W4416399827",
     "cited": 0,
@@ -6974,11 +6904,6 @@
     "cited": 0,
     "year": 2026
   },
-  "2511.16220": {
-    "oa": "https://openalex.org/W4416550406",
-    "cited": 0,
-    "year": 2025
-  },
   "2511.16303": {
     "oa": "https://openalex.org/W4416550536",
     "cited": 0,
@@ -6986,11 +6911,6 @@
   },
   "2511.16632": {
     "oa": "https://openalex.org/W4416550751",
-    "cited": 0,
-    "year": 2025
-  },
-  "2511.17785": {
-    "oa": "https://openalex.org/W7106695430",
     "cited": 0,
     "year": 2025
   },
@@ -7261,11 +7181,6 @@
   },
   "2601.01521": {
     "oa": "https://openalex.org/W7118442319",
-    "cited": 0,
-    "year": 2026
-  },
-  "2601.01626": {
-    "oa": "https://openalex.org/W7118292731",
     "cited": 0,
     "year": 2026
   },
@@ -7786,11 +7701,6 @@
   },
   "2604.13436": {
     "oa": "https://openalex.org/W7154570918",
-    "cited": 0,
-    "year": 2026
-  },
-  "2604.13859": {
-    "oa": "https://openalex.org/W7154596527",
     "cited": 0,
     "year": 2026
   },
