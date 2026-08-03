@@ -7,15 +7,17 @@ import AboutPage from "./components/AboutPage.tsx";
 import StoryPage from "./components/StoryPage.tsx";
 import TourBar from "./components/TourBar.tsx";
 import { useUiState } from "./lib/urlState.ts";
-import { storyReady } from "./data/story.ts";
-import { tourOrder, arxivOf } from "./lib/entities.ts";
+import { storyReady, ACTS } from "./data/story.ts";
+import type { Act } from "./data/story.ts";
+import { tourOrder, arxivOf, entById } from "./lib/entities.ts";
 import "./App.css";
 
 type Page = "story" | "explore" | "growth" | "about";
 
 // 해시 라우팅: #/ = Story, #/explore = 데이터 모드(타임라인). 구 해시(#growth 등)도 유지.
 // Story 는 PLACEHOLDER(테제·막 제목)가 남아 있는 동안 기본 라우트가 되지 않는다.
-const EXPLORE_KEYS = ["v", "sel", "br", "tq", "g", "tour", "fl", "fr"];
+const EXPLORE_KEYS = ["v", "sel", "br", "tq", "g", "tour", "fl", "fr", "act"];
+const ROMAN = ["I", "II", "III", "IV"];
 function defaultPage(): Page {
   const p = new URLSearchParams(window.location.search);
   const hasExploreState = EXPLORE_KEYS.some((k) => p.has(k));
@@ -55,6 +57,23 @@ export default function App() {
     window.history.replaceState(null, "", (qs ? `${window.location.pathname}?${qs}` : window.location.pathname) + window.location.hash);
   }, [tourIdx]);
   const tourActive = tourIdx != null && page === "explore";
+
+  // Story 막(act) 하이라이트 — ?act=<id> 로 공유 가능, 칩 ✕ 로 해제
+  const [actId, setActId] = useState<string | null>(() => new URLSearchParams(window.location.search).get("act"));
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search);
+    if (actId == null) p.delete("act");
+    else p.set("act", actId);
+    const qs = p.toString();
+    window.history.replaceState(null, "", (qs ? `${window.location.pathname}?${qs}` : window.location.pathname) + window.location.hash);
+  }, [actId]);
+  const actFocus = useMemo(() => {
+    if (!actId) return null;
+    const i = ACTS.findIndex((a) => a.id === actId);
+    if (i < 0) return null;
+    const ids = ACTS[i].entityIds.map((eid) => { const e = entById.get(eid); return e ? arxivOf(e) : null; }).filter((x): x is string => !!x);
+    return { ids, label: `Act ${ROMAN[i]} · ${ACTS[i].title}` };
+  }, [actId]);
   useEffect(() => {
     if (!tourActive) return;
     const on = (e: KeyboardEvent) => {
@@ -75,12 +94,20 @@ export default function App() {
     setPage("explore");
   };
 
+  // 막 미니 타임라인 클릭: 랜드마크 하이라이트 상태로 데이터 모드 진입
+  // (연도 줌은 TimelineZoom 이 focus prop 에서 직접 유도한다)
+  const openAct = (act: Act) => {
+    setActId(act.id);
+    goExplore({ act: act.id });
+  };
+
   if (page === "story") {
     return (
       <StoryPage
         onStartTour={() => { setTourIdx(0); goExplore({ tour: "1" }); }}
         onOpenPaper={(ax) => { update({ sel: ax, branch: null }); goExplore({}); }}
         onExploreBranch={(b) => goExplore({ fl: b, fr: "1" })}
+        onOpenAct={openAct}
       />
     );
   }
@@ -133,6 +160,8 @@ export default function App() {
             onSelectBranch={(id) => { update({ branch: id }); setSelPaper(null); }}
             selectedId={selPaper}
             tour={tourActive ? { ids: tourIds, idx: tourIdx! } : null}
+            focus={!tourActive ? actFocus : null}
+            onClearFocus={() => setActId(null)}
           />
         </div>
         {selPaper ? (

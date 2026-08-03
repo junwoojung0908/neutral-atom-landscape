@@ -14,6 +14,8 @@ interface Props {
   onStartTour: () => void;
   onOpenPaper: (arxivId: string) => void;
   onExploreBranch: (branchId: string) => void;
+  /** 막 미니 타임라인 클릭 → 데이터 모드에서 같은 골격(그 막의 랜드마크+엣지)을 하이라이트 */
+  onOpenAct: (act: Act) => void;
 }
 
 const Y0 = 2015, Y1 = 2026;
@@ -23,8 +25,9 @@ const groupRowOf = (branch: string): number => {
   return i < 0 ? 0 : i;
 };
 
-/** 막 옆 미니 타임라인 — 랜드마크 12개와 curated edges 만 그린 골격. 1,757편은 그리지 않는다. */
-function ActMini({ act }: { act: Act }) {
+/** 막 옆 미니 타임라인 — 랜드마크 12개와 curated edges 만 그린 골격. 1,757편은 그리지 않는다.
+ *  클릭하면 데이터 모드에서 같은 골격을 하이라이트한 채 연다. */
+function ActMini({ act, onOpen }: { act: Act; onOpen: () => void }) {
   const W = 260, H = 118, ML = 10, MR = 10, MT = 12, MB = 20;
   const x = (yr: number) => ML + ((Math.min(Math.max(yr, Y0), Y1) - Y0) / (Y1 - Y0)) * (W - ML - MR);
   const y = (row: number) => MT + ((row + 0.5) / LANE_GROUPS.length) * (H - MT - MB);
@@ -62,7 +65,10 @@ function ActMini({ act }: { act: Act }) {
   }, [act.id]);
 
   return (
-    <svg className="story-mini" viewBox={`0 0 ${W} ${H}`} aria-label={`Landmarks ${act.period}`}>
+    <svg className="story-mini" viewBox={`0 0 ${W} ${H}`} role="button" tabIndex={0}
+      aria-label={`Open landmarks ${act.period} in the timeline`} onClick={onOpen}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onOpen(); } }}>
+      <title>Open this act in the timeline</title>
       <line className="story-mini-axis" x1={ML} y1={H - MB} x2={W - MR} y2={H - MB} />
       {[2015, 2020, 2025].map((yr) => (
         <text key={yr} className="story-mini-year" x={x(yr)} y={H - 7} textAnchor="middle">{yr}</text>
@@ -113,7 +119,7 @@ function useRecentStats() {
   }, []);
 }
 
-export default function StoryPage({ onStartTour, onOpenPaper, onExploreBranch }: Props) {
+export default function StoryPage({ onStartTour, onOpenPaper, onExploreBranch, onOpenAct }: Props) {
   const recent = useRecentStats();
   const totalFresh = recent.reduce((s, r) => s + r.fresh, 0);
 
@@ -182,7 +188,10 @@ export default function StoryPage({ onStartTour, onOpenPaper, onExploreBranch }:
                 })}
               </div>
             </div>
-            <ActMini act={act} />
+            <div className="story-mini-wrap">
+              <ActMini act={act} onOpen={() => onOpenAct(act)} />
+              <button className="story-mini-open" onClick={() => onOpenAct(act)}>open in timeline →</button>
+            </div>
           </section>
         ))}
 

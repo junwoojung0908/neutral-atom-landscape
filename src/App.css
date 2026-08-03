@@ -955,6 +955,14 @@ input[type="range"] {
   margin-top: 10px;
 }
 .story-chip { font-size: 12px; padding: 1px 7px; }
+.story-mini-wrap {
+  justify-self: end;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
 .story-mini {
   width: 260px;
   max-width: 100%;
@@ -962,9 +970,20 @@ input[type="range"] {
   background: var(--frame);
   border: 1px solid var(--border);
   border-radius: 8px;
-  justify-self: end;
-  margin-top: 22px;
+  cursor: pointer;
 }
+.story-mini:hover { border-color: var(--focus); }
+.story-mini-open {
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  color: var(--focus);
+  cursor: pointer;
+}
+.story-mini-open:hover { text-decoration: underline; }
 .story-mini-axis { stroke: var(--border); stroke-width: 1; }
 .story-mini-year {
   font-family: var(--mono);
@@ -1019,7 +1038,13 @@ input[type="range"] {
   .story { padding: 22px 14px 48px; }
   .story-thesis { font-size: 26px; }
   .story-act { grid-template-columns: 1fr; }
-  .story-mini { justify-self: start; margin-top: 4px; }
+  .story-mini-wrap { justify-self: start; margin-top: 4px; align-items: flex-start; }
+}
+
+.tlz-actchip {
+  border-color: var(--focus);
+  color: var(--focus);
+  font-weight: 600;
 }
 
 /* ---- Start-here 가이드 ---- */

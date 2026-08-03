@@ -66,6 +66,9 @@ interface Props {
   selectedId?: string | null;
   /** Start-here 가이드: 정거장 arXiv id 목록 + 현재 인덱스. 있으면 정거장만 밝히고 경로선을 그린다. */
   tour?: { ids: string[]; idx: number } | null;
+  /** Story 막(act) 하이라이트: 해당 랜드마크만 밝히고 그 사이 큐레이션 엣지를 상시 표시. */
+  focus?: { ids: string[]; label: string } | null;
+  onClearFocus?: () => void;
 }
 
 // 줌아웃 대분류(5) — 세로 줌인하면 13개 세분류로 갈라짐(시맨틱 줌)
@@ -84,7 +87,7 @@ const SIM_SUBS = [
   { id: "sim.gauge", ko: "Simulation · gauge/topo", color: "#B04A4F", branch: "sim" },
 ];
 
-export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour }: Props) {
+export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour, focus, onClearFocus }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const [H, setH] = useState(420);
   const [measured, setMeasured] = useState(false);
@@ -255,7 +258,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
     const start = laneIndex.get(g.children[0]) ?? 0;
     fitRow(g.id, start, g.children.length);
   };
-  // Story 의 "Recent movement" 카드 진입: ?fl=<branch>&fr=1 → 해당 가지 fit + 최근 2년 줌 (1회성)
+  // Story "Recent movement" 카드 진입 (1회성 URL 파라미터): ?fl=<branch>&fr=1 → 가지 fit + 최근 2년 줌
   const pendingFocus = useRef<{ branch: string; recent: boolean } | null>((() => {
     const p = new URLSearchParams(window.location.search);
     const fl = p.get("fl");
@@ -267,24 +270,50 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
     pendingFocus.current = null;
     const g = branch === "sim" ? LANE_GROUPS.find((x) => x.id === "g.sim") : undefined;
     const fitId = g ? g.id : laneIndex.has(branch) ? branch : null;
-    if (!fitId) return;
-    const start = laneIndex.get(g ? g.children[0] : branch) ?? 0;
-    const len = g ? g.children.length : 1;
-    const ky = lanes.length / len;
-    const target: Partial<View> = { ky, ty: M.t - (M.t + start * laneH) * ky };
-    if (recent) {
-      const kx = NYEARS / 2; // 최근 2년이 화면을 채우도록
-      target.kx = kx;
-      target.tx = (W - M.r) * (1 - kx); // 오른쪽 끝(최신)으로
+    if (fitId) {
+      const start = laneIndex.get(g ? g.children[0] : branch) ?? 0;
+      const len = g ? g.children.length : 1;
+      const ky = lanes.length / len;
+      const target: Partial<View> = { ky, ty: M.t - (M.t + start * laneH) * ky };
+      if (recent) {
+        const kx = NYEARS / 2; // 최근 2년이 화면을 채우도록
+        target.kx = kx;
+        target.tx = (W - M.r) * (1 - kx); // 오른쪽 끝(최신)으로
+      }
+      setFitted(fitId);
+      animateTo(target);
     }
-    setFitted(fitId);
-    animateTo(target);
     const p = new URLSearchParams(window.location.search);
     p.delete("fl"); p.delete("fr");
     const qs = p.toString();
     window.history.replaceState(null, "", (qs ? `${window.location.pathname}?${qs}` : window.location.pathname) + window.location.hash);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [measured]);
+
+  // 막(act) 하이라이트가 켜지면 그 랜드마크들의 연도 범위로 x줌 — URL 타이밍이 아니라
+  // focus prop 자체가 줌을 유도한다(앱 내 전환·직접 링크 양쪽에서 동일하게 동작).
+  const prevFocus = useRef<string | null>(null);
+  useEffect(() => {
+    if (!measured) return;
+    const key = focus?.label ?? null;
+    if (key === prevFocus.current) return;
+    const had = prevFocus.current;
+    prevFocus.current = key;
+    if (focus) {
+      const ys = focus.ids.map((id) => byId.get(id)?.year).filter((y): y is number => !!y);
+      if (!ys.length) return;
+      const y0 = clamp(Math.min(...ys) - 1, Y0, Y1);
+      const y1 = clamp(Math.max(...ys) + 1, Y0, Y1);
+      const kx = clamp(NYEARS / (y1 - y0 + 1), 1, 40);
+      cancelAnim();
+      setFitted(null);
+      animateTo({ kx, tx: M.l - (M.l + (y0 - Y0) * YEARW) * kx }); // 범위 왼쪽 끝을 플롯 왼쪽에
+    } else if (had) {
+      cancelAnim();
+      animateTo({ kx: 1, ky: 1, tx: 0, ty: 0 }); // 막 해제 = 전체 보기로 복귀
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [measured, focus]);
   // 뷰·그룹·검색을 URL 에 동기화(공유용). 다른 키는 보존.
   useEffect(() => {
     const t = window.setTimeout(() => {
@@ -439,6 +468,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
     }
     if (qn) for (const p of papers) if (matched.has(p.id)) push(p);
     if (tour) for (const id of tour.ids) { const p = byId.get(id); if (p) push(p); } // 정거장은 LOD 무시하고 항상 표시
+    if (focus) for (const id of focus.ids) { const p = byId.get(id); if (p) push(p); } // 막 랜드마크도 항상 표시
     // 겹침 완화: 3회 반복 분리 + 논문당 총 이동 12 상한(위치 안정성)
     const origin = out.map((o) => ({ x: o.x, y: o.y }));
     for (let it = 0; it < 3; it++) {
@@ -464,9 +494,10 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
       if (d > 12) { out[i].x = origin[i].x + (dx / d) * 12; out[i].y = origin[i].y + (dy / d) * 12; }
     }
     return out;
-  }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched, eff, tour]);
+  }, [perLane, view, pos, byLaneSorted, byGroupSorted, coarse, qn, matched, eff, tour, focus]);
   const tourSet = useMemo(() => new Set(tour?.ids ?? []), [tour]);
   const tourCur = tour ? tour.ids[tour.idx] : null;
+  const focusSet = useMemo(() => new Set(focus?.ids ?? []), [focus]);
 
   const posS = useMemo(() => new Map(visible.map((v) => [v.p.id, v])), [visible]);
   const visSet = useMemo(() => new Set(visible.map((v) => v.p.id)), [visible]);
@@ -499,8 +530,9 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
     const fs = narrow ? 8.5 : 9;
     const DIRS = [[1, 0], [-1, 0], [1, -1], [1, 1], [-1, -1], [-1, 1], [0, -1], [0, 1]];
     const DISTS = [4, 16, 30, 46];
-    // 가이드 모드에선 정거장 라벨만 — 나머지는 dim 이라 라벨이 소음이 된다
-    const labelSrc = tour ? visible.filter((v) => tourSet.has(v.p.id)) : visible;
+    // 가이드/막 모드에선 정거장·랜드마크 라벨만 — 나머지는 dim 이라 라벨이 소음이 된다
+    const labelSrc = tour ? visible.filter((v) => tourSet.has(v.p.id))
+      : focus ? visible.filter((v) => focusSet.has(v.p.id)) : visible;
     for (const v of labelSrc) {
       const lines = wrap2(v.p.title, narrow ? 18 : 26, 3);
       const wText = Math.max(...lines.map((l) => l.length)) * fs * 0.56 + 26 + surname(v.p.pi).length * fs * 0.56;
@@ -533,7 +565,7 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
       out.push({ p: v.p, lines, lx: chosen.lx, ly: chosen.ly, lead });
     }
     return out;
-  }, [visible, narrow, tour, tourSet]);
+  }, [visible, narrow, tour, tourSet, focus, focusSet]);
 
   const grpActive = checked.size > 0;
   const qActive = qn.length > 0;
@@ -547,13 +579,14 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
       if (tourSet.has(p.id)) return 0.5;
       return 0.08;
     }
+    if (focus) return focusSet.has(p.id) || p.id === eff ? 1 : 0.08; // 막 랜드마크만 밝게
     if (qActive) return matched.has(p.id) ? Math.max(baseOp(p), 0.9) : 0.1;
     if (grpActive) return p.group && checked.has(p.group) ? Math.max(baseOp(p), 0.9) : 0.1;
     if (eff) return p.id === eff ? 1 : connected.has(p.id) ? Math.min(baseOp(p) + 0.18, 0.95) : 0.12;
     return baseOp(p);
   };
   const dotRing = (p: TPaper) =>
-    tour ? p.id === tourCur : qActive ? matched.has(p.id) : grpActive ? !!(p.group && checked.has(p.group)) : eff === p.id;
+    tour ? p.id === tourCur : focus ? focusSet.has(p.id) : qActive ? matched.has(p.id) : grpActive ? !!(p.group && checked.has(p.group)) : eff === p.id;
 
   const hpaper = hover ? byId.get(hover) : null;
   const toggle = (id: string) => setChecked((s) => { const n = new Set(s); n.has(id) ? n.delete(id) : n.add(id); return n; });
@@ -569,6 +602,11 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
           <span className="tlz-zlabel">Lane</span><button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1.6, cy)}>＋</button>
           <button className="tlz-reset tlz-zbtn" onClick={() => zoomAxis("y", 1 / 1.6, cy)}>－</button>
           <button className="tlz-reset" onClick={() => { cancelAnim(); setFitted(null); animateTo({ kx: 1, ky: 1, tx: 0, ty: 0 }); }}>Reset</button>
+          {focus && (
+            <button className="tlz-reset tlz-actchip" onClick={onClearFocus} title="Clear act highlight">
+              {focus.label} ✕
+            </button>
+          )}
           {fitted && laneMetaMap.has(fitted) && (
             <button className="tlz-reset tlz-listbtn" onClick={() => onSelectBranch(laneMetaMap.get(fitted)?.branch ?? fitted)}>
               {laneMetaMap.get(fitted)?.ko} paper list ▸
@@ -685,6 +723,17 @@ export default function TimelineZoom({ onOpen, onSelectBranch, selectedId, tour 
               ? <polyline className="tlz-tourpath" points={pts.map((v) => `${v.x},${v.y}`).join(" ")} />
               : null;
           })()}
+          {/* 막(act) 하이라이트: 그 막 랜드마크 사이 큐레이션 엣지는 상시 표시 (미니 타임라인과 동일한 골격) */}
+          {focus && curatedEdges.filter((e) => focusSet.has(e.from) && focusSet.has(e.to)).map((e, i) => {
+            const a = posS.get(e.from), b = posS.get(e.to);
+            if (!a || !b) return null;
+            return (
+              <line key={`fc-${i}`} className={e.rel === "contests" ? "tlz-cur-con" : "tlz-cur-imp"}
+                x1={a.x} y1={a.y} x2={b.x} y2={b.y}>
+                <title>{e.rel === "contests" ? "contests (rebuttal)" : e.rel}</title>
+              </line>
+            );
+          })}
           {/* 큐레이션 관계는 관련 논문 hover/선택 시에만 (표본이 적어 상시 표시는 임의로 보임) */}
           {eff && curatedEdges.filter((e) => e.from === eff || e.to === eff).map((e, i) => {
             const a = posS.get(e.from), b = posS.get(e.to);
