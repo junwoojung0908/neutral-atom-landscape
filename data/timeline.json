@@ -7,8 +7,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 258,
-      "score": 258,
+      "cited": 260,
+      "score": 260,
       "title": "Randomized benchmarking of single qubit gates in a 2D array of neutral atom qubits",
       "author": "T. Xia et al.",
       "pi": "M. Saffman",
@@ -36,8 +36,8 @@
         "scale",
         "sim"
       ],
-      "cited": 358,
-      "score": 358,
+      "cited": 360,
+      "score": 360,
       "title": "Entangling Atomic Spins with a Strong Rydberg-Dressed Interaction",
       "author": "Y. -Y. Jau et al.",
       "pi": "G. W. Biedermann",
@@ -94,8 +94,8 @@
         "sim",
         "species"
       ],
-      "cited": 60,
-      "score": 60,
+      "cited": 61,
+      "score": 61,
       "title": "Dynamics of correlations in two-dimensional quantum spin models with long-range interactions: A phase-space Monte-Carlo study",
       "author": "Johannes Schachenmayer et al.",
       "pi": "Ana Maria Rey",
@@ -208,8 +208,8 @@
         "gate",
         "scale"
       ],
-      "cited": 243,
-      "score": 243,
+      "cited": 245,
+      "score": 245,
       "title": "A Rydberg blockade CNOT gate and entanglement in a 2D array of neutral atom qubits",
       "author": "K. M. Maller et al.",
       "pi": "M. Saffman",
@@ -294,8 +294,8 @@
         "net",
         "readout"
       ],
-      "cited": 246,
-      "score": 246,
+      "cited": 249,
+      "score": 249,
       "title": "Approaching the Heisenberg limit without single-particle detection",
       "author": "Emily Davis et al.",
       "pi": "Monika Schleier-Smith",
@@ -352,8 +352,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 778,
-      "score": 778,
+      "cited": 782,
+      "score": 782,
       "title": "Realizing quantum Ising models in tunable two-dimensional arrays of single Rydberg atoms",
       "author": "Henning Labuhn et al.",
       "pi": "Antoine Browaeys",
@@ -394,8 +394,8 @@
       "fields": [
         "net"
       ],
-      "cited": 25,
-      "score": 25,
+      "cited": 26,
+      "score": 26,
       "title": "Quantum state tomography with non-instantaneous measurements, imperfections and decoherence",
       "author": "Pierre Six et al.",
       "pi": "Pierre Rouchon",
@@ -408,8 +408,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 51,
-      "score": 51,
+      "cited": 52,
+      "score": 52,
       "title": "Improved error thresholds for measurement-free error correction",
       "author": "Daniel Crow et al.",
       "pi": "Mark Saffman",
@@ -423,8 +423,8 @@
         "gate",
         "net"
       ],
-      "cited": 11,
-      "score": 11,
+      "cited": 12,
+      "score": 12,
       "title": "High teleportation rates using cold-atom ensemble based quantum repeaters with Rydberg blockade",
       "author": "Neal Solmeyer et al.",
       "pi": "Qudsia Quraishi",
@@ -552,8 +552,8 @@
         "classical",
         "gate"
       ],
-      "cited": 163,
-      "score": 163,
+      "cited": 164,
+      "score": 164,
       "title": "Universal gates based on targeted phase shifts in a 3D neutral atom array",
       "author": "Yang Wang et al.",
       "pi": "David S. Weiss",
@@ -566,8 +566,8 @@
       "fields": [
         "scale"
       ],
-      "cited": 249,
-      "score": 249,
+      "cited": 250,
+      "score": 250,
       "title": "In situ single-atom array synthesis by dynamic holographic optical tweezers",
       "author": "Hyosub Kim et al.",
       "pi": "Jaewook Ahn",
@@ -608,8 +608,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 26,
-      "score": 26,
+      "cited": 27,
+      "score": 27,
       "title": "Simulated quantum process tomography of quantum gates with Rydberg superatoms",
       "author": "I. I. Beterov et al.",
       "pi": "I. I. Ryabtsev",
@@ -678,8 +678,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 369,
-      "score": 369,
+      "cited": 371,
+      "score": 371,
       "title": "Many-body interferometry of a Rydberg-dressed spin lattice",
       "author": "Johannes Zeiher et al.",
       "pi": "Christian Gross",
@@ -751,8 +751,8 @@
         "clock",
         "sim"
       ],
-      "cited": 227,
-      "score": 227,
+      "cited": 232,
+      "score": 232,
       "title": "Experimental investigations of the dipolar interactions between single Rydberg atoms",
       "author": "Antoine Browaeys et al.",
       "pi": "Thierry Lahaye",
@@ -780,8 +780,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 471,
-      "score": 471,
+      "cited": 479,
+      "score": 479,
       "title": "Strongly interacting photons in one-dimensional continuum",
       "author": "Dibyendu Roy et al.",
       "pi": "Ofer Firstenberg",
@@ -824,8 +824,8 @@
         "gate",
         "net"
       ],
-      "cited": 867,
-      "score": 867,
+      "cited": 878,
+      "score": 878,
       "title": "Stimulated Raman adiabatic passage in physics, chemistry and beyond",
       "author": "Nikolay V. Vitanov et al.",
       "pi": "Klaas Bergmann",
@@ -867,8 +867,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 683,
-      "score": 683,
+      "cited": 692,
+      "score": 692,
       "title": "Quantum computing with atomic qubits and Rydberg interactions: Progress and challenges",
       "author": "M. Saffman",
       "pi": "M. Saffman",
@@ -883,8 +883,8 @@
         "net",
         "readout"
       ],
-      "cited": 344,
-      "score": 344,
+      "cited": 347,
+      "score": 347,
       "title": "A photon-photon quantum gate based on a single atom in an optical resonator",
       "author": "Bastian Hacker et al.",
       "pi": "Stephan Ritter",
@@ -913,8 +913,8 @@
         "net",
         "sim"
       ],
-      "cited": 111,
-      "score": 111,
+      "cited": 113,
+      "score": 113,
       "title": "Measurement Protocol for the Entanglement Spectrum of Cold Atoms",
       "author": "Hannes Pichler et al.",
       "pi": "Mohammad Hafezi",
@@ -927,8 +927,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 106,
-      "score": 106,
+      "cited": 109,
+      "score": 109,
       "title": "High-fidelity Rydberg-blockade entangling gate using shaped, analytic pulses",
       "author": "L. S. Theis et al.",
       "pi": "M. Saffman",
@@ -1042,8 +1042,8 @@
         "gate",
         "sim"
       ],
-      "cited": 49,
-      "score": 49,
+      "cited": 50,
+      "score": 50,
       "title": "Simulating Quantum Spin Models using Rydberg-Excited Atomic Ensembles in Magnetic Microtrap Arrays",
       "author": "Shannon Whitlock et al.",
       "pi": "Peter Hannaford",
@@ -1115,8 +1115,8 @@
       "fields": [
         "net"
       ],
-      "cited": 60,
-      "score": 60,
+      "cited": 61,
+      "score": 61,
       "title": "Meissner-like effect for synthetic gauge field in multimode cavity QED",
       "author": "Kyle E. Ballantine et al.",
       "pi": "Jonathan Keeling",
@@ -1130,8 +1130,8 @@
         "clock",
         "sim"
       ],
-      "cited": 1693,
-      "score": 1693,
+      "cited": 1722,
+      "score": 1722,
       "title": "Quantum metrology with nonclassical states of atomic ensembles",
       "author": "Luca Pezzè et al.",
       "pi": "Philipp Treutlein",
@@ -1144,8 +1144,8 @@
       "fields": [
         "net"
       ],
-      "cited": 64,
-      "score": 64,
+      "cited": 65,
+      "score": 65,
       "title": "Electrically tunable artificial gauge potential for polaritons",
       "author": "Hyang-Tag Lim et al.",
       "pi": "Atac Imamoglu",
@@ -1158,8 +1158,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 138,
-      "score": 138,
+      "cited": 139,
+      "score": 139,
       "title": "Floquet symmetry-protected topological phases in cold atomic systems",
       "author": "Ionut-Dragos Potirniche et al.",
       "pi": "Norman Y. Yao",
@@ -1172,8 +1172,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 59,
-      "score": 59,
+      "cited": 60,
+      "score": 60,
       "title": "Rydberg Quantum Gates Free from Blockade Error",
       "author": "Xiao-Feng Shi",
       "pi": "Xiao-Feng Shi",
@@ -1230,8 +1230,8 @@
       "fields": [
         "net"
       ],
-      "cited": 32,
-      "score": 32,
+      "cited": 33,
+      "score": 33,
       "title": "Superconducting Resonator-Rydberg Atom Hybrid in the Strong Coupling Regime",
       "author": "Deshui Yu et al.",
       "pi": "Rainer Dumke",
@@ -1245,8 +1245,8 @@
         "gate",
         "sim"
       ],
-      "cited": 447,
-      "score": 447,
+      "cited": 457,
+      "score": 457,
       "title": "ARC: An open-source library for calculating properties of alkali Rydberg atoms",
       "author": "N. Šibalić et al.",
       "pi": "K. J. Weatherill",
@@ -1259,8 +1259,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 288,
-      "score": 288,
+      "cited": 290,
+      "score": 290,
       "title": "Microscopy of the interacting Harper-Hofstadter model in the few-body limit",
       "author": "M. Eric Tai et al.",
       "pi": "Markus Greiner",
@@ -1273,8 +1273,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 150,
-      "score": 150,
+      "cited": 154,
+      "score": 154,
       "title": "Tutorial: Calculation of Rydberg interaction potentials",
       "author": "Sebastian Weber et al.",
       "pi": "Sebastian Hofferberth",
@@ -1290,8 +1290,8 @@
         "gate",
         "sim"
       ],
-      "cited": 166,
-      "score": 166,
+      "cited": 170,
+      "score": 170,
       "title": "Entangling two atoms of different isotopes via Rydberg blockade",
       "author": "Y. Zeng et al.",
       "pi": "M. S. Zhan",
@@ -1346,8 +1346,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 61,
-      "score": 61,
+      "cited": 62,
+      "score": 62,
       "title": "A solvable family of driven-dissipative many-body systems",
       "author": "Michael Foss-Feig et al.",
       "pi": "Mohammad F. Maghrebi",
@@ -1360,8 +1360,8 @@
       "fields": [
         "net"
       ],
-      "cited": 46,
-      "score": 46,
+      "cited": 47,
+      "score": 47,
       "title": "Coherent transfer between low-angular momentum and circular Rydberg states",
       "author": "Adrien Signoles et al.",
       "pi": "Sébastien Gleyzes",
@@ -1374,8 +1374,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 89,
-      "score": 89,
+      "cited": 92,
+      "score": 92,
       "title": "Relaxation of an isolated dipolar-interacting Rydberg quantum spin system",
       "author": "A. Piñeiro Orioli et al.",
       "pi": "M. Weidemüller",
@@ -1416,8 +1416,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 13,
-      "score": 13,
+      "cited": 14,
+      "score": 14,
       "title": "Quantum Spin Lenses in Atomic Arrays",
       "author": "A. W. Glaetzle et al.",
       "pi": "P. Zoller",
@@ -1472,8 +1472,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 58,
-      "score": 58,
+      "cited": 59,
+      "score": 59,
       "title": "Ground-state blockade of Rydberg atoms and application in entanglement generation",
       "author": "X. Q. Shao et al.",
       "pi": "X. X. Yi",
@@ -1486,8 +1486,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 92,
-      "score": 92,
+      "cited": 95,
+      "score": 95,
       "title": "Local optical control of the resonant dipole-dipole interaction between Rydberg atoms",
       "author": "Sylvain de Léséleuc et al.",
       "pi": "Thierry Lahaye",
@@ -1500,8 +1500,8 @@
       "fields": [
         "net"
       ],
-      "cited": 50,
-      "score": 50,
+      "cited": 51,
+      "score": 51,
       "title": "Dissipation-based entanglement via quantum Zeno dynamics and Rydberg antiblockade",
       "author": "X. Q. Shao et al.",
       "pi": "X. X. Yi",
@@ -1515,8 +1515,8 @@
         "gate",
         "net"
       ],
-      "cited": 53,
-      "score": 53,
+      "cited": 54,
+      "score": 54,
       "title": "Free-Space Quantum Electrodynamics with a single Rydberg superatom",
       "author": "Asaf Paris-Mandoki et al.",
       "pi": "Sebastian Hofferberth",
@@ -1571,8 +1571,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 234,
-      "score": 234,
+      "cited": 236,
+      "score": 236,
       "title": "Coherent many-body spin dynamics in a long-range interacting Ising chain",
       "author": "Johannes Zeiher et al.",
       "pi": "Christian Gross",
@@ -1599,8 +1599,8 @@
       "fields": [
         "readout"
       ],
-      "cited": 69,
-      "score": 69,
+      "cited": 70,
+      "score": 70,
       "title": "Fast non-destructive parallel readout of neutral atom registers in optical potentials",
       "author": "Miguel Martinez-Dorantes et al.",
       "pi": "Dieter Meschede",
@@ -1658,8 +1658,8 @@
         "gate",
         "sim"
       ],
-      "cited": 93,
-      "score": 93,
+      "cited": 94,
+      "score": 94,
       "title": "Finite-range interacting Ising quantum magnets with Rydberg atoms in optical lattices - From Rydberg superatoms to crystallization",
       "author": "Peter Schauss",
       "pi": "Peter Schauss",
@@ -1672,8 +1672,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 31,
+      "score": 31,
       "title": "Observation of the Borromean three-body Förster resonances for three interacting Rb Rydberg atoms",
       "author": "D. B. Tretyakov et al.",
       "pi": "P. Pillet",
@@ -1700,8 +1700,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 27,
-      "score": 27,
+      "cited": 28,
+      "score": 28,
       "title": "Rydberg Aggregates",
       "author": "S. Wüster et al.",
       "pi": "J. -M. Rost",
@@ -1728,8 +1728,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 2526,
-      "score": 2526,
+      "cited": 2544,
+      "score": 2544,
       "title": "Probing many-body dynamics on a 51-atom quantum simulator",
       "author": "Hannes Bernien et al.",
       "pi": "Mikhail D. Lukin",
@@ -1742,8 +1742,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 132,
-      "score": 132,
+      "cited": 135,
+      "score": 135,
       "title": "Towards quantum simulation with circular Rydberg atoms",
       "author": "Thanh Long Nguyen et al.",
       "pi": "Michel Brune",
@@ -1785,8 +1785,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 120,
-      "score": 120,
+      "cited": 122,
+      "score": 122,
       "title": "High-fidelity Rydberg quantum gate via a two-atom dark state",
       "author": "David Petrosyan et al.",
       "pi": "Klaus Mølmer",
@@ -1800,8 +1800,8 @@
         "clock",
         "sim"
       ],
-      "cited": 198,
-      "score": 198,
+      "cited": 199,
+      "score": 199,
       "title": "Entanglement between two spatially separated atomic modes",
       "author": "Karsten Lange et al.",
       "pi": "Carsten Klempt",
@@ -1829,8 +1829,8 @@
         "gate",
         "qec"
       ],
-      "cited": 67,
-      "score": 67,
+      "cited": 68,
+      "score": 68,
       "title": "Deutsch, Toffoli, and CNOT Gates via Rydberg Blockade of Neutral Atoms",
       "author": "Xiao-Feng Shi",
       "pi": "Xiao-Feng Shi",
@@ -1859,8 +1859,8 @@
         "gate",
         "sim"
       ],
-      "cited": 65,
-      "score": 65,
+      "cited": 66,
+      "score": 66,
       "title": "Accurate mapping of multilevel Rydberg atoms on interacting spin-$1/2$ particles for the quantum simulation of Ising models",
       "author": "Sylvain de Léséleuc et al.",
       "pi": "Antoine Browaeys",
@@ -1944,8 +1944,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 147,
-      "score": 147,
+      "cited": 149,
+      "score": 149,
       "title": "Observing the space- and time-dependent growth of correlations in dynamically tuned synthetic Ising antiferromagnets",
       "author": "Vincent Lienhard et al.",
       "pi": "Andreas M. Läuchli",
@@ -1986,8 +1986,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 1029,
-      "score": 1029,
+      "cited": 1037,
+      "score": 1037,
       "title": "Quantum many-body scars",
       "author": "Christopher J. Turner et al.",
       "pi": "Zlatko Papic",
@@ -2014,8 +2014,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 117,
-      "score": 117,
+      "cited": 118,
+      "score": 118,
       "title": "Rydberg-atom-based scheme of nonadiabatic geometric quantum computation",
       "author": "P. Z. Zhao et al.",
       "pi": "D. M. Tong",
@@ -2028,8 +2028,8 @@
       "fields": [
         "species"
       ],
-      "cited": 23,
-      "score": 23,
+      "cited": 24,
+      "score": 24,
       "title": "Theory of long range interactions for Rydberg states attached to hyperfine split cores",
       "author": "F. Robicheaux et al.",
       "pi": "M. Saffman",
@@ -2056,8 +2056,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 554,
-      "score": 554,
+      "cited": 560,
+      "score": 560,
       "title": "Synthetic three-dimensional atomic structures assembled atom by atom",
       "author": "Daniel Barredo et al.",
       "pi": "Antoine Browaeys",
@@ -2085,8 +2085,8 @@
         "classical",
         "gate"
       ],
-      "cited": 83,
-      "score": 83,
+      "cited": 84,
+      "score": 84,
       "title": "High Fidelity Single-qubit Gates of a Single Neutral Atom in the Magic-Intensity Optical Dipole Trap",
       "author": "Cheng Sheng et al.",
       "pi": "Mingsheng Zhan",
@@ -2116,8 +2116,8 @@
         "sim",
         "species"
       ],
-      "cited": 21,
-      "score": 21,
+      "cited": 22,
+      "score": 22,
       "title": "An approach to quantum gas microscopy of polar molecules",
       "author": "Jacob P. Covey et al.",
       "pi": "Jun Ye",
@@ -2186,8 +2186,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 89,
-      "score": 89,
+      "cited": 90,
+      "score": 90,
       "title": "Two clock transitions in neutral Yb for the highest sensitivity to variations of the fine-structure constant",
       "author": "M. S. Safronova et al.",
       "pi": "Jun Ye",
@@ -2215,8 +2215,8 @@
         "net",
         "qec"
       ],
-      "cited": 9,
-      "score": 9,
+      "cited": 10,
+      "score": 10,
       "title": "Precisely controlling the reflection phase of a photon via a strongly-coupled ancilla dressed qubit",
       "author": "Felix Motzoi et al.",
       "pi": "Klaus Mølmer",
@@ -2285,8 +2285,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 212,
-      "score": 212,
+      "cited": 215,
+      "score": 215,
       "title": "Analysis of imperfections in the coherent optical excitation of single atoms to Rydberg states",
       "author": "Sylvain de Léséleuc et al.",
       "pi": "Thierry Lahaye",
@@ -2313,8 +2313,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 96,
-      "score": 96,
+      "cited": 98,
+      "score": 98,
       "title": "Quantum simulation of the universal features of the Polyakov loop",
       "author": "Jin Zhang et al.",
       "pi": "Y. Meurice",
@@ -2342,8 +2342,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 31,
+      "score": 31,
       "title": "Imaging topology of Hofstadter ribbons",
       "author": "Dina Genkina et al.",
       "pi": "I. B. Spielman",
@@ -2370,8 +2370,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 63,
-      "score": 63,
+      "cited": 65,
+      "score": 65,
       "title": "Precision spectroscopy of helium in a magic wavelength optical dipole trap",
       "author": "R. J. Rengelink et al.",
       "pi": "W. Vassen",
@@ -2384,8 +2384,8 @@
       "fields": [
         "net"
       ],
-      "cited": 57,
-      "score": 57,
+      "cited": 59,
+      "score": 59,
       "title": "Storing single photons emitted by a quantum memory on a highly excited Rydberg state",
       "author": "Emanuele Distante et al.",
       "pi": "Hugues de Riedmatten",
@@ -2398,8 +2398,8 @@
       "fields": [
         "net"
       ],
-      "cited": 71,
-      "score": 71,
+      "cited": 72,
+      "score": 72,
       "title": "Strong Purcell effect on a neutral atom trapped in an open fiber cavity",
       "author": "Jose Gallego et al.",
       "pi": "Dieter Meschede",
@@ -2412,8 +2412,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 32,
-      "score": 32,
+      "cited": 33,
+      "score": 33,
       "title": "Non-equilibrium absorbing state phase transitions in discrete-time quantum dynamics",
       "author": "I. Lesanovsky et al.",
       "pi": "Juan P. Garrahan",
@@ -2440,8 +2440,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 88,
-      "score": 88,
+      "cited": 90,
+      "score": 90,
       "title": "Multiparameter optimisation of a magneto-optical trap using deep learning",
       "author": "Aaron D. Tranter et al.",
       "pi": "Geoff T. Campbell",
@@ -2569,8 +2569,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 436,
-      "score": 436,
+      "cited": 440,
+      "score": 440,
       "title": "High-fidelity control and entanglement of Rydberg atom qubits",
       "author": "Harry Levine et al.",
       "pi": "Mikhail D. Lukin",
@@ -2641,8 +2641,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 496,
-      "score": 496,
+      "cited": 501,
+      "score": 501,
       "title": "Quantum scarred eigenstates in a Rydberg atom chain: entanglement, breakdown of thermalization, and stability to perturbations",
       "author": "C. J. Turner et al.",
       "pi": "Z. Papić",
@@ -2656,8 +2656,8 @@
         "classical",
         "sim"
       ],
-      "cited": 355,
-      "score": 355,
+      "cited": 358,
+      "score": 358,
       "title": "Periodic orbits, entanglement and quantum many-body scars in constrained models: matrix product state approach",
       "author": "Wen Wei Ho et al.",
       "pi": "Mikhail D. Lukin",
@@ -2685,8 +2685,8 @@
         "gate",
         "sim"
       ],
-      "cited": 260,
-      "score": 260,
+      "cited": 261,
+      "score": 261,
       "title": "Signatures of integrability in the dynamics of Rydberg-blockaded chains",
       "author": "Vedika Khemani et al.",
       "pi": "Anushya Chandran",
@@ -2701,8 +2701,8 @@
         "net",
         "sim"
       ],
-      "cited": 155,
-      "score": 155,
+      "cited": 156,
+      "score": 156,
       "title": "A Photon-Photon Quantum Gate Based on Rydberg Interactions",
       "author": "Daniel Tiarks et al.",
       "pi": "Stephan Dürr",
@@ -2715,8 +2715,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Transport on flexible Rydberg aggregates using circular states",
       "author": "M. M. Aliyu et al.",
       "pi": "S. Wüster",
@@ -2758,8 +2758,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 56,
-      "score": 56,
+      "cited": 57,
+      "score": 57,
       "title": "Magnetic field stabilization system for atomic physics experiments",
       "author": "B. Merkel et al.",
       "pi": "D. M. Lucas",
@@ -2844,8 +2844,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 53,
-      "score": 53,
+      "cited": 52,
+      "score": 52,
       "title": "Observation of Rydberg Blockade Induced by a Single Ion",
       "author": "Felix Engel et al.",
       "pi": "Florian Meinert",
@@ -2872,8 +2872,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 92,
-      "score": 92,
+      "cited": 93,
+      "score": 93,
       "title": "Inner-shell clock transition in atomic thulium with small BBR shift",
       "author": "A. Golovisin et al.",
       "pi": "N. Kolachevsky",
@@ -2916,8 +2916,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 549,
-      "score": 549,
+      "cited": 553,
+      "score": 553,
       "title": "Quantum Kibble-Zurek mechanism and critical dynamics on a programmable Rydberg simulator",
       "author": "Alexander Keesling et al.",
       "pi": "Mikhail D. Lukin",
@@ -2930,8 +2930,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 41,
-      "score": 41,
+      "cited": 42,
+      "score": 42,
       "title": "Fast, Accurate, and Realizable Two-Qubit Entangling Gates by Quantum Interference in Detuned Rabi Cycles of Rydberg Atoms",
       "author": "Xiao-Feng Shi",
       "pi": "Xiao-Feng Shi",
@@ -2944,8 +2944,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 52,
-      "score": 52,
+      "cited": 53,
+      "score": 53,
       "title": "Realization of a Rydberg-dressed Ramsey interferometer and electrometer",
       "author": "A. Arias et al.",
       "pi": "S. Whitlock",
@@ -2958,8 +2958,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 26,
-      "score": 26,
+      "cited": 27,
+      "score": 27,
       "title": "Universal entanglement of typical states in constrained systems",
       "author": "Siddhardh C. Morampudi et al.",
       "pi": "Chris R. Laumann",
@@ -2973,8 +2973,8 @@
         "classical",
         "sim"
       ],
-      "cited": 33,
-      "score": 33,
+      "cited": 34,
+      "score": 34,
       "title": "Ultrafast Variational Simulation of Non-trivial Quantum States with Long Range Interactions",
       "author": "Wen Wei Ho et al.",
       "pi": "Timothy H. Hsieh",
@@ -3001,8 +3001,8 @@
       "fields": [
         "species"
       ],
-      "cited": 222,
-      "score": 222,
+      "cited": 223,
+      "score": 223,
       "title": "Alkaline earth atoms in optical tweezers",
       "author": "Alexandre Cooper et al.",
       "pi": "Manuel Endres",
@@ -3017,8 +3017,8 @@
         "sim",
         "species"
       ],
-      "cited": 206,
-      "score": 206,
+      "cited": 207,
+      "score": 207,
       "title": "Microscopic control and detection of ultracold strontium in optical-tweezer arrays",
       "author": "M. A. Norcia et al.",
       "pi": "A. M. Kaufman",
@@ -3047,8 +3047,8 @@
         "scale",
         "sim"
       ],
-      "cited": 66,
-      "score": 66,
+      "cited": 69,
+      "score": 69,
       "title": "Trapping single atoms on a nanophotonic circuit with configurable tweezer lattices",
       "author": "May E. Kim et al.",
       "pi": "Chen-Lung Hung",
@@ -3061,8 +3061,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 307,
-      "score": 307,
+      "cited": 309,
+      "score": 309,
       "title": "Topological quantum matter with cold atoms",
       "author": "Dan-Wei Zhang et al.",
       "pi": "Shi-Liang Zhu",
@@ -3077,8 +3077,8 @@
         "sim",
         "species"
       ],
-      "cited": 175,
-      "score": 175,
+      "cited": 176,
+      "score": 176,
       "title": "Narrow-line cooling and imaging of Ytterbium atoms in an optical tweezer array",
       "author": "Samuel Saskin et al.",
       "pi": "Jeff Thompson",
@@ -3091,8 +3091,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 545,
-      "score": 545,
+      "cited": 559,
+      "score": 559,
       "title": "Experimental realization of a symmetry protected topological phase of interacting bosons with Rydberg atoms",
       "author": "Sylvain de Léséleuc et al.",
       "pi": "Antoine Browaeys",
@@ -3105,8 +3105,8 @@
       "fields": [
         "net"
       ],
-      "cited": 42,
-      "score": 42,
+      "cited": 43,
+      "score": 43,
       "title": "Nonadiabatic holonomic quantum computation with Rydberg superatoms",
       "author": "P. Z. Zhao et al.",
       "pi": "D. M. Tong",
@@ -3120,8 +3120,8 @@
         "scale",
         "sim"
       ],
-      "cited": 98,
-      "score": 98,
+      "cited": 99,
+      "score": 99,
       "title": "Grey-molasses optical-tweezer loading: Controlling collisions for scaling atom-array assembly",
       "author": "M. O. Brown et al.",
       "pi": "C. A. Regal",
@@ -3150,8 +3150,8 @@
         "readout",
         "species"
       ],
-      "cited": 147,
-      "score": 147,
+      "cited": 149,
+      "score": 149,
       "title": "2000-times repeated imaging of strontium atoms in clock-magic tweezer arrays",
       "author": "Jacob P. Covey et al.",
       "pi": "Manuel Endres",
@@ -3193,8 +3193,8 @@
         "classical",
         "opt"
       ],
-      "cited": 667,
-      "score": 667,
+      "cited": 684,
+      "score": 684,
       "title": "Quantum Approximate Optimization Algorithm: Performance, Mechanism, and Implementation on Near-Term Devices",
       "author": "Leo Zhou et al.",
       "pi": "Mikhail D. Lukin",
@@ -3207,8 +3207,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 37,
-      "score": 37,
+      "cited": 41,
+      "score": 41,
       "title": "Two-qubit controlled-PHASE Rydberg blockade gate protocol for neutral atoms via off-resonant modulated driving within a single pulse",
       "author": "Yuan Sun et al.",
       "pi": "Ping-Xing Chen",
@@ -3222,8 +3222,8 @@
         "gate",
         "sim"
       ],
-      "cited": 358,
-      "score": 358,
+      "cited": 361,
+      "score": 361,
       "title": "Emergent SU(2) dynamics and perfect quantum many-body scars",
       "author": "Soonwon Choi et al.",
       "pi": "Dmitry A. Abanin",
@@ -3236,8 +3236,8 @@
       "fields": [
         "scale"
       ],
-      "cited": 69,
-      "score": 69,
+      "cited": 72,
+      "score": 72,
       "title": "Quantum gas microscopy of Rydberg macrodimers",
       "author": "Simon Hollerith et al.",
       "pi": "Christian Gross",
@@ -3265,8 +3265,8 @@
         "scale",
         "sim"
       ],
-      "cited": 85,
-      "score": 85,
+      "cited": 86,
+      "score": 86,
       "title": "Two-Dimensional Photonic Crystals for Engineering Atom-Light Interactions",
       "author": "Su-Peng Yu et al.",
       "pi": "H. J. Kimble",
@@ -3279,8 +3279,8 @@
       "fields": [
         "net"
       ],
-      "cited": 140,
-      "score": 140,
+      "cited": 141,
+      "score": 141,
       "title": "Cavity-Based 3D Cooling of a Levitated Nanoparticle via Coherent Scattering",
       "author": "Dominik Windey et al.",
       "pi": "René Reimann",
@@ -3293,8 +3293,8 @@
       "fields": [
         "net"
       ],
-      "cited": 162,
-      "score": 162,
+      "cited": 163,
+      "score": 163,
       "title": "Cavity cooling of a levitated nanosphere by coherent scattering",
       "author": "Uroš Delić et al.",
       "pi": "Markus Aspelmeyer",
@@ -3380,8 +3380,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 75,
-      "score": 75,
+      "cited": 76,
+      "score": 76,
       "title": "Molecular assembly of ground state cooled single atoms",
       "author": "Lee R. Liu et al.",
       "pi": "Kang-Kuen Ni",
@@ -3394,8 +3394,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 267,
-      "score": 267,
+      "cited": 272,
+      "score": 272,
       "title": "Lattice gauge theories and string dynamics in Rydberg atom quantum simulators",
       "author": "Federica M. Surace et al.",
       "pi": "Marcello Dalmonte",
@@ -3422,8 +3422,8 @@
       "fields": [
         "net"
       ],
-      "cited": 58,
-      "score": 58,
+      "cited": 59,
+      "score": 59,
       "title": "Topologically Protected Quantum Coherence in a Superatom",
       "author": "Wei Nie et al.",
       "pi": "Yu-xi Liu",
@@ -3436,8 +3436,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 23,
-      "score": 23,
+      "cited": 24,
+      "score": 24,
       "title": "Glassy Dynamics from Quark Confinement: Atomic Quantum Simulation of Gauge-Higgs Model on Lattice",
       "author": "Jonghoon Park et al.",
       "pi": "Ikuo Ichinose",
@@ -3507,8 +3507,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 157,
-      "score": 157,
+      "cited": 158,
+      "score": 158,
       "title": "Quantum Many-Body Scars and Space-Time Crystalline Order from Magnon Condensation",
       "author": "Thomas Iadecola et al.",
       "pi": "Shenglong Xu",
@@ -3521,8 +3521,8 @@
       "fields": [
         "species"
       ],
-      "cited": 14,
-      "score": 14,
+      "cited": 15,
+      "score": 15,
       "title": "Number-resolved imaging of $^{88}$Sr atoms in a long working distance optical tweezer",
       "author": "N. C. Jackson et al.",
       "pi": "M. P. A. Jones",
@@ -3550,8 +3550,8 @@
         "scale",
         "species"
       ],
-      "cited": 53,
-      "score": 53,
+      "cited": 54,
+      "score": 54,
       "title": "Microwave-to-optical conversion via four-wave-mixing in a cold ytterbium ensemble",
       "author": "Jacob P. Covey et al.",
       "pi": "Mark Saffman",
@@ -3565,8 +3565,8 @@
         "clock",
         "species"
       ],
-      "cited": 185,
-      "score": 185,
+      "cited": 188,
+      "score": 188,
       "title": "Seconds-scale coherence in a tweezer-array optical clock",
       "author": "Matthew A. Norcia et al.",
       "pi": "Adam M. Kaufman",
@@ -3580,8 +3580,8 @@
         "clock",
         "sim"
       ],
-      "cited": 645,
-      "score": 645,
+      "cited": 651,
+      "score": 651,
       "title": "Generation and manipulation of Schrödinger cat states in Rydberg atom arrays",
       "author": "Ahmed Omran et al.",
       "pi": "Mikhail D. Lukin",
@@ -3636,8 +3636,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 22,
-      "score": 22,
+      "cited": 23,
+      "score": 23,
       "title": "Lieb-Robinson bounds for open quantum systems with long-ranged interactions",
       "author": "Ryan Sweke et al.",
       "pi": "Michael Kastner",
@@ -3721,8 +3721,8 @@
         "gate",
         "sim"
       ],
-      "cited": 116,
-      "score": 116,
+      "cited": 118,
+      "score": 118,
       "title": "Emerging 2D Gauge theories in Rydberg configurable arrays",
       "author": "A. Celi et al.",
       "pi": "P. Zoller",
@@ -3749,8 +3749,8 @@
       "fields": [
         "species"
       ],
-      "cited": 9,
-      "score": 9,
+      "cited": 10,
+      "score": 10,
       "title": "Strong angular-momentum mixing in ultracold atom-ion excitation-exchange",
       "author": "Ruti Ben-Shlomi et al.",
       "pi": "Roee Ozeri",
@@ -3763,8 +3763,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 152,
-      "score": 152,
+      "cited": 153,
+      "score": 153,
       "title": "Collapse and revival of quantum many-body scars via Floquet engineering",
       "author": "Bhaskar Mukherjee et al.",
       "pi": "K. Sengupta",
@@ -3835,8 +3835,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 51,
-      "score": 51,
+      "cited": 52,
+      "score": 52,
       "title": "Real-time-dynamics quantum simulation of (1+1)-D lattice QED with Rydberg atoms",
       "author": "Simone Notarnicola et al.",
       "pi": "Simone Montangero",
@@ -3907,8 +3907,8 @@
         "clock",
         "sim"
       ],
-      "cited": 99,
-      "score": 99,
+      "cited": 100,
+      "score": 100,
       "title": "An atomic array optical clock with single-atom readout",
       "author": "Ivaylo S. Madjarov et al.",
       "pi": "Manuel Endres",
@@ -3921,8 +3921,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 614,
-      "score": 614,
+      "cited": 623,
+      "score": 623,
       "title": "Parallel implementation of high-fidelity multi-qubit gates with neutral atoms",
       "author": "Harry Levine et al.",
       "pi": "Mikhail D. Lukin",
@@ -3935,8 +3935,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 298,
-      "score": 298,
+      "cited": 300,
+      "score": 300,
       "title": "Rydberg mediated entanglement in a two-dimensional neutral atom qubit array",
       "author": "T. M. Graham et al.",
       "pi": "M. Saffman",
@@ -3950,8 +3950,8 @@
         "clock",
         "sim"
       ],
-      "cited": 146,
-      "score": 146,
+      "cited": 149,
+      "score": 149,
       "title": "Variational spin-squeezing algorithms on programmable quantum sensors",
       "author": "Raphael Kaubruegger et al.",
       "pi": "Peter Zoller",
@@ -3964,8 +3964,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 108,
-      "score": 108,
+      "cited": 111,
+      "score": 111,
       "title": "Dynamics of quantum information",
       "author": "R. J. Lewis-Swan et al.",
       "pi": "A. M. Rey",
@@ -3992,8 +3992,8 @@
       "fields": [
         "species"
       ],
-      "cited": 15,
-      "score": 15,
+      "cited": 16,
+      "score": 16,
       "title": "Crossover from fast to slow dynamics in quantum Ising chains with long range interactions",
       "author": "Giulia Piccitto et al.",
       "pi": "Alessandro Silva",
@@ -4020,8 +4020,8 @@
       "fields": [
         "species"
       ],
-      "cited": 159,
-      "score": 159,
+      "cited": 162,
+      "score": 162,
       "title": "Ultracold polar molecules as qudits",
       "author": "Rahul Sawant et al.",
       "pi": "Simon L Cornish",
@@ -4034,8 +4034,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 53,
-      "score": 53,
+      "cited": 54,
+      "score": 54,
       "title": "Optical Traps for sympathetic Cooling of Ions with ultracold neutral Atoms",
       "author": "J. Schmidt et al.",
       "pi": "L. Karpa",
@@ -4063,8 +4063,8 @@
         "net",
         "sim"
       ],
-      "cited": 120,
-      "score": 120,
+      "cited": 121,
+      "score": 121,
       "title": "Strong coupling of two individually controlled atoms via a nanophotonic cavity",
       "author": "Polnop Samutpraphoot et al.",
       "pi": "Mikhail D. Lukin",
@@ -4077,8 +4077,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 64,
-      "score": 64,
+      "cited": 65,
+      "score": 65,
       "title": "Unitary and non-unitary quantum cellular automata with Rydberg arrays",
       "author": "T. M. Wintermantel et al.",
       "pi": "S. Whitlock",
@@ -4119,8 +4119,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 181,
-      "score": 181,
+      "cited": 183,
+      "score": 183,
       "title": "Statistical localization: from strong fragmentation to strong edge modes",
       "author": "Tibor Rakovszky et al.",
       "pi": "Frank Pollmann",
@@ -4161,8 +4161,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 103,
-      "score": 103,
+      "cited": 104,
+      "score": 104,
       "title": "Complex density wave orders and quantum phase transitions in a model of square-lattice Rydberg atom arrays",
       "author": "Rhine Samajdar et al.",
       "pi": "Subir Sachdev",
@@ -4206,8 +4206,8 @@
         "clock",
         "sim"
       ],
-      "cited": 119,
-      "score": 119,
+      "cited": 122,
+      "score": 122,
       "title": "Transverse-Field Ising Dynamics in a Rydberg-Dressed Atomic Gas",
       "author": "Victoria Borish et al.",
       "pi": "Monika Schleier-Smith",
@@ -4221,8 +4221,8 @@
         "classical",
         "sim"
       ],
-      "cited": 483,
-      "score": 483,
+      "cited": 491,
+      "score": 491,
       "title": "Simulating Lattice Gauge Theories within Quantum Technologies",
       "author": "M. C. Bañuls et al.",
       "pi": "P. Zoller",
@@ -4250,8 +4250,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 77,
-      "score": 77,
+      "cited": 78,
+      "score": 78,
       "title": "Robust Mølmer-Sørensen gate for neutral atoms using rapid adiabatic Rydberg dressing",
       "author": "Anupam Mitra et al.",
       "pi": "Ivan H. Deutsch",
@@ -4279,8 +4279,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 79,
-      "score": 79,
+      "cited": 81,
+      "score": 81,
       "title": "Real-time dynamics of string breaking in quantum spin chains",
       "author": "Roberto Verdel et al.",
       "pi": "Markus Heyl",
@@ -4293,8 +4293,8 @@
       "fields": [
         "net"
       ],
-      "cited": 20,
-      "score": 20,
+      "cited": 21,
+      "score": 21,
       "title": "An advanced apparatus for the integration of nanophotonics and cold atoms",
       "author": "J. -B. Béguin et al.",
       "pi": "H. J. Kimble",
@@ -4307,8 +4307,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 98,
-      "score": 98,
+      "cited": 99,
+      "score": 99,
       "title": "Symmetric Rydberg controlled-Z gates with adiabatic pulses",
       "author": "M. Saffman et al.",
       "pi": "B. C. Sanders",
@@ -4349,8 +4349,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 65,
-      "score": 65,
+      "cited": 66,
+      "score": 66,
       "title": "Preparation of hundreds of microscopic atomic ensembles in optical tweezer arrays",
       "author": "Y. Wang et al.",
       "pi": "S. Whitlock",
@@ -4406,8 +4406,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 82,
-      "score": 82,
+      "cited": 84,
+      "score": 84,
       "title": "Atomic-waveguide quantum electrodynamics",
       "author": "Stuart J Masson et al.",
       "pi": "Ana Asenjo-Garcia",
@@ -4420,8 +4420,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 28,
-      "score": 28,
+      "cited": 29,
+      "score": 29,
       "title": "The Passivity Deformation Approach for the Thermodynamics of Isolated Quantum Setups",
       "author": "Raam Uzdin et al.",
       "pi": "Saar Rahav",
@@ -4436,8 +4436,8 @@
         "sim",
         "species"
       ],
-      "cited": 113,
-      "score": 113,
+      "cited": 115,
+      "score": 115,
       "title": "Trapped arrays of alkaline earth Rydberg atoms in optical tweezers",
       "author": "Jack Wilson et al.",
       "pi": "Jeff Thompson",
@@ -4451,8 +4451,8 @@
         "classical",
         "sim"
       ],
-      "cited": 228,
-      "score": 228,
+      "cited": 232,
+      "score": 232,
       "title": "Quantum many-body dynamics in two dimensions with artificial neural networks",
       "author": "Markus Schmitt et al.",
       "pi": "Markus Heyl",
@@ -4465,8 +4465,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 49,
-      "score": 49,
+      "cited": 50,
+      "score": 50,
       "title": "Framework for simulating gauge theories with dipolar spin systems",
       "author": "Di Luo et al.",
       "pi": "Bryce Gadway",
@@ -4479,8 +4479,8 @@
       "fields": [
         "scale"
       ],
-      "cited": 25,
-      "score": 25,
+      "cited": 26,
+      "score": 26,
       "title": "Single atom movement with dynamic holographic optical tweezers",
       "author": "Sergey Samoylenko et al.",
       "pi": "Sergei Kulik",
@@ -4495,8 +4495,8 @@
         "readout",
         "species"
       ],
-      "cited": 382,
-      "score": 382,
+      "cited": 387,
+      "score": 387,
       "title": "High-Fidelity Entanglement and Detection of Alkaline-Earth Rydberg Atoms",
       "author": "Ivaylo S. Madjarov et al.",
       "pi": "Manuel Endres",
@@ -4609,8 +4609,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 33,
-      "score": 33,
+      "cited": 34,
+      "score": 34,
       "title": "Long-lived circular Rydberg states of laser-cooled Rubidium atoms in a cryostat",
       "author": "Tigrane Cantat-Moltrecht et al.",
       "pi": "Clément Sayrin",
@@ -4665,8 +4665,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 1104,
-      "score": 1104,
+      "cited": 1126,
+      "score": 1126,
       "title": "Many-Body Physics with Individually-Controlled Rydberg Atoms",
       "author": "Antoine Browaeys et al.",
       "pi": "Thierry Lahaye",
@@ -4680,8 +4680,8 @@
         "classical",
         "sim"
       ],
-      "cited": 33,
-      "score": 33,
+      "cited": 34,
+      "score": 34,
       "title": "Non-equilibrium phase transitions in $(1+1)$-dimensional quantum cellular automata with controllable quantum correlations",
       "author": "Edward Gillman et al.",
       "pi": "Igor Lesanovsky",
@@ -4694,8 +4694,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 34,
-      "score": 34,
+      "cited": 35,
+      "score": 35,
       "title": "Vibrational dressing in Kinetically Constrained Rydberg Spin Systems",
       "author": "Paolo P. Mazza et al.",
       "pi": "Igor Lesanovsky",
@@ -4709,8 +4709,8 @@
         "net",
         "sim"
       ],
-      "cited": 27,
-      "score": 27,
+      "cited": 30,
+      "score": 30,
       "title": "The integration of photonic crystal waveguides with atom arrays in optical tweezers",
       "author": "X. Luan et al.",
       "pi": "H. J. Kimble",
@@ -4723,8 +4723,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 35,
-      "score": 35,
+      "cited": 36,
+      "score": 36,
       "title": "Effective Rabi dynamics of Rydberg atoms and robust high-fidelity quantum gates with a resonant amplitude-modulation field",
       "author": "Jin-Lei Wu et al.",
       "pi": "Yan Xia",
@@ -4737,8 +4737,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 71,
-      "score": 71,
+      "cited": 72,
+      "score": 72,
       "title": "Stabilizing two-dimensional quantum scars by deformation and synchronization",
       "author": "A. A. Michailidis et al.",
       "pi": "M. Serbyn",
@@ -4765,8 +4765,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 110,
-      "score": 110,
+      "cited": 111,
+      "score": 111,
       "title": "Quantum Many-Body Scar States in Two-Dimensional Rydberg Atom Arrays",
       "author": "Cheng-Ju Lin et al.",
       "pi": "Timothy H. Hsieh",
@@ -4808,8 +4808,8 @@
         "clock",
         "species"
       ],
-      "cited": 218,
-      "score": 218,
+      "cited": 223,
+      "score": 223,
       "title": "A tweezer clock with half-minute atomic coherence at optical frequencies and high relative stability",
       "author": "Aaron W. Young et al.",
       "pi": "Adam M. Kaufman",
@@ -4865,8 +4865,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 55,
-      "score": 55,
+      "cited": 57,
+      "score": 57,
       "title": "Nonadiabatic noncyclic geometric quantum computation in Rydberg atoms",
       "author": "Bao-Jie Liu et al.",
       "pi": "Man-Hong Yung",
@@ -4951,8 +4951,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 57,
-      "score": 57,
+      "cited": 58,
+      "score": 58,
       "title": "Asymmetric blockade and multi-qubit gates via dipole-dipole interactions",
       "author": "Jeremy T. Young et al.",
       "pi": "Alexey V. Gorshkov",
@@ -4965,8 +4965,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 19,
-      "score": 19,
+      "cited": 20,
+      "score": 20,
       "title": "Enhancing the effect of quantum many-body scars on dynamics by minimising the effective dimension",
       "author": "Shane Dooley et al.",
       "pi": "Graham Kells",
@@ -4980,8 +4980,8 @@
         "gate",
         "sim"
       ],
-      "cited": 25,
-      "score": 25,
+      "cited": 26,
+      "score": 26,
       "title": "Dipole-dipole interaction driven antiblockade of two Rydberg atoms",
       "author": "Shi-Lei Su et al.",
       "pi": "Weibin Li",
@@ -4995,8 +4995,8 @@
         "gate",
         "sim"
       ],
-      "cited": 101,
-      "score": 101,
+      "cited": 102,
+      "score": 102,
       "title": "Fast multi-qubit gates by adiabatic evolution in interacting excited state manifolds",
       "author": "Mohammadsadegh Khazali et al.",
       "pi": "Klaus Mølmer",
@@ -5053,8 +5053,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Realizing the Frenkel-Kontorova model with Rydberg-dressed atoms",
       "author": "Jorge Mellado Muñoz et al.",
       "pi": "Giovanni Barontini",
@@ -5138,8 +5138,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 91,
-      "score": 91,
+      "cited": 97,
+      "score": 97,
       "title": "ARC 3.0: An expanded Python toolbox for atomic physics calculations",
       "author": "Elizabeth J. Robertson et al.",
       "pi": "Matthew P. A. Jones",
@@ -5167,8 +5167,8 @@
         "opt",
         "sim"
       ],
-      "cited": 47,
-      "score": 47,
+      "cited": 48,
+      "score": 48,
       "title": "Programmable Quantum Annealing Architectures with Ising Quantum Wires",
       "author": "Xingze Qiu et al.",
       "pi": "Xiaopeng Li",
@@ -5209,8 +5209,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 45,
-      "score": 45,
+      "cited": 46,
+      "score": 46,
       "title": "Heralded atomic nonadiabatic holonomic quantum computation with Rydberg blockade",
       "author": "Yi-Hao Kang et al.",
       "pi": "Yan Xia",
@@ -5224,8 +5224,8 @@
         "net",
         "sim"
       ],
-      "cited": 200,
-      "score": 200,
+      "cited": 205,
+      "score": 205,
       "title": "Roadmap on Atomtronics: State of the art and perspective",
       "author": "L. Amico et al.",
       "pi": "A. Yakimenko",
@@ -5283,8 +5283,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 52,
-      "score": 52,
+      "cited": 53,
+      "score": 53,
       "title": "Scalable and Parallel Tweezer Gates for Quantum Computing with Long Ion Strings",
       "author": "Tobias Olsacher et al.",
       "pi": "Lukas M. Sieberer",
@@ -5325,8 +5325,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 56,
-      "score": 56,
+      "cited": 58,
+      "score": 58,
       "title": "Optimized Geometric Quantum Computation with mesoscopic ensemble of Rydberg Atoms",
       "author": "Chen-Yue Guo et al.",
       "pi": "Weibin Li",
@@ -5339,8 +5339,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 32,
+      "score": 32,
       "title": "Quantum-Ising Hamiltonian programming in trio, quartet, and sextet qubit systems",
       "author": "Minhyuk Kim et al.",
       "pi": "Jaewook Ahn",
@@ -5368,8 +5368,8 @@
         "classical",
         "clock"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 31,
+      "score": 31,
       "title": "Quantum Phase Estimation Algorithm with Gaussian Spin States",
       "author": "Luca Pezzè et al.",
       "pi": "Augusto Smerzi",
@@ -5396,8 +5396,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 95,
-      "score": 95,
+      "cited": 96,
+      "score": 96,
       "title": "Quench Dynamics of a Fermi Gas with Strong Non-Local Interactions",
       "author": "Elmer Guardado-Sanchez et al.",
       "pi": "Waseem S. Bakr",
@@ -5453,8 +5453,8 @@
         "opt",
         "sim"
       ],
-      "cited": 33,
-      "score": 33,
+      "cited": 34,
+      "score": 34,
       "title": "Quantum annealing of Cayley-tree Ising spins at small scales",
       "author": "Yunheung Song et al.",
       "pi": "Jaewook Ahn",
@@ -5467,8 +5467,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 327,
-      "score": 327,
+      "cited": 334,
+      "score": 334,
       "title": "Quantum simulation and computing with Rydberg-interacting qubits",
       "author": "M. Morgado et al.",
       "pi": "S. Whitlock",
@@ -5526,8 +5526,8 @@
         "classical",
         "sim"
       ],
-      "cited": 63,
-      "score": 63,
+      "cited": 64,
+      "score": 64,
       "title": "Efficient Tensor Network ansatz for high-dimensional quantum many-body problems",
       "author": "Timo Felser et al.",
       "pi": "Simone Montangero",
@@ -5542,8 +5542,8 @@
         "gate",
         "sim"
       ],
-      "cited": 70,
-      "score": 70,
+      "cited": 71,
+      "score": 71,
       "title": "Exact many-body scars and their stability in constrained quantum chains",
       "author": "Federica Maria Surace et al.",
       "pi": "Giuliano Giudici",
@@ -5556,8 +5556,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 523,
-      "score": 523,
+      "cited": 533,
+      "score": 533,
       "title": "Quantum Many-Body Scars and Weak Breaking of Ergodicity",
       "author": "Maksym Serbyn et al.",
       "pi": "Zlatko Papić",
@@ -5570,8 +5570,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 48,
-      "score": 48,
+      "cited": 50,
+      "score": 50,
       "title": "Photon recoil and laser focusing limits to Rydberg gate fidelity",
       "author": "F. Robicheaux et al.",
       "pi": "M. Saffman",
@@ -5599,8 +5599,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 58,
-      "score": 58,
+      "cited": 60,
+      "score": 60,
       "title": "Scattering of mesons in quantum simulators",
       "author": "Federica Maria Surace et al.",
       "pi": "Alessio Lerose",
@@ -5641,8 +5641,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 202,
-      "score": 202,
+      "cited": 206,
+      "score": 206,
       "title": "Quantum phases of Rydberg atoms on a kagome lattice",
       "author": "Rhine Samajdar et al.",
       "pi": "Subir Sachdev",
@@ -5657,8 +5657,8 @@
         "qec",
         "sim"
       ],
-      "cited": 200,
-      "score": 200,
+      "cited": 205,
+      "score": 205,
       "title": "Prediction of Toric Code Topological Order from Rydberg Blockade",
       "author": "Ruben Verresen et al.",
       "pi": "Ashvin Vishwanath",
@@ -5672,8 +5672,8 @@
         "gate",
         "qec"
       ],
-      "cited": 40,
-      "score": 40,
+      "cited": 42,
+      "score": 42,
       "title": "Systematic error tolerant multiqubit holonomic entangling gates",
       "author": "Jin-Lei Wu et al.",
       "pi": "Weibin Li",
@@ -5686,8 +5686,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 24,
-      "score": 24,
+      "cited": 25,
+      "score": 25,
       "title": "Localization and criticality in antiblockaded 2D Rydberg atom arrays",
       "author": "Fangli Liu et al.",
       "pi": "Alexey V. Gorshkov",
@@ -5714,8 +5714,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 119,
-      "score": 119,
+      "cited": 121,
+      "score": 121,
       "title": "Quantum scars from zero modes in an Abelian lattice gauge theory on ladders",
       "author": "Debasish Banerjee et al.",
       "pi": "Arnab Sen",
@@ -5757,8 +5757,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 191,
-      "score": 191,
+      "cited": 195,
+      "score": 195,
       "title": "A concise review of Rydberg atom based quantum computation and quantum simulation",
       "author": "Xiaoling Wu et al.",
       "pi": "Li You",
@@ -5772,8 +5772,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 681,
-      "score": 681,
+      "cited": 695,
+      "score": 695,
       "title": "Programmable quantum simulation of 2D antiferromagnets with hundreds of Rydberg atoms",
       "author": "Pascal Scholl et al.",
       "pi": "Antoine Browaeys",
@@ -5786,8 +5786,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 400,
-      "score": 400,
+      "cited": 407,
+      "score": 407,
       "title": "Controlling many-body dynamics with driven quantum scars in Rydberg atom arrays",
       "author": "Dolev Bluvstein et al.",
       "pi": "Mikhail D. Lukin",
@@ -5800,8 +5800,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 944,
-      "score": 944,
+      "cited": 964,
+      "score": 964,
       "title": "Quantum Phases of Matter on a 256-Atom Programmable Quantum Simulator",
       "author": "Sepehr Ebadi et al.",
       "pi": "Mikhail D. Lukin",
@@ -5814,8 +5814,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 26,
-      "score": 26,
+      "cited": 28,
+      "score": 28,
       "title": "Influence of ground-Rydberg coherence in two-qubit gate based on Rydberg blockade",
       "author": "Yangyang Liu et al.",
       "pi": "Mingsheng Zhan",
@@ -5828,8 +5828,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 8,
+      "score": 8,
       "title": "Experimental realization of a 3D long-range random hopping model",
       "author": "Carsten Lippe et al.",
       "pi": "Herwig Ott",
@@ -5871,8 +5871,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 64,
-      "score": 64,
+      "cited": 65,
+      "score": 65,
       "title": "Quantum nonlinear optics based on two-dimensional Rydberg atom arrays",
       "author": "Mariona Moreno-Cardoner et al.",
       "pi": "Darrick E. Chang",
@@ -5899,8 +5899,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 52,
-      "score": 52,
+      "cited": 53,
+      "score": 53,
       "title": "Resilient quantum gates on periodically driven Rydberg atoms",
       "author": "Jin-Lei Wu et al.",
       "pi": "Jie Song",
@@ -5929,8 +5929,8 @@
         "net",
         "readout"
       ],
-      "cited": 9,
-      "score": 9,
+      "cited": 10,
+      "score": 10,
       "title": "Improving entanglement generation rates in trapped ion quantum networks using nondestructive photon measurement and storage",
       "author": "John Hannegan et al.",
       "pi": "Qudsia Quraishi",
@@ -6030,8 +6030,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 61,
-      "score": 61,
+      "cited": 62,
+      "score": 62,
       "title": "Many-body quantum teleportation via operator spreading in the traversable wormhole protocol",
       "author": "Thomas Schuster et al.",
       "pi": "Norman Y. Yao",
@@ -6129,8 +6129,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 85,
-      "score": 85,
+      "cited": 86,
+      "score": 86,
       "title": "Discrete time-crystalline order enabled by quantum many-body scars: entanglement steering via periodic driving",
       "author": "Nishad Maskara et al.",
       "pi": "Maksym Serbyn",
@@ -6144,8 +6144,8 @@
         "classical",
         "sim"
       ],
-      "cited": 158,
-      "score": 158,
+      "cited": 161,
+      "score": 161,
       "title": "Preparing random states and benchmarking with many-body quantum chaos",
       "author": "Joonhee Choi et al.",
       "pi": "Manuel Endres",
@@ -6202,8 +6202,8 @@
       "fields": [
         "net"
       ],
-      "cited": 34,
-      "score": 34,
+      "cited": 36,
+      "score": 36,
       "title": "Scalable and High-Fidelity Quantum Random Access Memory in Spin-Photon Networks",
       "author": "Kevin C. Chen et al.",
       "pi": "Dirk Englund",
@@ -6259,8 +6259,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 86,
-      "score": 86,
+      "cited": 88,
+      "score": 88,
       "title": "Quantum Computing with Circular Rydberg Atoms",
       "author": "Sam R. Cohen et al.",
       "pi": "Jeff D. Thompson",
@@ -6303,8 +6303,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 48,
-      "score": 48,
+      "cited": 50,
+      "score": 50,
       "title": "Classically-Verifiable Quantum Advantage from a Computational Bell Test",
       "author": "Gregory D. Kahanamoku-Meyer et al.",
       "pi": "Norman Y. Yao",
@@ -6332,8 +6332,8 @@
         "gate",
         "sim"
       ],
-      "cited": 829,
-      "score": 829,
+      "cited": 843,
+      "score": 843,
       "title": "Probing Topological Spin Liquids on a Programmable Quantum Simulator",
       "author": "Giulia Semeghini et al.",
       "pi": "Mikhail D. Lukin",
@@ -6374,8 +6374,8 @@
       "fields": [
         "net"
       ],
-      "cited": 77,
-      "score": 77,
+      "cited": 78,
+      "score": 78,
       "title": "An optical lattice with sound",
       "author": "Yudan Guo et al.",
       "pi": "Benjamin L. Lev",
@@ -6388,8 +6388,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 62,
-      "score": 62,
+      "cited": 64,
+      "score": 64,
       "title": "Pulser: An open-source package for the design of pulse sequences in programmable neutral-atom arrays",
       "author": "Henrique Silvério et al.",
       "pi": "Loïc Henriet",
@@ -6552,8 +6552,8 @@
         "scale",
         "species"
       ],
-      "cited": 23,
-      "score": 23,
+      "cited": 24,
+      "score": 24,
       "title": "D1 magic wavelength tweezers for scaling atom arrays",
       "author": "Mohammad Mujahid Aliyu et al.",
       "pi": "Huanqian Loh",
@@ -6566,8 +6566,8 @@
       "fields": [
         "species"
       ],
-      "cited": 87,
-      "score": 87,
+      "cited": 89,
+      "score": 89,
       "title": "Rotational Coherence Times of Polar Molecules in Optical Tweezers",
       "author": "Sean Burchesky et al.",
       "pi": "John M. Doyle",
@@ -6580,8 +6580,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 164,
-      "score": 164,
+      "cited": 166,
+      "score": 166,
       "title": "Universality of Dicke superradiance in arrays of quantum emitters",
       "author": "Stuart J Masson et al.",
       "pi": "Ana Asenjo-Garcia",
@@ -6625,8 +6625,8 @@
         "sim",
         "species"
       ],
-      "cited": 70,
-      "score": 70,
+      "cited": 73,
+      "score": 73,
       "title": "Defect-free arbitrary-geometry assembly of mixed-species atom arrays",
       "author": "Cheng Sheng et al.",
       "pi": "Mingsheng Zhan",
@@ -6654,8 +6654,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 52,
-      "score": 52,
+      "cited": 54,
+      "score": 54,
       "title": "Single Atoms with 6000-Second Trapping Lifetimes in Optical-Tweezer Arrays at Cryogenic Temperatures",
       "author": "Kai-Niklas Schymik et al.",
       "pi": "Thierry Lahaye",
@@ -6767,8 +6767,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 92,
-      "score": 92,
+      "cited": 93,
+      "score": 93,
       "title": "Classical Shadow Tomography with Locally Scrambled Quantum Dynamics",
       "author": "Hong-Ye Hu et al.",
       "pi": "Yi-Zhuang You",
@@ -6839,8 +6839,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 23,
-      "score": 23,
+      "cited": 24,
+      "score": 24,
       "title": "Unselective ground-state blockade of Rydberg atoms for implementing quantum gates",
       "author": "Jin-Lei Wu et al.",
       "pi": "Jie Song",
@@ -6853,8 +6853,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 27,
-      "score": 27,
+      "cited": 28,
+      "score": 28,
       "title": "Theoretical methods to design and test quantum simulators for the compact Abelian Higgs model",
       "author": "Yannick Meurice",
       "pi": "Yannick Meurice",
@@ -6881,8 +6881,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 168,
-      "score": 168,
+      "cited": 171,
+      "score": 171,
       "title": "Microwave-engineering of programmable XXZ Hamiltonians in arrays of Rydberg atoms",
       "author": "P. Scholl et al.",
       "pi": "M. Weidemüller",
@@ -6909,8 +6909,8 @@
       "fields": [
         "species"
       ],
-      "cited": 128,
-      "score": 128,
+      "cited": 129,
+      "score": 129,
       "title": "Assembly and coherent control of a register of nuclear spin qubits",
       "author": "Katrina Barnes et al.",
       "pi": "Michael Yarwood",
@@ -6938,8 +6938,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 471,
-      "score": 471,
+      "cited": 479,
+      "score": 479,
       "title": "Quantum Many-Body Scars and Hilbert Space Fragmentation: A Review of Exact Results",
       "author": "Sanjay Moudgalya et al.",
       "pi": "Nicolas Regnault",
@@ -6954,8 +6954,8 @@
         "net",
         "sim"
       ],
-      "cited": 284,
-      "score": 284,
+      "cited": 292,
+      "score": 292,
       "title": "Long-range interacting quantum systems",
       "author": "Nicolò Defenu et al.",
       "pi": "Andrea Trombettoni",
@@ -6969,8 +6969,8 @@
         "gate",
         "sim"
       ],
-      "cited": 76,
-      "score": 76,
+      "cited": 80,
+      "score": 80,
       "title": "High fidelity entanglement of neutral atoms via a Rydberg-mediated single-modulated-pulse controlled-PHASE gate",
       "author": "Zhuo Fu et al.",
       "pi": "Mingsheng Zhan",
@@ -7027,8 +7027,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 52,
-      "score": 52,
+      "cited": 53,
+      "score": 53,
       "title": "Extensive multipartite entanglement from su(2) quantum many-body scars",
       "author": "Jean-Yves Desaules et al.",
       "pi": "Silvia Pappalardi",
@@ -7041,8 +7041,8 @@
       "fields": [
         "net"
       ],
-      "cited": 63,
-      "score": 63,
+      "cited": 66,
+      "score": 66,
       "title": "Any-to-any connected cavity-mediated architecture for quantum computing with trapped ions or Rydberg arrays",
       "author": "Joshua Ramette et al.",
       "pi": "Vladan Vuletić",
@@ -7198,8 +7198,8 @@
         "sim",
         "species"
       ],
-      "cited": 52,
-      "score": 52,
+      "cited": 53,
+      "score": 53,
       "title": "Controlling Rydberg excitations using ion core transitions in alkaline earth atom tweezer arrays",
       "author": "Alex P Burgers et al.",
       "pi": "Jeff D Thompson",
@@ -7228,8 +7228,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 76,
-      "score": 76,
+      "cited": 77,
+      "score": 77,
       "title": "Quantum Simulation of an Extended Fermi-Hubbard Model Using a 2D Lattice of Dopant-based Quantum Dots",
       "author": "Xiqiao Wang et al.",
       "pi": "Richard Silver",
@@ -7242,8 +7242,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 15,
-      "score": 15,
+      "cited": 16,
+      "score": 16,
       "title": "Floquet integrability and long-range entanglement generation in the one-dimensional quantum Potts model",
       "author": "A. I. Lotkov et al.",
       "pi": "D. V. Kurlov",
@@ -7257,8 +7257,8 @@
         "scale",
         "sim"
       ],
-      "cited": 55,
-      "score": 55,
+      "cited": 59,
+      "score": 59,
       "title": "Realizing distance-selective interactions in a Rydberg-dressed atom array",
       "author": "Simon Hollerith et al.",
       "pi": "Johannes Zeiher",
@@ -7387,8 +7387,8 @@
         "qec",
         "software"
       ],
-      "cited": 35,
-      "score": 35,
+      "cited": 38,
+      "score": 38,
       "title": "Efficient realization of quantum algorithms with qudits",
       "author": "Anastasiia S. Nikolaeva et al.",
       "pi": "Aleksey K. Fedorov",
@@ -7402,8 +7402,8 @@
         "gate",
         "qec"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 31,
+      "score": 31,
       "title": "Composite Short-path Nonadiabatic Holonomic Quantum Gates",
       "author": "Yan Liang et al.",
       "pi": "Zheng-Yuan Xue",
@@ -7445,8 +7445,8 @@
       "fields": [
         "net"
       ],
-      "cited": 69,
-      "score": 69,
+      "cited": 70,
+      "score": 70,
       "title": "Quantum-Logic Gate between Two Optical Photons with an Average Efficiency above 40%",
       "author": "Thomas Stolz et al.",
       "pi": "Stephan Dürr",
@@ -7459,8 +7459,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 73,
-      "score": 73,
+      "cited": 77,
+      "score": 77,
       "title": "Quantum reservoir computing using arrays of Rydberg atoms",
       "author": "Rodrigo Araiza Bravo et al.",
       "pi": "Susanne F. Yelin",
@@ -7502,8 +7502,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 105,
-      "score": 105,
+      "cited": 110,
+      "score": 110,
       "title": "Ultrafast energy exchange between two single Rydberg atoms on the nanosecond timescale",
       "author": "Yeelai Chew et al.",
       "pi": "Kenji Ohmori",
@@ -7550,8 +7550,8 @@
         "sim",
         "species"
       ],
-      "cited": 114,
-      "score": 114,
+      "cited": 116,
+      "score": 116,
       "title": "Long-lived Bell states in an array of optical clock qubits",
       "author": "Nathan Schine et al.",
       "pi": "Adam M. Kaufman",
@@ -7579,8 +7579,8 @@
       "fields": [
         "species"
       ],
-      "cited": 63,
-      "score": 63,
+      "cited": 65,
+      "score": 65,
       "title": "An optical tweezer array of ground-state polar molecules",
       "author": "Jessie T. Zhang et al.",
       "pi": "Kang-Kuen Ni",
@@ -7610,8 +7610,8 @@
         "scale",
         "sim"
       ],
-      "cited": 11,
-      "score": 11,
+      "cited": 12,
+      "score": 12,
       "title": "A quantum processor based on coherent transport of entangled atom arrays",
       "author": "Dolev Bluvstein et al.",
       "pi": "Mikhail D. Lukin",
@@ -7656,8 +7656,8 @@
         "sim",
         "species"
       ],
-      "cited": 153,
-      "score": 153,
+      "cited": 157,
+      "score": 157,
       "title": "Ytterbium nuclear-spin qubits in an optical tweezer array",
       "author": "Alec Jenkins et al.",
       "pi": "Adam M. Kaufman",
@@ -7671,8 +7671,8 @@
         "gate",
         "species"
       ],
-      "cited": 120,
-      "score": 120,
+      "cited": 122,
+      "score": 122,
       "title": "Universal gate operations on nuclear spin qubits in an optical tweezer array of $^{171}$Yb atoms",
       "author": "Shuo Ma et al.",
       "pi": "Jeff D Thompson",
@@ -7715,8 +7715,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 67,
-      "score": 67,
+      "cited": 68,
+      "score": 68,
       "title": "Sequential generation of multiphoton entanglement with a Rydberg superatom",
       "author": "Chao-Wei Yang et al.",
       "pi": "Jian-Wei Pan",
@@ -7743,8 +7743,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 45,
-      "score": 45,
+      "cited": 46,
+      "score": 46,
       "title": "Bulk and Boundary Quantum Phase Transitions in a Square Rydberg Atom Array",
       "author": "Marcin Kalinowski et al.",
       "pi": "Soonwon Choi",
@@ -7815,8 +7815,8 @@
         "opt",
         "species"
       ],
-      "cited": 533,
-      "score": 533,
+      "cited": 544,
+      "score": 544,
       "title": "Demonstration of multi-qubit entanglement and algorithms on a programmable neutral atom quantum computer",
       "author": "T. M. Graham et al.",
       "pi": "M. Saffman",
@@ -7857,8 +7857,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 171,
-      "score": 171,
+      "cited": 172,
+      "score": 172,
       "title": "Observation of many-body scarring in a Bose--Hubbard quantum simulator",
       "author": "Guo-Xian Su et al.",
       "pi": "Jian-Wei Pan",
@@ -7871,8 +7871,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 37,
-      "score": 37,
+      "cited": 38,
+      "score": 38,
       "title": "Quantum Information Scrambling in Quantum Many-body Scarred Systems",
       "author": "Dong Yuan et al.",
       "pi": "Dong-Ling Deng",
@@ -7902,8 +7902,8 @@
         "qec",
         "species"
       ],
-      "cited": 204,
-      "score": 204,
+      "cited": 212,
+      "score": 212,
       "title": "Erasure conversion for fault-tolerant quantum computing in alkaline earth Rydberg atom arrays",
       "author": "Yue Wu et al.",
       "pi": "Jeff D Thompson",
@@ -7959,8 +7959,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 31,
-      "score": 31,
+      "cited": 32,
+      "score": 32,
       "title": "Single temporal-pulse-modulated parameterized controlled-phase gate for Rydberg atoms",
       "author": "X. X. Li et al.",
       "pi": "Weibin Li",
@@ -7987,8 +7987,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 9,
+      "score": 9,
       "title": "Motional decoherence in ultracold Rydberg atom quantum simulators of spin models",
       "author": "Zewen Zhang et al.",
       "pi": "Kaden R. A. Hazzard",
@@ -8016,8 +8016,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 95,
-      "score": 95,
+      "cited": 96,
+      "score": 96,
       "title": "Tweezer-programmable 2D quantum walks in a Hubbard-regime lattice",
       "author": "Aaron W. Young et al.",
       "pi": "Adam M. Kaufman",
@@ -8031,8 +8031,8 @@
         "net",
         "species"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 31,
+      "score": 31,
       "title": "An architecture for quantum networking of neutral atom processors",
       "author": "C. B. Young et al.",
       "pi": "M. Saffman",
@@ -8062,8 +8062,8 @@
         "scale",
         "species"
       ],
-      "cited": 34,
-      "score": 34,
+      "cited": 36,
+      "score": 36,
       "title": "Narrow-line imaging of single strontium atoms in shallow optical tweezers",
       "author": "Alexander Urech et al.",
       "pi": "Florian Schreck",
@@ -8107,8 +8107,8 @@
         "gate",
         "opt"
       ],
-      "cited": 439,
-      "score": 439,
+      "cited": 447,
+      "score": 447,
       "title": "Quantum Optimization of Maximum Independent Set using Rydberg Atom Arrays",
       "author": "Sepehr Ebadi et al.",
       "pi": "Mikhail D. Lukin",
@@ -8121,8 +8121,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 53,
-      "score": 53,
+      "cited": 54,
+      "score": 54,
       "title": "Triangular lattice quantum dimer model with variable dimer density",
       "author": "Zheng Yan et al.",
       "pi": "Zi Yang Meng",
@@ -8192,8 +8192,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 49,
-      "score": 49,
+      "cited": 51,
+      "score": 51,
       "title": "Quantum simulation of Ising spins on Platonic graphs",
       "author": "Andrew Byun et al.",
       "pi": "Jaewook Ahn",
@@ -8220,8 +8220,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 31,
+      "score": 31,
       "title": "Manipulating synthetic gauge fluxes via multicolor dressing of Rydberg-atom arrays",
       "author": "Xiaoling Wu et al.",
       "pi": "Li You",
@@ -8262,8 +8262,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 43,
-      "score": 43,
+      "cited": 45,
+      "score": 45,
       "title": "Robust quantum many-body scars in lattice gauge theories",
       "author": "Jad C. Halimeh et al.",
       "pi": "Annabelle Bohrdt",
@@ -8320,8 +8320,8 @@
         "sim",
         "species"
       ],
-      "cited": 13,
-      "score": 13,
+      "cited": 14,
+      "score": 14,
       "title": "Efficient two-dimensional defect-free dual-species atom arrays rearrangement algorithm with near-fewest atom moves",
       "author": "Zhi-Jin Tao et al.",
       "pi": "Ming-Sheng Zhan",
@@ -8334,8 +8334,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 8,
+      "score": 8,
       "title": "Correlation spectroscopy with multi-qubit-enhanced phase estimation",
       "author": "H. Hainzer et al.",
       "pi": "C. F. Roos",
@@ -8391,8 +8391,8 @@
         "gate",
         "sim"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 144,
+      "score": 144,
       "title": "Hardware efficient quantum simulation of non-abelian gauge theories with qudits on Rydberg platforms",
       "author": "Daniel González-Cuadra et al.",
       "pi": "Peter Zoller",
@@ -8420,8 +8420,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 28,
-      "score": 28,
+      "cited": 29,
+      "score": 29,
       "title": "Hybrid discrete-continuous truncated Wigner approximation for driven, dissipative spin systems",
       "author": "Christopher D. Mink et al.",
       "pi": "Michael Fleischhauer",
@@ -8434,8 +8434,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 34,
+      "score": 34,
       "title": "Quantum spin liquids bootstrapped from Ising criticality in Rydberg arrays",
       "author": "Kevin Slagle et al.",
       "pi": "Jason Alicea",
@@ -8448,8 +8448,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 53,
-      "score": 53,
+      "cited": 54,
+      "score": 54,
       "title": "Emergent $\\mathbb{Z}_2$ gauge theories and topological excitations in Rydberg atom arrays",
       "author": "Rhine Samajdar et al.",
       "pi": "Subir Sachdev",
@@ -8479,8 +8479,8 @@
         "readout",
         "species"
       ],
-      "cited": 45,
-      "score": 45,
+      "cited": 46,
+      "score": 46,
       "title": "Quantum computation in a hybrid array of molecules and Rydberg atoms",
       "author": "Chi Zhang et al.",
       "pi": "M. R. Tarbutt",
@@ -8493,8 +8493,8 @@
       "fields": [
         "readout"
       ],
-      "cited": 37,
-      "score": 37,
+      "cited": 39,
+      "score": 39,
       "title": "Enriching the quantum toolbox of ultracold molecules with Rydberg atoms",
       "author": "Kenneth Wang et al.",
       "pi": "Kang-Kuen Ni",
@@ -8521,8 +8521,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 18,
-      "score": 18,
+      "cited": 20,
+      "score": 20,
       "title": "Quantum Hall states for Rydberg atoms with laser-assisted dipole-dipole interactions",
       "author": "Tian-Hua Yang et al.",
       "pi": "Xiong-Jun Liu",
@@ -8537,8 +8537,8 @@
         "sim",
         "species"
       ],
-      "cited": 34,
-      "score": 34,
+      "cited": 35,
+      "score": 35,
       "title": "High-resolution spectroscopy and single-photon Rydberg excitation of reconfigurable ytterbium atom tweezer arrays utilizing a metastable state",
       "author": "Daichi Okuno et al.",
       "pi": "Yoshiro Takahashi",
@@ -8756,8 +8756,8 @@
       "fields": [
         "net"
       ],
-      "cited": 55,
-      "score": 55,
+      "cited": 56,
+      "score": 56,
       "title": "Simultaneous cooling of all six degrees of freedom of an optically levitated nanoparticle by elliptic coherent scattering",
       "author": "Antonio Pontin et al.",
       "pi": "Peter F. Barker",
@@ -8771,8 +8771,8 @@
         "classical",
         "sim"
       ],
-      "cited": 23,
-      "score": 23,
+      "cited": 24,
+      "score": 24,
       "title": "Trimer states with $\\mathbb{Z}_3$ topological order in Rydberg atom arrays",
       "author": "Giacomo Giudice et al.",
       "pi": "Giuliano Giudici",
@@ -8786,8 +8786,8 @@
         "classical",
         "sim"
       ],
-      "cited": 36,
-      "score": 36,
+      "cited": 37,
+      "score": 37,
       "title": "Benchmarking Quantum Simulators using Ergodic Quantum Dynamics",
       "author": "Daniel K. Mark et al.",
       "pi": "Soonwon Choi",
@@ -8800,8 +8800,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 20,
-      "score": 20,
+      "cited": 22,
+      "score": 22,
       "title": "Neutral atom entanglement using adiabatic Rydberg dressing",
       "author": "Anupam Mitra et al.",
       "pi": "Ivan H. Deutsch",
@@ -8829,8 +8829,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 31,
+      "score": 31,
       "title": "Gauge-theoretic origin of Rydberg quantum spin liquids",
       "author": "P. S. Tarabunga et al.",
       "pi": "M. Dalmonte",
@@ -8843,8 +8843,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 125,
-      "score": 125,
+      "cited": 127,
+      "score": 127,
       "title": "An Optical Atomic Clock Based on a Highly Charged Ion",
       "author": "Steven A. King et al.",
       "pi": "Piet O. Schmidt",
@@ -8860,8 +8860,8 @@
         "readout",
         "scale"
       ],
-      "cited": 102,
-      "score": 102,
+      "cited": 103,
+      "score": 103,
       "title": "Mid-circuit cavity measurement in a neutral atom array",
       "author": "Emma Deist et al.",
       "pi": "Dan M. Stamper-Kurn",
@@ -8906,8 +8906,8 @@
         "gate",
         "sim"
       ],
-      "cited": 22,
-      "score": 22,
+      "cited": 23,
+      "score": 23,
       "title": "High-dimensional SO(4)-symmetric Rydberg manifolds for quantum simulation",
       "author": "Andreas Kruckenhauser et al.",
       "pi": "Peter Zoller",
@@ -9048,8 +9048,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 10,
-      "score": 10,
+      "cited": 11,
+      "score": 11,
       "title": "Parallel implementation of CNOT$^{N}$ and C$_2$NOT$^2$ gates via homonuclear and heteronuclear Förster interactions of Rydberg atoms",
       "author": "Ahmed M. Farouk et al.",
       "pi": "I. I. Ryabtsev",
@@ -9062,8 +9062,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 49,
-      "score": 49,
+      "cited": 51,
+      "score": 51,
       "title": "Spatially tunable spin interactions in neutral atom arrays",
       "author": "Lea-Marina Steinert et al.",
       "pi": "Christian Gross",
@@ -9134,8 +9134,8 @@
       "fields": [
         "readout"
       ],
-      "cited": 16,
-      "score": 16,
+      "cited": 17,
+      "score": 17,
       "title": "Image-charge detection of the Rydberg transition of electrons on superfluid helium confined in a microchannel structure",
       "author": "Shan Zou et al.",
       "pi": "Denis Konstantinov",
@@ -9148,8 +9148,8 @@
       "fields": [
         "net"
       ],
-      "cited": 72,
-      "score": 72,
+      "cited": 74,
+      "score": 74,
       "title": "Realization of strong coupling between deterministic single-atom arrays and a high-finesse miniature optical cavity",
       "author": "Yanxin Liu et al.",
       "pi": "Tiancai Zhang",
@@ -9206,8 +9206,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 27,
-      "score": 27,
+      "cited": 28,
+      "score": 28,
       "title": "Landau-Forbidden Quantum Criticality in Rydberg Quantum Simulators",
       "author": "Jong Yeon Lee et al.",
       "pi": "Soonwon Choi",
@@ -9220,8 +9220,8 @@
       "fields": [
         "net"
       ],
-      "cited": 95,
-      "score": 95,
+      "cited": 97,
+      "score": 97,
       "title": "A subwavelength atomic array switched by a single Rydberg atom",
       "author": "Kritsana Srakaew et al.",
       "pi": "Johannes Zeiher",
@@ -9249,8 +9249,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 182,
-      "score": 182,
+      "cited": 193,
+      "score": 193,
       "title": "Continuous Symmetry Breaking in a Two-dimensional Rydberg Array",
       "author": "Cheng Chen et al.",
       "pi": "Antoine Browaeys",
@@ -9408,8 +9408,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 32,
-      "score": 32,
+      "cited": 33,
+      "score": 33,
       "title": "Entanglement filter with Rydberg atoms",
       "author": "Gen-Sheng Ye et al.",
       "pi": "Lin Li",
@@ -9422,8 +9422,8 @@
       "fields": [
         "opt"
       ],
-      "cited": 122,
-      "score": 122,
+      "cited": 124,
+      "score": 124,
       "title": "Quantum optimization with arbitrary connectivity using Rydberg atom arrays",
       "author": "Minh-Thi Nguyen et al.",
       "pi": "Hannes Pichler",
@@ -9494,8 +9494,8 @@
         "clock",
         "sim"
       ],
-      "cited": 18,
-      "score": 18,
+      "cited": 19,
+      "score": 19,
       "title": "Millisecond-lived circular Rydberg atoms in a room-temperature experiment",
       "author": "Haiteng Wu et al.",
       "pi": "Sébastien Gleyzes",
@@ -9509,8 +9509,8 @@
         "qec",
         "sim"
       ],
-      "cited": 21,
-      "score": 21,
+      "cited": 23,
+      "score": 23,
       "title": "Enhancing Detection of Topological Order by Local Error Correction",
       "author": "Iris Cong et al.",
       "pi": "Mikhail D. Lukin",
@@ -9523,8 +9523,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 12,
-      "score": 12,
+      "cited": 13,
+      "score": 13,
       "title": "Off-resonant modulated driving gate protocols for two-photon ground-Rydberg transition and finite Rydberg blockade strength",
       "author": "Yuan Sun",
       "pi": "Yuan Sun",
@@ -9537,8 +9537,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 44,
-      "score": 44,
+      "cited": 45,
+      "score": 45,
       "title": "Superdiffusive Energy Transport in Kinetically Constrained Models",
       "author": "Marko Ljubotina et al.",
       "pi": "Zlatko Papić",
@@ -9567,8 +9567,8 @@
         "classical",
         "sim"
       ],
-      "cited": 15,
-      "score": 15,
+      "cited": 16,
+      "score": 16,
       "title": "State Preparation in the Heisenberg Model through Adiabatic Spiraling",
       "author": "Anthony N. Ciavarella et al.",
       "pi": "Martin J. Savage",
@@ -9582,8 +9582,8 @@
         "gate",
         "opt"
       ],
-      "cited": 33,
-      "score": 33,
+      "cited": 34,
+      "score": 34,
       "title": "Rydberg blockade based parity quantum optimization",
       "author": "Martin Lanthaler et al.",
       "pi": "Wolfgang Lechner",
@@ -9597,8 +9597,8 @@
         "gate",
         "sim"
       ],
-      "cited": 133,
-      "score": 133,
+      "cited": 135,
+      "score": 135,
       "title": "On-Demand Entanglement of Molecules in a Reconfigurable Optical Tweezer Array",
       "author": "Connor M. Holland et al.",
       "pi": "Lawrence W. Cheuk",
@@ -9613,8 +9613,8 @@
         "qec",
         "species"
       ],
-      "cited": 51,
-      "score": 51,
+      "cited": 53,
+      "score": 53,
       "title": "Optimizing Rydberg Gates for Logical Qubit Performance",
       "author": "Sven Jandura et al.",
       "pi": "Guido Pupillo",
@@ -9641,8 +9641,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 32,
-      "score": 32,
+      "cited": 33,
+      "score": 33,
       "title": "Protocols for Rydberg entangling gates featuring robustness against quasi-static errors",
       "author": "Charles Fromonteil et al.",
       "pi": "Hannes Pichler",
@@ -9655,8 +9655,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 9,
+      "score": 9,
       "title": "Optical Two-dimensional Coherent Spectroscopy of Cold Atoms",
       "author": "Danfu Liang et al.",
       "pi": "Hebin Li",
@@ -9711,8 +9711,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 57,
-      "score": 57,
+      "cited": 59,
+      "score": 59,
       "title": "Non-Abelian Floquet Spin Liquids in a Digital Rydberg Simulator",
       "author": "Marcin Kalinowski et al.",
       "pi": "Mikhail D. Lukin",
@@ -9726,8 +9726,8 @@
         "net",
         "sim"
       ],
-      "cited": 15,
-      "score": 15,
+      "cited": 16,
+      "score": 16,
       "title": "Single atom in a superoscillatory optical trap",
       "author": "Hamim Mahmud Rivy et al.",
       "pi": "David Wilkowski",
@@ -9831,8 +9831,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Quantum tomography of Rydberg atom graphs by configurable ancillas",
       "author": "Kangheun Kim et al.",
       "pi": "Jaewook Ahn",
@@ -9861,8 +9861,8 @@
         "sim",
         "species"
       ],
-      "cited": 125,
-      "score": 125,
+      "cited": 126,
+      "score": 126,
       "title": "Dipolar spin-exchange and entanglement between molecules in an optical tweezer array",
       "author": "Yicheng Bao et al.",
       "pi": "John M. Doyle",
@@ -10033,8 +10033,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 20,
-      "score": 20,
+      "cited": 22,
+      "score": 22,
       "title": "Financial Risk Management on a Neutral Atom Quantum Processor",
       "author": "Lucas Leclerc et al.",
       "pi": "Didier M'tamon",
@@ -10091,8 +10091,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 75,
-      "score": 75,
+      "cited": 76,
+      "score": 76,
       "title": "Quantum logic and entanglement by neutral Rydberg atoms: methods and fidelity",
       "author": "Xiao-Feng Shi",
       "pi": "Xiao-Feng Shi",
@@ -10122,8 +10122,8 @@
         "sim",
         "species"
       ],
-      "cited": 29,
-      "score": 29,
+      "cited": 30,
+      "score": 30,
       "title": "Qudit entanglers using quantum optimal control",
       "author": "Sivaprasad Omanakuttan et al.",
       "pi": "Ivan H Deutsch",
@@ -10137,8 +10137,8 @@
         "gate",
         "species"
       ],
-      "cited": 39,
-      "score": 39,
+      "cited": 41,
+      "score": 41,
       "title": "Robust control and optimal Rydberg states for neutral atom two-qubit gates",
       "author": "Madhav Mohan et al.",
       "pi": "Servaas Kokkelmans",
@@ -10209,8 +10209,8 @@
         "classical",
         "sim"
       ],
-      "cited": 18,
-      "score": 18,
+      "cited": 20,
+      "score": 20,
       "title": "Bridging quantum criticality via many-body scarring",
       "author": "Aiden Daniel et al.",
       "pi": "Zlatko Papić",
@@ -10224,8 +10224,8 @@
         "scale",
         "sim"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 7,
+      "score": 7,
       "title": "An accordion superlattice for controlling atom separation in optical potentials",
       "author": "Simon Wili et al.",
       "pi": "Konrad Viebahn",
@@ -10266,8 +10266,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 12,
-      "score": 12,
+      "cited": 14,
+      "score": 14,
       "title": "Quantum spin ice in three-dimensional Rydberg atom arrays",
       "author": "Jeet Shah et al.",
       "pi": "Victor Galitski",
@@ -10366,8 +10366,8 @@
         "gate",
         "readout"
       ],
-      "cited": 33,
-      "score": 33,
+      "cited": 34,
+      "score": 34,
       "title": "Randomized Benchmarking using Non-Destructive Readout in a 2D Atom Array",
       "author": "B. Nikolov et al.",
       "pi": "J. D. Pritchard",
@@ -10411,8 +10411,8 @@
         "qec",
         "species"
       ],
-      "cited": 66,
-      "score": 66,
+      "cited": 71,
+      "score": 71,
       "title": "High threshold codes for neutral atom qubits with biased erasure errors",
       "author": "Kaavya Sahay et al.",
       "pi": "Shruti Puri",
@@ -10425,8 +10425,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 21,
-      "score": 21,
+      "cited": 24,
+      "score": 24,
       "title": "Rabi-error and Blockade-error-resilient All-Geometric Rydberg Quantum Gates",
       "author": "S. -L. Su et al.",
       "pi": "M. Feng",
@@ -10454,8 +10454,8 @@
         "gate",
         "readout"
       ],
-      "cited": 44,
-      "score": 44,
+      "cited": 46,
+      "score": 46,
       "title": "Measurement-altered Ising quantum criticality",
       "author": "Sara Murciano et al.",
       "pi": "Jason Alicea",
@@ -10468,8 +10468,8 @@
       "fields": [
         "net"
       ],
-      "cited": 12,
-      "score": 12,
+      "cited": 13,
+      "score": 13,
       "title": "Universal approach for quantum interfaces with atomic arrays",
       "author": "Yakov Solomons et al.",
       "pi": "Ephraim Shahmoon",
@@ -10512,8 +10512,8 @@
       "fields": [
         "net"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Proposal of ensemble qubits with two-atom decay",
       "author": "Wei Qin et al.",
       "pi": "Franco Nori",
@@ -10542,8 +10542,8 @@
       "fields": [
         "net"
       ],
-      "cited": 88,
-      "score": 88,
+      "cited": 96,
+      "score": 96,
       "title": "Continuous wideband microwave-to-optical converter based on room-temperature Rydberg atoms",
       "author": "Sebastian Borówka et al.",
       "pi": "Michał Parniak",
@@ -10571,8 +10571,8 @@
         "scale",
         "sim"
       ],
-      "cited": 21,
-      "score": 21,
+      "cited": 22,
+      "score": 22,
       "title": "Dark-state enhanced loading of an optical tweezer array",
       "author": "Adam L. Shaw et al.",
       "pi": "Manuel Endres",
@@ -10627,8 +10627,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 13,
-      "score": 13,
+      "cited": 15,
+      "score": 15,
       "title": "Impact of decoherence on the fidelity of quantum gates leaving the computational subspace",
       "author": "Tahereh Abad et al.",
       "pi": "Göran Johansson",
@@ -10641,8 +10641,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 14,
-      "score": 14,
+      "cited": 15,
+      "score": 15,
       "title": "Quantum Programming of the Satisfiability Problem with Rydberg Atom Graphs",
       "author": "Seokho Jeong et al.",
       "pi": "Jaewook Ahn",
@@ -10657,8 +10657,8 @@
         "sim",
         "species"
       ],
-      "cited": 11,
-      "score": 11,
+      "cited": 12,
+      "score": 12,
       "title": "Quantum simulation of the central spin model with a Rydberg atom and polar molecules in optical tweezers",
       "author": "Jacek Dobrzyniecki et al.",
       "pi": "Michał Tomza",
@@ -10672,8 +10672,8 @@
         "sim",
         "software"
       ],
-      "cited": 13,
-      "score": 13,
+      "cited": 14,
+      "score": 14,
       "title": "SimuQ: A Framework for Programming Quantum Hamiltonian Simulation with Analog Compilation",
       "author": "Yuxiang Peng et al.",
       "pi": "Xiaodi Wu",
@@ -10715,8 +10715,8 @@
         "gate",
         "species"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 35,
+      "score": 35,
       "title": "Observation of Rydberg blockade due to the charge-dipole interaction between an atom and a polar molecule",
       "author": "Alexander Guttridge et al.",
       "pi": "Simon L. Cornish",
@@ -10729,8 +10729,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 87,
-      "score": 87,
+      "cited": 89,
+      "score": 89,
       "title": "Fermionic quantum processing with programmable neutral atom arrays",
       "author": "Daniel González-Cuadra et al.",
       "pi": "Peter Zoller",
@@ -10744,8 +10744,8 @@
         "clock",
         "sim"
       ],
-      "cited": 122,
-      "score": 122,
+      "cited": 128,
+      "score": 128,
       "title": "Scalable spin squeezing in a dipolar Rydberg atom array",
       "author": "Guillaume Bornet et al.",
       "pi": "Antoine Browaeys",
@@ -10758,8 +10758,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 140,
-      "score": 140,
+      "cited": 147,
+      "score": 147,
       "title": "Realizing spin squeezing with Rydberg interactions in a programmable optical clock",
       "author": "William J. Eckner et al.",
       "pi": "Adam M. Kaufman",
@@ -10772,8 +10772,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 18,
-      "score": 18,
+      "cited": 19,
+      "score": 19,
       "title": "Highly resolved spectral functions of two-dimensional systems with neural quantum states",
       "author": "Tiago Mendes-Santos et al.",
       "pi": "Markus Heyl",
@@ -10800,8 +10800,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 55,
-      "score": 55,
+      "cited": 56,
+      "score": 56,
       "title": "Fermion-qudit quantum processors for simulating lattice gauge theories with matter",
       "author": "Torsten V. Zache et al.",
       "pi": "Peter Zoller",
@@ -10829,8 +10829,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 60,
-      "score": 60,
+      "cited": 65,
+      "score": 65,
       "title": "Spin Squeezing by Rydberg Dressing in an Array of Atomic Ensembles",
       "author": "Jacob A. Hines et al.",
       "pi": "Monika Schleier-Smith",
@@ -10844,8 +10844,8 @@
         "qec",
         "readout"
       ],
-      "cited": 72,
-      "score": 72,
+      "cited": 74,
+      "score": 74,
       "title": "Mid-circuit measurements on a single species neutral alkali atom quantum processor",
       "author": "T. M. Graham et al.",
       "pi": "M. Saffman",
@@ -10858,8 +10858,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 16,
-      "score": 16,
+      "cited": 17,
+      "score": 17,
       "title": "Spin-motion coupling in a circular Rydberg state quantum simulator: case of two atoms",
       "author": "Paul Méhaignerie et al.",
       "pi": "Guillaume Roux",
@@ -10887,8 +10887,8 @@
       "fields": [
         "net"
       ],
-      "cited": 29,
-      "score": 29,
+      "cited": 32,
+      "score": 32,
       "title": "High-fidelity interconversion between Greenberger-Horne-Zeilinger and $W$ states through Floquet-Lindblad engineering in Rydberg atom arrays",
       "author": "X. Q. Shao et al.",
       "pi": "Weibin Li",
@@ -11001,8 +11001,8 @@
       "fields": [
         "net"
       ],
-      "cited": 105,
-      "score": 105,
+      "cited": 108,
+      "score": 108,
       "title": "Quantum networks with neutral atom processing nodes",
       "author": "Jacob P. Covey et al.",
       "pi": "Hannes Bernien",
@@ -11015,8 +11015,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 25,
-      "score": 25,
+      "cited": 26,
+      "score": 26,
       "title": "Array of Individual Circular Rydberg Atoms Trapped in Optical Tweezers",
       "author": "Brice Ravon et al.",
       "pi": "Clément Sayrin",
@@ -11030,8 +11030,8 @@
         "gate",
         "qec"
       ],
-      "cited": 498,
-      "score": 498,
+      "cited": 512,
+      "score": 512,
       "title": "High-fidelity parallel entangling gates on a neutral atom quantum computer",
       "author": "Simon J. Evered et al.",
       "pi": "Mikhail D. Lukin",
@@ -11114,8 +11114,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 13,
-      "score": 13,
+      "cited": 14,
+      "score": 14,
       "title": "Dynamical localization transition of string breaking in quantum spin chains",
       "author": "Roberto Verdel et al.",
       "pi": "Markus Heyl",
@@ -11157,8 +11157,8 @@
         "qec",
         "software"
       ],
-      "cited": 109,
-      "score": 109,
+      "cited": 111,
+      "score": 111,
       "title": "Neutral Atom Quantum Computing Hardware: Performance and End-User Perspective",
       "author": "Karen Wintersperger et al.",
       "pi": "Sebastian Luber",
@@ -11205,8 +11205,8 @@
         "sim",
         "species"
       ],
-      "cited": 138,
-      "score": 138,
+      "cited": 144,
+      "score": 144,
       "title": "Erasure conversion in a high-fidelity Rydberg quantum simulator",
       "author": "Pascal Scholl et al.",
       "pi": "Manuel Endres",
@@ -11265,8 +11265,8 @@
         "sim",
         "species"
       ],
-      "cited": 221,
-      "score": 221,
+      "cited": 228,
+      "score": 228,
       "title": "High-fidelity gates with mid-circuit erasure conversion in a metastable neutral atom qubit",
       "author": "Shuo Ma et al.",
       "pi": "Jeff D. Thompson",
@@ -11308,8 +11308,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 39,
+      "score": 39,
       "title": "Quantum state complexity meets many-body scars",
       "author": "Sourav Nandy et al.",
       "pi": "Aritra Banerjee",
@@ -11324,8 +11324,8 @@
         "scale",
         "sim"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "Measuring Non-local Brane Order with Error-corrected Parity Snapshots",
       "author": "Junhyeok Hur et al.",
       "pi": "Jae-yoon Choi",
@@ -11338,8 +11338,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 9,
+      "score": 9,
       "title": "Leveraging static quantum many-body scars into period-doubled responses",
       "author": "Wentai Deng et al.",
       "pi": "Zhi-Cheng Yang",
@@ -11383,8 +11383,8 @@
         "readout",
         "scale"
       ],
-      "cited": 75,
-      "score": 75,
+      "cited": 76,
+      "score": 76,
       "title": "Mid-circuit qubit measurement and rearrangement in a $^{171}$Yb atomic array",
       "author": "M. A. Norcia et al.",
       "pi": "B. J. Bloom",
@@ -11398,8 +11398,8 @@
         "gate",
         "species"
       ],
-      "cited": 31,
-      "score": 31,
+      "cited": 33,
+      "score": 33,
       "title": "Universal Quantum Computation in Globally Driven Rydberg Atom Arrays",
       "author": "Francesco Cesa et al.",
       "pi": "Hannes Pichler",
@@ -11443,8 +11443,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 23,
-      "score": 23,
+      "cited": 26,
+      "score": 26,
       "title": "Strongly interacting Rydberg atoms in synthetic dimensions with a magnetic flux",
       "author": "Tao Chen et al.",
       "pi": "Bryce Gadway",
@@ -11458,8 +11458,8 @@
         "sim",
         "species"
       ],
-      "cited": 95,
-      "score": 95,
+      "cited": 98,
+      "score": 98,
       "title": "Dipolar quantum solids emerging in a Hubbard quantum simulator",
       "author": "Lin Su et al.",
       "pi": "Markus Greiner",
@@ -11559,8 +11559,8 @@
         "gate",
         "sim"
       ],
-      "cited": 15,
-      "score": 15,
+      "cited": 16,
+      "score": 16,
       "title": "Proposal for simulating quantum spin models with the Dzyaloshinskii-Moriya interaction using Rydberg atoms and the construction of asymptotic quantum many-body scar states",
       "author": "Masaya Kunimi et al.",
       "pi": "Yusuke Kato",
@@ -11573,8 +11573,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 26,
-      "score": 26,
+      "cited": 27,
+      "score": 27,
       "title": "Quantum simulation of generic spin exchange models in Floquet-engineered Rydberg atom arrays",
       "author": "Naveen Nishad et al.",
       "pi": "Shai Tsesses",
@@ -11588,8 +11588,8 @@
         "gate",
         "species"
       ],
-      "cited": 21,
-      "score": 21,
+      "cited": 22,
+      "score": 22,
       "title": "Extended rotational coherence of polar molecules in an elliptically polarized trap",
       "author": "Annie J. Park et al.",
       "pi": "Kang-Kuen Ni",
@@ -11602,8 +11602,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 24,
-      "score": 24,
+      "cited": 26,
+      "score": 26,
       "title": "Floquet-Tailored Rydberg Interactions",
       "author": "Luheng Zhao et al.",
       "pi": "Huanqian Loh",
@@ -11734,8 +11734,8 @@
         "scale",
         "sim"
       ],
-      "cited": 32,
-      "score": 32,
+      "cited": 36,
+      "score": 36,
       "title": "Realization of an extremely anisotropic Heisenberg magnet in Rydberg atom arrays",
       "author": "Kangheun Kim et al.",
       "pi": "Jaewook Ahn",
@@ -11777,8 +11777,8 @@
       "fields": [
         "scale"
       ],
-      "cited": 33,
-      "score": 33,
+      "cited": 35,
+      "score": 35,
       "title": "An atomic boson sampler",
       "author": "Aaron W. Young et al.",
       "pi": "Adam M. Kaufman",
@@ -11791,8 +11791,8 @@
       "fields": [
         "scale"
       ],
-      "cited": 27,
-      "score": 27,
+      "cited": 29,
+      "score": 29,
       "title": "Quantum Sensing in Tweezer Arrays: Optical Magnetometry on an Individual-Atom Sensor Grid",
       "author": "Dominik Schäffner et al.",
       "pi": "Gerhard Birkl",
@@ -11805,8 +11805,8 @@
       "fields": [
         "net"
       ],
-      "cited": 4,
-      "score": 4,
+      "cited": 5,
+      "score": 5,
       "title": "Interference filter based external-cavity diode laser with combined dual interference filters and largely adjustable feedback range",
       "author": "Rui Chang et al.",
       "pi": "Junmin Wang",
@@ -11820,8 +11820,8 @@
         "classical",
         "opt"
       ],
-      "cited": 28,
-      "score": 28,
+      "cited": 30,
+      "score": 30,
       "title": "Hardness of the Maximum Independent Set Problem on Unit-Disk Graphs and Prospects for Quantum Speedups",
       "author": "Ruben S. Andrist et al.",
       "pi": "Helmut G. Katzgraber",
@@ -11866,8 +11866,8 @@
         "net",
         "sim"
       ],
-      "cited": 56,
-      "score": 56,
+      "cited": 57,
+      "score": 57,
       "title": "Super-radiant and Sub-radiant Cavity Scattering by Atom Arrays",
       "author": "Zhenjie Yan et al.",
       "pi": "Dan M. Stamper-Kurn",
@@ -11909,25 +11909,11 @@
       "fields": [
         "gate"
       ],
-      "cited": 11,
-      "score": 11,
+      "cited": 12,
+      "score": 12,
       "title": "Entangling quantum logic gates in neutral atoms via the microwave-driven spin-flip blockade",
       "author": "Vikas Buchemmavari et al.",
       "pi": "Ivan Deutsch",
-      "group": null
-    },
-    {
-      "id": "2308.01603",
-      "year": 2023,
-      "lane": "sim.eq",
-      "fields": [
-        "sim"
-      ],
-      "cited": 3,
-      "score": 3,
-      "title": "Active quantum flocks",
-      "author": "Reyhaneh Khasseh et al.",
-      "pi": "Markus Heyl",
       "group": null
     },
     {
@@ -11937,8 +11923,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 15,
-      "score": 15,
+      "cited": 16,
+      "score": 16,
       "title": "Enhancing variational Monte Carlo using a programmable quantum simulator",
       "author": "M. Schuyler Moss et al.",
       "pi": "Roger G. Melko",
@@ -11951,8 +11937,8 @@
       "fields": [
         "net"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 8,
+      "score": 8,
       "title": "Topologically protected subradiant cavity polaritons through linewidth narrowing enabled by dissipationless edge states",
       "author": "Yuwei Lu et al.",
       "pi": "Zeyang Liao",
@@ -11981,8 +11967,8 @@
         "opt",
         "sim"
       ],
-      "cited": 16,
-      "score": 16,
+      "cited": 17,
+      "score": 17,
       "title": "Solving optimization problems with local light shift encoding on Rydberg quantum annealers",
       "author": "Kapil Goswami et al.",
       "pi": "Peter Schmelcher",
@@ -11996,8 +11982,8 @@
         "classical",
         "sim"
       ],
-      "cited": 54,
-      "score": 54,
+      "cited": 58,
+      "score": 58,
       "title": "Benchmarking highly entangled states on a 60-atom analog quantum simulator",
       "author": "Adam L. Shaw et al.",
       "pi": "Manuel Endres",
@@ -12011,8 +11997,8 @@
         "qec",
         "scale"
       ],
-      "cited": 145,
-      "score": 145,
+      "cited": 151,
+      "score": 151,
       "title": "Constant-Overhead Fault-Tolerant Quantum Computation with Reconfigurable Atom Arrays",
       "author": "Qian Xu et al.",
       "pi": "Hengyun Zhou",
@@ -12026,8 +12012,8 @@
         "classical",
         "opt"
       ],
-      "cited": 37,
-      "score": 37,
+      "cited": 38,
+      "score": 38,
       "title": "Quantum-Informed Recursive Optimization Algorithms",
       "author": "Jernej Rudi Finžgar et al.",
       "pi": "Helmut G. Katzgraber",
@@ -12055,8 +12041,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 8,
+      "score": 8,
       "title": "Equilibrium dynamics of infinite-range quantum spin glasses in a field",
       "author": "Maria Tikhanovskaya et al.",
       "pi": "Rhine Samajdar",
@@ -12086,8 +12072,8 @@
         "sim",
         "species"
       ],
-      "cited": 55,
-      "score": 55,
+      "cited": 56,
+      "score": 56,
       "title": "High-fidelity detection of large-scale atom arrays in an optical lattice",
       "author": "Renhao Tao et al.",
       "pi": "Johannes Zeiher",
@@ -12185,8 +12171,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 10,
-      "score": 10,
+      "cited": 11,
+      "score": 11,
       "title": "Leveraging Analog Quantum Computing with Neutral Atoms for Solvent Configuration Prediction in Drug Discovery",
       "author": "Mauro D'Arcangelo et al.",
       "pi": "Jean-Philip Piquemal",
@@ -12199,8 +12185,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 25,
-      "score": 25,
+      "cited": 26,
+      "score": 26,
       "title": "Rydberg platform for non-ergodic chiral quantum dynamics",
       "author": "Riccardo J. Valencia-Tortora et al.",
       "pi": "Jamir Marino",
@@ -12228,8 +12214,8 @@
         "opt",
         "sim"
       ],
-      "cited": 14,
-      "score": 14,
+      "cited": 15,
+      "score": 15,
       "title": "Rydberg-atom graphs for quadratic unconstrained binary optimization problems",
       "author": "Andrew Byun et al.",
       "pi": "Jaewook Ahn",
@@ -12272,8 +12258,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 11,
-      "score": 11,
+      "cited": 12,
+      "score": 12,
       "title": "Controlling the interactions in a cold atom quantum impurity system",
       "author": "Thomas Hewitt et al.",
       "pi": "Giovanni Barontini",
@@ -12315,8 +12301,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 24,
-      "score": 24,
+      "cited": 25,
+      "score": 25,
       "title": "A scaled local gate controller for optically addressed qubits",
       "author": "Bichen Zhang et al.",
       "pi": "Jeff D. Thompson",
@@ -12331,8 +12317,8 @@
         "qec",
         "sim"
       ],
-      "cited": 65,
-      "score": 65,
+      "cited": 69,
+      "score": 69,
       "title": "Supercharged two-dimensional tweezer array with more than 1000 atomic qubits",
       "author": "Lars Pause et al.",
       "pi": "Gerhard Birkl",
@@ -12359,8 +12345,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 9,
+      "score": 9,
       "title": "Realization and detection of Kitaev quantum spin liquid with Rydberg atoms",
       "author": "Yi-Hong Chen et al.",
       "pi": "Xiong-Jun Liu",
@@ -12417,8 +12403,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 10,
-      "score": 10,
+      "cited": 11,
+      "score": 11,
       "title": "Rydberg atomtronic devices",
       "author": "Philip Kitson et al.",
       "pi": "Luigi Amico",
@@ -12459,8 +12445,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "Quantum Sensing with Topological-Paired Bound States",
       "author": "Tao Zhang et al.",
       "pi": "Xingze Qiu",
@@ -12503,8 +12489,8 @@
         "net",
         "species"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 9,
+      "score": 9,
       "title": "Optical pumping of ${\\mathrm{5s4d} ^1\\mathrm{D}_2}$ strontium atoms for laser cooling and imaging",
       "author": "Jens Samland et al.",
       "pi": "Benjamin Pasquiou",
@@ -12517,8 +12503,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 7,
+      "score": 7,
       "title": "Benchmarking a Neutral-Atom Quantum Computer",
       "author": "N. Wagner et al.",
       "pi": "M. Saffman",
@@ -12561,8 +12547,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 16,
-      "score": 16,
+      "cited": 21,
+      "score": 21,
       "title": "Spectroscopy of elementary excitations from quench dynamics in a dipolar XY Rydberg simulator",
       "author": "Cheng Chen et al.",
       "pi": "Antoine Browaeys",
@@ -12576,8 +12562,8 @@
         "opt",
         "sim"
       ],
-      "cited": 15,
-      "score": 15,
+      "cited": 17,
+      "score": 17,
       "title": "Quantum Computing Dataset of Maximum Independent Set Problem on King's Lattice of over Hundred Rydberg Atoms",
       "author": "Kangheun Kim et al.",
       "pi": "Jaewook Ahn",
@@ -12623,8 +12609,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 13,
-      "score": 13,
+      "cited": 16,
+      "score": 16,
       "title": "Strong Spin-Motion Coupling in the Ultrafast Dynamics of Rydberg Atoms",
       "author": "Vineet Bharti et al.",
       "pi": "Kenji Ohmori",
@@ -12637,8 +12623,8 @@
       "fields": [
         "readout"
       ],
-      "cited": 29,
-      "score": 29,
+      "cited": 30,
+      "score": 30,
       "title": "Erasure-cooling, control, and hyper-entanglement of motion in optical tweezers",
       "author": "Adam L. Shaw et al.",
       "pi": "Manuel Endres",
@@ -12652,8 +12638,8 @@
         "classical",
         "sim"
       ],
-      "cited": 9,
-      "score": 9,
+      "cited": 10,
+      "score": 10,
       "title": "Avalanche terahertz photon detection in a Rydberg tweezer array",
       "author": "Chris Nill et al.",
       "pi": "Igor Lesanovsky",
@@ -12666,8 +12652,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 10,
-      "score": 10,
+      "cited": 12,
+      "score": 12,
       "title": "Extended two-body Rydberg blockade interaction with off-resonant modulated driving",
       "author": "Yuan Sun",
       "pi": "Yuan Sun",
@@ -12722,8 +12708,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 30,
-      "score": 30,
+      "cited": 32,
+      "score": 32,
       "title": "Programmable Simulations of Molecules and Materials with Reconfigurable Quantum Processors",
       "author": "Nishad Maskara et al.",
       "pi": "Susanne F. Yelin",
@@ -12754,8 +12740,8 @@
         "readout",
         "sim"
       ],
-      "cited": 1044,
-      "score": 1044,
+      "cited": 1079,
+      "score": 1079,
       "title": "Logical quantum processor based on reconfigurable atom arrays",
       "author": "Dolev Bluvstein et al.",
       "pi": "Mikhail D. Lukin",
@@ -12768,8 +12754,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Critical behavior of lattice gauge theory Rydberg simulators from effective Hamiltonians",
       "author": "Jin Zhang et al.",
       "pi": "Yannick Meurice",
@@ -12811,8 +12797,8 @@
         "classical",
         "sim"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 8,
+      "score": 8,
       "title": "A Rydberg-atom approach to the integer factorization problem",
       "author": "Juyoung Park et al.",
       "pi": "Jaewook Ahn",
@@ -12853,8 +12839,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 9,
-      "score": 9,
+      "cited": 11,
+      "score": 11,
       "title": "Extending the coherence time limit of a single-alkali-atom qubit by suppressing phonon-jumping-induced decoherence",
       "author": "Zhuangzhuang Tian et al.",
       "pi": "Tiancai Zhang",
@@ -12909,8 +12895,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 9,
+      "score": 9,
       "title": "Unraveling PXP Many-Body Scars through Floquet Dynamics",
       "author": "Giuliano Giudici et al.",
       "pi": "Hannes Pichler",
@@ -12953,8 +12939,8 @@
         "clock",
         "gate"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 7,
+      "score": 7,
       "title": "Generation of complete graph states in a spin-$1/2$ Heisenberg chain with a globally optimized magnetic field",
       "author": "X. X. Li et al.",
       "pi": "X. Q. Shao",
@@ -12969,8 +12955,8 @@
         "qec",
         "species"
       ],
-      "cited": 49,
-      "score": 94,
+      "cited": 50,
+      "score": 92,
       "hot": true,
       "title": "High-rate and high-fidelity modular interconnects between neutral atom quantum processors",
       "author": "Yiyi Li et al.",
@@ -12985,8 +12971,8 @@
         "gate",
         "qec"
       ],
-      "cited": 27,
-      "score": 52,
+      "cited": 29,
+      "score": 54,
       "hot": true,
       "title": "Fault-tolerant quantum computation using large spin cat-codes",
       "author": "Sivaprasad Omanakuttan et al.",
@@ -13030,7 +13016,7 @@
         "scale"
       ],
       "cited": 4,
-      "score": 8,
+      "score": 7,
       "hot": true,
       "title": "Scheme for Deterministic Loading of Laser-Cooled Molecules into Optical Tweezers",
       "author": "Etienne F. Walraven et al.",
@@ -13045,8 +13031,8 @@
         "gate",
         "sim"
       ],
-      "cited": 30,
-      "score": 58,
+      "cited": 33,
+      "score": 61,
       "hot": true,
       "title": "Emergent Gauge Theory in Rydberg Atom Arrays",
       "author": "Yanting Cheng et al.",
@@ -13108,8 +13094,8 @@
         "sim",
         "species"
       ],
-      "cited": 75,
-      "score": 144,
+      "cited": 80,
+      "score": 148,
       "hot": true,
       "title": "A dual-species Rydberg array",
       "author": "Shraddha Anand et al.",
@@ -13125,8 +13111,8 @@
         "sim",
         "species"
       ],
-      "cited": 35,
-      "score": 67,
+      "cited": 37,
+      "score": 68,
       "hot": true,
       "title": "Long-Lived Circular Rydberg Qubits of Alkaline-Earth Atoms in Optical Tweezers",
       "author": "Christian Hölzl et al.",
@@ -13140,7 +13126,7 @@
       "fields": [
         "species"
       ],
-      "cited": 41,
+      "cited": 43,
       "score": 79,
       "hot": true,
       "title": "Coherent Control of the Fine-Structure Qubit in a Single Alkaline-Earth Atom",
@@ -13157,7 +13143,7 @@
         "species"
       ],
       "cited": 37,
-      "score": 71,
+      "score": 68,
       "hot": true,
       "title": "Enhanced quantum control of individual ultracold molecules using optical tweezer arrays",
       "author": "Daniel K. Ruttley et al.",
@@ -13171,8 +13157,8 @@
       "fields": [
         "species"
       ],
-      "cited": 20,
-      "score": 38,
+      "cited": 21,
+      "score": 39,
       "hot": true,
       "title": "Site-selective preparation and multi-state readout of molecules in optical tweezers",
       "author": "Lewis R. B. Picard et al.",
@@ -13234,7 +13220,7 @@
         "qec",
         "sim"
       ],
-      "cited": 72,
+      "cited": 75,
       "score": 138,
       "hot": true,
       "title": "Nonstabilizerness via matrix product states in the Pauli basis",
@@ -13309,8 +13295,8 @@
         "scale",
         "sim"
       ],
-      "cited": 65,
-      "score": 125,
+      "cited": 67,
+      "score": 124,
       "hot": true,
       "title": "Continuous operation of large-scale atom arrays in optical lattices",
       "author": "Flavien Gyger et al.",
@@ -13326,8 +13312,8 @@
         "gate",
         "opt"
       ],
-      "cited": 10,
-      "score": 10,
+      "cited": 12,
+      "score": 12,
       "title": "Mixed Integer Linear Programming Solver Using Benders Decomposition Assisted by Neutral Atom Quantum Processor",
       "author": "M. Yassine Naghmouchi et al.",
       "pi": "Wesley da Silva Coelho",
@@ -13340,8 +13326,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 2,
+      "score": 2,
       "title": "Fast entangling quantum gates with almost-resonant modulated driving",
       "author": "Xiayang Fan et al.",
       "pi": "Yuan Sun",
@@ -13412,8 +13398,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 8,
+      "score": 8,
       "title": "Quantized Thouless pumps protected by interactions in dimerized Rydberg tweezer arrays",
       "author": "Sergi Julià-Farré et al.",
       "pi": "Alexandre Dauphin",
@@ -13427,8 +13413,8 @@
         "gate",
         "sim"
       ],
-      "cited": 10,
-      "score": 10,
+      "cited": 11,
+      "score": 11,
       "title": "Quantum dimer models with Rydberg gadgets",
       "author": "Zhongda Zeng et al.",
       "pi": "Hannes Pichler",
@@ -13441,8 +13427,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 30,
-      "score": 58,
+      "cited": 32,
+      "score": 59,
       "hot": true,
       "title": "Enhancing a Many-body Dipolar Rydberg Tweezer Array with Arbitrary Local Controls",
       "author": "Guillaume Bornet et al.",
@@ -13459,7 +13445,7 @@
         "species"
       ],
       "cited": 16,
-      "score": 31,
+      "score": 30,
       "hot": true,
       "title": "An architecture for two-qubit encoding in neutral ytterbium-171 atoms",
       "author": "Zhubing Jia et al.",
@@ -13488,8 +13474,8 @@
         "clock",
         "species"
       ],
-      "cited": 3,
-      "score": 3,
+      "cited": 4,
+      "score": 4,
       "title": "Atomic clock interferometry using optical tweezers",
       "author": "Ilan Meltzer et al.",
       "pi": "Yoav Sagi",
@@ -13517,8 +13503,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 9,
+      "score": 9,
       "title": "Probing critical phenomena in open quantum systems using atom arrays",
       "author": "Fang Fang et al.",
       "pi": "Norman Y. Yao",
@@ -13533,8 +13519,8 @@
         "gate",
         "readout"
       ],
-      "cited": 63,
-      "score": 121,
+      "cited": 66,
+      "score": 122,
       "hot": true,
       "title": "Universal quantum operations and ancilla-based readout for tweezer clocks",
       "author": "Ran Finkelstein et al.",
@@ -13549,7 +13535,7 @@
         "clock",
         "gate"
       ],
-      "cited": 101,
+      "cited": 105,
       "score": 194,
       "hot": true,
       "title": "Multi-qubit gates and Schrödinger cat states in an optical clock",
@@ -13593,8 +13579,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Single-electron states of phosphorus-atom arrays in silicon",
       "author": "Maicol A. Ochoa et al.",
       "pi": "Garnett W. Bryant",
@@ -13622,8 +13608,8 @@
         "classical",
         "opt"
       ],
-      "cited": 13,
-      "score": 13,
+      "cited": 14,
+      "score": 14,
       "title": "Solving non-native combinatorial optimization problems using hybrid quantum-classical algorithms",
       "author": "Jonathan Wurtz et al.",
       "pi": "Sheng-Tao Wang",
@@ -13650,8 +13636,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 19,
-      "score": 36,
+      "cited": 20,
+      "score": 37,
       "hot": true,
       "title": "Robust teleportation of a surface code and cascade of topological quantum phase transitions",
       "author": "Finn Eckstein et al.",
@@ -13680,7 +13666,7 @@
         "gate",
         "sim"
       ],
-      "cited": 28,
+      "cited": 29,
       "score": 54,
       "hot": true,
       "title": "Observation of quantum thermalization restricted to Hilbert space fragments",
@@ -13696,7 +13682,7 @@
         "qec"
       ],
       "cited": 4,
-      "score": 8,
+      "score": 7,
       "hot": true,
       "title": "Effectiveness of the syndrome extraction circuit with flag qubits on IBM quantum hardware",
       "author": "Younghun Kim et al.",
@@ -13752,8 +13738,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 8,
+      "score": 8,
       "title": "Experimental signatures of Hilbert-space ergodicity: Universal bitstring distributions and applications in noise learning",
       "author": "Adam L. Shaw et al.",
       "pi": "Manuel Endres",
@@ -13769,8 +13755,8 @@
         "readout",
         "species"
       ],
-      "cited": 84,
-      "score": 161,
+      "cited": 93,
+      "score": 172,
       "hot": true,
       "title": "A tweezer array with 6100 highly coherent atomic qubits",
       "author": "Hannah J. Manetsch et al.",
@@ -13826,8 +13812,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 10,
+      "score": 10,
       "title": "Quantum walks and correlated dynamics in an interacting synthetic Rydberg lattice",
       "author": "Tao Chen et al.",
       "pi": "Jacob P. Covey",
@@ -13896,8 +13882,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 30,
-      "score": 58,
+      "cited": 33,
+      "score": 61,
       "hot": true,
       "title": "Fast single atom imaging for optical lattice arrays",
       "author": "Lin Su et al.",
@@ -13926,8 +13912,8 @@
       "fields": [
         "scale"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 7,
+      "score": 7,
       "title": "Anisotropic polarizability of Dy at 532 nm on the intercombination transition",
       "author": "Damien Bloch et al.",
       "pi": "Igor Ferrier-Barbut",
@@ -13954,8 +13940,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 17,
-      "score": 17,
+      "cited": 18,
+      "score": 18,
       "title": "Optimized measurement-free and fault-tolerant quantum error correction for neutral atoms",
       "author": "Stefano Veroni et al.",
       "pi": "Giacomo Giudice",
@@ -13983,8 +13969,8 @@
         "sim",
         "species"
       ],
-      "cited": 12,
-      "score": 12,
+      "cited": 13,
+      "score": 13,
       "title": "False vacuum decay and nucleation dynamics in neutral atom systems",
       "author": "Siva Darbha et al.",
       "pi": "Katherine Klymko",
@@ -14013,8 +13999,8 @@
         "qec",
         "scale"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Erasure-tolerance scheme for the surface codes on neutral atom quantum computers",
       "author": "Fumiyoshi Kobayashi et al.",
       "pi": "Shota Nagayama",
@@ -14028,8 +14014,8 @@
         "gate",
         "qec"
       ],
-      "cited": 22,
-      "score": 42,
+      "cited": 26,
+      "score": 48,
       "hot": true,
       "title": "High-rate quantum LDPC codes for long-range-connected neutral atom registers",
       "author": "Laura Pecorari et al.",
@@ -14057,8 +14043,9 @@
       "fields": [
         "qec"
       ],
-      "cited": 16,
-      "score": 16,
+      "cited": 20,
+      "score": 37,
+      "hot": true,
       "title": "Architecture for fast implementation of qLDPC codes with optimized Rydberg gates",
       "author": "C. Poole et al.",
       "pi": "M. Saffman",
@@ -14072,7 +14059,7 @@
         "qec"
       ],
       "cited": 4,
-      "score": 8,
+      "score": 7,
       "hot": true,
       "title": "Fault-tolerant compiling of classically hard IQP circuits on hypercubes",
       "author": "Dominik Hangleiter et al.",
@@ -14086,8 +14073,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 4,
+      "score": 4,
       "title": "Floquet geometric entangling gates in ground-state manifolds of Rydberg atoms",
       "author": "Hao-Wen Sun et al.",
       "pi": "Shi-Lei Su",
@@ -14158,8 +14145,8 @@
         "net",
         "sim"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 6,
+      "score": 6,
       "title": "Quantum search in many-body interacting system with long-range interaction",
       "author": "Fan Xing et al.",
       "pi": "Zeyang Liao",
@@ -14219,8 +14206,8 @@
         "gate",
         "readout"
       ],
-      "cited": 17,
-      "score": 33,
+      "cited": 19,
+      "score": 35,
       "hot": true,
       "title": "Circuit-based leakage-to-erasure conversion in a neutral atom quantum processor",
       "author": "Matthew N. H. Chow et al.",
@@ -14235,8 +14222,8 @@
         "gate",
         "opt"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 7,
+      "score": 7,
       "title": "Simulation of a feedback-based algorithm for quantum optimization for a realistic neutral atom system with an optimized small-angle controlled-phase gate",
       "author": "S. X. Li et al.",
       "pi": "X. Q. Shao",
@@ -14264,8 +14251,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 39,
-      "score": 75,
+      "cited": 46,
+      "score": 85,
       "hot": true,
       "title": "Quantum mixtures of ultracold gases of neutral atoms",
       "author": "Cosetta Baroni et al.",
@@ -14338,8 +14325,8 @@
         "classical",
         "sim"
       ],
-      "cited": 3,
-      "score": 3,
+      "cited": 4,
+      "score": 4,
       "title": "Finite-temperature Rydberg arrays: quantum phases and entanglement characterization",
       "author": "Nora Reinić et al.",
       "pi": "Simone Montangero",
@@ -14352,8 +14339,8 @@
       "fields": [
         "scale"
       ],
-      "cited": 44,
-      "score": 84,
+      "cited": 47,
+      "score": 87,
       "hot": true,
       "title": "Rearrangement of single atoms in a 2000-site optical tweezers array at cryogenic temperatures",
       "author": "Grégoire Pichard et al.",
@@ -14367,8 +14354,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 10,
-      "score": 10,
+      "cited": 12,
+      "score": 12,
       "title": "Parity-controlled gate in a two-dimensional neutral-atom array",
       "author": "F. Q. Guo et al.",
       "pi": "X. Q. Shao",
@@ -14381,8 +14368,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 5,
-      "score": 10,
+      "cited": 6,
+      "score": 11,
       "hot": true,
       "title": "Recurrent neural network wave functions for Rydberg atom arrays on kagome lattice",
       "author": "Mohamed Hibat-Allah et al.",
@@ -14398,7 +14385,7 @@
         "species"
       ],
       "cited": 4,
-      "score": 8,
+      "score": 7,
       "hot": true,
       "title": "Quadrupole coupling of circular Rydberg qubits to inner shell excitations",
       "author": "Moritz Wirth et al.",
@@ -14441,8 +14428,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 11,
-      "score": 21,
+      "cited": 12,
+      "score": 22,
       "hot": true,
       "title": "Transformer neural networks and quantum simulators: a hybrid approach for simulating strongly correlated systems",
       "author": "Hannah Lange et al.",
@@ -14530,8 +14517,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 3,
-      "score": 3,
+      "cited": 4,
+      "score": 4,
       "title": "Prethermalization in the PXP Model under Continuous Quasiperiodic Driving",
       "author": "Pinaki Dutta et al.",
       "pi": "Vishwanath Shukla",
@@ -14576,8 +14563,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 10,
+      "score": 10,
       "title": "A Rydberg atom based system for benchmarking mmWave automotive radar chips",
       "author": "Sebastian Borówka et al.",
       "pi": "Michał Parniak",
@@ -14675,8 +14662,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 9,
+      "score": 9,
       "title": "Realization of topological Thouless pumping in a synthetic Rydberg dimension",
       "author": "Martin Trautmann et al.",
       "pi": "Johannes Deiglmayr",
@@ -14708,8 +14695,8 @@
         "scale",
         "species"
       ],
-      "cited": 14,
-      "score": 27,
+      "cited": 15,
+      "score": 28,
       "hot": true,
       "title": "A hybrid atom tweezer array of nuclear spin and optical clock qubits",
       "author": "Yuma Nakamura et al.",
@@ -14741,8 +14728,8 @@
         "qec",
         "sim"
       ],
-      "cited": 16,
-      "score": 16,
+      "cited": 17,
+      "score": 17,
       "title": "Non-stabilizerness in kinetically-constrained Rydberg atom arrays",
       "author": "Ryan Smith et al.",
       "pi": "Andrew Hallam",
@@ -14769,8 +14756,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 15,
-      "score": 29,
+      "cited": 16,
+      "score": 30,
       "hot": true,
       "title": "Optical Tweezer Arrays of Erbium Atoms",
       "author": "D. S. Grün et al.",
@@ -14812,8 +14799,8 @@
       "fields": [
         "opt"
       ],
-      "cited": 3,
-      "score": 3,
+      "cited": 4,
+      "score": 4,
       "title": "Programming higher-order interactions of Rydberg atoms",
       "author": "Andrew Byun et al.",
       "pi": "Jaewook Ahn",
@@ -14842,8 +14829,8 @@
         "clock",
         "sim"
       ],
-      "cited": 48,
-      "score": 92,
+      "cited": 52,
+      "score": 96,
       "hot": true,
       "title": "Quantum coarsening and collective dynamics on a programmable simulator",
       "author": "Tom Manovitz et al.",
@@ -14930,8 +14917,8 @@
         "sim",
         "species"
       ],
-      "cited": 14,
-      "score": 27,
+      "cited": 16,
+      "score": 30,
       "hot": true,
       "title": "Uncovering Emergent Spacetime Supersymmetry with Rydberg Atom Arrays",
       "author": "Chengshu Li et al.",
@@ -14959,8 +14946,8 @@
       "fields": [
         "net"
       ],
-      "cited": 46,
-      "score": 88,
+      "cited": 49,
+      "score": 90,
       "hot": true,
       "title": "A quantum-network register assembled with optical tweezers in an optical cavity",
       "author": "Lukas Hartung et al.",
@@ -14990,7 +14977,7 @@
         "sim",
         "software"
       ],
-      "cited": 24,
+      "cited": 25,
       "score": 46,
       "hot": true,
       "title": "Hybrid Oscillator-Qubit Quantum Processors: Instruction Set Architectures, Abstract Machine Models, and Applications",
@@ -15007,8 +14994,8 @@
         "qec",
         "species"
       ],
-      "cited": 24,
-      "score": 46,
+      "cited": 27,
+      "score": 50,
       "hot": true,
       "title": "Scalable Networking of Neutral-Atom Qubits: Nanofiber-Based Approach for Multiprocessor Fault-Tolerant Quantum Computer",
       "author": "Shinichi Sunami et al.",
@@ -15036,8 +15023,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 9,
+      "score": 9,
       "title": "Beyond Energy: Teleporting Current, Charge, and More",
       "author": "Kazuki Ikeda",
       "pi": "Kazuki Ikeda",
@@ -15108,8 +15095,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 12,
-      "score": 12,
+      "cited": 14,
+      "score": 14,
       "title": "Fast and Parallelizable Logical Computation with Homological Product Codes",
       "author": "Qian Xu et al.",
       "pi": "Liang Jiang",
@@ -15139,8 +15126,8 @@
         "qec",
         "sim"
       ],
-      "cited": 61,
-      "score": 117,
+      "cited": 64,
+      "score": 118,
       "hot": true,
       "title": "Benchmarking and fidelity response theory of high-fidelity Rydberg entangling gates",
       "author": "Richard Bing-Shiun Tsai et al.",
@@ -15154,7 +15141,7 @@
       "fields": [
         "scale"
       ],
-      "cited": 22,
+      "cited": 23,
       "score": 42,
       "hot": true,
       "title": "Ultra-precise holographic optical tweezers array",
@@ -15183,8 +15170,8 @@
       "fields": [
         "species"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Engineering Rydberg-pair interactions in divalent atoms with hyperfine-split ionization thresholds",
       "author": "Frederic Hummel et al.",
       "pi": "Ming Li",
@@ -15256,8 +15243,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "Dark spin-cats as biased qubits",
       "author": "Andreas Kruckenhauser et al.",
       "pi": "Peter Zoller",
@@ -15315,8 +15302,8 @@
       "fields": [
         "scale"
       ],
-      "cited": 4,
-      "score": 4,
+      "cited": 5,
+      "score": 5,
       "title": "Rapid stochastic spatial light modulator calibration and pixel crosstalk optimisation",
       "author": "P. Schroff et al.",
       "pi": "A. La Rooij",
@@ -15346,8 +15333,8 @@
         "qec",
         "readout"
       ],
-      "cited": 40,
-      "score": 77,
+      "cited": 45,
+      "score": 83,
       "hot": true,
       "title": "A universal neutral-atom quantum computer with individual optical addressing and non-destructive readout",
       "author": "A. G. Radnaev et al.",
@@ -15362,8 +15349,8 @@
         "net",
         "qec"
       ],
-      "cited": 21,
-      "score": 40,
+      "cited": 22,
+      "score": 41,
       "hot": true,
       "title": "Fault-tolerant optical interconnects for neutral-atom arrays",
       "author": "Josiah Sinclair et al.",
@@ -15392,8 +15379,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 1,
-      "score": 2,
+      "cited": 3,
+      "score": 6,
       "hot": true,
       "title": "Coprime Bivariate Bicycle Codes and Their Layouts on Cold Atoms",
       "author": "Ming Wang et al.",
@@ -15435,8 +15422,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 11,
-      "score": 11,
+      "cited": 12,
+      "score": 12,
       "title": "Bosonic Quantum Error Correction with Neutral Atoms in Optical Dipole Traps",
       "author": "Leon H. Bohnmann et al.",
       "pi": "Markus Müller",
@@ -15451,8 +15438,8 @@
         "sim",
         "species"
       ],
-      "cited": 40,
-      "score": 77,
+      "cited": 42,
+      "score": 78,
       "hot": true,
       "title": "Long-lived entanglement of molecules in magic-wavelength optical tweezers",
       "author": "Daniel K. Ruttley et al.",
@@ -15476,14 +15463,16 @@
     {
       "id": "2408.15965",
       "year": 2024,
-      "lane": "species",
+      "lane": "opt",
       "fields": [
+        "gate",
+        "opt",
         "sim",
         "species"
       ],
       "cited": 0,
       "score": 0,
-      "title": "Novel ground states and emergent quantum many-body scars in a two-species Rydberg atom array",
+      "title": "Distinct many-body scars and emergent quantum phases driven by competing interactions in two-species Rydberg arrays",
       "author": "Lei-Yi-Nan Liu et al.",
       "pi": "Jian Cui",
       "group": null
@@ -15523,8 +15512,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 4,
-      "score": 4,
+      "cited": 5,
+      "score": 5,
       "title": "Efficient generation of multiqubit entanglement states using rapid adiabatic passage",
       "author": "Shijie Xu et al.",
       "pi": "Ming Xue",
@@ -15551,8 +15540,8 @@
       "fields": [
         "opt"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 8,
+      "score": 8,
       "title": "Quantum Computing for Discrete Optimization: A Highlight of Three Technologies",
       "author": "Alexey Bochkarev et al.",
       "pi": "Anita Schöbel",
@@ -15566,8 +15555,8 @@
         "gate",
         "sim"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 7,
+      "score": 7,
       "title": "Splitting and connecting singlets in atomic quantum circuits",
       "author": "Zijie Zhu et al.",
       "pi": "Tilman Esslinger",
@@ -15581,8 +15570,8 @@
         "gate",
         "software"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "DasAtom: A Divide-and-Shuttle Atom Approach to Quantum Circuit Transformation",
       "author": "Yunqi Huang et al.",
       "pi": "Sanjiang Li",
@@ -15639,8 +15628,8 @@
       "fields": [
         "net"
       ],
-      "cited": 7,
-      "score": 13,
+      "cited": 8,
+      "score": 15,
       "hot": true,
       "title": "Suppression of motional dephasing using state mapping",
       "author": "Yuechun Jiao et al.",
@@ -15668,8 +15657,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 4,
-      "score": 8,
+      "cited": 5,
+      "score": 9,
       "hot": true,
       "title": "Simulating Chemistry with Fermionic Optical Superlattices",
       "author": "Fotios Gkritsis et al.",
@@ -15698,8 +15687,8 @@
         "qec",
         "sim"
       ],
-      "cited": 2,
-      "score": 4,
+      "cited": 3,
+      "score": 6,
       "hot": true,
       "title": "Concomitant Entanglement and Control Criticality Driven by Collective Measurements",
       "author": "Thomas Iadecola et al.",
@@ -15715,7 +15704,7 @@
       ],
       "cited": 0,
       "score": 0,
-      "title": "Proposal for experimental realization of quantum spin chains with quasiperiodic interaction using Rydberg atoms",
+      "title": "Proposal for experimental realization of quantum spin chains with quasiperiodic interactions using Rydberg atoms",
       "author": "Takaharu Yoshida et al.",
       "pi": "Tetsuro Nikuni",
       "group": null
@@ -15727,8 +15716,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 10,
-      "score": 10,
+      "cited": 12,
+      "score": 12,
       "title": "Memory-Augmented Hybrid Quantum Reservoir Computing",
       "author": "J. Settino et al.",
       "pi": "F. Plastina",
@@ -15783,8 +15772,8 @@
       "fields": [
         "net"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 0,
+      "score": 0,
       "title": "Entanglement-enhanced quantum sensing via optimal global control with neutral atoms in a cavity",
       "author": "Vineesha Srivastava et al.",
       "pi": "Guido Pupillo",
@@ -15799,7 +15788,7 @@
         "qec"
       ],
       "cited": 6,
-      "score": 12,
+      "score": 11,
       "hot": true,
       "title": "Efficient fault-tolerant code switching via one-way transversal CNOT gates",
       "author": "Sascha Heußen et al.",
@@ -15956,6 +15945,7 @@
       "year": 2024,
       "lane": "opt",
       "fields": [
+        "gate",
         "opt"
       ],
       "cited": 0,
@@ -15973,7 +15963,7 @@
         "sim"
       ],
       "cited": 5,
-      "score": 10,
+      "score": 9,
       "hot": true,
       "title": "Sensing with discrete time crystals",
       "author": "Leo Joon Il Moon et al.",
@@ -16018,8 +16008,8 @@
         "net",
         "readout"
       ],
-      "cited": 34,
-      "score": 65,
+      "cited": 37,
+      "score": 68,
       "hot": true,
       "title": "Error-Detected Quantum Operations with Neutral Atoms Mediated by an Optical Cavity",
       "author": "Brandon Grinkemeyer et al.",
@@ -16062,8 +16052,8 @@
         "net",
         "sim"
       ],
-      "cited": 7,
-      "score": 13,
+      "cited": 8,
+      "score": 15,
       "hot": true,
       "title": "Optomechanical self-organization in a mesoscopic atom array",
       "author": "Jacquelyn Ho et al.",
@@ -16092,8 +16082,9 @@
       "fields": [
         "sim"
       ],
-      "cited": 17,
-      "score": 17,
+      "cited": 20,
+      "score": 37,
+      "hot": true,
       "title": "Observation of anomalous information scrambling in a Rydberg atom array",
       "author": "Xinhui Liang et al.",
       "pi": "Li You",
@@ -16107,8 +16098,8 @@
         "gate",
         "sim"
       ],
-      "cited": 24,
-      "score": 46,
+      "cited": 30,
+      "score": 55,
       "hot": true,
       "title": "Observation of string breaking on a (2 + 1)D Rydberg quantum simulator",
       "author": "Daniel Gonzalez-Cuadra et al.",
@@ -16152,8 +16143,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 7,
+      "score": 7,
       "title": "Simulating and probing many-body quantum states in waveguide-QED systems with giant atoms",
       "author": "C. L. Yang et al.",
       "pi": "W. Z. Jia",
@@ -16166,8 +16157,8 @@
       "fields": [
         "species"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Dual-species Optical tweezer for Rb and K atoms",
       "author": "Yangbo Wei et al.",
       "pi": "Bo Yan",
@@ -16194,8 +16185,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 9,
-      "score": 17,
+      "cited": 10,
+      "score": 18,
       "hot": true,
       "title": "Spin-1 Haldane phase in a chain of Rydberg atoms",
       "author": "J. Mögerle et al.",
@@ -16239,8 +16230,8 @@
       "fields": [
         "net"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "A superconducting on-chip microwave cavity for tunable hybrid systems with optically trapped Rydberg atoms",
       "author": "Benedikt Wilde et al.",
       "pi": "Daniel Bothner",
@@ -16312,8 +16303,8 @@
       "fields": [
         "opt"
       ],
-      "cited": 8,
-      "score": 15,
+      "cited": 11,
+      "score": 20,
       "hot": true,
       "title": "Quantum adiabatic optimization with Rydberg arrays: localization phenomena and encoding strategies",
       "author": "Lisa Bombieri et al.",
@@ -16343,8 +16334,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 8,
+      "score": 8,
       "title": "Fast entangling gates for Rydberg atoms via resonant dipole-dipole interaction",
       "author": "Giuliano Giudici et al.",
       "pi": "Johannes Zeiher",
@@ -16360,8 +16351,8 @@
         "sim",
         "species"
       ],
-      "cited": 19,
-      "score": 36,
+      "cited": 24,
+      "score": 44,
       "hot": true,
       "title": "Trapping of Single Atoms in Metasurface Optical Tweezer Arrays",
       "author": "Aaron Holman et al.",
@@ -16390,8 +16381,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 9,
-      "score": 9,
+      "cited": 12,
+      "score": 12,
       "title": "Erasure Decoding for Quantum LDPC Codes via Belief Propagation with Guided Decimation",
       "author": "Mert Gökduman et al.",
       "pi": "Henry D. Pfister",
@@ -16420,8 +16411,8 @@
         "gate",
         "qec"
       ],
-      "cited": 7,
-      "score": 13,
+      "cited": 8,
+      "score": 15,
       "hot": true,
       "title": "A fiber array architecture for atom quantum computing",
       "author": "Xiao Li et al.",
@@ -16477,8 +16468,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 4,
-      "score": 8,
+      "cited": 5,
+      "score": 9,
       "hot": true,
       "title": "Measuring Hall voltage and Hall resistance in an atom-based quantum simulator",
       "author": "T. -W. Zhou et al.",
@@ -16612,8 +16603,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 4,
+      "score": 4,
       "title": "Emergent disorder and sub-ballistic dynamics in quantum simulations of the Ising model using Rydberg atom arrays",
       "author": "Ceren B. Dag et al.",
       "pi": "Susanne F. Yelin",
@@ -16641,8 +16632,8 @@
         "sim",
         "species"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 2,
+      "score": 2,
       "title": "Tunable two-species spin models with Rydberg atoms in circular and elliptical states",
       "author": "Jacek Dobrzyniecki et al.",
       "pi": "Michał Tomza",
@@ -16770,8 +16761,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 12,
-      "score": 12,
+      "cited": 14,
+      "score": 14,
       "title": "Entanglement asymmetry in periodically driven quantum systems",
       "author": "Tista Banerjee et al.",
       "pi": "K. Sengupta",
@@ -16874,8 +16865,8 @@
         "qec",
         "scale"
       ],
-      "cited": 11,
-      "score": 21,
+      "cited": 13,
+      "score": 24,
       "hot": true,
       "title": "Quantum Error Correction resilient against Atom Loss",
       "author": "Hugo Perrin et al.",
@@ -16904,8 +16895,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 16,
-      "score": 31,
+      "cited": 18,
+      "score": 33,
       "hot": true,
       "title": "Realization of strongly-interacting Meissner phases in large bosonic flux ladders",
       "author": "Alexander Impertro et al.",
@@ -16935,8 +16926,8 @@
         "scale",
         "sim"
       ],
-      "cited": 5,
-      "score": 10,
+      "cited": 9,
+      "score": 17,
       "hot": true,
       "title": "A high optical access cryogenic system for Rydberg atom arrays with a 3000-second trap lifetime",
       "author": "Zhenpu Zhang et al.",
@@ -16993,8 +16984,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 2,
+      "score": 2,
       "title": "Learning interactions between Rydberg atoms",
       "author": "Olivier Simard et al.",
       "pi": "Antoine Georges",
@@ -17007,8 +16998,9 @@
       "fields": [
         "net"
       ],
-      "cited": 12,
-      "score": 12,
+      "cited": 13,
+      "score": 24,
+      "hot": true,
       "title": "Ultrafast high-fidelity state readout of single neutral atom",
       "author": "Jian Wang et al.",
       "pi": "Guang-Can Guo",
@@ -17038,8 +17030,8 @@
         "scale",
         "sim"
       ],
-      "cited": 22,
-      "score": 42,
+      "cited": 25,
+      "score": 46,
       "hot": true,
       "title": "AI-Enabled Rapid Assembly of Thousands of Defect-Free Neutral Atom Arrays with Constant-time-overhead",
       "author": "Rui Lin et al.",
@@ -17053,8 +17045,8 @@
       "fields": [
         "species"
       ],
-      "cited": 5,
-      "score": 10,
+      "cited": 8,
+      "score": 15,
       "hot": true,
       "title": "Individual assembly of two-species Rydberg molecules using optical tweezers",
       "author": "Alexander Guttridge et al.",
@@ -17068,8 +17060,8 @@
       "fields": [
         "opt"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Quantum Compilation Toolkit for Rydberg Atom Arrays with Implications for Problem Hardness and Quantum Speedups",
       "author": "Martin J. A. Schuetz et al.",
       "pi": "Helmut G. Katzgraber",
@@ -17100,8 +17092,8 @@
         "sim",
         "species"
       ],
-      "cited": 7,
-      "score": 13,
+      "cited": 8,
+      "score": 15,
       "hot": true,
       "title": "Long-lived multilevel coherences and spin-1 dynamics encoded in the rotational states of ultracold molecules",
       "author": "Tom R. Hepworth et al.",
@@ -17115,8 +17107,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 46,
-      "score": 88,
+      "cited": 49,
+      "score": 90,
       "hot": true,
       "title": "Experimental Demonstration of Logical Magic State Distillation",
       "author": "Pedro Sales Rodriguez et al.",
@@ -17245,8 +17237,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 2,
+      "score": 2,
       "title": "String breaking dynamics in Ising chain with local vibrations",
       "author": "Arindam Mallick et al.",
       "pi": "Marcin Płodzień",
@@ -17291,8 +17283,8 @@
       "fields": [
         "readout"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 4,
+      "score": 4,
       "title": "Image-charge detection of electrons on helium in an on-chip trapping device",
       "author": "Mikhail Belianchikov et al.",
       "pi": "Denis Konstantinov",
@@ -17322,7 +17314,7 @@
         "sim"
       ],
       "cited": 4,
-      "score": 15,
+      "score": 14,
       "hot": true,
       "title": "Local vs non-local dynamics in cavity-coupled Rydberg atom arrays",
       "author": "Zeno Bacciconi et al.",
@@ -17338,8 +17330,8 @@
         "sim",
         "species"
       ],
-      "cited": 4,
-      "score": 4,
+      "cited": 5,
+      "score": 5,
       "title": "Plane-selective manipulations of nuclear spin qubits in a three-dimensional optical tweezer array",
       "author": "Toshi Kusano et al.",
       "pi": "Yoshiro Takahashi",
@@ -17367,8 +17359,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "Tomonaga-Luttinger Liquid Behavior in a Rydberg-encoded Spin Chain",
       "author": "Gabriel Emperauger et al.",
       "pi": "Antoine Browaeys",
@@ -17381,8 +17373,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 15,
-      "score": 55,
+      "cited": 19,
+      "score": 65,
       "hot": true,
       "title": "Realization of a doped quantum antiferromagnet with dipolar tunnelings in a Rydberg tweezer array",
       "author": "Mu Qiao et al.",
@@ -17439,8 +17431,8 @@
         "gate",
         "qec"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Analysis of heralded higher-fidelity two-qubit entangling gates with self-correction",
       "author": "Yuan Sun",
       "pi": "Yuan Sun",
@@ -17501,8 +17493,8 @@
         "sim",
         "software"
       ],
-      "cited": 25,
-      "score": 92,
+      "cited": 28,
+      "score": 96,
       "hot": true,
       "title": "Probing the Kitaev honeycomb model on a neutral-atom quantum computer",
       "author": "Simon J. Evered et al.",
@@ -17516,8 +17508,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 34,
-      "score": 126,
+      "cited": 37,
+      "score": 127,
       "hot": true,
       "title": "A neutral-atom Hubbard quantum simulator in the cryogenic regime",
       "author": "Muqing Xu et al.",
@@ -17603,7 +17595,7 @@
       "fields": [
         "sim"
       ],
-      "cited": 15,
+      "cited": 16,
       "score": 55,
       "hot": true,
       "title": "Anomalous suppression of large-scale density fluctuations in classical and quantum spin liquids",
@@ -17706,8 +17698,8 @@
         "net",
         "species"
       ],
-      "cited": 6,
-      "score": 6,
+      "cited": 7,
+      "score": 7,
       "title": "Probing curved spacetime with a distributed atomic processor clock",
       "author": "Jacob P. Covey et al.",
       "pi": "Johannes Borregaard",
@@ -17720,8 +17712,8 @@
       "fields": [
         "net"
       ],
-      "cited": 7,
-      "score": 26,
+      "cited": 11,
+      "score": 38,
       "hot": true,
       "title": "Tweezer-assisted subwavelength positioning of atomic arrays in an optical cavity",
       "author": "Matthias Seubert et al.",
@@ -17767,8 +17759,8 @@
         "net",
         "species"
       ],
-      "cited": 14,
-      "score": 52,
+      "cited": 15,
+      "score": 51,
       "hot": true,
       "title": "Parallelized telecom quantum networking with a ytterbium-171 atom array",
       "author": "Lintao Li et al.",
@@ -17783,8 +17775,8 @@
         "gate",
         "sim"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Non-paraxial effects on laser-qubit operations",
       "author": "L. P. H. Gallagher et al.",
       "pi": "R. J. C. Spreeuw",
@@ -17798,8 +17790,8 @@
         "net",
         "sim"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "A cavity QED system with defect-free single-atom array strongly coupled to an optical cavity",
       "author": "Zhihui Wang et al.",
       "pi": "Tiancai Zhang",
@@ -17813,8 +17805,8 @@
         "gate",
         "qec"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "Quantum low-density parity-check codes for erasure-biased atomic quantum processors",
       "author": "Laura Pecorari et al.",
       "pi": "Guido Pupillo",
@@ -17828,8 +17820,8 @@
         "opt",
         "sim"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Quantum Natural Gradient optimizer on noisy platforms: QAOA as a case study",
       "author": "Federico Dell'Anna et al.",
       "pi": "Elisa Ercolessi",
@@ -17842,8 +17834,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 9,
+      "score": 9,
       "title": "Leveraging Qubit Loss Detection in Fault Tolerant Quantum Algorithms",
       "author": "Gefen Baranes et al.",
       "pi": "Mikhail D. Lukin",
@@ -18105,8 +18097,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 7,
-      "score": 7,
+      "cited": 10,
+      "score": 10,
       "title": "Benchmarking direct and indirect dipolar spin-exchange interactions between two Rydberg atoms",
       "author": "Gabriel Emperauger et al.",
       "pi": "Thierry Lahaye",
@@ -18179,8 +18171,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 11,
-      "score": 11,
+      "cited": 12,
+      "score": 12,
       "title": "User-friendly TWA for dissipative spin dynamics",
       "author": "Hossein Hosseinabadi et al.",
       "pi": "Jamir Marino",
@@ -18291,8 +18283,8 @@
       "fields": [
         "net"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 6,
+      "score": 6,
       "title": "Entangling two Rydberg Superatoms via Heralded Storage",
       "author": "Zi-Ye An et al.",
       "pi": "Jian-Wei Pan",
@@ -18321,8 +18313,8 @@
         "net",
         "sim"
       ],
-      "cited": 4,
-      "score": 4,
+      "cited": 5,
+      "score": 5,
       "title": "Prethermalization of light and matter in cavity-coupled Rydberg arrays",
       "author": "Aleksandr N. Mikheev et al.",
       "pi": "Jamir Marino",
@@ -18421,8 +18413,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 4,
-      "score": 4,
+      "cited": 5,
+      "score": 5,
       "title": "Liouvillian Spectral Transition in Noisy Quantum Many-Body Scars",
       "author": "Jin-Lou Ma et al.",
       "pi": "Lei Ying",
@@ -18440,20 +18432,6 @@
       "title": "ScarFinder: a detector of optimal scar trajectories in quantum many-body dynamics",
       "author": "Jie Ren et al.",
       "pi": "Zlatko Papić",
-      "group": null
-    },
-    {
-      "id": "2504.13086",
-      "year": 2025,
-      "lane": "sim.gauge",
-      "fields": [
-        "sim"
-      ],
-      "cited": 0,
-      "score": 0,
-      "title": "Many-body cages: disorder-free glassiness from flat bands in Fock space, and many-body Rabi oscillations",
-      "author": "Tom Ben-Ami et al.",
-      "pi": "Roderich Moessner",
       "group": null
     },
     {
@@ -18576,8 +18554,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 2,
+      "score": 2,
       "title": "Forces on alkali Rydberg atoms due to non-linearly polarized light",
       "author": "A. Bhowmik et al.",
       "pi": "D. Blume",
@@ -18605,8 +18583,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 3,
-      "score": 3,
+      "cited": 5,
+      "score": 5,
       "title": "Engineering frustrated Rydberg spin models by graphical Floquet modulation",
       "author": "Mingsheng Tian et al.",
       "pi": "Bryce Gadway",
@@ -18634,7 +18612,7 @@
         "sim"
       ],
       "cited": 4,
-      "score": 15,
+      "score": 14,
       "hot": true,
       "title": "Observation of average topological phase in disordered Rydberg atom array",
       "author": "Zongpei Yue et al.",
@@ -18707,8 +18685,8 @@
         "gate",
         "sim"
       ],
-      "cited": 8,
-      "score": 8,
+      "cited": 11,
+      "score": 11,
       "title": "Observation of Near-Critical Kibble-Zurek Scaling in Rydberg Atom Arrays",
       "author": "Tao Zhang et al.",
       "pi": "Wenlan Chen",
@@ -18765,8 +18743,8 @@
         "net",
         "sim"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 2,
+      "score": 2,
       "title": "Design and assembly of a cavity microscope with high numerical aperture for quantum simulations",
       "author": "Gaia Stella Bolognini et al.",
       "pi": "Jean-Philippe Brantut",
@@ -18779,8 +18757,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 5,
-      "score": 18,
+      "cited": 8,
+      "score": 27,
       "hot": true,
       "title": "Tricritical Kibble-Zurek scaling in Rydberg atom ladders",
       "author": "Hanteng Wang et al.",
@@ -18809,8 +18787,8 @@
         "sim",
         "species"
       ],
-      "cited": 5,
-      "score": 5,
+      "cited": 7,
+      "score": 7,
       "title": "Engineering the Kondo impurity problem with alkaline-earth atom arrays",
       "author": "Adriano Amaricci et al.",
       "pi": "Francesco Scazza",
@@ -18883,8 +18861,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 2,
-      "score": 7,
+      "cited": 3,
+      "score": 10,
       "hot": true,
       "title": "Statistical Localization in a Rydberg Simulator of $U(1)$ Lattice Gauge Theory",
       "author": "Prithvi Raj Datla et al.",
@@ -18912,8 +18890,8 @@
       "fields": [
         "net"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "A multimode cavity QED Ising spin glass",
       "author": "Brendan P. Marsh et al.",
       "pi": "Benjamin L. Lev",
@@ -18954,8 +18932,8 @@
       "fields": [
         "clock"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 0,
+      "score": 0,
       "title": "Nonlinear-enhanced wideband sensing via subharmonic excitation of a quantum harmonic oscillator",
       "author": "Hao Wu et al.",
       "pi": "Eric R. Hudson",
@@ -19072,8 +19050,8 @@
         "readout",
         "scale"
       ],
-      "cited": 9,
-      "score": 9,
+      "cited": 10,
+      "score": 10,
       "title": "Repeated ancilla reuse for logical computation on a neutral atom quantum computer",
       "author": "J. A. Muniz et al.",
       "pi": "M. A. Norcia",
@@ -19211,8 +19189,8 @@
         "scale",
         "species"
       ],
-      "cited": 1,
-      "score": 4,
+      "cited": 3,
+      "score": 10,
       "hot": true,
       "title": "Logical qubits with erasure conversion using metastable neutral atoms",
       "author": "Bichen Zhang et al.",
@@ -19228,7 +19206,7 @@
         "sim"
       ],
       "cited": 8,
-      "score": 30,
+      "score": 27,
       "hot": true,
       "title": "High-fidelity collisional quantum gates with fermionic atoms",
       "author": "Petar Bojović et al.",
@@ -19243,8 +19221,8 @@
         "sim",
         "species"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Quantum simulation of fermionic non-Abelian lattice gauge theories in $(2+1)$D with built-in gauge protection",
       "author": "Gaia De Paciani et al.",
       "pi": "Fabian Grusdt",
@@ -19376,8 +19354,8 @@
         "scale",
         "species"
       ],
-      "cited": 3,
-      "score": 3,
+      "cited": 4,
+      "score": 4,
       "title": "Transverse Polarization Gradient Entangling Gates for Trapped-Ion Quantum Computation",
       "author": "Jin-Ming Cui et al.",
       "pi": "Guang-Can Guo",
@@ -19408,8 +19386,8 @@
         "scale",
         "sim"
       ],
-      "cited": 42,
-      "score": 155,
+      "cited": 47,
+      "score": 161,
       "hot": true,
       "title": "Continuous operation of a coherent 3,000-qubit system",
       "author": "Neng-Chun Chiu et al.",
@@ -19425,8 +19403,8 @@
         "readout",
         "scale"
       ],
-      "cited": 33,
-      "score": 122,
+      "cited": 43,
+      "score": 147,
       "hot": true,
       "title": "Architectural mechanisms of a universal fault-tolerant quantum computer",
       "author": "Dolev Bluvstein et al.",
@@ -19513,8 +19491,8 @@
         "sim",
         "species"
       ],
-      "cited": 4,
-      "score": 4,
+      "cited": 5,
+      "score": 5,
       "title": "Microsecond-scale high-survival and number-resolved detection of ytterbium atom arrays",
       "author": "Alessandro Muzi Falconi et al.",
       "pi": "Francesco Scazza",
@@ -19546,6 +19524,21 @@
       "title": "Toffoli and C$^\\text{n}$NOT (n$&gt;2$) gates in a neutral-atom platform using Rydberg coupling and dark state resonances",
       "author": "Sinchan Snigdha Rej et al.",
       "pi": "Bimalendu Deb",
+      "group": null
+    },
+    {
+      "id": "2507.03440",
+      "year": 2025,
+      "lane": "classical",
+      "fields": [
+        "classical",
+        "sim"
+      ],
+      "cited": 0,
+      "score": 0,
+      "title": "Spatial Leggett-Garg inequalities",
+      "author": "Guillem Müller-Rigat et al.",
+      "pi": "Andrea Tononi",
       "group": null
     },
     {
@@ -19761,8 +19754,8 @@
         "opt",
         "qec"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Application-Driven Benchmarking of the Traveling Salesperson Problem: a Quantum Hardware Deep-Dive",
       "author": "Amine Bentellis et al.",
       "pi": "Jeanette Miriam Lorenz",
@@ -19861,8 +19854,8 @@
       "fields": [
         "qec"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Towards self-correcting quantum codes for neutral atom arrays",
       "author": "Jinkang Guo et al.",
       "pi": "Andrew Lucas",
@@ -19892,7 +19885,7 @@
         "scale"
       ],
       "cited": 1,
-      "score": 4,
+      "score": 3,
       "hot": true,
       "title": "Protected quantum gates using qubit doublons in dynamical optical lattices",
       "author": "Yann Kiefer et al.",
@@ -19921,8 +19914,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Proposal for realizing Heisenberg-type quantum-spin models in Rydberg-atom quantum simulators",
       "author": "Masaya Kunimi et al.",
       "pi": "Takafumi Tomita",
@@ -20023,8 +20016,8 @@
       "fields": [
         "classical"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 2,
+      "score": 2,
       "title": "Simulation and Benchmarking of Real Quantum Hardware",
       "author": "T. Piskor et al.",
       "pi": "M. Papič",
@@ -20418,8 +20411,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 3,
-      "score": 3,
+      "cited": 4,
+      "score": 4,
       "title": "Collective dissipation engineering of interacting Rydberg atoms",
       "author": "Tao Chen et al.",
       "pi": "Bryce Gadway",
@@ -20538,8 +20531,8 @@
       "fields": [
         "net"
       ],
-      "cited": 2,
-      "score": 7,
+      "cited": 3,
+      "score": 10,
       "hot": true,
       "title": "Quantum ground-state cooling of two librational modes of a nanorotor",
       "author": "Stephan Troyer et al.",
@@ -20582,7 +20575,7 @@
         "net"
       ],
       "cited": 1,
-      "score": 4,
+      "score": 3,
       "hot": true,
       "title": "Hybrid Trapping of Cold Atoms with Surface Forces and Blue-Detuned Evanescent Light on a Nanophotonic Waveguide",
       "author": "Riccardo Pennetta et al.",
@@ -20685,7 +20678,7 @@
         "species"
       ],
       "cited": 1,
-      "score": 4,
+      "score": 3,
       "hot": true,
       "title": "Variational approach to open quantum systems with long-range competing interactions",
       "author": "Dawid A. Hryniuk et al.",
@@ -20936,8 +20929,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 4,
-      "score": 4,
+      "cited": 5,
+      "score": 5,
       "title": "Yang-Lee edge singularity and quantum criticality in non-Hermitian PXP model",
       "author": "Wen-Yi Zhang et al.",
       "pi": "Wen-Long You",
@@ -21171,7 +21164,7 @@
       ],
       "cited": 0,
       "score": 0,
-      "title": "Quantum predator-prey cycles in dissipative Rydberg lattices",
+      "title": "Quantum predator-prey cycles in dissipative Rydberg array",
       "author": "Ya-Xin Xiang et al.",
       "pi": "Yu-Qiang Ma",
       "group": null
@@ -21590,8 +21583,8 @@
         "sim",
         "species"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "Probing False Vacuum Decay and Bubble Nucleation in a Rydberg Atom Array",
       "author": "Yu-Xin Chao et al.",
       "pi": "Li You",
@@ -21663,8 +21656,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "Enhancing ground-state interaction strength of neutral atoms via Floquet stroboscopic dynamics",
       "author": "Y. Wei et al.",
       "pi": "X. Q. Shao",
@@ -21692,8 +21685,8 @@
         "qec",
         "scale"
       ],
-      "cited": 2,
-      "score": 2,
+      "cited": 3,
+      "score": 3,
       "title": "Direct Generation of an Array with 78400 Optical Tweezers Using a Single Metasurface",
       "author": "Yuqing Wang et al.",
       "pi": "Zhongchi Zhang",
@@ -21847,8 +21840,8 @@
       "fields": [
         "sim"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 2,
+      "score": 2,
       "title": "Discrete time crystals enhanced by Stark potentials in Rydberg atom arrays",
       "author": "Jian-Jia Wang et al.",
       "pi": "Dan-Wei Zhang",
@@ -21945,6 +21938,7 @@
       "lane": "scale",
       "fields": [
         "gate",
+        "qec",
         "scale",
         "species"
       ],
@@ -22554,8 +22548,8 @@
       "fields": [
         "gate"
       ],
-      "cited": 0,
-      "score": 0,
+      "cited": 1,
+      "score": 1,
       "title": "Extended Rydberg Lifetimes in a Cryogenic Atom Array",
       "author": "Junlan Jin et al.",
       "pi": "Waseem S. Bakr",
@@ -22597,8 +22591,8 @@
       "fields": [
         "net"
       ],
-      "cited": 8,
-      "score": 64,
+      "cited": 10,
+      "score": 80,
       "hot": true,
       "title": "Device-independent quantum key distribution over 100 km with single atoms",
       "author": "Bo-Wei Lu et al.",
@@ -23351,8 +23345,8 @@
         "qec",
         "software"
       ],
-      "cited": 1,
-      "score": 1,
+      "cited": 2,
+      "score": 2,
       "title": "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits",
       "author": "Madelyn Cain et al.",
       "pi": "Dolev Bluvstein",
@@ -25659,6 +25653,35 @@
       "title": "Noise-aware emulation and cross-device validation of neutral atom analog quantum processing units",
       "author": "Constantin Dalyac et al.",
       "pi": "Alexandre Dauphin",
+      "group": null
+    },
+    {
+      "id": "2607.28795",
+      "year": 2026,
+      "lane": "qec",
+      "fields": [
+        "qec"
+      ],
+      "cited": 0,
+      "score": 0,
+      "title": "High-rate qLDPC processors",
+      "author": "Aditya Bhardwaj et al.",
+      "pi": "Hsin-Yuan Huang",
+      "group": null
+    },
+    {
+      "id": "2607.29603",
+      "year": 2026,
+      "lane": "readout",
+      "fields": [
+        "qec",
+        "readout"
+      ],
+      "cited": 0,
+      "score": 0,
+      "title": "Qubit Loss Inference with Stabilizer Codes without Leakage Detection Units",
+      "author": "Shin Nishio et al.",
+      "pi": "Dan E. Browne",
       "group": null
     }
   ]
