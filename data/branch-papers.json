@@ -11,8 +11,8 @@
       "2022": 17,
       "2023": 28,
       "2024": 58,
-      "2025": 73,
-      "2026": 57
+      "2025": 72,
+      "2026": 58
     },
     "landmarks": [
       {
@@ -105,7 +105,7 @@
       {
         "id": "2603.04156",
         "year": 2026,
-        "title": "Achieving Optimal-Distance Atom-Loss Correction via Pauli Envelope",
+        "title": "Low-Overhead Surface Code with Delayed Atom-Loss Detection via Pauli Envelope",
         "author": "Pengyu Liu et al.",
         "cited": 0
       },
@@ -170,14 +170,14 @@
         "year": 2026,
         "title": "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits",
         "author": "Madelyn Cain et al.",
-        "cited": 2
+        "cited": 3
       },
       {
         "id": "2603.28846",
         "year": 2026,
         "title": "Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations",
         "author": "Ryan Babbush et al.",
-        "cited": 1
+        "cited": 3
       },
       {
         "id": "2604.01376",
@@ -397,6 +397,13 @@
         "cited": 0
       },
       {
+        "id": "2607.13351",
+        "year": 2026,
+        "title": "TandemQEC: Joint Provisioning of Streaming Quantum Error Correction in Tightly-Integrated Quantum-Classical Systems",
+        "author": "Panayiotis Christou et al.",
+        "cited": 0
+      },
+      {
         "id": "2607.15597",
         "year": 2026,
         "title": "Deterministic atom-shuttle interconnects via ultrafast atom-ion entangling gate",
@@ -457,21 +464,14 @@
         "year": 2025,
         "title": "Enhanced Atom-by-Atom Assembly of Defect-Free Two-Dimensional Mixed-Species Atomic Arrays",
         "author": "Ming-Rui Wei et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2501.05935",
         "year": 2025,
         "title": "Plane-selective manipulations of nuclear spin qubits in a three-dimensional optical tweezer array",
         "author": "Toshi Kusano et al.",
-        "cited": 5
-      },
-      {
-        "id": "2501.14220",
-        "year": 2025,
-        "title": "Analysis of heralded higher-fidelity two-qubit entangling gates with self-correction",
-        "author": "Yuan Sun",
-        "cited": 1
+        "cited": 6
       }
     ],
     "topCited": [
@@ -480,56 +480,56 @@
         "year": 2023,
         "title": "Logical quantum processor based on reconfigurable atom arrays",
         "author": "Dolev Bluvstein et al.",
-        "cited": 1094
+        "cited": 1119
       },
       {
         "id": "2304.05420",
         "year": 2023,
         "title": "High-fidelity parallel entangling gates on a neutral atom quantum computer",
         "author": "Simon J. Evered et al.",
-        "cited": 517
+        "cited": 522
       },
       {
         "id": "2305.05493",
         "year": 2023,
         "title": "High-fidelity gates with mid-circuit erasure conversion in a metastable neutral atom qubit",
         "author": "Shuo Ma et al.",
-        "cited": 226
+        "cited": 228
       },
       {
         "id": "2201.03540",
         "year": 2022,
         "title": "Erasure conversion for fault-tolerant quantum computing in alkaline earth Rydberg atom arrays",
         "author": "Yue Wu et al.",
-        "cited": 196
+        "cited": 197
       },
       {
         "id": "2011.12310",
         "year": 2020,
         "title": "Prediction of Toric Code Topological Order from Rydberg Blockade",
         "author": "Ruben Verresen et al.",
-        "cited": 185
+        "cited": 193
       },
       {
         "id": "2308.08648",
         "year": 2023,
         "title": "Constant-Overhead Fault-Tolerant Quantum Computation with Reconfigurable Atom Arrays",
         "author": "Qian Xu et al.",
-        "cited": 156
+        "cited": 160
       },
       {
-        "id": "2305.03406",
-        "year": 2023,
-        "title": "Erasure conversion in a high-fidelity Rydberg quantum simulator",
-        "author": "Pascal Scholl et al.",
-        "cited": 144
+        "id": "2202.00903",
+        "year": 2022,
+        "title": "Time-Optimal Two- and Three-Qubit Gates for Rydberg Atoms",
+        "author": "Sven Jandura et al.",
+        "cited": 151
       },
       {
         "id": "2105.13501",
         "year": 2021,
         "title": "Hardware-Efficient, Fault-Tolerant Quantum Computation with Rydberg Atoms",
         "author": "Iris Cong et al.",
-        "cited": 143
+        "cited": 144
       }
     ]
   },
@@ -668,7 +668,7 @@
         "year": 2025,
         "title": "Image-charge detection of electrons on helium in an on-chip trapping device",
         "author": "Mikhail Belianchikov et al.",
-        "cited": 4
+        "cited": 5
       },
       {
         "id": "2501.14957",
@@ -710,42 +710,42 @@
         "year": 2025,
         "title": "Repeated ancilla reuse for logical computation on a neutral atom quantum computer",
         "author": "J. A. Muniz et al.",
-        "cited": 11
+        "cited": 14
       },
       {
         "id": "2506.10919",
         "year": 2025,
         "title": "A cavity array microscope for parallel single-atom interfacing",
         "author": "Adam L. Shaw et al.",
-        "cited": 0
+        "cited": 10
       },
       {
         "id": "2506.13632",
         "year": 2025,
         "title": "High-fidelity entanglement and coherent multi-qubit mapping in an atom array",
         "author": "Aruku Senoo et al.",
-        "cited": 4
+        "cited": 6
       },
       {
         "id": "2506.13724",
         "year": 2025,
         "title": "Logical qubits with erasure conversion using metastable neutral atoms",
         "author": "Bichen Zhang et al.",
-        "cited": 4
+        "cited": 7
       },
       {
         "id": "2506.15633",
         "year": 2025,
         "title": "Fast, continuous and coherent atom replacement in a neutral atom qubit array",
         "author": "Yiyi Li et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2506.20661",
         "year": 2025,
         "title": "Architectural mechanisms of a universal fault-tolerant quantum computer",
         "author": "Dolev Bluvstein et al.",
-        "cited": 55
+        "cited": 63
       },
       {
         "id": "2507.00944",
@@ -759,7 +759,7 @@
         "year": 2025,
         "title": "Microsecond-scale high-survival and number-resolved detection of ytterbium atom arrays",
         "author": "Alessandro Muzi Falconi et al.",
-        "cited": 6
+        "cited": 7
       },
       {
         "id": "2507.22132",
@@ -780,7 +780,7 @@
         "year": 2025,
         "title": "Non-destructive optical read-out and manipulation of circular Rydberg atoms",
         "author": "Yohann Machu et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2510.09398",
@@ -794,7 +794,7 @@
         "year": 2025,
         "title": "Mode multiplexing for scalable cavity-enhanced operations in neutral-atom arrays",
         "author": "Ziv Aqua et al.",
-        "cited": 0
+        "cited": 2
       },
       {
         "id": "2512.20919",
@@ -808,35 +808,35 @@
         "year": 2024,
         "title": "A dual-species Rydberg array",
         "author": "Shraddha Anand et al.",
-        "cited": 86
+        "cited": 87
       },
       {
         "id": "2401.16177",
         "year": 2024,
         "title": "Iterative assembly of $^{171}$Yb atom arrays with cavity-enhanced optical lattices",
         "author": "M. A. Norcia et al.",
-        "cited": 4
+        "cited": 0
       },
       {
         "id": "2402.16220",
         "year": 2024,
         "title": "Universal quantum operations and ancilla-based readout for tweezer clocks",
         "author": "Ran Finkelstein et al.",
-        "cited": 70
+        "cited": 71
       },
       {
         "id": "2403.12021",
         "year": 2024,
         "title": "A tweezer array with 6100 highly coherent atomic qubits",
         "author": "Hannah J. Manetsch et al.",
-        "cited": 120
+        "cited": 127
       },
       {
         "id": "2405.10434",
         "year": 2024,
         "title": "Circuit-based leakage-to-erasure conversion in a neutral atom quantum processor",
         "author": "Matthew N. H. Chow et al.",
-        "cited": 19
+        "cited": 20
       },
       {
         "id": "2406.02391",
@@ -850,21 +850,21 @@
         "year": 2024,
         "title": "A hybrid atom tweezer array of nuclear spin and optical clock qubits",
         "author": "Yuma Nakamura et al.",
-        "cited": 15
+        "cited": 16
       },
       {
         "id": "2407.04784",
         "year": 2024,
         "title": "Cavity QED in a High NA Resonator",
         "author": "Danial Shadmany et al.",
-        "cited": 18
+        "cited": 19
       },
       {
         "id": "2408.08288",
         "year": 2024,
         "title": "A universal neutral-atom quantum computer with individual optical addressing and non-destructive readout",
         "author": "A. G. Radnaev et al.",
-        "cited": 48
+        "cited": 54
       },
       {
         "id": "2408.09872",
@@ -878,7 +878,7 @@
         "year": 2024,
         "title": "Error-Detected Quantum Operations with Neutral Atoms Mediated by an Optical Cavity",
         "author": "Brandon Grinkemeyer et al.",
-        "cited": 39
+        "cited": 42
       },
       {
         "id": "2410.23430",
@@ -892,7 +892,7 @@
         "year": 2024,
         "title": "Taming Rydberg Decay with Measurement-based Quantum Computation",
         "author": "Cheng-Cheng Yu et al.",
-        "cited": 1
+        "cited": 3
       },
       {
         "id": "2411.12622",
@@ -906,35 +906,35 @@
         "year": 2024,
         "title": "Universal quantum computation via scalable measurement-free error correction",
         "author": "Stefano Veroni et al.",
-        "cited": 0
+        "cited": 4
       },
       {
         "id": "2301.10510",
         "year": 2023,
         "title": "Randomized Benchmarking using Non-Destructive Readout in a 2D Atom Array",
         "author": "B. Nikolov et al.",
-        "cited": 33
+        "cited": 32
       },
       {
         "id": "2302.04325",
         "year": 2023,
         "title": "Measurement-altered Ising quantum criticality",
         "author": "Sara Murciano et al.",
-        "cited": 45
+        "cited": 46
       },
       {
         "id": "2303.10051",
         "year": 2023,
         "title": "Mid-circuit measurements on a single species neutral alkali atom quantum processor",
         "author": "T. M. Graham et al.",
-        "cited": 83
+        "cited": 81
       },
       {
         "id": "2305.05493",
         "year": 2023,
         "title": "High-fidelity gates with mid-circuit erasure conversion in a metastable neutral atom qubit",
         "author": "Shuo Ma et al.",
-        "cited": 226
+        "cited": 228
       },
       {
         "id": "2305.19119",
@@ -948,28 +948,28 @@
         "year": 2023,
         "title": "Mid-circuit operations using the omg-architecture in neutral atom arrays",
         "author": "Joanna W. Lis et al.",
-        "cited": 16
+        "cited": 14
       },
       {
         "id": "2307.13296",
         "year": 2023,
         "title": "Measurement-free fault-tolerant quantum error correction in near-term devices",
         "author": "Sascha Heußen et al.",
-        "cited": 43
+        "cited": 44
       },
       {
         "id": "2311.07529",
         "year": 2023,
         "title": "An optical tweezer array of ultracold polyatomic molecules",
         "author": "Nathaniel B. Vilas et al.",
-        "cited": 41
+        "cited": 42
       },
       {
         "id": "2311.15580",
         "year": 2023,
         "title": "Erasure-cooling, control, and hyper-entanglement of motion in optical tweezers",
         "author": "Adam L. Shaw et al.",
-        "cited": 36
+        "cited": 37
       }
     ],
     "topCited": [
@@ -978,56 +978,56 @@
         "year": 2023,
         "title": "Logical quantum processor based on reconfigurable atom arrays",
         "author": "Dolev Bluvstein et al.",
-        "cited": 1094
+        "cited": 1119
       },
       {
         "id": "2001.04455",
         "year": 2020,
         "title": "High-Fidelity Entanglement and Detection of Alkaline-Earth Rydberg Atoms",
         "author": "Ivaylo S. Madjarov et al.",
-        "cited": 374
+        "cited": 382
       },
       {
         "id": "1605.05261",
         "year": 2016,
         "title": "A photon-photon quantum gate based on a single atom in an optical resonator",
         "author": "Bastian Hacker et al.",
-        "cited": 349
+        "cited": 343
       },
       {
         "id": "1508.04110",
         "year": 2015,
         "title": "Approaching the Heisenberg limit without single-particle detection",
         "author": "Emily Davis et al.",
-        "cited": 246
+        "cited": 245
       },
       {
         "id": "2305.05493",
         "year": 2023,
         "title": "High-fidelity gates with mid-circuit erasure conversion in a metastable neutral atom qubit",
         "author": "Shuo Ma et al.",
-        "cited": 226
+        "cited": 228
       },
       {
         "id": "1810.06626",
         "year": 2018,
         "title": "Microscopic control and detection of ultracold strontium in optical-tweezer arrays",
         "author": "M. A. Norcia et al.",
-        "cited": 209
+        "cited": 214
       },
       {
         "id": "1810.10517",
         "year": 2018,
         "title": "Narrow-line cooling and imaging of Ytterbium atoms in an optical tweezer array",
         "author": "Samuel Saskin et al.",
-        "cited": 170
+        "cited": 166
       },
       {
         "id": "1811.06014",
         "year": 2018,
         "title": "2000-times repeated imaging of strontium atoms in clock-magic tweezer arrays",
         "author": "Jacob P. Covey et al.",
-        "cited": 139
+        "cited": 136
       }
     ]
   },
@@ -1192,7 +1192,7 @@
         "year": 2026,
         "title": "Engineering the non-Hermitian Su-Schrieffer-Heeger model with skin effects in Rydberg atom arrays",
         "author": "J. N. Bai et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2602.02251",
@@ -1363,6 +1363,13 @@
         "cited": 0
       },
       {
+        "id": "2604.00732",
+        "year": 2026,
+        "title": "Fate of emergent Hilbert space fragmentation and information insulation upon softening of hard dual constraints at PXP-chain junctions",
+        "author": "Akshay Panda et al.",
+        "cited": 0
+      },
+      {
         "id": "2604.01376",
         "year": 2026,
         "title": "Resource Estimation via Efficient Compilation of Key Quantum Primitives",
@@ -1423,13 +1430,6 @@
         "year": 2026,
         "title": "Discovering quantum phenomena with Interpretable Machine Learning",
         "author": "Paulin de Schoulepnikoff et al.",
-        "cited": 0
-      },
-      {
-        "id": "2604.18119",
-        "year": 2026,
-        "title": "Dissipative dynamics and superradiant countinuous time crystal in a Rydberg-dressed Dicke system",
-        "author": "Haohang Zhou et al.",
         "cited": 0
       },
       {
@@ -1537,28 +1537,35 @@
         "year": 2017,
         "title": "Probing many-body dynamics on a 51-atom quantum simulator",
         "author": "Hannes Bernien et al.",
-        "cited": 2490
+        "cited": 2460
       },
       {
         "id": "1609.01609",
         "year": 2016,
         "title": "Quantum metrology with nonclassical states of atomic ensembles",
         "author": "Luca Pezzè et al.",
-        "cited": 1694
+        "cited": 1691
       },
       {
         "id": "2002.07413",
         "year": 2020,
         "title": "Many-Body Physics with Individually-Controlled Rydberg Atoms",
         "author": "Antoine Browaeys et al.",
-        "cited": 1164
+        "cited": 1243
       },
       {
         "id": "2312.03982",
         "year": 2023,
         "title": "Logical quantum processor based on reconfigurable atom arrays",
         "author": "Dolev Bluvstein et al.",
-        "cited": 1094
+        "cited": 1119
+      },
+      {
+        "id": "2012.12281",
+        "year": 2020,
+        "title": "Quantum Phases of Matter on a 256-Atom Programmable Quantum Simulator",
+        "author": "Sepehr Ebadi et al.",
+        "cited": 996
       },
       {
         "id": "1711.03528",
@@ -1568,25 +1575,18 @@
         "cited": 993
       },
       {
-        "id": "2012.12281",
-        "year": 2020,
-        "title": "Quantum Phases of Matter on a 256-Atom Programmable Quantum Simulator",
-        "author": "Sepehr Ebadi et al.",
-        "cited": 984
-      },
-      {
         "id": "2104.04119",
         "year": 2021,
         "title": "Probing Topological Spin Liquids on a Programmable Quantum Simulator",
         "author": "Giulia Semeghini et al.",
-        "cited": 795
+        "cited": 777
       },
       {
         "id": "1509.04543",
         "year": 2015,
         "title": "Realizing quantum Ising models in tunable two-dimensional arrays of single Rydberg atoms",
         "author": "Henning Labuhn et al.",
-        "cited": 781
+        "cited": 775
       }
     ]
   },
@@ -1716,7 +1716,7 @@
         "year": 2026,
         "title": "Purely optical macroscopic trap for alkaline-earth and similar atoms",
         "author": "O. N. Prudnikov et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2603.11191",
@@ -1847,7 +1847,7 @@
       {
         "id": "2605.14993",
         "year": 2026,
-        "title": "Accurate Modeling of Rydberg Atoms and Their Interactions: Theory and Implementation in PairInteraction",
+        "title": "The PairInteraction Toolkit for Modeling Rydberg Physics in Alkali and Alkaline-Earth-Like Atoms",
         "author": "Johannes Mögerle et al.",
         "cited": 0
       },
@@ -1940,7 +1940,7 @@
         "year": 2025,
         "title": "Plane-selective manipulations of nuclear spin qubits in a three-dimensional optical tweezer array",
         "author": "Toshi Kusano et al.",
-        "cited": 5
+        "cited": 6
       },
       {
         "id": "2501.14957",
@@ -1954,7 +1954,7 @@
         "year": 2025,
         "title": "Probing curved spacetime with a distributed atomic processor clock",
         "author": "Jacob P. Covey et al.",
-        "cited": 7
+        "cited": 12
       },
       {
         "id": "2502.17406",
@@ -2010,14 +2010,14 @@
         "year": 2025,
         "title": "High-fidelity entanglement and coherent multi-qubit mapping in an atom array",
         "author": "Aruku Senoo et al.",
-        "cited": 4
+        "cited": 6
       },
       {
         "id": "2506.13724",
         "year": 2025,
         "title": "Logical qubits with erasure conversion using metastable neutral atoms",
         "author": "Bichen Zhang et al.",
-        "cited": 4
+        "cited": 7
       },
       {
         "id": "2506.14747",
@@ -2031,21 +2031,21 @@
         "year": 2025,
         "title": "Fast, continuous and coherent atom replacement in a neutral atom qubit array",
         "author": "Yiyi Li et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2506.16974",
         "year": 2025,
         "title": "Fidelity Relations in an Array of Neutral Atom Qubits -- Experimental Validation of Control Noise",
         "author": "Deon Janse van Rensburg et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2506.19691",
         "year": 2025,
         "title": "Transverse Polarization Gradient Entangling Gates for Trapped-Ion Quantum Computation",
         "author": "Jin-Ming Cui et al.",
-        "cited": 4
+        "cited": 5
       }
     ],
     "topCited": [
@@ -2054,56 +2054,56 @@
         "year": 2021,
         "title": "Demonstration of multi-qubit entanglement and algorithms on a programmable neutral atom quantum computer",
         "author": "T. M. Graham et al.",
-        "cited": 517
+        "cited": 518
       },
       {
         "id": "2001.04455",
         "year": 2020,
         "title": "High-Fidelity Entanglement and Detection of Alkaline-Earth Rydberg Atoms",
         "author": "Ivaylo S. Madjarov et al.",
-        "cited": 374
+        "cited": 382
       },
       {
         "id": "1810.06537",
         "year": 2018,
         "title": "Alkaline earth atoms in optical tweezers",
         "author": "Alexandre Cooper et al.",
-        "cited": 227
+        "cited": 250
       },
       {
         "id": "2305.05493",
         "year": 2023,
         "title": "High-fidelity gates with mid-circuit erasure conversion in a metastable neutral atom qubit",
         "author": "Shuo Ma et al.",
-        "cited": 226
-      },
-      {
-        "id": "2004.06095",
-        "year": 2020,
-        "title": "A tweezer clock with half-minute atomic coherence at optical frequencies and high relative stability",
-        "author": "Aaron W. Young et al.",
-        "cited": 218
+        "cited": 228
       },
       {
         "id": "1810.06626",
         "year": 2018,
         "title": "Microscopic control and detection of ultracold strontium in optical-tweezer arrays",
         "author": "M. A. Norcia et al.",
-        "cited": 209
+        "cited": 214
+      },
+      {
+        "id": "2004.06095",
+        "year": 2020,
+        "title": "A tweezer clock with half-minute atomic coherence at optical frequencies and high relative stability",
+        "author": "Aaron W. Young et al.",
+        "cited": 214
       },
       {
         "id": "2201.03540",
         "year": 2022,
         "title": "Erasure conversion for fault-tolerant quantum computing in alkaline earth Rydberg atom arrays",
         "author": "Yue Wu et al.",
-        "cited": 196
+        "cited": 197
       },
       {
         "id": "1904.10934",
         "year": 2019,
         "title": "Seconds-scale coherence in a tweezer-array optical clock",
         "author": "Matthew A. Norcia et al.",
-        "cited": 189
+        "cited": 184
       }
     ]
   },
@@ -2173,7 +2173,7 @@
         "year": 2026,
         "title": "Purely optical macroscopic trap for alkaline-earth and similar atoms",
         "author": "O. N. Prudnikov et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2603.21643",
@@ -2222,7 +2222,7 @@
         "year": 2025,
         "title": "Enhanced Atom-by-Atom Assembly of Defect-Free Two-Dimensional Mixed-Species Atomic Arrays",
         "author": "Ming-Rui Wei et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2501.06359",
@@ -2271,14 +2271,14 @@
         "year": 2025,
         "title": "Generation of Motional Squeezed States for Neutral Atoms in Optical Tweezers",
         "author": "Vincent Lienhard et al.",
-        "cited": 2
+        "cited": 3
       },
       {
         "id": "2506.03010",
         "year": 2025,
         "title": "Nonlinear-enhanced wideband sensing via subharmonic excitation of a quantum harmonic oscillator",
         "author": "Hao Wu et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2506.09031",
@@ -2292,14 +2292,14 @@
         "year": 2025,
         "title": "High-fidelity entanglement and coherent multi-qubit mapping in an atom array",
         "author": "Aruku Senoo et al.",
-        "cited": 4
+        "cited": 6
       },
       {
         "id": "2506.20660",
         "year": 2025,
         "title": "Continuous operation of a coherent 3,000-qubit system",
         "author": "Neng-Chun Chiu et al.",
-        "cited": 55
+        "cited": 61
       },
       {
         "id": "2507.07875",
@@ -2334,14 +2334,14 @@
         "year": 2025,
         "title": "Astigmatism-free 3D Optical Tweezer Control for Rapid Atom Rearrangement",
         "author": "Yue-Hui Lu et al.",
-        "cited": 2
+        "cited": 4
       },
       {
         "id": "2512.05413",
         "year": 2025,
         "title": "Microwave electrometry with quantum-limited resolutions in a Rydberg atom array",
         "author": "Yao-Wen Zhang et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2512.05630",
@@ -2383,7 +2383,7 @@
         "year": 2024,
         "title": "Continuous operation of large-scale atom arrays in optical lattices",
         "author": "Flavien Gyger et al.",
-        "cited": 72
+        "cited": 75
       },
       {
         "id": "2402.14412",
@@ -2397,21 +2397,21 @@
         "year": 2024,
         "title": "Universal quantum operations and ancilla-based readout for tweezer clocks",
         "author": "Ran Finkelstein et al.",
-        "cited": 70
+        "cited": 71
       },
       {
         "id": "2402.16289",
         "year": 2024,
         "title": "Multi-qubit gates and Schrödinger cat states in an optical clock",
         "author": "Alec Cao et al.",
-        "cited": 107
+        "cited": 110
       },
       {
         "id": "2403.10225",
         "year": 2024,
         "title": "A single-photon large-momentum-transfer atom interferometry scheme for Sr or Yb atoms with application to determining the fine-structure constant",
         "author": "Jesse S. Schelfhout et al.",
-        "cited": 8
+        "cited": 10
       },
       {
         "id": "2406.00927",
@@ -2425,14 +2425,14 @@
         "year": 2024,
         "title": "A hybrid atom tweezer array of nuclear spin and optical clock qubits",
         "author": "Yuma Nakamura et al.",
-        "cited": 15
+        "cited": 16
       },
       {
         "id": "2407.03249",
         "year": 2024,
         "title": "Quantum coarsening and collective dynamics on a programmable simulator",
         "author": "Tom Manovitz et al.",
-        "cited": 57
+        "cited": 59
       },
       {
         "id": "2410.02452",
@@ -2446,21 +2446,21 @@
         "year": 2024,
         "title": "Autoionization-enhanced Rydberg dressing by fast contaminant removal",
         "author": "Alec Cao et al.",
-        "cited": 2
+        "cited": 3
       },
       {
         "id": "2411.02869",
         "year": 2024,
         "title": "Realization of a fast triple-magic all-optical qutrit in strontium-88",
         "author": "Maximilian Ammenwerth et al.",
-        "cited": 6
+        "cited": 8
       },
       {
         "id": "2411.05321",
         "year": 2024,
         "title": "Trapping of Single Atoms in Metasurface Optical Tweezer Arrays",
         "author": "Aaron Holman et al.",
-        "cited": 29
+        "cited": 32
       },
       {
         "id": "2411.07219",
@@ -2474,7 +2474,7 @@
         "year": 2024,
         "title": "Entangled states from sparsely coupled spins for metrology with neutral atoms",
         "author": "Sridevi Kuriyattil et al.",
-        "cited": 3
+        "cited": 4
       },
       {
         "id": "2412.14163",
@@ -2488,7 +2488,7 @@
         "year": 2024,
         "title": "Long-lived multilevel coherences and spin-1 dynamics encoded in the rotational states of ultracold molecules",
         "author": "Tom R. Hepworth et al.",
-        "cited": 9
+        "cited": 10
       },
       {
         "id": "2303.08053",
@@ -2502,7 +2502,7 @@
         "year": 2023,
         "title": "Realizing spin squeezing with Rydberg interactions in a programmable optical clock",
         "author": "William J. Eckner et al.",
-        "cited": 144
+        "cited": 148
       },
       {
         "id": "2303.08805",
@@ -2516,14 +2516,14 @@
         "year": 2023,
         "title": "Multi-ensemble metrology by programming local rotations with atom movements",
         "author": "Adam L. Shaw et al.",
-        "cited": 49
+        "cited": 50
       },
       {
         "id": "2305.19266",
         "year": 2023,
         "title": "Mid-circuit operations using the omg-architecture in neutral atom arrays",
         "author": "Joanna W. Lis et al.",
-        "cited": 16
+        "cited": 14
       },
       {
         "id": "2305.20060",
@@ -2567,56 +2567,56 @@
         "year": 2016,
         "title": "Quantum metrology with nonclassical states of atomic ensembles",
         "author": "Luca Pezzè et al.",
-        "cited": 1694
+        "cited": 1691
       },
       {
         "id": "1905.05721",
         "year": 2019,
         "title": "Generation and manipulation of Schrödinger cat states in Rydberg atom arrays",
         "author": "Ahmed Omran et al.",
-        "cited": 644
+        "cited": 633
       },
       {
         "id": "2001.04455",
         "year": 2020,
         "title": "High-Fidelity Entanglement and Detection of Alkaline-Earth Rydberg Atoms",
         "author": "Ivaylo S. Madjarov et al.",
-        "cited": 374
-      },
-      {
-        "id": "1508.04110",
-        "year": 2015,
-        "title": "Approaching the Heisenberg limit without single-particle detection",
-        "author": "Emily Davis et al.",
-        "cited": 246
+        "cited": 382
       },
       {
         "id": "1603.04603",
         "year": 2016,
         "title": "Experimental investigations of the dipolar interactions between single Rydberg atoms",
         "author": "Antoine Browaeys et al.",
-        "cited": 244
+        "cited": 260
+      },
+      {
+        "id": "1508.04110",
+        "year": 2015,
+        "title": "Approaching the Heisenberg limit without single-particle detection",
+        "author": "Emily Davis et al.",
+        "cited": 245
       },
       {
         "id": "2004.06095",
         "year": 2020,
         "title": "A tweezer clock with half-minute atomic coherence at optical frequencies and high relative stability",
         "author": "Aaron W. Young et al.",
-        "cited": 218
+        "cited": 214
       },
       {
         "id": "1708.02480",
         "year": 2017,
         "title": "Entanglement between two spatially separated atomic modes",
         "author": "Karsten Lange et al.",
-        "cited": 201
+        "cited": 203
       },
       {
         "id": "1904.10934",
         "year": 2019,
         "title": "Seconds-scale coherence in a tweezer-array optical clock",
         "author": "Matthew A. Norcia et al.",
-        "cited": 189
+        "cited": 184
       }
     ]
   },
@@ -2747,7 +2747,7 @@
         "year": 2026,
         "title": "Neural-powered unit disk graph embedding: qubits connectivity for some QUBO problems",
         "author": "Chiara Vercellino et al.",
-        "cited": 5
+        "cited": 6
       },
       {
         "id": "2605.04737",
@@ -2766,7 +2766,7 @@
       {
         "id": "2605.16944",
         "year": 2026,
-        "title": "Efficient Hamiltonian Engineering for Adiabatic MIS Algorithms",
+        "title": "Degree-Guided Adiabatic Quantum Algorithm for MIS with Neutral Atoms",
         "author": "Guy Karni et al.",
         "cited": 0
       },
@@ -2943,7 +2943,7 @@
         "year": 2025,
         "title": "Leveraging Analog Neutral Atom Quantum Computers for Diversified Pricing in Hybrid Column Generation Frameworks",
         "author": "Cédrick Perron et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2510.18540",
@@ -2999,7 +2999,7 @@
         "year": 2024,
         "title": "Depth-Optimal Addressing of 2D Qubit Array with 1D Controls Based on Exact Binary Matrix Factorization",
         "author": "Daniel Bochen Tan et al.",
-        "cited": 5
+        "cited": 6
       },
       {
         "id": "2401.15144",
@@ -3027,7 +3027,7 @@
         "year": 2024,
         "title": "Approximating maximum independent set on Rydberg atom arrays using local detunings",
         "author": "Hyeonjun Yeo et al.",
-        "cited": 3
+        "cited": 4
       },
       {
         "id": "2402.16541",
@@ -3041,7 +3041,7 @@
         "year": 2024,
         "title": "Solving non-native combinatorial optimization problems using hybrid quantum-classical algorithms",
         "author": "Jonathan Wurtz et al.",
-        "cited": 14
+        "cited": 16
       },
       {
         "id": "2403.11931",
@@ -3055,7 +3055,7 @@
         "year": 2024,
         "title": "Solving Power Grid Optimization Problems with Rydberg Atoms",
         "author": "Nora Bauer et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2405.09803",
@@ -3076,7 +3076,7 @@
         "year": 2024,
         "title": "Analog Counterdiabatic Quantum Computing",
         "author": "Qi Zhang et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2405.21019",
@@ -3113,61 +3113,61 @@
         "year": 2018,
         "title": "Quantum Approximate Optimization Algorithm: Performance, Mechanism, and Implementation on Near-Term Devices",
         "author": "Leo Zhou et al.",
-        "cited": 702
+        "cited": 912
       },
       {
         "id": "2112.14589",
         "year": 2021,
         "title": "Demonstration of multi-qubit entanglement and algorithms on a programmable neutral atom quantum computer",
         "author": "T. M. Graham et al.",
-        "cited": 517
+        "cited": 518
       },
       {
         "id": "2202.09372",
         "year": 2022,
         "title": "Quantum Optimization of Maximum Independent Set using Rydberg Atom Arrays",
         "author": "Sepehr Ebadi et al.",
-        "cited": 429
+        "cited": 423
       },
       {
         "id": "2209.03965",
         "year": 2022,
         "title": "Quantum optimization with arbitrary connectivity using Rydberg atom arrays",
         "author": "Minh-Thi Nguyen et al.",
-        "cited": 120
+        "cited": 119
       },
       {
         "id": "2008.00006",
         "year": 2020,
         "title": "Programmable Quantum Annealing Architectures with Ising Quantum Wires",
         "author": "Xingze Qiu et al.",
-        "cited": 48
+        "cited": 54
       },
       {
         "id": "2106.02663",
         "year": 2021,
         "title": "Quantum optimization via four-body Rydberg gates",
         "author": "Clemens Dlaska et al.",
-        "cited": 47
+        "cited": 50
       },
       {
         "id": "2106.11672",
         "year": 2021,
         "title": "Solving correlation clustering with QAOA and a Rydberg qudit system: a full-stack approach",
         "author": "Jordi R. Weggemans et al.",
-        "cited": 41
+        "cited": 42
       },
       {
         "id": "2308.13607",
         "year": 2023,
         "title": "Quantum-Informed Recursive Optimization Algorithms",
         "author": "Jernej Rudi Finžgar et al.",
-        "cited": 40
+        "cited": 39
       }
     ]
   },
   "classical": {
-    "count": 157,
+    "count": 158,
     "byYear": {
       "2015": 2,
       "2016": 2,
@@ -3180,7 +3180,7 @@
       "2023": 20,
       "2024": 24,
       "2025": 32,
-      "2026": 25
+      "2026": 26
     },
     "landmarks": [
       {
@@ -3299,7 +3299,7 @@
         "year": 2026,
         "title": "QCalEval: Benchmarking Vision-Language Models for Quantum Calibration Plot Understanding",
         "author": "Shuxiang Cao et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2605.03503",
@@ -3320,6 +3320,13 @@
         "year": 2026,
         "title": "Reducibility of native weighted graphs on Rydberg Arrays",
         "author": "J. Kombe et al.",
+        "cited": 0
+      },
+      {
+        "id": "2605.16944",
+        "year": 2026,
+        "title": "Degree-Guided Adiabatic Quantum Algorithm for MIS with Neutral Atoms",
+        "author": "Guy Karni et al.",
         "cited": 0
       },
       {
@@ -3418,14 +3425,14 @@
         "year": 2025,
         "title": "Low-latency control system for feedback experiments with optical tweezer arrays",
         "author": "Amir H. Dadpour et al.",
-        "cited": 1
+        "cited": 2
       },
       {
         "id": "2504.08170",
         "year": 2025,
         "title": "Efficient measurement of neutral-atom qubits with matched filters",
         "author": "Robert M. Kent et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2505.01506",
@@ -3614,14 +3621,7 @@
         "year": 2024,
         "title": "Nonstabilizerness via matrix product states in the Pauli basis",
         "author": "Poetri Sonya Tarabunga et al.",
-        "cited": 75
-      },
-      {
-        "id": "2402.02127",
-        "year": 2024,
-        "title": "Benchmarking the algorithmic performance of near-term neutral atom processors",
-        "author": "K. McInroy et al.",
-        "cited": 2
+        "cited": 78
       }
     ],
     "topCited": [
@@ -3630,61 +3630,61 @@
         "year": 2023,
         "title": "Logical quantum processor based on reconfigurable atom arrays",
         "author": "Dolev Bluvstein et al.",
-        "cited": 1094
+        "cited": 1119
       },
       {
         "id": "1812.01041",
         "year": 2018,
         "title": "Quantum Approximate Optimization Algorithm: Performance, Mechanism, and Implementation on Near-Term Devices",
         "author": "Leo Zhou et al.",
-        "cited": 702
+        "cited": 912
       },
       {
         "id": "1911.00003",
         "year": 2019,
         "title": "Simulating Lattice Gauge Theories within Quantum Technologies",
         "author": "M. C. Bañuls et al.",
-        "cited": 499
+        "cited": 501
       },
       {
         "id": "2202.09372",
         "year": 2022,
         "title": "Quantum Optimization of Maximum Independent Set using Rydberg Atom Arrays",
         "author": "Sepehr Ebadi et al.",
-        "cited": 429
+        "cited": 423
       },
       {
         "id": "1807.01815",
         "year": 2018,
         "title": "Periodic orbits, entanglement and quantum many-body scars in constrained models: matrix product state approach",
         "author": "Wen Wei Ho et al.",
-        "cited": 346
+        "cited": 349
       },
       {
         "id": "1501.02041",
         "year": 2015,
         "title": "Randomized benchmarking of single qubit gates in a 2D array of neutral atom qubits",
         "author": "T. Xia et al.",
-        "cited": 252
+        "cited": 247
       },
       {
         "id": "1912.08828",
         "year": 2019,
         "title": "Quantum many-body dynamics in two dimensions with artificial neural networks",
         "author": "Markus Schmitt et al.",
-        "cited": 225
+        "cited": 220
       },
       {
         "id": "1902.00284",
         "year": 2019,
         "title": "Defect-free assembly of 2D clusters of more than 100 single-atom quantum systems",
         "author": "Daniel Ohl de Mello et al.",
-        "cited": 171
+        "cited": 169
       }
     ]
   },
   "gate": {
-    "count": 363,
+    "count": 364,
     "byYear": {
       "2015": 7,
       "2016": 14,
@@ -3697,7 +3697,7 @@
       "2023": 36,
       "2024": 56,
       "2025": 67,
-      "2026": 46
+      "2026": 47
     },
     "landmarks": [
       {
@@ -3921,6 +3921,13 @@
         "cited": 0
       },
       {
+        "id": "2605.16944",
+        "year": 2026,
+        "title": "Degree-Guided Adiabatic Quantum Algorithm for MIS with Neutral Atoms",
+        "author": "Guy Karni et al.",
+        "cited": 0
+      },
+      {
         "id": "2605.19245",
         "year": 2026,
         "title": "Entangling gate performance and fidelity limits with neutral atom Förster resonances",
@@ -4114,7 +4121,7 @@
         "year": 2025,
         "title": "Probing the Kitaev honeycomb model on a neutral-atom quantum computer",
         "author": "Simon J. Evered et al.",
-        "cited": 35
+        "cited": 36
       },
       {
         "id": "2502.00836",
@@ -4156,7 +4163,7 @@
         "year": 2025,
         "title": "Quantum low-density parity-check codes for erasure-biased atomic quantum processors",
         "author": "Laura Pecorari et al.",
-        "cited": 3
+        "cited": 4
       },
       {
         "id": "2502.21238",
@@ -4164,13 +4171,6 @@
         "title": "The iSWAP gate with polar molecules: Robustness criteria for entangling operations",
         "author": "Matteo Bergonzoni et al.",
         "cited": 6
-      },
-      {
-        "id": "2503.01649",
-        "year": 2025,
-        "title": "Locating Rydberg Decay Error in SWAP-Leakage Reduction Circuit Protocol",
-        "author": "Cheng-Cheng Yu et al.",
-        "cited": 1
       }
     ],
     "topCited": [
@@ -4179,56 +4179,56 @@
         "year": 2023,
         "title": "Logical quantum processor based on reconfigurable atom arrays",
         "author": "Dolev Bluvstein et al.",
-        "cited": 1094
+        "cited": 1119
       },
       {
         "id": "1605.00224",
         "year": 2016,
         "title": "Stimulated Raman adiabatic passage in physics, chemistry and beyond",
         "author": "Nikolay V. Vitanov et al.",
-        "cited": 873
+        "cited": 875
       },
       {
         "id": "2104.04119",
         "year": 2021,
         "title": "Probing Topological Spin Liquids on a Programmable Quantum Simulator",
         "author": "Giulia Semeghini et al.",
-        "cited": 795
+        "cited": 777
       },
       {
         "id": "1908.06101",
         "year": 2019,
         "title": "Parallel implementation of high-fidelity multi-qubit gates with neutral atoms",
         "author": "Harry Levine et al.",
-        "cited": 605
+        "cited": 604
       },
       {
         "id": "2304.05420",
         "year": 2023,
         "title": "High-fidelity parallel entangling gates on a neutral atom quantum computer",
         "author": "Simon J. Evered et al.",
-        "cited": 517
+        "cited": 522
       },
       {
         "id": "1612.05529",
         "year": 2016,
         "title": "ARC: An open-source library for calculating properties of alkali Rydberg atoms",
         "author": "N. Šibalić et al.",
-        "cited": 473
+        "cited": 466
       },
       {
         "id": "2202.09372",
         "year": 2022,
         "title": "Quantum Optimization of Maximum Independent Set using Rydberg Atom Arrays",
         "author": "Sepehr Ebadi et al.",
-        "cited": 429
+        "cited": 423
       },
       {
-        "id": "1605.05261",
-        "year": 2016,
-        "title": "A photon-photon quantum gate based on a single atom in an optical resonator",
-        "author": "Bastian Hacker et al.",
-        "cited": 349
+        "id": "1812.05561",
+        "year": 2018,
+        "title": "Emergent SU(2) dynamics and perfect quantum many-body scars",
+        "author": "Soonwon Choi et al.",
+        "cited": 344
       }
     ]
   },
@@ -4316,7 +4316,7 @@
         "year": 2026,
         "title": "Device for MHz-rate rastering of arbitrary 2D optical potentials",
         "author": "Edita Bytyqi et al.",
-        "cited": 0
+        "cited": 2
       },
       {
         "id": "2603.01612",
@@ -4328,7 +4328,7 @@
       {
         "id": "2603.04156",
         "year": 2026,
-        "title": "Achieving Optimal-Distance Atom-Loss Correction via Pauli Envelope",
+        "title": "Low-Overhead Surface Code with Delayed Atom-Loss Detection via Pauli Envelope",
         "author": "Pengyu Liu et al.",
         "cited": 0
       },
@@ -4386,7 +4386,7 @@
         "year": 2026,
         "title": "Defect-free arrays at the thousand-atom scale in a 4-K cryogenic environment",
         "author": "Desiree Lim et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2604.07862",
@@ -4568,21 +4568,21 @@
         "year": 2025,
         "title": "Enhanced Atom-by-Atom Assembly of Defect-Free Two-Dimensional Mixed-Species Atomic Arrays",
         "author": "Ming-Rui Wei et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2501.18554",
         "year": 2025,
         "title": "Probing the Kitaev honeycomb model on a neutral-atom quantum computer",
         "author": "Simon J. Evered et al.",
-        "cited": 35
+        "cited": 36
       },
       {
         "id": "2502.04612",
         "year": 2025,
         "title": "Blinking optical tweezers for atom rearrangements",
         "author": "Kangjin Kim et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2502.08511",
@@ -4617,7 +4617,7 @@
         "year": 2025,
         "title": "Dynamical spatial light modulation in the ultraviolet spectral range",
         "author": "Maximilian Ammenwerth et al.",
-        "cited": 3
+        "cited": 4
       },
       {
         "id": "2505.13049",
@@ -4638,49 +4638,49 @@
         "year": 2025,
         "title": "Repeated ancilla reuse for logical computation on a neutral atom quantum computer",
         "author": "J. A. Muniz et al.",
-        "cited": 11
+        "cited": 14
       },
       {
         "id": "2506.13724",
         "year": 2025,
         "title": "Logical qubits with erasure conversion using metastable neutral atoms",
         "author": "Bichen Zhang et al.",
-        "cited": 4
+        "cited": 7
       },
       {
         "id": "2506.15633",
         "year": 2025,
         "title": "Fast, continuous and coherent atom replacement in a neutral atom qubit array",
         "author": "Yiyi Li et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2506.19691",
         "year": 2025,
         "title": "Transverse Polarization Gradient Entangling Gates for Trapped-Ion Quantum Computation",
         "author": "Jin-Ming Cui et al.",
-        "cited": 4
+        "cited": 5
       },
       {
         "id": "2506.20660",
         "year": 2025,
         "title": "Continuous operation of a coherent 3,000-qubit system",
         "author": "Neng-Chun Chiu et al.",
-        "cited": 55
+        "cited": 61
       },
       {
         "id": "2506.20661",
         "year": 2025,
         "title": "Architectural mechanisms of a universal fault-tolerant quantum computer",
         "author": "Dolev Bluvstein et al.",
-        "cited": 55
+        "cited": 63
       },
       {
         "id": "2507.12827",
         "year": 2025,
         "title": "Towards a fictitious magnetic field trap for both ground and Rydberg state $^{87}$Rb atoms via the evanescent field of an optical nanofibre",
         "author": "Alexey Vylegzhanin et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2507.21456",
@@ -4724,61 +4724,61 @@
         "year": 2015,
         "title": "Entangling Atomic Spins with a Strong Rydberg-Dressed Interaction",
         "author": "Y. -Y. Jau et al.",
-        "cited": 366
+        "cited": 364
       },
       {
         "id": "1601.03833",
         "year": 2016,
         "title": "In situ single-atom array synthesis by dynamic holographic optical tweezers",
         "author": "Hyosub Kim et al.",
-        "cited": 252
+        "cited": 255
       },
       {
         "id": "1506.06416",
         "year": 2015,
         "title": "A Rydberg blockade CNOT gate and entanglement in a 2D array of neutral atom qubits",
         "author": "K. M. Maller et al.",
-        "cited": 249
+        "cited": 241
       },
       {
         "id": "1902.00284",
         "year": 2019,
         "title": "Defect-free assembly of 2D clusters of more than 100 single-atom quantum systems",
         "author": "Daniel Ohl de Mello et al.",
-        "cited": 171
+        "cited": 169
       },
       {
         "id": "2308.08648",
         "year": 2023,
         "title": "Constant-Overhead Fault-Tolerant Quantum Computation with Reconfigurable Atom Arrays",
         "author": "Qian Xu et al.",
-        "cited": 156
+        "cited": 160
       },
       {
         "id": "1912.08754",
         "year": 2019,
         "title": "Trapped arrays of alkaline earth Rydberg atoms in optical tweezers",
         "author": "Jack Wilson et al.",
-        "cited": 109
+        "cited": 110
       },
       {
         "id": "2111.14653",
         "year": 2021,
         "title": "Long-lived Bell states in an array of optical clock qubits",
         "author": "Nathan Schine et al.",
-        "cited": 109
+        "cited": 108
       },
       {
         "id": "2110.05515",
         "year": 2021,
         "title": "A dual-element, two-dimensional atom array with continuous-mode operation",
         "author": "Kevin Singh et al.",
-        "cited": 102
+        "cited": 105
       }
     ]
   },
   "net": {
-    "count": 262,
+    "count": 261,
     "byYear": {
       "2015": 9,
       "2016": 15,
@@ -4791,7 +4791,7 @@
       "2023": 21,
       "2024": 37,
       "2025": 47,
-      "2026": 43
+      "2026": 42
     },
     "landmarks": [],
     "papers": [
@@ -4842,7 +4842,7 @@
         "year": 2026,
         "title": "Device-independent quantum key distribution over 100 km with single atoms",
         "author": "Bo-Wei Lu et al.",
-        "cited": 14
+        "cited": 16
       },
       {
         "id": "2602.12152",
@@ -4955,13 +4955,6 @@
         "title": "QuMod: Parallel Quantum Job Scheduling on Modular QPUs using Circuit Cutting",
         "author": "Vinooth Kulkarni et al.",
         "cited": 1
-      },
-      {
-        "id": "2604.18119",
-        "year": 2026,
-        "title": "Dissipative dynamics and superradiant countinuous time crystal in a Rydberg-dressed Dicke system",
-        "author": "Haohang Zhou et al.",
-        "cited": 0
       },
       {
         "id": "2604.18426",
@@ -5108,7 +5101,7 @@
         "year": 2025,
         "title": "Local vs non-local dynamics in cavity-coupled Rydberg atom arrays",
         "author": "Zeno Bacciconi et al.",
-        "cited": 4
+        "cited": 5
       },
       {
         "id": "2502.11282",
@@ -5122,7 +5115,7 @@
         "year": 2025,
         "title": "Probing curved spacetime with a distributed atomic processor clock",
         "author": "Jacob P. Covey et al.",
-        "cited": 7
+        "cited": 12
       },
       {
         "id": "2502.13560",
@@ -5136,7 +5129,7 @@
         "year": 2025,
         "title": "Taming Recoil Effect in Cavity-Assisted Quantum Interconnects",
         "author": "Seigo Kikura et al.",
-        "cited": 5
+        "cited": 6
       },
       {
         "id": "2502.17406",
@@ -5171,7 +5164,7 @@
         "year": 2025,
         "title": "Logical entanglement distribution between distant 2D array qubits",
         "author": "Yuya Maeda et al.",
-        "cited": 0
+        "cited": 3
       },
       {
         "id": "2503.21121",
@@ -5192,7 +5185,7 @@
         "year": 2025,
         "title": "Frustrated Rydberg Atom Arrays Meet Cavity-QED: Emergence of the Superradiant Clock Phase",
         "author": "Ying Liang et al.",
-        "cited": 0
+        "cited": 2
       },
       {
         "id": "2504.06267",
@@ -5214,6 +5207,13 @@
         "title": "Design and assembly of a cavity microscope with high numerical aperture for quantum simulations",
         "author": "Gaia Stella Bolognini et al.",
         "cited": 2
+      },
+      {
+        "id": "2505.22658",
+        "year": 2025,
+        "title": "A multimode cavity QED Ising spin glass",
+        "author": "Brendan P. Marsh et al.",
+        "cited": 4
       }
     ],
     "topCited": [
@@ -5222,42 +5222,42 @@
         "year": 2016,
         "title": "Stimulated Raman adiabatic passage in physics, chemistry and beyond",
         "author": "Nikolay V. Vitanov et al.",
-        "cited": 873
+        "cited": 875
       },
       {
         "id": "1605.05261",
         "year": 2016,
         "title": "A photon-photon quantum gate based on a single atom in an optical resonator",
         "author": "Bastian Hacker et al.",
-        "cited": 349
+        "cited": 343
       },
       {
         "id": "2109.01063",
         "year": 2021,
         "title": "Long-range interacting quantum systems",
         "author": "Nicolò Defenu et al.",
-        "cited": 318
+        "cited": 326
       },
       {
         "id": "1508.04110",
         "year": 2015,
         "title": "Approaching the Heisenberg limit without single-particle detection",
         "author": "Emily Davis et al.",
-        "cited": 246
+        "cited": 245
       },
       {
         "id": "2008.04439",
         "year": 2020,
         "title": "Roadmap on Atomtronics: State of the art and perspective",
         "author": "L. Amico et al.",
-        "cited": 211
+        "cited": 215
       },
       {
         "id": "1807.05795",
         "year": 2018,
         "title": "A Photon-Photon Quantum Gate Based on Rydberg Interactions",
         "author": "Daniel Tiarks et al.",
-        "cited": 161
+        "cited": 163
       },
       {
         "id": "1812.09358",
@@ -5320,7 +5320,7 @@
         "year": 2026,
         "title": "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits",
         "author": "Madelyn Cain et al.",
-        "cited": 2
+        "cited": 3
       },
       {
         "id": "2604.01376",
@@ -5404,7 +5404,7 @@
         "year": 2025,
         "title": "Probing the Kitaev honeycomb model on a neutral-atom quantum computer",
         "author": "Simon J. Evered et al.",
-        "cited": 35
+        "cited": 36
       },
       {
         "id": "2503.02272",
@@ -5432,7 +5432,7 @@
         "year": 2025,
         "title": "High-fidelity entanglement and coherent multi-qubit mapping in an atom array",
         "author": "Aruku Senoo et al.",
-        "cited": 4
+        "cited": 6
       },
       {
         "id": "2506.18979",
@@ -5474,21 +5474,21 @@
         "year": 2024,
         "title": "Arctic: A Field Programmable Quantum Array Scheduling Technique",
         "author": "Ethan Decker",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2405.15095",
         "year": 2024,
         "title": "Compilation for Dynamically Field-Programmable Qubit Arrays with Efficient and Provably Near-Optimal Scheduling",
         "author": "Daniel Bochen Tan et al.",
-        "cited": 11
+        "cited": 15
       },
       {
         "id": "2407.10381",
         "year": 2024,
         "title": "Hybrid Oscillator-Qubit Quantum Processors: Instruction Set Architectures, Abstract Machine Models, and Applications",
         "author": "Yuan Liu et al.",
-        "cited": 35
+        "cited": 47
       },
       {
         "id": "2409.03185",
@@ -5502,7 +5502,7 @@
         "year": 2024,
         "title": "Hybrid Oscillator-Qubit Quantum Processors: Simulating Fermions, Bosons, and Gauge Fields",
         "author": "Eleanor Crane et al.",
-        "cited": 7
+        "cited": 0
       },
       {
         "id": "2409.04578",
@@ -5516,14 +5516,14 @@
         "year": 2024,
         "title": "Resource Estimation for Delayed Choice Quantum Entanglement Based Sneakernet Networks Using Neutral Atom qLDPC Memories",
         "author": "S. Srikara et al.",
-        "cited": 0
+        "cited": 1
       },
       {
         "id": "2411.11784",
         "year": 2024,
         "title": "Reuse-Aware Compilation for Zoned Quantum Architectures Based on Neutral Atoms",
         "author": "Wan-Hsuan Lin et al.",
-        "cited": 8
+        "cited": 10
       },
       {
         "id": "2411.12263",
@@ -5565,28 +5565,28 @@
         "year": 2023,
         "title": "Neutral Atom Quantum Computing Hardware: Performance and End-User Perspective",
         "author": "Karen Wintersperger et al.",
-        "cited": 114
+        "cited": 117
       },
       {
         "id": "2307.14996",
         "year": 2023,
         "title": "Circuit decompositions and scheduling for neutral atom devices with limited local addressability",
         "author": "Natalia Nottingham et al.",
-        "cited": 2
+        "cited": 10
       },
       {
         "id": "2311.15123",
         "year": 2023,
         "title": "Atomique: A Quantum Compiler for Reconfigurable Neutral Atom Arrays",
         "author": "Hanrui Wang et al.",
-        "cited": 26
+        "cited": 31
       },
       {
         "id": "2311.16190",
         "year": 2023,
         "title": "Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas",
         "author": "Hanrui Wang et al.",
-        "cited": 15
+        "cited": 19
       },
       {
         "id": "2206.04990",
@@ -5607,7 +5607,7 @@
         "year": 2021,
         "title": "Efficient realization of quantum algorithms with qudits",
         "author": "Anastasiia S. Nikolaeva et al.",
-        "cited": 44
+        "cited": 45
       }
     ],
     "topCited": [
@@ -5616,35 +5616,42 @@
         "year": 2023,
         "title": "Neutral Atom Quantum Computing Hardware: Performance and End-User Perspective",
         "author": "Karen Wintersperger et al.",
-        "cited": 114
-      },
-      {
-        "id": "2111.04384",
-        "year": 2021,
-        "title": "Efficient realization of quantum algorithms with qudits",
-        "author": "Anastasiia S. Nikolaeva et al.",
-        "cited": 44
+        "cited": 117
       },
       {
         "id": "2407.10381",
         "year": 2024,
         "title": "Hybrid Oscillator-Qubit Quantum Processors: Instruction Set Architectures, Abstract Machine Models, and Applications",
         "author": "Yuan Liu et al.",
-        "cited": 35
+        "cited": 47
+      },
+      {
+        "id": "2111.04384",
+        "year": 2021,
+        "title": "Efficient realization of quantum algorithms with qudits",
+        "author": "Anastasiia S. Nikolaeva et al.",
+        "cited": 45
       },
       {
         "id": "2501.18554",
         "year": 2025,
         "title": "Probing the Kitaev honeycomb model on a neutral-atom quantum computer",
         "author": "Simon J. Evered et al.",
-        "cited": 35
+        "cited": 36
       },
       {
         "id": "2311.15123",
         "year": 2023,
         "title": "Atomique: A Quantum Compiler for Reconfigurable Neutral Atom Arrays",
         "author": "Hanrui Wang et al.",
-        "cited": 26
+        "cited": 31
+      },
+      {
+        "id": "2311.16190",
+        "year": 2023,
+        "title": "Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas",
+        "author": "Hanrui Wang et al.",
+        "cited": 19
       },
       {
         "id": "2405.04514",
@@ -5658,13 +5665,6 @@
         "year": 2023,
         "title": "SimuQ: A Framework for Programming Quantum Hamiltonian Simulation with Analog Compilation",
         "author": "Yuxiang Peng et al.",
-        "cited": 15
-      },
-      {
-        "id": "2311.16190",
-        "year": 2023,
-        "title": "Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas",
-        "author": "Hanrui Wang et al.",
         "cited": 15
       }
     ]
